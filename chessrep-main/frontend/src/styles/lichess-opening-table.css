@@ -1,0 +1,416 @@
+/* Lichess Opening Table Styles - Matching the image design */
+
+.lichess-opening-table {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.table-header {
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.database-selector {
+  display: flex;
+  gap: 4px;
+  background: #e9ecef;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.db-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #6c757d;
+}
+
+.db-btn:hover {
+  background: #dee2e6;
+  color: #495057;
+}
+
+.db-btn.active {
+  background: #28a745;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.player-input {
+  flex: 1;
+  max-width: 200px;
+}
+
+.player-field {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.player-field:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25);
+}
+
+.settings-btn {
+  display: flex;
+  align-items: center;
+}
+
+.settings-icon {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.settings-icon:hover {
+  background: #e9ecef;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+}
+
+.opening-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Table Header */
+.table-header-row {
+  background: #28a745;
+  color: #ffffff;
+}
+
+.table-header-row th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.move-header {
+  width: 80px;
+}
+
+.games-header {
+  width: 120px;
+}
+
+.outcome-header {
+  width: auto;
+}
+
+.sort-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sort-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sort-btn.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.outcome-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Table Rows */
+.table-row {
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.table-row:hover {
+  background: #f8f9fa;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row td {
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+/* Move Cell */
+.move-cell {
+  font-family: 'Chess Cases', 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 16px;
+  color: #212529;
+}
+
+.move-san {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+/* Games Cell */
+.games-cell {
+  text-align: right;
+}
+
+.games-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.percentage {
+  font-weight: 600;
+  color: #212529;
+  font-size: 14px;
+}
+
+.total {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+/* Outcome Cell */
+.outcome-cell {
+  padding: 8px 16px;
+}
+
+.outcome-bar {
+  display: flex;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  min-width: 200px;
+}
+
+.outcome-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.outcome-segment.white {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.outcome-segment.draw {
+  background: #6c757d;
+  color: #ffffff;
+}
+
+.outcome-segment.black {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.outcome-text {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 1;
+  position: relative;
+}
+
+/* Summary Row */
+.summary-row {
+  background: #f8f9fa;
+  border-top: 2px solid #28a745;
+  font-weight: 600;
+}
+
+.summary-row td {
+  padding: 12px 16px;
+}
+
+.summary-label {
+  font-size: 16px;
+  color: #28a745;
+  text-align: center;
+}
+
+.summary-games {
+  text-align: right;
+}
+
+.summary-outcome {
+  padding: 8px 16px;
+}
+
+/* Footer */
+.table-footer {
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-top: 1px solid #e9ecef;
+}
+
+.top-games-btn {
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.top-games-btn:hover {
+  background: #218838;
+}
+
+/* Loading State */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: #6c757d;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e9ecef;
+  border-top: 3px solid #28a745;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error State */
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.error-message button {
+  background: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.error-message button:hover {
+  background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .database-selector {
+    justify-content: center;
+  }
+  
+  .player-input {
+    max-width: none;
+  }
+  
+  .outcome-bar {
+    min-width: 150px;
+  }
+  
+  .table-header-row th {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .table-row td {
+    padding: 8px 12px;
+  }
+  
+  .move-san {
+    font-size: 14px;
+  }
+  
+  .percentage {
+    font-size: 12px;
+  }
+  
+  .total {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outcome-buttons {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .outcome-bar {
+    min-width: 120px;
+  }
+  
+  .outcome-text {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,318 @@
+[Event "Opening Traps!!: Trap 1 (Queen for mate!)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B00"]
+[Opening "Duras Gambit"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 1 (Queen for mate!)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/7wMLXglZ"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:18:08"]
+
+{ [%cal Ge2e4] }
+1. e4 { [%cal Gf7f5] } 1... f5 { [%cal Gd1h5] } 2. Qh5+ { [%cal Gg7g6] } (2. exf5) 2... g6 { [%cal Gf1e2] } 3. Be2 { If they take the queen . . . } { [%cal Gg6h5] } 3... gxh5 { [%cal Ge2h5] } 4. Bxh5# { GG } *
+
+
+[Event "Opening Traps!!: Trap 2 (Englund Gambit)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A40"]
+[Opening "Englund Gambit: Main Line"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 2 (Englund Gambit)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/NZmTrYz1"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:19:50"]
+
+{ [%cal Gd2d4] }
+1. d4 { Play e5, the Englund Gambit!! } { [%csl Ge5][%cal Ge7e5] } 1... e5 2. dxe5 { Develop the knight } { [%cal Gb8c6] } 2... Nc6 { they defend with the knight } { [%cal Gg1f3] } 3. Nf3 { Qe2, attacking the pawn again. } { [%cal Gd8e7] } 3... Qe7 { Bf4, defending } { [%cal Gc1f4] } 4. Bf4! { Now play Qb4+! } { [%csl Gb4][%cal Ge7b4] } 4... Qb4+!! { If your opponent blocks with any other piece, we eat his bishop. (Besides Qd2) } { [%cal Gf4d2] } 5. Bd2 { Now take the pawn on b2!! } { [%cal Gb4b2] } (5. c3 Qxf4) (5. Nc3 Qxf4) (5. Qd2 { [%cal Gb4b2] } 5... Qxb2 { We are winning the rook!! } 6. Qc3 { Free queen! (With a pin!) } { [%cal Gf8b4] } (6. e4 Qxa1) 6... Bb4) 5... Qxb2 { if the opponent plays Bc3, defending the rook . . . (If other moves, there are sidelines) } 6. Bc3 { Pin!! } { [%cal Gf8b4] } (6. Nc3! { This is the correct way to defend. }) 6... Bb4 { We win either way. } { [%cal Gd1d2,Gc3b4] } 7. Qd2 { Take the bishop } { [%cal Gb4c3] } (7. Bxb4 { OOh! I see a free bishop (the rook is still trapped) } 7... Nxb4 { The only way to save the rook is either Na3, losing the knight! We are winning!! (If Nc3 or Nbd2 to save the rook, we have Nxc2, forking the king and rook!) } { [%cal Gb1a3,Gb4c2] } 8. Na3 { Free knight! } { [%cal Gb2a3] } (8. Nc3 Nxc2+ 9. Kd2 (9. Qxc2 { We just take the free queen. } { [%cal Gb2c2] } 9... Qxc2!! $16) 9... Nxa1+) (8. Nbd2 { See the fork? } { [%cal Gb4c2] } 8... Nxc2+ { He has to lose the queen, otherwise check mate!! } 9. Qxc2 { [%cal Gb2c2] } 9... Qxc2) 8... Qxa3!! $16) 7... Bxc3 { If knight takes, he loses the rook. If he doesn't take, he loses the queen! 😆 } 8. Qxc3 { Mate in one!! } { [%cal Gb2c1] } (8. Nxc3 { Free rook! } 8... Qxa1+) 8... Qc1# *
+
+
+[Event "Opening Traps!!: Trap 3 (Englund Gambit #2)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A40"]
+[Opening "Englund Gambit"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 3 (Englund Gambit #2)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/cZWHiOAA"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:40:53"]
+
+1. d4 { You know the drill. } { [%cal Ge7e5] } 1... e5 2. dxe5 { Now play a different move for a different trap. Bc5! } { [%cal Gf8c5] } 2... Bc5! { [%cal Gd7d6,Gg1f3] } 3. Nf3 { Play d6 now! } 3... d6 4. exd6?! { Now play Ne7!! (If you premove during bullet/blitz, your opponents won't think twice) } 4... Ne7!! 5. dxe7?? { NOW SAC THE BISHOP WITH BXf2!!!!!! } { [%csl Gf2][%cal Gc5f2] } 5... Bxf2+!! { White must take. } { [%cal Ge1f2] } 6. Kxf2 { Free queen! Did you hit the heart button if you are liking this study?? } { [%cal Gd8d1] } 6... Qxd1!! *
+
+
+[Event "Opening Traps!!: Trap 4 (Fool's mate)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A00"]
+[Opening "Barnes Opening"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 4 (Fool's mate)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/pbnGWfwb"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:47:07"]
+
+{ This chapter is about a mate in 2 moves. This will hardly ever happen, but still, keep an eye out!! 👀 }
+1. f3 { Play e6 or e5, mostly e6 } 1... e6 2. g4 { Mate in one!! } 2... Qh4# *
+
+
+[Event "Opening Traps!!: Trap 5 (Scholar's Attack)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C20"]
+[Opening "King's Pawn Game: Wayward Queen Attack"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 5 (Scholar's Attack)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/OcSZxqJs"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:49:05"]
+
+{ One quick thing: You should not bring your queen out early. I am showing this to you so that you know how to defend against it. Play e4. } { [%cal Ge2e4] }
+1. e4 e5 { Now Qh5 (again, just to show you how to defend, don't bring your queen out early unless to avoid doubled pawns or some necessary reason) } { [%csl Gh5][%cal Gd1h5] } 2. Qh5 { Some people will just freak out "THE QUEEN IS HITTING F7!! MUST DEFEND!!" (Just play Nc6, defending the pawn, if they try to Scholar's mate you, then you can play g6. If Qf3, just play Nc6. } 2... g6 { [%cal Gh5e5] } 3. Qxe5+ { No matter how they block, take the rook. } 3... Qe7 { [%csl Gh8][%cal Ge5h8] } (3... Be7 { [%csl Gh8][%cal Ge5h8] } 4. Qxh8) (3... Ne7 { [%cal Ge5h8] } 4. Qxh8) 4. Qxh8 *
+
+
+[Event "Opening Traps!!: Trap 6 (Scholar's Mate)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C20"]
+[Opening "King's Pawn Game: Wayward Queen Attack"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 6 (Scholar's Mate)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/JtlIXpXK"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:52:51"]
+
+{ follow the arrows } { [%cal Ge2e4] }
+1. e4 e5 { [%cal Gd1h5] } 2. Qh5 Nc6 { [%cal Gf1c4] } 3. Bc4 { If they make a normal move . . } { [%csl Gf7][%cal Gh5f7,Gc4f7] } 3... Nf6 { mate. } { [%cal Gh5f7] } 4. Qxf7# *
+
+
+[Event "Opening Traps!!: Trap 7 (defending against Scholar's Mate)"]
+[Date "2025.10.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C20"]
+[Opening "King's Pawn Game: Wayward Queen Attack"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 7 (defending against Scholar's Mate)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/7MNZ7ecx"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.15"]
+[UTCTime "20:55:20"]
+
+{ OK, you must know how to stop this. }
+1. e4 { [%cal Ge7e5] } 1... e5 { [%cal Gd1h5] } 2. Qh5?? { Defend the pawn } { [%cal Gb8c6] } 2... Nc6 3. Bc4 { Threatening mate. Now you can play g6 bc your e pawn is safe } { [%csl Gf7][%cal Gc4f7,Gh5f7,Gg7g6] } 3... g6 4. Qf3 { Threatening mate again. Can you find a developing move that blocks? } 4... Nf6 { Correct! } 5. g4 { they try to win the knight. Play Nd4, threatening the queen and a fork! } 5... Nd4 { 😍 } { [%csl Gf3,Gc2,Ga1,Ge1][%cal Gd4f3,Gd4c2,Gc2a1,Gc2e1] } 6. Qd1 d5 7. Be2 dxe4 { We are much better. -3.6. 👏 } *
+
+
+[Event "Opening Traps!!: Trap 8 (Blackburne-Shilling Trap)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Blackburne-Kostić Gambit"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 8 (Blackburne-Shilling Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/YzYVXFKC"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "13:11:55"]
+
+1. e4 { This trap comes from the Italian Game 🇮🇹 } { [%cal Ge7e5] } 1... e5 2. Nf3 { Follow the arrows } { [%cal Gb8c6] } 2... Nc6 3. Bc4 { the Italian!! Now here play Nd4, the Blackburne shilling Gambit! } { [%csl Gd4][%cal Gc6d4] } 3... Nd4! { Now some people will trade knights . . . but a lot of people like eating free stuff you know? } 4. Nxe5 { We ignore White's threat and play Qg5, forking the knight and the weak pawn on g2. } { [%csl Ge5,Gg5,Gg2][%cal Gd8g5,Gg5e5,Gg5g2] } 4... Qg5 { So most people play Nxf7, trying to win the rook while simultaneously saving the knight. } 5. Nxf7 { Take the pawn! } { [%csl Gg2][%cal Gg5g2] } 5... Qxg2 { The rook is under attack . . . if they don't move it, they lose it with check! 😉 } 6. Rf1 { Free pawn!! } { [%cal Gg2e4] } (6. Nxh8 { [%cal Gg2h1] } 6... Qxh1+ 7. Bf1 { [%cal Gh1e4] } 7... Qxe4+ 8. Qe2 { And white is up a knight for a queen :D } (8. Be2 { Mate in 8 . . . } { [%cal Gf8c5] } 8... Bc5 9. d3 { [%cal Gd4f3] } (9. Nf7 { [%cal Gd4f3] } 9... Nf3+ 10. Kf1 { [%cal Ge4h4] } 10... Qh4 11. Nd6+ { [%cal Gc7d6] } 11... cxd6 12. Kg2 { [%cal Gh4f2] } 12... Qxf2+ 13. Kh3 { [%cal Gf2h2] } 13... Qxh2+ 14. Kg4 { [%cal Gg8f6] } 14... Nf6+ 15. Kxf3 { [%cal Gh2f2] } 15... Qf2# { We win!! }) 9... Nf3+ 10. Kf1 Qh4 11. Bxf3 Qxf2# { GG }) 8... Nxe2 9. Bxe2) 6... Qxe4+ { Most people will block with the bishop because they don't want to lose their queen for the knight. } 7. Be2 { Mate in 1! } (7. Qe2 { Free queen. If bishop blocks, we have Nf3# :D } { [%csl Ge2][%cal Gd4e2] } 7... Nxe2) 7... Nf3#!! { 👍 The bishop is pinned!! } { [%cal Ge4e2,Ge2e1] } *
+
+
+[Event "Opening Traps!!: Trap 9 (Legal Mate)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 9 (Legal Mate)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/b9ltLVxa"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "13:23:18"]
+
+{ e4! } { [%cal Ge2e4] }
+1. e4 e5 { Horsey } { [%csl Gf3][%cal Gg1f3] } 2. Nf3 d6 { Philidor's Defence: Stick to the Italian } { [%cal Gf1c4] } 3. Bc4 Bg4 { They pin us? Just develop the other knight for now :D } { [%cal Gb1c3] } 4. Nc3 g6 { Now we . . . sacrifice . . . the QUEEEN!! } { [%cal Gf3e5] } 5. Nxe5 Bxd1?? { Check!! } { [%cal Gc4f7] } 6. Bxf7+!! { Only square . . . } 6... Ke7 { Mate in one!! } 7. Nd5# { 🤯 } { [%csl Gd6,Gd8,Gf8,Gf7,Ge6,Ge8,Gd7,Gf6,Ge7][%cal Ge5f7,Gf7e8,Gf7e6,Ge5d7,Gd5f6,Gd5e7] } *
+
+
+[Event "Opening Traps!!: Trap 10 (Fishing Pole Trap)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C65"]
+[Opening "Ruy Lopez: Berlin Defense, Fishing Pole Variation"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 10 (Fishing Pole Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/ZfbxiTqG"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "13:28:37"]
+
+{ Are you enjoying this study? If so, please SMASH that like button down there! ❤ }
+1. e4 { Follow the arrows. } { [%cal Ge7e5] } 1... e5 2. Nf3 { [%cal Gb8c6] } 2... Nc6 3. Bb5 { Ruy Lopez or the Spanish 🇪🇸 } { [%cal Gg8f6] } 3... Nf6 4. O-O { Gal } { [%cal Gf6g4] } 4... Ng4 { Galloping into white territory!! } 5. h3 { "Get your knight away!" } { [%cal Gh7h5] } 5... h5 { Nope. 😏 } 6. hxg4?? { [%cal Gh5g4] } 6... hxg4 7. Ne1?? { [%csl Gd8][%cal Gd8h4] } (7. Nh2 { [%cal Gd8h4] } 7... Qh4! 8. f3 { Escape route . . . lock the King in! } { [%cal Gg1f2,Gg4g3] } 8... g3 { [%csl Gf2][%cal Gg3f2] } 9. Re1 { [%csl Gf1][%cal Gg1f1,Gh4h2] } 9... Qxh2+ 10. Kf1 { [%csl Gd4][%cal Gc6d4] } 10... Nd4 { [%csl Ge2,Gf2][%cal Gd4e2,Gg3f2,Gh2h1] } 11. Bxd7+ Bxd7 { A spite check . . . mate is inevitable. } 12. c3 { [%cal Gh2h1] } 12... Qh1# { :D }) 7... Qh4 8. f3 { An escape route . . . lock it down!!! } { [%cal Gg1f2,Gf2e2,Ge2e3,Gg4g3] } 8... g3 { [%csl Gf2][%cal Gg3f2] } 9. Bxc6 { Mate in 1 . . . 2 different ways! } { [%csl Gh2,Gh1][%cal Gh4h1,Gh4h2] } 9... Qh2# (9... Qh1#) *
+
+
+[Event "Opening Traps!!: Trap 11 (Lasker Trap)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D08"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 11 (Lasker Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/fmKnPnPe"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "13:36:32"]
+
+1. d4 { [%cal Gd7d5] } 1... d5 2. c4 { The queen's gambit! } { [%csl Ge5][%cal Ge7e5] } 2... e5 { Albin CounterGambit! } 3. dxe5 { [%csl Gd4][%cal Gd5d4] } 3... d4 4. e3? { Check him! } 4... Bb4+ 5. Bd2 { [%cal Gd4e3] } 5... dxe3! { Brilliant! } 6. Bxb4 { [%cal Ge3f2] } 6... exf2+ { If they take we win the queen . . . } 7. Ke2 { Underpromotion! } { [%cal Gf2g1] } (7. Kxf2 Qxd1) 7... fxg1=N+ 8. Rxg1 { [%cal Gc8g4] } 8... Bg4+ { [%csl Gd1,Ge2][%cal Gg4e2,Ge2d1] } 9. Kf2 Qxd1 { Free queen! } *
+
+
+[Event "Opening Traps!!: Trap 12 (Budapest Trap)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A45"]
+[Opening "Indian Defense: Lazard Gambit"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 12 (Budapest Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/NJ36Bmyh"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "14:43:43"]
+
+1. d4 { [%csl Gf6][%cal Gg8f6] } 1... Nf6 2. Nd2 { Arrows! } { [%csl Ge5][%cal Ge7e5] } 2... e5 3. dxe5 Ng4 4. h3 { [%csl Ge3][%cal Gg4e3] } 4... Ne3! 5. fxe3 { Mate in 2!! } { [%csl Gh4][%cal Gd8h4] } 5... Qh4+ 6. g3 { [%csl Gg3][%cal Gh4g3] } 6... Qxg3# { :D } *
+
+
+[Event "Opening Traps!!: Trap 13 (Vienna Trap)"]
+[Date "2025.10.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 13 (Vienna Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/RWbyBZ0N"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.16"]
+[UTCTime "14:48:04"]
+
+{ [%csl Ge4][%cal Ge2e4] }
+1. e4 e5 { Vienna! } { [%csl Gc3][%cal Gb1c3] } 2. Nc3 Nf6 { Bishop! } { [%csl Gc4][%cal Gf1c4] } 3. Bc4 Nxe4 { If we take back he forks us . . . so we . . . SAC THE BISHOP!! } { [%csl Ge4,Gf7][%cal Gc3e4,Gd7d5,Gd5c4,Gd5e4,Gc4f7] } 4. Bxf7+ Kxf7 { Now we can take the knight :D } { [%csl Ge4][%cal Gc3e4] } 5. Nxe4 Nc6 { Attack the king! } { [%csl Gf3][%cal Gd1f3] } 6. Qf3+ Kg8 7. Ng5 { [%csl Ge6,Gf7][%cal Gg5e6,Gg5f7,Gf3f7,Gf3d5,Gd5g8] } 7... Qf6 { Desperately trying to defend } { [%csl Gd5][%cal Gf3d5] } (7... Qxg5 { Mate! } { [%csl Gd5][%cal Gf3d5] } 8. Qd5#) 8. Qd5+ Qe6 (8... Qf7?? 9. Qxf7# { [%csl Gg8][%cal Gf7g8] }) 9. Nxe6 $16 *
+
+
+[Event "Opening Traps!!: Trap 14 (Kienger Trap)"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A52"]
+[Opening "Indian Defense: Budapest Defense, Rubinstein Variation"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 14 (Kienger Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/5ijEsi3E"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.18"]
+[UTCTime "14:13:02"]
+
+1. d4 { White starts out with the queen's pawn game. Play Nf6, the Indian/Budapest Defence! } { [%csl Gf6][%cal Gg8f6] } 1... Nf6 { This move controls some squares in the center, stopping white from playing e4 (for now) } { [%csl Ge4,Gd5,Gg4,Gh5][%cal Gf6e4,Gf6d5,Gf6g4,Gf6h5] } 2. c4 { Play e5, an Englund Gambit style move! } { [%csl Ge5][%cal Ge7e5] } 2... e5 3. dxe5 { Can you find a move that attacks the pawn while saving our knight? } 3... Ng4 { Great job! } { [%csl Ge5][%cal Gg4e5] } (3... Ng8 { Try not to move your developed pieces backwards when it causes them to have less effect in the battle. Here, the knight sees 3 squares, and all of them are currently inconsequential. Try Again! } { [%csl Ge7,Gf6,Gh6] }) (3... Nh5 { "A knight on the rim is dim!" }) (3... Nd5 { Oh no, your knight! } { [%csl Gd5][%cal Gc4d5,Gd1d5] }) (3... Ne4 { This is ok, however, it doesn't pressure the e5 pawn. }) 4. Bf4 { Develop and attack! } 4... Nc6 { 👍 } (4... Bd6 { [%csl Gd6][%cal Ge5d6] }) (4... Qf6 { [%csl Gf6][%cal Ge5f6] }) 5. Nf3 { Check the king! } { [%csl Ge5][%cal Gf3e5,Gf4e5] } 5... Bb4+ 6. Nbd2 { Attack the pawn once more! } { [%cal Gd8e7] } 6... Qe7 7. a3 { We ignore the hanging bishop, and instead take the pawn! } { [%csl Ge5][%cal Gg4e5] } 7... Ngxe5 8. axb4?? { Try to find mate in one! } 8... Nd3# { Great job! The pawn is pinned! } { [%csl Ge2,Ge1][%cal Ge7e2,Ge2e1] } (8... Nxf3+ { The pawn can take } { [%csl Gf3][%cal Gg2f3] }) *
+
+
+[Event "Opening Traps!!: Trap 15 (Scandinavian Defense)"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B01"]
+[Opening "Scandinavian Defense: Mieses-Kotroc Variation"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 15 (Scandinavian Defense)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/GsrUcy1f"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.18"]
+[UTCTime "17:09:31"]
+
+{ e4 } { [%csl Ge4][%cal Ge2e4] }
+1. e4 d5 { Scandinavian Defense? Take } { [%csl Gd5][%cal Ge4d5] } 2. exd5 Qxd5 { Develop and attack! } 3. Nc3 { Good! Now most people play Qa5, Qd8, or check you . . . but what if they play . . . Qc6?? } 3... Qc6?? { Find a creative pin! } 4. Bb5 { Perfect! Also, bonus . . if they take . . } 4... Qxb5 { take back of course } 5. Nxb5 { we are threating a fork 😍 } { [%csl Gc7,Ge8,Ga8][%cal Gb5c7,Gc7e8,Gc7a8] } *
+
+
+[Event "Opening Traps!!: Trap 16 (Legal Mate in Scotch)"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C44"]
+[Opening "Scotch Game: Sea-Cadet Mate"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 16 (Legal Mate in Scotch)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/Tc673F8h"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.20"]
+[UTCTime "15:08:23"]
+
+{ e4! } { [%csl Ge4][%cal Ge2e4] }
+1. e4 e5 { The normal Nf3, attacking the pawn . . } { [%csl Ge5][%cal Gg1f3,Gf3e5] } 2. Nf3 Nc6 { This is the most played position from openings at all levels. I personally like the Italian here (Bc4) But for this trap we will do the Scotch, d4. } { [%csl Gd4][%cal Gd2d4] } 3. d4 exd4 { Instead of taking back, we now play Bc4, the Scotch Gambit. } { [%csl Gc4][%cal Gf1c4] } 4. Bc4 { This attacks black's weak spot, f7, the only pawn that is guarded only by the king. } { [%csl Gf7][%cal Gc4f7] } 4... d6 { c3, offering another pawn to get a lead in development. } { [%csl Gc3][%cal Gc2c3] } 5. c3 dxc3 { [%csl Gc3][%cal Gb1c3] } 6. Nxc3 Bg4 { Just ignore the pin and castle. } { [%cal Ge1g1,Gh1f1] } 7. O-O Ne5 { centralizing the Knight, attacking the bishop and the pinned knight . . so of course, we just take 😎 } { [%csl Ge5][%cal Gf3e5] } 8. Nxe5 Bxd1?? { Attack! } { [%csl Gf7][%cal Gc4f7] } 9. Bxf7+ Ke7 { Mate in one! Try to find it! } 10. Nd5# { Good job! } { [%csl Ge6,Ge8,Gd8,Gf8,Gd6,Gf6,Gd7,Gf7,Ge7][%cal Gf7e8,Gf7e6,Ge5d7,Gd5f6,Ge5f7,Gd5e7] } (10. Bg5+ { This is not mate, but it is still mate in one. If you play this, this is how you win. } 10... Nf6 { Only legal move. Can you find mate in one? } 11. Nd5# { Same thing, the knight is pinned. } { [%csl Gf6,Ge7][%cal Gg5e7] }) *
+
+
+[Event "Opening Traps!!: Trap 17 (Siberian Trap)"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B21"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation, Siberian Trap"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 17 (Siberian Trap)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/x057LB08"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.20"]
+[UTCTime "16:54:40"]
+
+1. e4 { play c5, the Sicilian Defence! } { [%csl Gc5][%cal Gc7c5] } 1... c5 2. d4 { Just take } { [%csl Gd4][%cal Gc5d4] } 2... cxd4 3. c3 { Same thing. Yum! } { [%csl Gc3][%cal Gd4c3] } 3... dxc3 4. Nxc3 { Develop the knight } { [%csl Gc6][%cal Gb8c6] } 4... Nc6 5. Nf3 { Now play e6! } { [%csl Ge6][%cal Ge7e6] } 5... e6 { Opening up the queen and DSB. } { [%csl Ga3,Gb4,Gc5,Gd6,Ge7,Gf6,Gg5,Gh4][%cal Gd8h4,Gf8a3] } 6. Bc4 { now . . put the queen on c7 (It'll come in handy later, trust me) } { [%csl Gc7][%cal Gd8c7] } 6... Qc7 7. O-O { Bring the other knight to the party! } { [%csl Gf6][%cal Gg8f6] } 7... Nf6 8. Qe2 { Jumping forward! } { [%csl Gg4][%cal Gf6g4] } 8... Ng4 9. h3?? { Now . . . Nd4!! } { [%csl Gd4][%cal Gc6d4] } 9... Nd4!! { Here's the thing . . . White would love to take the d4 knight, but if they move their knight, it stops guarding h2, and we mate. They should take the g4 knight to stop mate, but then we get the queen. } { [%csl Gh2,Ge2,Gf3][%cal Gc7h2,Gg4h2,Gf3h2,Gd4f3,Gd4e2] } 10. hxg4 (10. Nxd4 { Mate in one. Seek 🔍 } 10... Qh2# { Yup! }) 10... Nxe2+ 11. Bxe2 { And we are up a queen :D } *
+
+
+[Event "Opening Traps!!: Trap 18 (Trap in the Haggis-Grdize Gambit!)"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C56"]
+[Opening "Italian Game: Two Knights Defense, Perreux Variation"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 18 (Trap in the Haggis-Grdize Gambit!)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/7qaUt5M2"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.20"]
+[UTCTime "18:33:43"]
+
+{ [%csl Ge4][%cal Ge2e4] }
+1. e4 e5 { Arrows! } { [%csl Gf3][%cal Gg1f3] } 2. Nf3 Nc6 { [%csl Gd4][%cal Gd2d4] } 3. d4 { OOh! An exciting gambit! } 3... exd4 4. Ng5 { Without the d-pawn in the way, our bishop supports the knight from the queen. } { [%csl Gd2,Gg5][%cal Gc1g5,Gd8g5] } 4... Nf6 { [%csl Gc4][%cal Gf1c4] } 5. Bc4 { This hits black's soft spot twice } { [%csl Gf7][%cal Gg5f7,Gc4f7] } 5... Ne5!? { Attacking the bishop and defending f7! Retreat, but keep the pressure on f7! } { [%cal Ge5c4,Ge5f7] } 6. Bb3 { Good. } { [%csl Gf7][%cal Gb3f7,Gg5f7] } 6... h6 { [%csl Gg5][%cal Gh6g5] } 7. f4! { [%csl Ge5,Gg5][%cal Gf4e5,Gf4g5] } 7... hxg5 { Just take. } { [%csl Ge5][%cal Gf4e5] } 8. fxe5 Nxe4 9. Bd5 { Whoa! We gain tempo on the knight, and stop black from playing d5. } 9... Nc5 { [%csl Gg1][%cal Ge1g1] } 10. O-O Ne6 { [%csl Gd4][%cal Gd1d4] } 11. Qxd4 { Oh no! My queen! } { [%csl Gd4][%cal Ge6d4] } 11... Nxd4 { now I'm totally losing! 😢 So of course, after losing one piece . . . WE SAC ANOTHER! Bxf7+! } { [%csl Gf7][%cal Gd5f7] } 12. Bxf7+ { Black only has one move . . } { [%csl Ge7][%cal Ge8e7] } 12... Ke7 { Mate in one! } 13. Bxg5# { Ha ha 😆 Mate
+P.S. If you are enjoying this study, please leave a like below. It really helps me reach more viewers like you.♥ } { [%csl Gf6,Ge7,Gf8,Gd8,Gd7,Ge6,Gd6,Ge8,Gf7][%cal Gg5d8,Gf7e6,Ge5d6,Ge5f6,Gf7e8,Gf1f7] } *
+
+
+[Event "Opening Traps!!: Trap 19 (Tennison Gambit)"]
+[Date "2025.10.22"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A06"]
+[Opening "Zukertort Opening: Tennison Gambit"]
+[StudyName "Opening Traps!!"]
+[ChapterName "Trap 19 (Tennison Gambit)"]
+[ChapterURL "https://lichess.org/study/bbY46ERT/9jbHCOmv"]
+[Annotator "https://lichess.org/@/EJWalker305"]
+[UTCDate "2025.10.22"]
+[UTCTime "13:29:44"]
+
+{ Reti! } { [%csl Gf3][%cal Gg1f3] }
+1. Nf3 d5 { [%csl Ge4][%cal Ge2e4] } 2. e4 { The Tennison Gambit! } 2... dxe4 { Attack the pawn! } { [%csl Gg5][%cal Gf3g5] } 3. Ng5 Nf6 { The most common move. } { [%csl Gd3][%cal Gd2d3] } 4. d3 exd3 { [%csl Gd3][%cal Gf1d3] } 5. Bxd3 h6 { Do a fork, even if you lose a piece. } 6. Nxf7 { [%csl Gh8,Gd8][%cal Gf7h8,Gf7d8] } 6... Kxf7?! { Now what! } 7. Bg6+ { Yup! We win the queen! } { [%csl Ge8,Gf7,Gg6,Gd8][%cal Gg6e8,Gd1d8] } 7... Kxg6 8. Qxd8 { 🙂 } *
+
+

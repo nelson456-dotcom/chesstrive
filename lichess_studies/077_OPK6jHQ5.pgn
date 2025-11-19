@@ -1,0 +1,16 @@
+[Event "Дебюты: Система колле"]
+[Date "2025.11.08"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D05"]
+[Opening "Queen's Pawn Game: Colle System, Traditional Colle"]
+[StudyName "Дебюты"]
+[ChapterName "Система колле"]
+[ChapterURL "https://lichess.org/study/OPK6jHQ5/ereLXJeB"]
+[Annotator "https://lichess.org/@/peter1_83"]
+[UTCDate "2025.11.08"]
+[UTCTime "05:46:38"]
+
+1. d4 c5 2. e3 Nf6 3. Nf3 e6 4. Bd3 d5 5. c3 Nbd7 6. O-O Bd6 7. Nbd2 O-O 8. Re1 { [%cal Ge3e4] } 8... b6 (8... Qc7?! { [%cal Gc7h2] } 9. e4! { [%cal Ge4e5] } 9... cxd4 10. cxd4 dxe4 11. Nxe4 Nxe4? 12. Rxe4! b6?? 13. Rh4! (13. Qe2 Bb7 14. Rh4 h6?? (14... g6 15. Bd2 Rac8 16. Qe3! { [%cal Ge3h6] } 16... Rfd8?? 17. Bxg6!!) 15. Bxh6!! gxh6 16. Rg4+ Kh8 17. Qe3! Bf4 18. Rxf4) 13... g6 14. Ng5! (14. Qd2!) (14. Qe2 Bb7)) *
+
+

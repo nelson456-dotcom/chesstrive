@@ -1,0 +1,229 @@
+[Event "12 Popular Tricks & Traps: Legal Trap (40,000 people)"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Paris Defense"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Legal Trap (40,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/Be3qV4Oi"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.26"]
+[UTCTime "19:28:56"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 { [%cal Gg1f3] } 2. Nf3 Nc6 { [%cal Gf1c4] } 3. Bc4 d6 { [%cal Gb1c3] } 4. Nc3 Bg4 { [%cal Gh2h3] } 5. h3 Bh5 6. Nxe5!! Bxd1?? 7. Bxf7+! Ke7 8. Nd5#! *
+
+
+[Event "12 Popular Tricks & Traps: Noah's Ark Trap (70,000 people)"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C71"]
+[Opening "Ruy Lopez: Noah's Ark Trap"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Noah's Ark Trap (70,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/HboscBOf"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.26"]
+[UTCTime "23:37:23"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Ge7e5] } 1... e5 2. Nf3 { [%cal Gb8c6] } 2... Nc6 3. Bb5 { [%cal Ga7a6] } 3... a6 4. Ba4 { [%cal Gd7d6] } 4... d6 5. d4 { [%cal Gb7b5] } 5... b5 6. Bb3 { [%cal Gc6d4] } 6... Nxd4 7. Nxd4 { [%cal Ge5d4] } 7... exd4 8. Qxd4?? { Greedy person.......... } 8... c5!! 9. Qd5 { [%csl Ba8,Bf7,Ge6][%cal Rd5f7,Rd5a8,Gc8e6] } 9... Be6 { [%csl Rf7,Ra8][%cal Re6f7,Rd8a8] } 10. Qc6+ { [%csl Gd7][%cal Ge6d7] } 10... Bd7 11. Qd5 c4!! { Trapped bishop } *
+
+
+[Event "12 Popular Tricks & Traps: Englund Gambit Trap (740,000 people"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A40"]
+[Opening "Englund Gambit: Main Line"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Englund Gambit Trap (740,000 people"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/v8IEB0b5"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.26"]
+[UTCTime "23:41:36"]
+[ChapterMode "gamebook"]
+
+1. d4 { [%cal Ge7e5] } 1... e5 2. dxe5 { [%cal Gb8c6] } 2... Nc6 3. Nf3 { [%cal Gd8e7] } 3... Qe7 4. Bf4 Qb4+ 5. Bd2 { [%cal Gb4b2] } 5... Qxb2 6. Bc3?? Bb4!! 7. Qd2 { [%cal Gb4c3] } (7. Bxb4 Nxb4 8. Na3 Qxa3) 7... Bxc3 8. Qxc3?? Qc1#! *
+
+
+[Event "12 Popular Tricks & Traps: Blackburne Shilling Gambit Trap (850,000 people)"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Blackburne-Kostić Gambit"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Blackburne Shilling Gambit Trap (850,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/yNsoRwzp"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.26"]
+[UTCTime "23:45:20"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Ge7e5] } 1... e5 2. Nf3 { [%cal Gb8c6] } 2... Nc6 3. Bc4 { [%cal Gc6d4] } 3... Nd4 4. Nxe5? Qg5! { [%csl Bg2,Be5][%cal Bg5g2,Bg5e5] } 5. Nxf7?? Qxg2! 6. Rf1?? Qxe4+! 7. Be2?? (7. Qe2 Nxe2) 7... Nf3# *
+
+
+[Event "12 Popular Tricks & Traps: Elephant Gambit Trap (80,000 people)"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D51"]
+[Opening "Queen's Gambit Declined: Modern Variation, Knight Defense"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Elephant Gambit Trap (80,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/fF33pClx"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.26"]
+[UTCTime "23:52:25"]
+[ChapterMode "gamebook"]
+
+1. d4 { [%cal Gd7d5] } 1... d5 2. c4 { [%cal Ge7e6] } 2... e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. cxd5 exd5 6. Nxd5?? Nxd5!! 7. Bxd8?? Bb4+!! 8. Qd2 Bxd2+ 9. Kxd2 Kxd8 *
+
+
+[Event "12 Popular Tricks & Traps: Lasker Trap (120,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D08"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Lasker Trap (120,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/0CbSvJLO"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:15:18"]
+[ChapterMode "gamebook"]
+
+1. d4 { [%cal Gd7d5] } 1... d5 2. c4 { [%cal Ge7e5] } 2... e5 3. dxe5 { [%cal Gd5d4] } 3... d4 4. e3 { [%cal Gf8b4] } 4... Bb4+ 5. Bd2 dxe3! 6. Bxb4?? exf2+! 7. Kxf2 (7. Ke2 fxg1=N+ 8. Ke1 Qh4+ 9. g3 (9. Kd2 Nc6 10. Qe1 Qd4+) 9... Qe4+ { [%cal Re4h1,Re4e1] }) 7... Qxd1 *
+
+
+[Event "12 Popular Tricks & Traps: Stafford Gambit Trap (450,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C42"]
+[Opening "Petrov's Defense: Stafford Gambit"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Stafford Gambit Trap (450,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/8LjvZ5o5"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:18:51"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Ge7e5] } 1... e5 2. Nf3 { [%cal Gg8f6] } 2... Nf6 3. Nxe5 { [%cal Gb8c6] } 3... Nc6 4. Nxc6 { [%cal Gd7c6] } 4... dxc6 5. d3 { [%cal Gf8c5] } 5... Bc5 6. Bg5 Nxe4!! 7. Bxd8?? Bxf2+! 8. Ke2 Bg4#! *
+
+
+[Event "12 Popular Tricks & Traps: Stafford Gambit Trap pt. 2 (12,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C42"]
+[Opening "Petrov's Defense: Stafford Gambit"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Stafford Gambit Trap pt. 2 (12,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/pajQM5T7"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:21:25"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Ge7e5] } 1... e5 2. Nf3 { [%cal Gg8f6] } 2... Nf6 3. Nxe5 { [%cal Gb8c6] } 3... Nc6 4. Nxc6 { [%cal Gd7c6] } 4... dxc6 5. d3 { [%cal Gf8c5] } 5... Bc5 6. Be2 { [%cal Gh7h5] } 6... h5 7. O-O { [%cal Gf6g4] } 7... Ng4 8. h3 Qd6! 9. hxg4?? hxg4! 10. g3 Qxg3#!! { [%cal Rg3g1,Bc5g1,Bf2g3,Rh8h1] } *
+
+
+[Event "12 Popular Tricks & Traps: Caro-Kann Trap (4,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B18"]
+[Opening "Caro-Kann Defense: Classical Variation"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Caro-Kann Trap (4,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/Asc0e6Df"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:23:45"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge2e4] }
+1. e4 c6 { [%cal Gd2d4] } 2. d4 d5 { [%cal Gb1c3] } 3. Nc3 dxe4 { [%cal Gc3e4] } 4. Nxe4 Bf5 { [%cal Gd1e2] } 5. Qe2 Nd7?? 6. Nd6#!! { [%csl Ye7,Yd6][%cal Be2e8,Re7d6] } *
+
+
+[Event "12 Popular Tricks & Traps: Petrov Defence Trap (12,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C42"]
+[Opening "Petrov's Defense: Nimzowitsch Attack"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Petrov Defence Trap (12,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/xEfU7D98"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:25:05"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge2e4] }
+1. e4 e5 { [%cal Gg1f3] } 2. Nf3 Nf6 { [%cal Gf3e5] } 3. Nxe5 d6 { [%cal Ge5f3] } 4. Nf3 Nxe4 { [%cal Gb1c3] } 5. Nc3 Bf5?? 6. Qe2!! Qe7 7. Nd5! Qd7 (7... Qe6?? 8. Nxc7+ { [%csl Re6,Re8][%cal Rc7e6,Rc7e8] }) (7... Qe5?? 8. Nxe5) 8. d3! { [%csl Be8,Be4][%cal Be2e8,Bd3e4] } *
+
+
+[Event "12 Popular Tricks & Traps: Dutch Defence Trap (4,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A80"]
+[Opening "Dutch Defense: Hopton Attack"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Dutch Defence Trap (4,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/pGS7A1wz"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:26:44"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gd2d4] }
+1. d4 f5 { [%cal Gc1g5] } 2. Bg5 h6 { [%cal Gg5h4] } 3. Bh4 g5 { [%cal Ge2e4] } 4. e4! gxh4?? 5. Qh5#! *
+
+
+[Event "12 Popular Tricks & Traps: Sicilian Defence Trap (20,000 people)"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B21"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Sicilian Defence Trap (20,000 people)"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/GtoCl9R9"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:29:06"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge2e4] }
+1. e4 c5 { [%cal Gd2d4] } 2. d4 cxd4 { [%cal Gc2c3] } 3. c3 dxc3 { [%cal Gb1c3] } 4. Nxc3 d6 { [%cal Gf1c4] } 5. Bc4 Nf6 { [%cal Ge4e5] } 6. e5 dxe5?? 7. Bxf7+!! Kxf7 8. Qxd8! *
+
+
+[Event "12 Popular Tricks & Traps: Thanks everyone!"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "12 Popular Tricks & Traps"]
+[ChapterName "Thanks everyone!"]
+[ChapterURL "https://lichess.org/study/mOevGRc0/EJ6Pei9E"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.28"]
+[UTCTime "20:31:16"]
+[ChapterMode "gamebook"]
+
+{ If you made it this far, Congrats!
+If u liked this study please put a heart down below, and you can check out other studies!
+Write to me if u have any ideas for other studies!
+Bye! }
+ *
+
+

@@ -1,0 +1,125 @@
+[Event "Caro-Kann: Caro-Kann"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B12"]
+[Opening "Caro-Kann Defense"]
+[StudyName "Caro-Kann"]
+[ChapterName "Caro-Kann"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/9ZjpZ6QI"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "15:26:34"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Gc7c6] } 1... c6 2. d4 { [%cal Gd7d5] } 2... d5 { [%csl Re4,Rd4,Bd5,Bc6][%cal Yc6e4,Yd4d5,Ye4d4] } *
+
+
+[Event "Caro-Kann: Caro-Kann Advanced Variation"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B12"]
+[Opening "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"]
+[StudyName "Caro-Kann"]
+[ChapterName "Caro-Kann Advanced Variation"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/KgdWQvQI"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "15:27:51"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. d4 d5 3. e5 { [%cal Gc6c5] } 3... c5 { You right away attack the center! } 4. c3 { [%cal Gb8c6] } 4... Nc6 { Putting more pressure! } { [%csl Rd4] } 5. Nf3 { [%cal Gc5d4] } 5... cxd4 6. cxd4 { [%cal Gc8g4] } 6... Bg4 { Threatening later bxf3 and if Qxf3 nxd4 so he has to do gxf3 and he has doubled pawns } 7. Bb5 { Hes defending. } { [%cal Ge7e6] } 7... e6 8. O-O { [%cal Gg8e7] } 8... Ne7 { Development giving night more prot. } 9. Nbd2 { [%cal Ga7a6] } 9... a6 10. Be2 { [%cal Ge7f5] } 10... Nf5 { NF5! Putting even more pressure on d4! } 11. h3 { [%cal Gg4f3] } 11... Bxf3 12. Nxf3 { [%cal Gd8b6] } 12... Qb6 { And then you develop and castle like be7 later } 13. Be3 Nxe3 14. fxe3 Be7 15. Rb1 O-O *
+
+
+[Event "Caro-Kann: Caro-Kann Exchange Variation"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B13"]
+[Opening "Caro-Kann Defense: Exchange Variation"]
+[StudyName "Caro-Kann"]
+[ChapterName "Caro-Kann Exchange Variation"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/3B1MSGEI"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "15:39:54"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Gc7c6] } 1... c6 2. d4 { [%cal Gd7d5] } 2... d5 3. exd5 { [%cal Gc6d5] } 3... cxd5 { Now you position is more open and simpler! Almost like Queen's Gambit but without e-pawn and blacks c-pawn. } { [%csl Re2,Bc7] } 4. Nf3 { [%cal Gb8c6] } 4... Nc6 5. Nc3 { [%cal Gg8f6] } 5... Nf6 { [%csl Rc3,Rf3,Bf6,Bc6] } 6. Bb5 { [%cal Gc8g4] } 6... Bg4 { You gave each other pins. } 7. O-O { [%cal Ge7e6] } 7... e6 8. h3 { [%cal Gg4h5] } 8... Bh5 9. Bg5 { Another pin???? No. } { [%cal Gf8e7] } 9... Be7 { Thats what you get. Now we qual each 1 pin. xD } 10. Qd3 { [%cal Gh5g6] } 10... Bg6 { Attack! } 11. Qe2 { [%cal Ge8g8,Gh8f8] } 11... O-O { Yaya no more pins and we have good position } *
+
+
+[Event "Caro-Kann: Caro-Kann Classic Variation - Main Line"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B15"]
+[Opening "Caro-Kann Defense: Tartakower Variation"]
+[StudyName "Caro-Kann"]
+[ChapterName "Caro-Kann Classic Variation - Main Line"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/VrslwSCD"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "15:50:03"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Gc7c6] } 1... c6 2. d4 { [%cal Gd7d5] } 2... d5 3. Nc3 { [%cal Gd5e4] } 3... dxe4 4. Nxe4 { You see now hes trying to put night in center. No. Way. } { [%cal Gg8f6] } 4... Nf6 5. Nxf6+ { [%cal Ge7f6] } 5... exf6 6. Nf3 { [%cal Gc8g4] } 6... Bg4 7. Be2 { [%cal Gf8d6] } 7... Bd6 8. O-O { [%cal Ge8g8,Gh8f8] } 8... O-O { Yay you castled! it may look like you have doubled pawns but this is fine lets h3
+then bh5 and lets possibly say they play g4 then you play bg6 and you bishop is surrounded by pawns in a good way. } 9. c4 { [%cal Gd8d7] } (9. h3 Bh5 10. g4 Bg6 { [%csl Rg6,Bh7,Bg7,Bf7,Bf6] }) 9... Qd7 10. Be3 { [%cal Gb8a6] } 10... Na6 11. Qb3 { [%cal Ga8c8] } 11... Rac8 *
+
+
+[Event "Caro-Kann: Alien Gambit = What you guys were waiting for.........xD"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B15"]
+[Opening "Caro-Kann Defense: Alien Gambit"]
+[StudyName "Caro-Kann"]
+[ChapterName "Alien Gambit = What you guys were waiting for.........xD"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/GzpdikRQ"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "15:54:40"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Gc7c6] } 1... c6 2. d4 { [%cal Gd7d5] } 2... d5 3. Nc3 { [%cal Gd5e4] } 3... dxe4 4. Nxe4 { [%cal Gg8f6] } 4... Nf6 { Main line but......... } 5. Ng5 { ?????? Black = What is this? White = The almighty Aliens Gambit mwahahah! } { [%cal Gh7h6] } 5... h6 6. Nxf7 { [%cal Ge8f7] } 6... Kxf7 { White sacs night to open your king. We will learn how to defend against it! } 7. Nf3 { [%cal Gc6c5] } 7... c5 8. Bc4+ { [%cal Ge7e6] } 8... e6 { [%csl Rf7,Re6,Rc8,Rf6] } 9. O-O { [%cal Gb8c6] } 9... Nc6 10. c3 { [%cal Gc5d4] } 10... cxd4 11. cxd4 { [%cal Gf8d6] } 11... Bd6 12. Re1 { [%cal Gh8e8] } 12... Re8 { And your fine! He cant do anything because your defence is big!
+Black = Not so almighty is it? White = where did you learn how to defend this well????? Black = From AJQ64 Caro-Kann Study - Check it out White = I will, next time you cooked! Black = ye right! } *
+
+
+[Event "Caro-Kann: Alien Gambit Trap - (90,000 people)"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B15"]
+[Opening "Caro-Kann Defense: Alien Gambit"]
+[StudyName "Caro-Kann"]
+[ChapterName "Alien Gambit Trap - (90,000 people)"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/tPWgmZri"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "16:05:43"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%cal Gc7c6] } 1... c6 2. d4 { [%cal Gd7d5] } 2... d5 3. Nd2 { [%cal Gd5e4] } 3... dxe4 4. Nxe4 { [%cal Gg8f6] } 4... Nf6 5. Ng5 { [%cal Gh7h6] } 5... h6 6. Nxf7 { [%cal Ge8f7] } 6... Kxf7 7. Nf3 { [%cal Gc8g4] } 7... Bg4?? 8. Ne5+ { [%cal Gf7e8] } 8... Ke8 9. Nxg4 { [%cal Gf6g4] } 9... Nxg4 { [%cal Gd1g4] } 10. Qxg4 *
+
+
+[Event "Caro-Kann: Thanks everyone!"]
+[Date "2025.10.29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Caro-Kann"]
+[ChapterName "Thanks everyone!"]
+[ChapterURL "https://lichess.org/study/Mclj5Xkb/kHT5ANUo"]
+[Annotator "https://lichess.org/@/AJQ64"]
+[UTCDate "2025.10.29"]
+[UTCTime "16:07:44"]
+[ChapterMode "gamebook"]
+
+{ If you made it this far, Congrats!
+If u liked this study please put a heart down below, and you can check out other studies!
+Write to me if u have any ideas for other studies!
+Bye! }
+ *
+
+

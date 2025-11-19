@@ -1,0 +1,301 @@
+[Event "The Mexican Defense: 🚀Introduction🚀"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A50"]
+[Opening "Mexican Defense"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🚀Introduction🚀"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/TVWnxeCU"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+[ChapterMode "gamebook"]
+
+{ 👋Hello everyone! Welcome to my study! Today, we're going to learn about a new opening for Black against d4! An opening that can beat your opponent!👊 An opening that your opponent doesn't know.🤔
+You: Ooooh, me super so intested!🤓 Whut is it?
+Well, what is it?
+
+🤯The Mexican Defense!🤯
+
+The Mexican Defense (or the Black Knights' Tango) is a rare defense for Black. Here are the moves: }
+1. d4 { Play, Nf6. } { [%cal Bg8f6] } 1... Nf6 2. c4 { Now play, Nc6! } { [%cal Bb8c6] } 2... Nc6!? { This is a super rare move. Players find this less than 1% of the time. Now, are you ready to Master the Mexican Defense?? Then let's start! } { [%cal Gd4d5,Rb1c3,Bg1f3] } *
+
+
+[Event "The Mexican Defense: 🌵Chapter 1: Mexican 3.d5"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🌵Chapter 1: Mexican 3.d5"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/P6vBwyET"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/2n2n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+[ChapterMode "gamebook"]
+
+3. d5 { This looks tempting but Black can get some counterplay with Ne5! } { [%cal Bc6e5] } 3... Ne5 { Now let's see some lines for White. } *
+
+
+[Event "The Mexican Defense: 🌵4.e4"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🌵4.e4"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/GJOroiTm"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/5n2/3Pn3/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. e4 { This is the most popular, controlling the center. } 4... e6 { Attacking White's space advantage. } { [%cal Ge6d5] } (4... Nxe4?? { This loses a piece. } 5. Qd4! { [%cal Gd4e4,Gd4e5] }) 5. f4 { Don't worry about this. We'll be fine. } (5. dxe6 Bb4+ 6. Bd2 Bxd2+ 7. Qxd2 (7. Nxd2 dxe6 $10) 7... dxe6 8. Qxd8+ Kxd8 $10 { [%cal Gb7b6,Gc8b7] }) (5. Nc3 Bc5 6. Nf3?! Neg4! { [%cal Gg4f2,Gc5f2] } 7. e5 Nxf2 8. Qc2 N6g4 $14) 5... Ng6 6. Bd3 (6. Nc3 Bb4 { [%cal Gb4e1,Gf6e4] } 7. Bd3 exd5 8. cxd5 (8. exd5? b5! { [%cal Gc4b5,Gf6d5] }) 8... O-O { [%cal Gd7d6,Gc7c6,Gf8e8] }) 6... exd5 7. cxd5 (7. exd5? { This is already a mistake because of } 7... Bc5 { We can castle and White can't because of our bishop. } { [%cal Ge8g8] } 8. Qe2+ Ne7 9. Be3 Bxe3 10. Qxe3 O-O 11. Nf3 Re8 $17 { White's going to lose a pawn. } { [%cal Ge8e1,Ge7d5] }) 7... Bc5 8. Nf3 (8. e5 { This is a very tricky move. We don't take on d5 because of Bxg6. } 8... Qe7 { [%cal Ge7e1,Ge5f6] } 9. Kf1! { This is actually the best move. } 9... Ng8 10. h4 (10. Nf3 d6 11. Nc3 dxe5 12. fxe5 Nxe5 13. Bf4 Bd6 { White has no compensation right now. }) 10... d6 11. h5 Nh4 12. exd6 Bxd6 13. g4 Nh6 { White has to be careful. } 14. f5 N4xf5!! { Sacrifice! } 15. gxf5 Nxf5 16. Bxf5 Bxf5 $44 { We're only 1 point down and White's king is quite exposed. Our next move is to castle queenside and have a safer king. } { [%cal Ge8c8] }) 8... Ng4 { [%cal Gg4f2,Gc5f2] } 9. Qc2 (9. Rf1 Nxh2! 10. Nxh2 Qh4+ { [%cal Gh4h2,Gh4e1] }) 9... d6 10. h3 Nf2 { [%csl Gd3,Gh1][%cal Gf2h1,Gf2d3] } 11. Rf1 Nxd3+ 12. Qxd3 Qe7 { Our pieces are fine right now. } 13. Nc3 O-O 14. Bd2 b5! { We're opening up the queenside for our pieces! } 15. O-O-O (15. Nxb5? Ba6 { [%cal Ga6d3] } 16. a4 f5 $132) (15. Qxb5?! a5! { Ba6 is a threat. } { [%cal Rc8a6] } 16. Qa4 Ba6 17. Rh1 Rfb8 { [%cal Gb8b2] } 18. O-O-O Bd3 $17 { White can't make a discovered attack with the bishop or his f4-pawn will be hanging. } { [%cal Gd2f4] }) 15... Bd7 16. g4 b4 17. Ne2 c6 $15 { Our attack will be faster than White's. We'll just open up files on the queenside. } { [%cal Ge7d8,Gd8b6,Ga7a5] } *
+
+
+[Event "The Mexican Defense: 🌵4.Qd4"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🌵4.Qd4"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/D7JRswZG"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/5n2/3Pn3/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. Qd4 { This is the 2nd most common move in the Masters database. } 4... d6 { Just protecting the knight. } 5. Nf3 (5. e4 e6 6. Nc3 (6. f4 Ng6 $10) 6... Be7 7. Be2 O-O $10) (5. f4 Ned7 6. e4 e5! 7. dxe6 fxe6 8. Nc3 e5 $15 { The game is slightly better for us. We can develop our pieces like this and we can castle. } { [%cal Gf8e7,Gd7c5,Gc7c6,Ge8g8] }) 5... e6! { Sacrificing a pawn! } 6. Nxe5 dxe5 7. Qxe5 Bd6! { [%cal Gd6e5] } 8. Qd4 exd5 9. cxd5 c5 10. dxc6 Qc7! { This is a very small tactic. } 11. Nd2 (11. cxb7?? Qxc1+ 12. Qd1 Bb4+ 13. Nc3 (13. Nd2 Bxd2#) 13... Bxc3+ 14. bxc3 Qxc3+ $19 { [%csl Ge1,Ga1][%cal Gc3e1,Gc3a1] }) (11. Nc3 O-O 12. e3 (12. cxb7? { Again, the pawn is poisoned. } 12... Bxb7 13. e3 Rfd8 $17) 12... bxc6 13. Bd3 Rd8 { [%cal Gd8d4] } 14. Qa4 Be5 15. Qc2 a5! { Pushing Arry, the a-pawn. } { [%cal Ga5a4,Ga4a3] } 16. Na4 { One of the ways to stop it. } (16. h3 { Let's say this for example. Now we have 2 choices. Sacrificing, THE ROOOOOOK, or playing a4. They're both good. } 16... a4 (16... Rxd3! { Sacrificing THE ROOOOOOOOOOOOOOOOOK is another option. } 17. Qxd3 Ba6 { [%cal Ga6f1] } 18. Qc2 Rd8 $17 { White cannot castle at all and we have the bishop pair. We're better in this position. } { [%csl Ye5,Ya6][%cal Re1g1,Ga6f1] }) 17. Nxa4? { This doesn't work because of } (17. O-O Rxd3! 18. Qxd3 Ba6 { [%cal Ga6f1] }) (17. a3 Rxd3! 18. Qxd3 Ba6 { We still play this! } 19. Qc2 Qd6 20. Bd2 Nd7 21. Ne2 Nc5 $15 { [%cal Gc5d3,Ga6d3] }) 17... Qa5+ { [%cal Ga5e1,Ga5a4] } 18. Nc3 Bxc3+ 19. bxc3 Qd5 { [%cal Gd5g2,Gd5d3] } 20. Be2 Qxg2 21. Rf1 Bxh3 $19 { [%cal Gh3f1] }) 16... Qd6 { [%cal Gd8d3] } 17. Be2 Ng4 $15) 11... O-O! { Sacrificing a pawn just to open up our light-squared bishop to the very long diagonal. } 12. cxb7? { This is a mistake, even though White is up 2 pawns, but not right now, but after we take. } (12. e3 Rd8 { [%cal Gd8d4] } 13. Qa4 Rb8! { The b7-pawn is poisoned! } 14. Be2 bxc6 { I think we need to take back. } 15. Nf3 Bb4+ 16. Kf1 Bf5 $15) 12... Bxb7 13. e3 Rfd8 { [%cal Gd8d4,Gd6h2] } 14. Qa4 Rac8 $19 { All the pieces are developed and White can't do anything. If he moves the bishop, then the g2-pawn is gone. If White plays, b3, then Be5. If Nf3 then Bb4+! White can't take the bishop on b4 because of Qxc1+! Rxc1 Rxc1+ Ke2 Ba6+ and mate follows. I'm just going to show every line on the board. } 15. Nf3 (15. Be2 Bxg2) (15. Nc4 Bc6 16. Qb3 Rb8 17. Qc2 Be4 18. Qe2 Bb4+ $19) (15. b3 Be5 { [%cal Ge5a1] } 16. Rb1 Qxc1+! 17. Rxc1 Rxc1+ 18. Ke2 Bc3 $19 { White cannot move the knight to f3 because of Re1#. } { [%cal Gc3d2,Gd8d2] }) 15... Bb4+! 16. Qxb4? Qxc1+! 17. Rxc1 Rxc1+ 18. Ke2 Ba6+ 19. Qc4 Bxc4# *
+
+
+[Event "The Mexican Defense: 🌵4.e3 Most common move in the Lichess Database"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🌵4.e3 Most common move in the Lichess Database"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/d1qEvEs4"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/5n2/3Pn3/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. e3 { This is the most common move in the Lichess database. I don't know why it is the most common because first, it blocks their dark-squared bishop. Second, why couldn't White just prepare playing e4 by playing Nc3 and then e4? } { [%csl Rc1][%cal Rb1c3,Re3e4] } 4... e6 5. Nc3 Bd6! { Don't worry about our light-squared bishop. } 6. f4 (6. Nf3 O-O 7. Be2 Nxf3+ 8. Bxf3 exd5 9. cxd5 Be5 10. O-O Re8 11. Qd3 d6 12. Bd2 Nd7 { [%cal Gd7c5] } 13. Qc2 Nc5 14. Ne2 g6 $10 { [%cal Gc8f5] }) (6. e4 { Okay, they just wasted a tempo by playing e3 and then e4. } 6... Bc5! { [%cal Gf8d6,Gf8c5] } 7. Be2 exd5 8. exd5 (8. cxd5 d6 $10 { [%cal Ge8g8] }) 8... Qe7 { [%cal Ge5c4] }) 6... Ng6 7. Nf3 O-O 8. Bd3 c6! { Now our pawn structure looks funky right now, right? } 9. dxc6 (9. dxe6 dxe6 (9... fxe6? { This is a mistake because of a tactic. } 10. Bxg6 hxg6 11. Qxd6 $16)) 9... dxc6 10. O-O Qe7 $10 { The game is pretty equal. Our next moves will be b6 followed by Ba6 or b7. } { [%cal Gb7b6,Gc8a6,Gc8b7] } *
+
+
+[Event "The Mexican Defense: 🌵4.f4 Horsefly Gambit"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A50"]
+[Opening "Mexican Defense: Horsefly Gambit"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🌵4.f4 Horsefly Gambit"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/vXsRfyKZ"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/5n2/3Pn3/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. f4?! { This is known as the Horsefly Gambit. I wonder why people play this. } 4... Nxc4 { Just take it, right? } 5. e4 Nb6 6. Nc3 (6. e5? Nfxd5) 6... e6 { [%cal Ge6d5] } 7. dxe6 dxe6 { Offering White a queen trade. } 8. Qxd8+ (8. Qc2 Bb4 9. Nf3 O-O $15) 8... Kxd8 9. Nf3 Bb4 10. Bd2 Ke7 $15 { We're up a pawn and we can bring our rook to d8. } { [%cal Gh8d8,Gc8d7] } *
+
+
+[Event "The Mexican Defense: 🐎Chapter 2: Mexican 3.Nc3 Chigorin Defense Tranposition"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🐎Chapter 2: Mexican 3.Nc3 Chigorin Defense Tranposition"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/V3gy59MM"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/2n2n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+[ChapterMode "gamebook"]
+
+3. Nc3 { This is the most popular move in the Lichess database. Now go ahead and play, d5! } { [%cal Bd7d5] } 3... d5 { Now we've transposed into a Chigorin Defense. Also I used to say Chigorin, Chigerin. Now, let's see some lines! } *
+
+
+[Event "The Mexican Defense: 🐎4.Nf3"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D07"]
+[Opening "Queen's Gambit Declined: Chigorin Defense, Modern Gambit"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🐎4.Nf3"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/34GMgbsM"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/ppp1pppp/2n2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. Nf3 { This is the most natural move. } 4... dxc4! { Wait, why are we doing that? } 5. e4 (5. e3 e5! 6. dxe5?! Qxd1+ 7. Nxd1 (7. Kxd1 Ng4 { [%cal Gg4f2] } 8. Nd5 Kd8 9. Ke2 Ngxe5 $17) 7... Ng4 { [%cal Gg4e5,Gc6e5] } 8. Bxc4 Ngxe5 9. Nxe5 Nxe5 $15) 5... Bg4! 6. Bxc4?! { I think that White will lose his center control. I think this is a dubious move. } (6. Be3 e6 7. Bxc4 Bb4 8. Qd3 Bh5! { [%csl Re4][%cal Gb4c3,Gh5g6,Gg6d3] } 9. O-O O-O 10. e5 Bg6 11. Qe2 Bxc3 12. bxc3 (12. exf6 Nxd4 13. Nxd4 Bxd4 $10) 12... Nd5 $10 { [%cal Gd5e3,Gd5c3] }) 6... Bxf3 7. gxf3 (7. Qxf3? Nxd4 $15) 7... e5! { We don't take on d4! Do you know why? } (7... Qxd4?! { This looks tempting but it's not the best. In the Lichess database, most people just take the queen and Black gets a 68% win rate. } { [%cal Rd1d4] } 8. Qb3! { Now White's win rate is now 58%! } { [%cal Gb3f7,Gb3b7] } 8... O-O-O 9. Be3 Qe5 10. Bxf7 $16 { So, don't go into this line. }) 8. d5 Nd4 9. Be3 Bc5 10. Rg1 Nd7! { Sacrificing a pawn just to open up our queen! } { [%cal Gd8h4] } 11. Rxg7?! { This has only been played once. } 11... Qh4! { We're not exactly trying to win the h2-pawn. Our main plan is to castle queenside! } 12. Rg2? { Let's see what happens when White thinks we're going to capture our pawn. } (12. Nb5! { The better move. } 12... Bb4+ 13. Nc3 O-O-O 14. Rxf7 Rhg8 15. Kd2 Nb6 16. Bd3 Rg2 $13) 12... O-O-O $15 { White's queen has to get an eye on that pawn. Most of White's pieces are passive. } { [%cal Rd1f3,Rg2h2,Gh4h3,Gh8g8] } *
+
+
+[Event "The Mexican Defense: 🐎4.Bg5"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🐎4.Bg5"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/2srRqijz"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/ppp1pppp/2n2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. Bg5 { dxc4 is an option, but things get complicated. Let's play a simpler move. } 4... e6 { Just opening up our dark-squared bishop. } 5. e3 (5. c5 b6 6. cxb6 axb6 $10) 5... Be7 6. Nf3 (6. cxd5 Nxd5 7. Bxe7 Ncxe7 8. Bd3 (8. e4?! Nxc3 9. bxc3 O-O 10. Nf3 c5 11. Be2 Qa5 12. Qd2 Rd8 $15) 8... O-O 9. Nge2 b6 { Putting the bishop on the long diagonal. } { [%cal Gc8b7,Gb7h1] }) 6... O-O 7. Bd3 { This looks natural, but there is a tiny problem... } (7. Be2 h6 8. Bh4 (8. Bxf6 Bxf6 9. O-O b6 10. cxd5 exd5 11. Rc1 { [%cal Gc1c6] } 11... Ne7 $10 { We're going to play, Bf5 and c6 next. } { [%cal Gc7c6,Gc8f5] })) 7... Nb4 { [%cal Gb4d3] } 8. O-O Nxd3 9. Qxd3 b6 { Fianchettoing the bishop. } { [%cal Gc8b7] } 10. cxd5 exd5 11. Ne5 Bb7 $10 { We're going to play, c5 and h6 next. } { [%cal Gc7c5,Gh7h6,Ga8c8] } *
+
+
+[Event "The Mexican Defense: 🐎4.Bf4"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🐎4.Bf4"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/xFN3GdHz"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/ppp1pppp/2n2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. Bf4 { This is a normal move. We can now take the pawn. } 4... dxc4 5. e3 { [%cal Ge3d4] } (5. d5 Na5 { [%cal Ga5c4] } 6. Nf3 (6. Qa4+ c6 7. b4 (7. dxc6 Nxc6 8. Qxc4? e5 9. Bd2 Be6 10. Qa4 Be7 $17 { [%cal Ge8g8] }) 7... b5! { Things are going crazy right now. } 8. Qxa5 Qxa5 9. bxa5 b4 10. Na4? { Saving the knight is a mistake. } 10... cxd5 $17 { Our pawns will be super strong. } { [%cal Gb4b3,Gc8d7,Ge7e6,Gf8b4] })) (5. e4 Qxd4 6. Nb5 Qxe4+ { [%cal Ge4f4,Ge4e1] } 7. Ne2 (7. Be3? Qe5 { [%cal Ge5c7,Ge5b5] } 8. Nc3 Bg4 9. Qc2 e6 $19 { We're up 3 pawns. } { [%cal Gf8c5,Ge8c8,Ga7a6] }) 7... Bd7! { Wait, why are we doing this? } 8. Nxc7+ { [%csl Ge8,Ga8][%cal Gc7e8,Gc7a8] } 8... Kd8 9. Nxa8 e5! { A very strong move. } 10. Be3 (10. Bd2 Nb4! { Nd3 is a checkmate threat. } { [%csl Rf1,Rf2,Re2,Rd2,Rd1,Re1][%cal Yb4d3] }) (10. Bg3?? Bb4+ { Now White has to give up the queen. } { [%cal Rd1d2] } 11. Qd2 Bxd2+ 12. Kxd2 $19) 10... Bb4+ 11. Nc3 Nd4 { [%cal Gd4c2] } 12. Rc1 b5 $17 { [%csl Ra8][%cal Ge4a8] }) 5... Na5 { Holding the pawn. } { [%cal Ga5c4] } 6. Qa4+ c6 7. Bxc4 (7. Nf3?! b5 { [%csl Yc4,Yb5,Yc6][%cal Bc6b5,Bb5c4] } 8. Qc2 Nd5 { [%cal Gd5b4] } 9. Bg3 Nb4 10. Qd2 e6 $15) 7... Nxc4 8. Qxc4 Nd5 { [%cal Gd5f4] } 9. Bg3 Be6! { Why, blocking our central pawn? We can just develop our dark-squared bishop to g7. } { [%csl Re7,Rf8][%cal Gg7g6,Gf8g7] } 10. Qd3 g6 11. Nf3 Bg7 $10 { The game is equal. We can now castle kingside and we can play pawn moves like a7-a5 and b7-b5. } { [%cal Ga7a5,Ge8g8,Gb7b5] } *
+
+
+[Event "The Mexican Defense: 🐎4.cxd5"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🐎4.cxd5"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/1OSscASY"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/ppp1pppp/2n2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. cxd5 { This is the 2nd most common move in the Lichess database. } 4... Nxd5 5. e4 (5. Nxd5?! Qxd5 { [%cal Gd5d4,Gc6d4] } 6. e3 { [%cal Ge3d4] } 6... e5 $15) (5. Nf3 Nxc3 6. bxc3 e5 7. d5 e4! { [%cal Ge4f3,Gd5c6] } 8. dxc6 Qxd1+ 9. Kxd1 exf3 10. cxb7 fxe2+ 11. Bxe2 Bxb7 $10) 5... Nxc3 6. bxc3 e5! { Fighting for the center! } 7. d5 Nb8! { We can undevelop our pieces because first, none of White's pieces are developed. Second, our knight will be better on d7. } 8. Nf3 Bd6 9. Be2 O-O 10. O-O Nd7 (10... f5 { This is also fine. }) 11. Be3 Qe7 $10 { And the game is equal. } *
+
+
+[Event "The Mexican Defense: 🤠Chapter 3: Mexican 3.Nf3 Most Common Move"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🤠Chapter 3: Mexican 3.Nf3 Most Common Move"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/3zznXpqR"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppppppp/2n2n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+[ChapterMode "gamebook"]
+
+3. Nf3 { This is the most common move. Play the move: e6! } { [%cal Be7e6] } 3... e6 { And we'll cover some lines! } *
+
+
+[Event "The Mexican Defense: 🤠4.Nc3"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🤠4.Nc3"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/DBAVmqDN"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppp1ppp/2n1pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. Nc3 { Now you can play, d5 and hope for a transposition, but what I like better is... } 4... Bb4! { This is kind of like a Nimzo-Indian. } 5. Qc2 (5. Bd2 Bxc3! { This is our equalizing method. } 6. Bxc3 Ne4! { [%cal Ge4c3] } 7. Qc2 Nxc3 8. Qxc3 $10) (5. e3 Bxc3+ 6. bxc3 O-O 7. Bd3 d6 8. e4 e5 $10) 5... O-O { Don't worry about e4. There is one difference... } 6. e4 { e4 is the most tempting move, but there is one move we can make... } (6. Bd2 d6 { [%cal Re6e5] } 7. a3 Bxc3 8. Bxc3 Re8 9. e3 (9. e4?! e5 $10) 9... e5 10. dxe5 dxe5 11. Be2 Qe7 12. Rd1 a5 $10 { [%cal Gc8g4] }) 6... d6! { Our threat is to play, e5, trying to fight for an advantage! } { [%cal Ge6e5] } 7. Bd3 e5 8. d5 Ne7 9. O-O a5 { Now we're going to play, Bc5 next. } { [%cal Rb4c5] } (9... Bc5 { Don't play this right away! } 10. Na4 Bb6 11. Nxb6 axb6 $14 { White gains the bishop pair. }) 10. Be3 { White stops Bc5. } { [%cal Ge3c5] } 10... Ng4! { [%cal Gg4e3] } 11. Bd2 Bc5 $10 { These are our plans right now. Since the center's closed, this is our best time to attack. } { [%cal Ge7g6,Gf7f5] } *
+
+
+[Event "The Mexican Defense: 🤠4.a3"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🤠4.a3"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/uUw4bAR6"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppp1ppp/2n1pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. a3 { This is a very smart move because it stops Bb4. However, it runs into this move: } { [%cal Ra3b4] } 4... d5 5. Nc3 { And now here comes the crazy move: } 5... Ne4! { Wait, what? Why are we playing this move? White can't take the knight because of the d4-pawn. } 6. Qc2 (6. Nxe4? dxe4 7. Nd2 Qxd4 $17) 6... Nxc3 7. Qxc3 a5! { We have a huge threat which is Bb4!! } { [%cal Rf8b4] } 8. Bf4 { Don't play, Bb4 because the queen can go to c1! } { [%cal Rf8b4] } 8... a4 { Gaining space on the queenside. } 9. e3 Bd6 10. Bg3 (10. Bxd6 cxd6! 11. cxd5 exd5 12. Bd3 O-O 13. O-O Bg4 $10) 10... Na5 { [%csl Gc4,Gb3][%cal Gd5c4,Ga5c4,Ga5b3] } 11. c5 Be7 12. Bd3 c6 { Our pyramid structure will make everything solid. } { [%csl Yd5,Yc6,Yb7,Ye6,Yf7][%cal Yf7e6,Ye6d5,Yb7c6,Yc6d5] } 13. O-O b6! { Our threat is to play, Ba6, trading the bad bishop for White's good bishop. } { [%csl Rc8][%cal Rc8a6,Ra6d3,Rd3a6] } 14. e4 { White opens up the center. } 14... bxc5 15. dxc5 (15. exd5 cxd5 16. dxc5 O-O { Transposes to the main line. }) 15... O-O 16. exd5 cxd5 17. Qc2 Nb3 { [%csl Gc5,Ga1][%cal Gb3c5,Gb3a1] } 18. Bxh7+ Kh8 19. Rad1 (19. Rae1 Ba6 { [%cal Ga6f1] }) 19... Bd7 $10 { The game is equal and White cannot hold onto the pawn. } { [%cal Ga8c8,Gd7b5,Gb3c5] } *
+
+
+[Event "The Mexican Defense: 🤠4.g3"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "🤠4.g3"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/FxnmqeCe"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "r1bqkb1r/pppp1ppp/2n1pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+
+4. g3 { This looks like a Catalan. } 4... Bb4+ 5. Bd2 a5!? { Now White can't take on b4 because now we have the a-file open. } { [%cal Rd2b4,Ra5b4,Ya8a1] } (5... Qe7 { This transposes to the Bogo-Indian Defense, Nimzowitsch Variation. }) 6. a3 (6. Bxb4 axb4 { [%cal Ya8a1] } 7. Bg2 O-O 8. O-O Qe7 $10) 6... Bxd2+ 7. Qxd2 (7. Nbxd2 O-O 8. Bg2 d6 9. O-O e5 10. d5 Ne7 $10) 7... O-O 8. Bg2 d5! 9. Qc2 { White needs to hold onto that pawn. } { [%cal Gc2c4] } 9... a4! $10 { The game is equal here. Now our plans is to move the knight to a5-b3, so we can move our c-pawn to c5 or c6. } { [%csl Rb3][%cal Yc6a5,Ya5b3] } *
+
+
+[Event "The Mexican Defense: 👊Outro💥"]
+[Date "2025.10.27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Mexican Defense"]
+[ChapterName "👊Outro💥"]
+[ChapterURL "https://lichess.org/study/AZMM6QOJ/Kb23NyIT"]
+[Annotator "https://lichess.org/@/MisterBreadCrumb"]
+[FEN "Kbqqqqbq/brqqrbkb/qqqrbpbq/qqrb1brq/qqbQbrqq/qqrb1qqq/qqqqq1qq/qqqqqqBq w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.27"]
+[UTCTime "02:41:48"]
+[ChapterMode "gamebook"]
+
+{ Welp, that's it guys! I hope you liked this study and you can beat some people with it! Anyways, goodbye!
+
+✨BONUS: Can you solve this crazy puzzle? This was made by me. }
+1. Qxf6+!! Kxf6 2. Bd4# { Have a good day! } *
+
+

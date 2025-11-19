@@ -1,0 +1,17 @@
+[Event "The Traxler Counterattack: Iine 1"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/noahhezekiah"]
+[Variant "Standard"]
+[ECO "C57"]
+[Opening "Italian Game: Two Knights Defense, Traxler Counterattack, King March Line"]
+[StudyName "The Traxler Counterattack"]
+[ChapterName "The Traxler Counterattack: Iine 1"]
+[ChapterURL "https://lichess.org/study/67aQ2fGW/JO4FnBW7"]
+[ChapterMode "gamebook"]
+
+{ Let's learn the Traxler Counterattack! It's a vicious response to the Fried Liver Attack. It's so poisonous, that I... well I don't even know what to say. I really just want to jump right in and show you.
+if you can, please like the study by pressing the heart button below! 👇 }
+1. e4 { [%eval 0.18] } { First our opponent plays pawn to e4. Let's play pawn to e5. } 1... e5 { [%eval 0.22] } 2. Nf3 $40 $32 { [%eval 0.13] } { Now our opponent plays knight to f3 attacking our pawn. Let's play knight to c6 defending our pawn. } 2... Nc6 $32 { [%eval 0.21] } 3. Bc4 $32 { [%eval 0.11] } { Now our opponent develops their bishop aiming at f7. Let's invite the Fried Liver Attack with knight to f6. } 3... Nf6 { [%eval 0.1] } 4. Ng5 $40 { [%eval 0.17] } { White's going for the Fried Liver Attack, a opening where they dive straight for our weak f7 pawn. White might even think they already have a winning position, with the knight coming to f7 on the next move forking our queen and rook. Here, we lgnore the threat and play bishop to c5. } 4... Bc5?! $132 { [%eval 0.96] } { Inaccuracy. d5 was best. } (4... d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Bd3 Nd5 9. Nf3) 5. Nxf7?! { [%eval 0.0] } { Inaccuracy. Bxf7+ was best. } { White thinks they've successfully forked our rook and queen, but here we play bishop takes f2 check! } (5. Bxf7+ Ke7 6. Bc4 Qe8 7. Nc3 Nd4 8. d3 d6 9. Nd5+ Nxd5) 5... Bxf2+ { [%eval 0.0] } 6. Kxf2 $10 { [%eval 0.0] } { Our opponent takes our bishop. Now we have a necessary check on the exposed White king. Knight to e4. } 6... Nxe4+ { [%eval 0.0] } 7. Ke3 { [%eval 0.0] } { White's king is too brave, coming into the center. Let's play Queen to h4 to defend our knight. } 7... Qh4 { [%eval 0.0] } 8. Nxh8?? { [%eval #-4] } { Checkmate is now unavoidable. g3 was best. } { That's a big blunder, we now have mate in 4. Now we can play Queen to f4. } (8. g3 Nxg3 9. hxg3 Qd4+ 10. Kf3 O-O 11. Rh4 e4+ 12. Kg2 Qxc4) 8... Qf4+! { [%eval #-3] } 9. Kd3 { [%eval #-2] } { Now let's play Knight to b4. } 9... Nb4+ { [%eval #-1] } 10. Ke2 $7 { [%eval #-1] } { Now let's play Queen to f2 checkmate! } 10... Qf2# { And the game is over. } *
+
+

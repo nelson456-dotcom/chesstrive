@@ -1,0 +1,457 @@
+[Event "Итальянская партия белыми 3 разряд.: Что тут делать с пешечным центром?"]
+[Site "https://lichess.org/study/sH8rnr3G/X98nc4Vt"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "6k1/pppp1ppp/2n2n2/8/3PP3/2N2N2/PP3PPP/6K1 w - - 0 1"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Что тут делать с пешечным центром?"]
+[ChapterURL "https://lichess.org/study/VF627oRb/Zw9Uxc7J"]
+[FEN "6k1/pppp1ppp/2n2n2/8/3PP3/2N2N2/PP3PPP/6K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e5 Ne8 2. d5 { [%cal Gc6a5,Rb2b4] } 2... Nb8 { Пешки пересекают середину шахматной доски, оттесняют коней назад, и обеспечивают белым фигурам пространство для манёвров. } { [%csl Re8,Rb8,Rc6,Rd6,Re6,Rf6][%cal Re5d6,Rd5c6,Re5f6,Rd5e6] } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Атакующий шаблон"]
+[Site "https://lichess.org/study/sH8rnr3G/7mN6gjg8"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "3qk2r/3p1ppp/8/2b1P3/2B1n3/8/5PPP/3QK3 w - - 0 1"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Атакующий шаблон"]
+[ChapterURL "https://lichess.org/study/VF627oRb/cu3ccCrk"]
+[FEN "3qk2r/3p1ppp/8/2b1P3/2B1n3/8/5PPP/3QK3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. Qd5 Bxf2+ 2. Ke2 { [%csl Rf7][%cal Rd5f7,Ge8g8,Gh8f8] } 2... Bb6 3. Qxf7# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тактический шаблон."]
+[Site "https://lichess.org/study/sH8rnr3G/sIeDsqeO"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "5rk1/5ppp/8/6NQ/2B5/8/5PPP/5RK1 b - - 0 1"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тактический шаблон."]
+[ChapterURL "https://lichess.org/study/VF627oRb/gH0csJ71"]
+[FEN "5rk1/5ppp/8/6NQ/2B5/8/5PPP/5RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1... h6 2. Nxf7 { [%csl Gf7] } 2... Rxf7 3. Qxf7+ { C выигрышем качества и продолжающейся атакой. } 3... Kh8 4. Qg8# *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тактический шаблон"]
+[Site "https://lichess.org/study/sH8rnr3G/4VVcSOq2"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "3q1rk1/5ppp/8/6NQ/2B5/8/5PPP/2B2RK1 b - - 0 1"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тактический шаблон"]
+[ChapterURL "https://lichess.org/study/VF627oRb/bztEv0HN"]
+[FEN "3q1rk1/5ppp/8/6NQ/2B5/8/5PPP/2B2RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1... h6 2. Nxf7 Qe7 3. Nxh6+ { [%cal Rh6g8,Rc4g8] } 3... Kh7 4. Nf5# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: На пути к главной линии 5...Сb6"]
+[Site "https://lichess.org/study/sH8rnr3G/7JsROGHu"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Center Attack"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: На пути к главной линии 5...Сb6"]
+[ChapterURL "https://lichess.org/study/VF627oRb/dydkYbrl"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 { [%csl Gc5] } 4. c3 Nf6 5. d4 Bb6 6. dxe5 Nxe4 7. Qd5 { [%csl Bc4,Bd5,Rf7,Re4][%cal Rd5f7,Rd5e4] } 7... Bxf2+ 8. Ke2 O-O { [%csl Bf7][%cal Bf8f7] } 9. Qxe4 { и готовимся сделать искусственную рокировку. } { [%cal Gh1d1,Ge2f1] } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр:На пути к главной линии 5...Сb6"]
+[Site "https://lichess.org/study/sH8rnr3G/Em2f9Vgj"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Center Attack"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр:На пути к главной линии 5...Сb6"]
+[ChapterURL "https://lichess.org/study/VF627oRb/uzNfF1Y1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 Bb6 6. dxe5 Nxe4 7. Qd5 Bxf2+ 8. Ke2 O-O 9. Qxe4 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: На пути к главной линии 6...Cb6"]
+[Site "https://lichess.org/study/sH8rnr3G/Jc5NTBWh"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Greco Gambit, Traditional Line"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: На пути к главной линии 6...Cb6"]
+[ChapterURL "https://lichess.org/study/VF627oRb/uBmwsaBK"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 { [%cal Rc5b4,Rb4e1] } 6... Bb6 (6... Nxd4? { весьма глупо } 7. Nxd4 Bxd4 8. Qxd4 { и у белых лишняя фигура. }) 7. e5 Ng8 8. d5 Na5 9. Bd3 { [%cal Ge1g1,Gh1f1,Gb1c3,Gc1g5,Gg5d8] } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр.На пути к главной линии 6...Сb6"]
+[Site "https://lichess.org/study/sH8rnr3G/Dop5Tmn5"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Greco Gambit, Traditional Line"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр.На пути к главной линии 6...Сb6"]
+[ChapterURL "https://lichess.org/study/VF627oRb/dYsOToLJ"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb6 7. e5 Ng8 8. d5 Na5 9. Bd3 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Осторожная линия"]
+[Site "https://lichess.org/study/sH8rnr3G/o6ESQ83B"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C53"]
+[Opening "Italian Game: Classical Variation"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Осторожная линия"]
+[ChapterURL "https://lichess.org/study/VF627oRb/vTyBDu4V"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6!? 5. d4 exd4 6. cxd4 Bb4+ { [%csl Gc3] } 7. Nc3 Nf6 (7... Nge7 8. Ng5 { [%csl Gf7][%cal Gg5f7,Gc4f7] } 8... O-O 9. Qh5 h6 10. Nxf7 Rxf7 11. Qxf7+) 8. O-O Bxc3 (8... O-O { чуть лучше,но тогда белые заканчивают развитие с превосходной позицией. } 9. Bg5 { угрожая прыжком конём на d5 } { [%cal Bc3d5,Gg5d8] } 9... Bd7 10. Nd5 { [%cal Gd5f6,Gg7f6,Gg5h6,Gh6f8] }) 9. bxc3 Nxe4 10. Re1 { [%cal Ge1e8] } 10... d5 11. Rxe4+ dxe4 12. Ng5 { [%csl Gf7][%cal Gg5f7] } 12... O-O 13. Qh5 h6 14. Nxf7 Rxf7 15. Qxf7+ Kh7 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Главный вариант"]
+[Site "https://lichess.org/study/sH8rnr3G/PjZhbuWq"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Greco Gambit, Greco Variation"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Главный вариант"]
+[ChapterURL "https://lichess.org/study/VF627oRb/sq1Rp4RW"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 { [%cal Rb4e1] } 8. O-O Nxc3 9. bxc3 Bxc3 10. Qb3 { [%cal Bc4f7,Gb3f7,Gb3c3] } 10... Bxa1 11. Bxf7+ Kf8 12. Bg5 Ne7 (12... Nxd4? 13. Qa3+ { [%csl Rf8][%cal Ra3f8] } (13. Bxd8 Nxb3) (13. Nxd4 Qxg5) 13... Kxf7 14. Bxd8 { с лишним ферзём. }) 13. Rxa1 { [%cal Ra1e1,Re1e7,Rg5e7] } 13... h6 14. Bxe7+ Qxe7 15. Ne5 { [%cal Ge5f7,Ge5g6] } (15. Re1 { [%cal Ge1e8] } 15... Qxf7) 15... d5 (15... Qf6 16. Ng6+ { [%cal Gg6f8] } 16... Qxg6 17. Bxg6) 16. Ng6+ Kxf7 17. Nxe7 Kxe7 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Побочный"]
+[Site "https://lichess.org/study/sH8rnr3G/06oOFvyN"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Giuoco Piano, Greco's Attack"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Побочный"]
+[ChapterURL "https://lichess.org/study/VF627oRb/BRKpHUhI"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 O-O 8. e5 Ne4 { [%cal Gb4e1,Ge4c3] } 9. O-O Nxc3 10. bxc3 Bxc3 11. Ng5 Bxa1 (11... h6) 12. Qh5 h6 13. Nxf7 Rxf7 14. Qxf7+ Kh8 (14... Kh7 15. Bg5 hxg5 (15... Qxg5 16. Bd3+ { [%cal Gd3h7] } 16... Kh8 17. Qf8#) 16. Qh5#) 15. Bg5 Qxg5 (15... hxg5 16. Qh5#) 16. Qg8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/rmpqp1vZ"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Greco Gambit, Greco Variation"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/Sr1wdHkE"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Qb3 Bxa1 11. Bxf7+ Kf8 12. Bg5 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/zGeAHzuz"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq1k1r/pppp1Bpp/2n5/6B1/3P4/1Q3N2/P4PPP/b4RK1 b - - 2 12"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/SxvDUmVp"]
+[FEN "r1bq1k1r/pppp1Bpp/2n5/6B1/3P4/1Q3N2/P4PPP/b4RK1 b - - 2 12"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+12... Nxd4 13. Qa3+ Kxf7 14. Bxd8 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/vI7I7gtq"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq1k1r/pppp1Bpp/2n5/6B1/3P4/1Q3N2/P4PPP/b4RK1 b - - 2 12"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/0KPvw5xN"]
+[FEN "r1bq1k1r/pppp1Bpp/2n5/6B1/3P4/1Q3N2/P4PPP/b4RK1 b - - 2 12"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+12... Ne7 13. Rxa1 h6 14. Bxe7+ Qxe7 15. Ne5 Qf6 16. Ng6+ Qxg6 17. Bxg6 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/0zSmRbbJ"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Giuoco Piano, Greco's Attack"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/CU9ej1Io"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 O-O 8. e5 Ne4 9. O-O Nxc3 10. bxc3 Bxc3 11. Ng5 Bxa1 12. Qh5 h6 13. Nxf7 *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/Ap5R17pX"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq1rk1/pppp1Np1/2n4p/4P2Q/2BP4/8/P4PPP/b1B2RK1 b - - 0 13"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/w84c2vSS"]
+[FEN "r1bq1rk1/pppp1Np1/2n4p/4P2Q/2BP4/8/P4PPP/b1B2RK1 b - - 0 13"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+13... Qe7 14. Nxh6+ Kh8 15. Nf5# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/oy3mih8O"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq1rk1/pppp1Np1/2n4p/4P2Q/2BP4/8/P4PPP/b1B2RK1 b - - 0 13"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/XcWReqiK"]
+[FEN "r1bq1rk1/pppp1Np1/2n4p/4P2Q/2BP4/8/P4PPP/b1B2RK1 b - - 0 13"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+13... Rxf7 14. Qxf7+ Kh8 15. Bg5 Qxg5 16. Qg8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/F1UhA3N9"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq3k/pppp1Qp1/2n4p/4P1B1/2BP4/8/P4PPP/b4RK1 b - - 2 15"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/Dos2kOwb"]
+[FEN "r1bq3k/pppp1Qp1/2n4p/4P1B1/2BP4/8/P4PPP/b4RK1 b - - 2 15"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+15... hxg5 16. Qh5# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/W0Xy1F27"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq2k1/pppp1Qp1/2n4p/4P3/2BP4/8/P4PPP/b1B2RK1 b - - 0 14"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/HsTS6Um6"]
+[FEN "r1bq2k1/pppp1Qp1/2n4p/4P3/2BP4/8/P4PPP/b1B2RK1 b - - 0 14"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+14... Kh7 15. Bg5 Qxg5 16. Bd3+ Kh8 17. Qf8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[Site "https://lichess.org/study/sH8rnr3G/lafKhire"]
+[Date "2025.11.02"]
+[Result "*"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[FEN "r1bq4/pppp1Qpk/2n4p/4P1B1/2BP4/8/P4PPP/b4RK1 b - - 2 15"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Итальянская партия белыми 3 разряд.: Тренажёр"]
+[ChapterURL "https://lichess.org/study/VF627oRb/ox3BBTQH"]
+[FEN "r1bq4/pppp1Qpk/2n4p/4P1B1/2BP4/8/P4PPP/b4RK1 b - - 2 15"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:38:47"]
+[ChapterMode "gamebook"]
+
+15... hxg5 16. Qh5# { 1-0 White wins by checkmate. } *
+
+
+[Event "Greco"]
+[Site "Rome"]
+[Date "1620.??.??"]
+[White "Greco, Gioacchino"]
+[Black "NN"]
+[Result "1-0"]
+[Annotator "https://lichess.org/@/Monkey_King"]
+[Variant "Standard"]
+[ECO "C53"]
+[Opening "Italian Game: Classical Variation, Closed Variation"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Greco, Gioacchino - NN"]
+[ChapterURL "https://lichess.org/study/VF627oRb/DjxNp2GX"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. O-O d6 6. d4 Bb6 7. Bg5 f6 8. Bh4 g5 9. Nxg5 fxg5 10. Qh5+ Kd7 11. Bxg5 Qg7 12. Be6+ Kxe6 13. Qe8+ Nce7 14. d5# { 1-0 White wins. } 1-0
+
+
+[Event "Hastings International Masters"]
+[Site "Hastings"]
+[Date "1895.08.17"]
+[Round "10"]
+[White "Steinitz, William"]
+[Black "Von Bardeleben, Curt"]
+[Result "1-0"]
+[Annotator "Tartakower/du Mont/Reti"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Giuoco Piano, Greco's Attack"]
+[StudyName "Итальянская партия ИНТЕРАКТИВ"]
+[ChapterName "Steinitz, William - Von Bardeleben, Curt"]
+[ChapterURL "https://lichess.org/study/VF627oRb/iQgicJQw"]
+
+{ C54: Giuoco Piano: 4 c3 Nf6, main lines with 5 d4 and 5 d3 } { Sources: Sources:
+Tartakower & du Mont, 500 Master Games of Chess, pp.9-10; The Hastings
+Tournament, 1895, pp. 157-158; Reti, Masters of the Chessboard, pp. 52-55. All
+comments are Tartakower's unless otherwise noted. The feature of the following
+game is how White fastened on a small weakness in the enemy's camp and how, by
+skilful manoeuvring, he prevented him from castling. Never relaxing his grip,
+he wound up the game with one of the most beautiful and esthetically
+satisfying combinations ever devised on the chessboard. }
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 { A move already advocated by
+Greco the Calabrese in 1619, by which White offers to give up a pawn for the
+attack. 7.... } 7... d5 (7... Nxe4 { ; though
+Black must not hope to hold the gain of the pawn. }) 8. exd5 { White has come
+out of the preliminary skirmish with a pawn in the centre. Even though it is
+isolated, this pawn will prove a tower of strength. 8.... } 8... Nxd5 9. O-O Be6 (9... Bxc3 { , and then
+completed his development. }) 10. Bg5 Be7 11. Bxd5 Bxd5 12. Nxd5 Qxd5 13. Bxe7 Nxe7 14. Re1 { After this orgy of exchanges, Black finds himself unable to
+castle. With his next moves he tries to get his king into safety by
+"artificial castling," but it takes too much time.   Tarrasch: The point of
+all the exchanges, as by this move White obtains command of the board,
+prevents Black from castling, and initiates a most powerful attack on the king.
+14.... } 14... f6 15. Qe2 Qd7 16. Rac1 c6 (16... Kf7 { , as White had then nothing better than } 17. Qxe7+ Qxe7 18. Rxe7+ Kxe7 19. Rxc7+ { followed by Rxb7, and Black has still a prospect of a
+draw. }) 17. d5 { A fine vacating sacrifice. The d4 is made available for the
+knight, thus greatly intensifying the attack. 17.... } 17... cxd5 18. Nd4 Kf7 { Black has almost castled, but not quite. } 19. Ne6 Rhc8 20. Qg4 g6 21. Ng5+ Ke8 { [#] } 22. Rxe7+ { An amazing situation! All White's pieces are en prise, and
+Black threatens .... Rxc1#. Yet he cannot take the checking rook, 22...Qxe7 23.
+Rxc8+ Rxc8 24.Qxc8+, and White remains a piece ahead.    The variations
+resulting from 22....Kxe7 show the astounding degree of precision, which was
+required of White's calculations, before he could venture on the move in the
+text, e.g. 22....Kxe7 23.Re1+ Kd6 24.Qb4+ (neither 24.Re6+ Kc5 nor 24.Qf4+ Kc5
+would do) ...Rc5 (or 24....Kc7 25. Ne6+ Kb8 26. Qf4+ and wins) 25.Rc6+ and
+wins. In this beautiful combination the rook remains en prise for several
+moves until Black, compelled to capture it, succumbs to a mating finish. } { 22.... } 22... Kf8 23. Rf7+ Kg8 24. Rg7+ { (RR See note below.) 24.... } 24... Kh8 25. Rxh7+ { Black resigns. } 1-0
+
+

@@ -1,0 +1,204 @@
+[Event "Storm With The Scotch: —==Introduction==—"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "—==Introduction==—"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/XeY02blK"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[UTCDate "2025.10.31"]
+[UTCTime "17:23:14"]
+[ChapterMode "gamebook"]
+
+{ Hello Everyone! Today, we will be looking at the Scotch Game. The Scotch Game are for players who want to strike the center immediately. It was invented in the 1800 century in a correspondence game, and most of the theory was made by Super GM Garry Kasparov. Also, not many people play the scotch compared to the Ruy Lopez or the Italian Game, so your opponent just might have a surprise coming their way.
+
+Enough yapping from me, let’s get started! Play E4! }
+1. e4 e5 { Everything normal so far!
+Now, play Nf3, the King's Knight opening. } 2. Nf3 Nc6 { Everything regular!
+Now, most players will be expecting Bb5, challenging black's center, or Bc4, eyeing down the f7 weakness. In the lichess database, the Italian has been played about 450K times, and the Ruy Lopez has been played about 400K times.
+But now, we will be transposing into the Scotch Game, immediately striking with d4. Play that now :D } 3. d4 exd4 { Go ahead and take the pawn back. } 4. Nxd4 { Nice!👌 This is the Scotch Game. There are many different lines. The Classical variation, the Schmidt variation, the Steinitz variation, and the Malaniuk variation. It's black's decision, so you have to be ready for them all.
+The Scotch Game is not the same type of game as the Italian or Spanish. In most e4 games, the e4 pawn is blocked, but here, you have the opportunity to expand with the e4 pawn if you want to. There are a lot of options to castle queen-side and crush black with a pawn storm. The Scotch is a very interesting game that can throw your opponent off his comfort zone, definitely something you might want to try out!
+🎯 Btw, get this entire repertoire in Noctie and practice it through gameplay: https://go.noctie.ai/storm-with-the-scotch 🎯 } *
+
+
+[Event "Storm With The Scotch: Scotch Game: The Classical Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Classical Variation"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: The Classical Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/vhWZBb01"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[UTCDate "2025.10.31"]
+[UTCTime "17:31:50"]
+[ChapterMode "gamebook"]
+
+{ Play all the moves you have learned in the previous chapter :D }
+1. e4 e5 { Now? } 2. Nf3 Nc6 { The weird move. } 3. d4 exd4 { ??? } 4. Nxd4 { Nice!👌
+If Nxd4, Qxd4, then your queen cannot be chased away, and it’s way better than your opponent's queen. } 4... Bc5 { Now, in the classical variation, our opponent plays 4. Bc5, challenging our knight.
+Play Be3, defending. Unless you don’t want your horsey :o } 5. Be3 Qf6 { We need another defender!
+6. c3 does the job. Unless again you don’t want your poor horsey :0 } 6. c3 Nge7 { The light squared bishop needs to develop.
+c4 is the ideal square for it. } 7. Bc4 { Nice!👌 This is the Classical variation of the Scotch Game. There are some sidelines to the Classical Variation, you might want to check them out in the next chapters because you might prefer to play them. You will finish your development with Nd2 (make sure not to blunder your d4 knight), castles, f3, and off you go. You have a pawn in the center and your opponent does not. You have almost completed the opening, and you will have a solid middlegame. You are completely fine! Your opponent, on the other hand, could be bamboozled :D } *
+
+
+[Event "Storm With The Scotch: Scotch Game: Potter Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Potter Variation"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: Potter Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/79ICEuD6"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[FEN "r1bqk1nr/pppp1ppp/2n5/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.31"]
+[UTCTime "17:43:04"]
+[ChapterMode "gamebook"]
+
+{ In this chapter, we will be looking at the Potter variation, a sideline of the Classical variation.
+
+Go ahead and play Nb3, attacking the c4 bishop. }
+1. Nb3 Bb6 { Now, just develop normally.
+How do we develop the piece that looks like horsey on b1? } 2. Nc3 Nf6 { Now, challenge the f6 knight with your queenside bishop.
+If your opponent doesn't play Nf6 and plays something like d6, try playing Qe2 Be3, trading off that deadly dark squared bishop. } 3. Bg5 O-O { Nice!👌 Now, you will put your queen on d2, Bishop on d3, and castle queenside. Try putting your b knight on a more useful square. Then create a pawn storm on the king side and crush black with the f, g, and h pawns :D
+The Potter variation is quite different from the Classical variation, and if it fits you, go ahead and play it. It is kind of a Caro-Kann position :D
+So, which variation do you like more, the Potter variation, or the Classical? } *
+
+
+[Event "Storm With The Scotch: Scotch Game: Classical Variation, Intermezzo Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Classical Variation, Intermezzo Variation"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: Classical Variation, Intermezzo Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/x3KIKQkh"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[FEN "r1bqk1nr/pppp1ppp/2n5/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.31"]
+[UTCTime "18:01:46"]
+[ChapterMode "gamebook"]
+
+{ Here is another sideline in the Classical Variation you might like. Here, our knight is under attack. Go ahead and trade knights. }
+1. Nxc6 { Now, if our opponent takes with the d pawn, we will play QxQ and we are much better because our opponent's king is misplaced. The best move here is Qf6, threatening checkmate on f2, and also threatening the knight. } 1... Qf6 { We cannot save our knight or else we will get checkmated!
+Play Qf3, blocking the queen. } 2. Qf3 { If you think they will damage our pawn structure, that is not a bad thing because we can still castle queenside. It also gives our e pawn additional support. } 2... bxc6 { This move prepares the move d5.
+Nice!👌 You are very good in this position. The plans are highlighted above in blue. Your knight develops to the c3 square, and the bishops develop in the center. Once again, you can castle queenside, and go h4-h5 g4-g5 and destroy black with a kingside pawn storm. You are great in this position! Lots of attacking plans, as well as a sturdy foundation.
+So Those are the sidelines of the Classical Variation of the Scotch Game. Which one do you prefer to play? } *
+
+
+[Event "Storm With The Scotch: Scotch Game: Schmidt Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Schmidt Variation"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: Schmidt Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/nUtu7CBO"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.31"]
+[UTCTime "18:38:11"]
+[ChapterMode "gamebook"]
+
+{ In this chapter, we will be studying one of the most common replies to the Scotch, the Schmidt Variation, with Nf6. }
+1... Nf6 { Now, the move Nc3 defending the d4 pawn is the best.
+If they take your d4 knight, you bring out your queen, which can't be chased away, and your queen is active so yay :D } 2. Nc3 Bb4 { Right now, the best move is to just take the c6 knight. } 3. Nxc6 bxc6 { Your e4 pawn is currently undefended. How will you defend it? } 4. Bd3 { Nice!👌 Your position is brilliant. You will now develop your dark squared bishop, castle, either way is fine (Queenside if you feel a bit agressive today :D), and you stand fine. Black played bxc4 because later on, he wants to play d5 and smash the center, so just beware of that. Overall, this may seem like a strange position, but this position is equal, and you have many chances :D } *
+
+
+[Event "Storm With The Scotch: Scotch Game: Malaniuk Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Malaniuk Variation"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: Malaniuk Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/uInKSEGi"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.31"]
+[UTCTime "18:43:58"]
+[ChapterMode "gamebook"]
+
+{ What do you play here?
+Just a quick quiz :) }
+1. d4 exd4 { Now? } 2. Nxd4 { In this variation, black starts by delivering a check. } 2... Bb4+ { Oof :~\
+Block the check with the pawn. } 3. c3 Bc5 { And from here on, you continue exactly like the Classical Variation :D } *
+
+
+[Event "Storm With The Scotch: Scotch Game: Steinitz Variation"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game: Modern Defense"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Scotch Game: Steinitz Variation"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/TWsLN4kv"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.31"]
+[UTCTime "18:47:34"]
+[ChapterMode "gamebook"]
+
+{ In this chapter, we will be looking at the Steinitz Variation. This cheeky variation is not as popular as the Classical variation, but we still need to learn it, because you can still blunder! }
+4... Qh4 { Your e pawn is hanging! Defend it } 5. Nc3 Bb4 { It's time for a sacrifice! Be2 is the move here, sacrificing the e4 pawn. } 6. Be2 Qxe4 { Now, Nb5 threatens a fork on c7. } 7. Nb5 Bxc3+ { Don't do anything crazy lol! } 8. bxc3 { Now Kd8 is to prevent getting forked on c7.
+You are down a pawn, but you have a LOT of initiative and a lot of attacking chances. Now you will castle, attack the open king who can't castle, and everything is going well for you despite you being down 1 pawn. You have to keep attacking your opponent! } *
+
+
+[Event "Storm With The Scotch: Summary :D"]
+[Date "2025.10.31"]
+[White "You (The Genius)"]
+[Black "Your opponent"]
+[Result "*"]
+[WhiteTitle "GM"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game"]
+[StudyName "Storm With The Scotch"]
+[ChapterName "Summary :D"]
+[ChapterURL "https://lichess.org/study/uS4qqt7Y/tgRIxUmZ"]
+[Annotator "https://lichess.org/@/Lucasz05"]
+[UTCDate "2025.10.31"]
+[UTCTime "20:27:41"]
+[ChapterMode "gamebook"]
+
+{ Play everything that you have learned. }
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 { In summary, there are four variations. The Classical, Schmidt, Malaniuk, and Steinitz. You e pawn is not stuck, so you will have a space advantage. Castling queenside is an option, if you want to be agressive. Overall, this is a great opening that not many players have prepared for. If many openings have not worked for you, this may be the one!
+Thank you for checking out the study. Please feel free to message me if you have any questions! If you enjoyed this study or this study helped you out, please smash 💥 that like❤ button (Pls don’t break anything when smashing the like thingy)! See you in one of my other studies.
+Bye for now! } *
+
+

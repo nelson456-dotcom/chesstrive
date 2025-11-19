@@ -1,0 +1,291 @@
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Starting Setup"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Starting Setup"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/6tJ2hb8Z"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[UTCDate "2025.10.26"]
+[UTCTime "17:26:38"]
+[ChapterMode "gamebook"]
+
+{ Welcome to the Nc3 e3 Atomic Opening Study!
+
+Please leave a heart as it would mean a lot to my hard work.
+
+This is an uncommon opening with many traps and simple ideas, that will be sure to catch even the strongest players off guard!
+
+Whether you're here to just take a look, or to really dive in depth, you will be sure to learn something.
+
+I highly recommend looking at the analysis board after you complete a chapter to see the sidelines if you really want to learn this in depth. } { [%cal Gb1c3] }
+1. Nc3!! { This is the starting move of the uncommon but powerful Nc3 e3 setup.
+It is sure to give you an interesting game, unless your opponent falls into one of the common traps :)
+I was able to obtain the ATCM title (2000) in just about a month by spamming this opening, so if you're serious you should be able to do the same. } { [%cal Rc7c6,Re7e6,Rg8f6,Re7e5,Rd7d5,Ge2e3] } (1. Nf3 { Why'd you even come here if you didn't want to learn the best opening???
+Play Nc3 for starting setup :) }) *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: PART 1 Basic Ideas against c6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "PART 1 Basic Ideas against c6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/vwBWlvKx"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "17:45:28"]
+[ChapterMode "gamebook"]
+
+1... c6? { This move is by far the most common and seems natural to most players, but it is already a big mistake for black. } { [%cal Ge2e3] } 2. e3!! { Let's play through a sample game where black is slow to react to our threats and attempts an inaccurate counterattack... } { [%cal Re7e6,Rg8f6,Rd7d5,Re7e5,Rd7d6,Rf7f6] } 2... Nh6?? { A move that seems to threaten going Ng4 but our forcing attack crushes them before they can even think about play that... } { [%cal Gd1f3] } 3. Qf3 (3. Nd5) 3... f6 { Dominating the light squares and clearing the way for our other pieces } { [%cal Gf3d5] } 4. Qd5 cxd5 { [%cal Gc3d5] } 5. Nd5 e5 { The rest should be clear } { [%cal Gf1b5] } 6. Bb5 Nc6 { [%cal Gd5c7] } 7. Nc7+ Kf7 { [%cal Gc7e6] } 8. Ne6 { Forking 2 mate threats that black cannot evade } { [%cal Ge6f8,Ge6g7] } 8... Bb4 9. Nxg7# { Common ideas are the Nd5 sacrifice, often followed up with a queen attack targeting the weak d5 square. You can then often play an in-between move of Nf3 once your queen gets attacked, as it threatens mate. Follow up with your bishop, and you have an easy, intuitive, and powerful attack. } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #1 e6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #1 e6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/072rf9u8"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "17:48:57"]
+[ChapterMode "gamebook"]
+
+{ In the following 6 chapters, we will look at every one of black's replies that are played more than 5% of the time (lichess database), in order of commonality. This accounts for about 83% of replies.
+
+Pretty much everything else loses immediately - use your developed knight to gain control of the light squares and attack with your queen and follow up with your other pieces }
+2... e6 { Black's common reply is just a lame attempt to stop the queen from getting to d5...
+How can we sacrifice a knight to gain more control of the light squares for our other pieces? } { [%cal Gc3d5,Gd1h5,Gh5b5,Gg1f3] } (2... Qa5) 3. Nd5! cxd5 { Get your queen into the game } (3... exd5?? 4. Qh5 g6 5. Qe5+ Qe7 6. Qxe7#) (3... Bb4 4. c3 cxd5 5. Qh5 g6 6. Qb5 Nc6 7. Nf3 f6 8. Qb6 axb6 (8... Kf8 9. Qc7 Ne5 10. Nxe5 Qxc7) 9. Bb5 Kf8 10. Bxd7) (3... Qh4 4. g3 Qc4 5. Bxc4 Nf6 6. f3) (3... Qa5 4. b4 Qa4 5. Qh5 g6 6. Nf3 f6 7. Nc7+ Kd8 8. Ne5 fxe5 9. Qg5+ Nf6 10. Nxe6+ Kc7 11. Qd8+ Kd6) 4. Qh5 g6 { Make another threat while saving your queen } 5. Qb5 Nc6 { Get your knight into the game } 6. Nf3 f6 { [%cal Gb5c5] } 7. Qc5! Bxc5 { Make a threat while getting your bishop into the game (they can't defend it) } 8. Bb5! Kf8 { Get your material back } 9. Bxd7 { A complete winning position for white } 9... Nh6 { [%cal Gf3g5] } 10. Ng5 Ng4 { Move your pawn to save your king } { [%cal Gf2f3] } 11. f3 Nxh2 { [%cal Gg5h7] } 12. Nxh7 Kf7 { Watch out for the rook threat! } { [%cal Gb2b3,Ra8h8] } 13. b3 Rh8 { Make a threat on your opponent's king with your bishop so you can castle to get out of danger } 14. Bb2 e5 { Castle! } 15. O-O-O { Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #2 Nf6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #2 Nf6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/cNxsuPJe"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "17:52:47"]
+[ChapterMode "gamebook"]
+
+1... Nf6? { Black's second most common reply, while getting their knight into the game, allows us get a strong position by squeezing their position.
+Pin the knight with your queen! } { [%cal Gd1f3,Gg1h3,Gf1a6,Gf1d3,Gd3g6] } 2. Qf3! Qa5 { A very strong bishop move - they can't take or they lose their queen } { [%cal Gf1a6] } (2... d5 3. Nh3 Bxh3 4. Qf4 e5 (4... Na6 5. Bd3 Qc7 6. Bg6 Kd8 7. Qxc7#) 5. Qf5 Ba3 6. Qd7+ Kf8 7. Qxf7#) (2... e6 3. Bd3 g6 4. Nh3 Qa5 (4... Qb6 5. Nd5 Qxe3 6. Ng5 Kd8 7. Ne7 c5 8. Nxc8#) 5. Ng5 Kd8 6. Nxf7 Rf8 7. b4) 3. Ba6! Kd8 { Blow-up the pieces on the queenside! } 4. Bxb7 Ne4 { Sacrifice your queen to stop mate - you're still completely winning } 5. Qxe4 { Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #3 d5"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #3 d5"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/fZWIfKd5"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:23:52"]
+[ChapterMode "gamebook"]
+
+1... d5?? { Black's third most common reply is a complete blunder, allowing a forcing line to win a lot of material!
+Once again, get your queen out into the game! } 2. Qh5 (2. Qf3 { This move, while getting our queen out, doesn't do anything after they play f6. Try again! }) 2... g6 { Make a threat on the king! } 3. Qe5 (3. Qh4 { This is the most accurate continuation, but the line proposed is easier to memorize (less sidelines and still very powerful)
+Play Qe5 for the proposed line! } 3... f6 (3... Nf6 4. Nf3 e5 5. Ng5 Kd7 6. Ne6 Qa5 7. Nd8 c5 8. Bb5+ Qxb5 9. Qa4+ b5 10. Qa5 Ne4 11. Nxd5 b4 12. Qc7+ Ke8 13. Qxf7#) 4. Qb4 c5 5. Qb5+ Nc6 6. Qb6 Kf7 (6... axb6 7. Bb5+ Kf7 8. Be8+ Kg7 9. Bxg6#) 7. Qc7 Qd7 8. Ne4 dxe4 9. Qd6 exd6 10. Bc4+ Ke8 11. Bxg8) 3... e6 { Make a threat to the king that forces your opponent to lose material } (3... Be6 4. Nb5 cxb5 (4... Na6 5. Nc7+ Qxc7 6. Bxa6 Rc8 7. Qg7 Bxg7) 5. Bb5+ Nc6 6. Qc7 d4 7. Qxe7#) 4. Qc7 (4. Nf3 { An equally strong move - Play Qc7 for the proposed line! }) 4... Qxc7 { Get your other knight into the game } 5. Nf3 f6 { [%cal Gc3b5] } 6. Nb5 { Despite sacrificing the knight, it clears an important square for our bishop and misplaces your opponent's king, preparing for an easy rest of the game. } 6... cxb5 { Get your bishop into the game and displace your opponents king! } 7. Bb5+ Kd8 { Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #4 e5"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #4 e5"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/vmuiq3ki"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:26:54"]
+[ChapterMode "gamebook"]
+
+1... e5? { A big problem arises with this move - black loses the ability to play e6, weakening the d5 square significantly. Sacrifice your knight like previous variations! } { [%cal Gc3d5,Gd1f3,Gg1h3,Gh3g5] } 2. Nd5 cxd5 { Attack both black's king and the d5 square with your queen! } (2... Bb4 3. c3 Qh4 4. g3 Qh5 5. Qg4 Qf5 (5... f5 6. Nc7+ Kd8 7. Qg5+ Qxg5 8. Nxa8 Nf6 9. f3) 6. f4 Qxf4 7. Nc7+ Kf8 8. Nxa8 f5 9. cxb4) 3. Qf3 Qf6 { Get your remaining knight into the game to attack a vulnerable g5 square with a dual threat of both f7 and h7! } (3... Nf6 4. Qf5 d5 5. Qd7#) (3... f6 4. Qd5 d6 5. Qf7#) 4. Nh3 Qf4 { [%cal Gh3g5] } (4... Qxf3 5. Ng5 f5 6. Nxh7) (4... Kd8 5. Ng5 Qf4 6. Nxh7) 5. Ng5 { [%cal Gg5f7,Gg5h7] } 5... f6 { Win some material } 6. Nxh7 { Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #5 f6"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #5 f6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/pSDI9qzO"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "03:18:30"]
+[ChapterMode "gamebook"]
+
+1... f6?? { A complete blunder with a forcing line to win a lot of material to have a comfortable rest of the game. Attack using the knight with the common idea we've seen in other chapters! } 2. Nd5 e6 { Black can't take or else they get mated with Qh5 then Qd5 with a dual mate threat.
+Attack the king with your knight to win a bunch of material! } (2... cxd5 3. Qh5+ g6 4. Qd5 d6 5. Qf7+ Kd7 6. Qxe7#) 3. Nc7+ Qxc7 { A simple and forcing winning line with an evaluation of almost +20 :)
+Click the analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 c6 e3 Reply #6 d6"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 c6 e3 Reply #6 d6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/yWEN4gOJ"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "03:31:37"]
+[ChapterMode "gamebook"]
+
+1... d6?? { Another complete blunder that also comes with a forcing line to win a lot of material for a comfortable rest of the game.
+Use the same knight sacrifice/attack idea! } 2. Nd5 cxd5 { No forced mate this time, but black might wish for one by the end of this forcing line!
+Attack with your queen! } (2... e5 3. Nc7+ Qxc7) 3. Qh5 g6 { Do the common queen maneuver! } 4. Qb5+ Nc6 { Do the hook trick - if you don't know what this is, it's a common pattern that appears in these sorts of variations and would be good to learn that is useful in a lot of scenarios!
+Click hint if you don't understand for a full explanation! } 5. Qb6 Qc7 { Blow up all of your opponent's queenside pieces! } (5... axb6 6. Bb5+ Qd7 7. Bxd7#) 6. Qxb7 { A completely winning position that will be easy to continue from here.
+Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: PART 2 Nc3 Nf6 e3"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "PART 2 Nc3 Nf6 e3"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/WuFQLxUd"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:50:07"]
+[ChapterMode "gamebook"]
+
+{ Now we take a look at black's second most common reply - Nf6 }
+1... Nf6!? { Play the move to complete the basic setup! } 2. e3 { From this point we will look at all of black's most common replies (above 5%) which makes up about 96% of replies } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 Nf6 e3 Reply #1 Ng4"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 Nf6 e3 Reply #1 Ng4"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/tgy8wEMP"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:51:31"]
+[ChapterMode "gamebook"]
+
+2... Ng4 { Black's most common reply to our Nc3 e3 setup.
+Guard our king while not blocking out queen in! } { [%cal Gd1h5] } 3. f4 { Black can't move their knight, or we have forced mate by going Qh5 then Qd5 with a mate fork. } 3... c6 { Get your knight into the game } { [%cal Gg1h3] } 4. Nh3 f6 { Make the common knight sacrifice to weaken the light squares! } 5. Nd5 cxd5 { Attack with your other knight! } 6. Ng5 Nf2 { Move your queen to avoid losing where it can attack the weak light squares! } (6... Qa5 7. b4 Qd5 8. d4) 7. Qf3 Ne4 { Gain space while saving your king! } { [%cal Gd2d4] } (7... d5 8. Bb5+ Nc6 9. Kf1 a6 10. Nf7) 8. d4 { Click analysis board to see sidelines! } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 Nf6 e3 Reply #2 Ne4"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 Nf6 e3 Reply #2 Ne4"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/2JeLYiqf"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "03:18:06"]
+[ChapterMode "gamebook"]
+
+2... Ne4?! 3. Nxe4 e6 4. Qh5 g6 5. Qb5 c6 6. Nf3 f6 7. Qxb7 d5 8. d4 { [%cal Gf1a6] } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 Nf6 e3 Reply #3 c6"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 Nf6 e3 Reply #3 c6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/62G2W30h"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "05:30:45"]
+[ChapterMode "gamebook"]
+
+2... c6? { This move transposes back to the line in chapter 4 - do you remember the continuation? } 3. Qf3 { Go back to chapter 6 if you want to review the full line } *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 Nf6 e3 Reply #4 e6"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 Nf6 e3 Reply #4 e6"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/XmsF2jw4"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "05:32:45"]
+[ChapterMode "gamebook"]
+
+2... e6 3. Qf3 { I'm sure by now you see a recurring theme - if the knight is on f6, the common idea is to play Qf3 to pin the knight and get ready for Nh3. } { [%cal Gg1h3] } 3... Bb4 4. Nh3 g5 5. Nxg5 Qf6 6. Qf5 Qxf5 (6... Nc6 7. Bb5) 7. Bb5 c6 *
+
+
+[Event "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3: Nc3 Nf6 e3 Reply #5 d5"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Atomic"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "T-R-I-D-E-N-T's Atomic Repertoire for Nc3 e3"]
+[ChapterName "Nc3 Nf6 e3 Reply #5 d5"]
+[ChapterURL "https://lichess.org/study/X8Grg68C/HrIsMUKi"]
+[Annotator "https://lichess.org/@/T-R-I-D-E-N-T"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/8/2N1P3/PPPP1PPP/R1BQKBNR b KQkq - 0 2"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "05:36:13"]
+[ChapterMode "gamebook"]
+
+2... d5 { Play the move expected with the knight still on f3! } 3. Qf3 { Wow, who would've thought to play this? :) } 3... Bg4 (3... c6 4. Nh3 Bxh3 5. Qf4 Qb6 (5... e5 6. Qf5 Ke7 7. Qxf6#) 6. Qc7 Qxc7) 4. Nh3 Bxh3 5. Bd3 Qc8 (5... g6 6. Bxg6 f6 7. Qh5+ Kd7 8. Qe8+ Kd6 9. Qxe7#) 6. Bg6 Kd8 7. Qg3 e5 8. Bf5 Qe6 9. Bxe6 *
+
+

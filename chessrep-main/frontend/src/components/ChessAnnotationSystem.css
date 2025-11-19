@@ -1,0 +1,213 @@
+/* ChessAnnotationSystem Styles */
+
+.chess-annotation-system {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chess-annotation-system:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Move Items */
+.move-item {
+  position: relative;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.move-item:hover {
+  transform: translateX(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.move-item.selected {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+  border: 2px solid #2196f3 !important;
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+  transform: translateX(4px);
+}
+
+.move-item.current {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffcc80 100%) !important;
+  border: 2px solid #ff9800 !important;
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+  font-weight: 600;
+}
+
+/* Variation Headers */
+.variation-header,
+.sub-variation-header {
+  position: relative;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 2px 0;
+}
+
+.variation-header:hover,
+.sub-variation-header:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateX(2px);
+}
+
+.variation-header::before,
+.sub-variation-header::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 60%;
+  background: linear-gradient(to bottom, #2196f3, #bbdefb);
+  border-radius: 1px;
+}
+
+/* Annotation Symbols */
+.annotation-symbol {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.annotation-symbol:hover {
+  transform: scale(1.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar Styling */
+.chess-annotation-system::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chess-annotation-system::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.chess-annotation-system::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  border-radius: 4px;
+}
+
+.chess-annotation-system::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+}
+
+/* Animation for expanding/collapsing variations */
+.variation-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chess-annotation-system {
+    font-size: 12px;
+    padding: 12px;
+  }
+  
+  .move-item {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+  
+  .variation-header,
+  .sub-variation-header {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chess-annotation-system {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .move-item {
+    color: #e2e8f0;
+  }
+  
+  .move-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .move-item.selected {
+    background: linear-gradient(135deg, #2b6cb0 0%, #3182ce 100%) !important;
+    border-color: #63b3ed !important;
+  }
+  
+  .move-item.current {
+    background: linear-gradient(135deg, #c05621 0%, #dd6b20 100%) !important;
+    border-color: #f6ad55 !important;
+  }
+  
+  .variation-header,
+  .sub-variation-header {
+    color: #a0aec0;
+  }
+  
+  .variation-header:hover,
+  .sub-variation-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Focus states for accessibility */
+.move-item:focus,
+.variation-header:focus,
+.sub-variation-header:focus {
+  outline: 2px solid #2196f3;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.chess-annotation-system.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.chess-annotation-system.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #2196f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}

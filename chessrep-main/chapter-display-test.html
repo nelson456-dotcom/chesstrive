@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Display Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">Chapter Display Test</h1>
+        
+        <!-- Test Active Chapter Display -->
+        <div class="mb-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                ♟️ Enhanced Chess Study
+            </h2>
+            <p class="text-gray-600 mb-6">
+                Complete variation system with study management - Unlimited nesting support
+            </p>
+            
+            <!-- Active Chapter Display - More Prominent -->
+            <div class="mt-6 flex items-center justify-center space-x-4">
+                <div class="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-xl border-2 border-blue-600 shadow-lg">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <span class="font-bold text-lg">📖 Active Chapter: Test Chapter</span>
+                    <div class="ml-3 w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                </div>
+                <div class="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800">
+                    ✅ Saved
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Chapter List -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Chapter Management</h3>
+            
+            <div class="space-y-2">
+                <!-- Active Chapter -->
+                <button class="w-full text-left px-3 py-2 rounded text-sm font-medium transition-colors flex items-center justify-between bg-blue-500 text-white border-2 border-blue-600 shadow-md cursor-pointer">
+                    <span class="truncate flex items-center">
+                        <span class="w-2 h-2 bg-white rounded-full mr-2"></span>
+                        Test Chapter 1
+                        <span class="ml-2 text-xs bg-white bg-opacity-20 px-2 py-1 rounded-full">
+                            ACTIVE
+                        </span>
+                    </span>
+                    <div class="flex items-center space-x-1">
+                        <button class="p-1 rounded hover:bg-white hover:bg-opacity-20">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="p-1 rounded hover:bg-white hover:bg-opacity-20 text-white">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </button>
+
+                <!-- Inactive Chapter -->
+                <button class="w-full text-left px-3 py-2 rounded text-sm font-medium transition-colors flex items-center justify-between text-gray-700 hover:bg-gray-100 border border-transparent cursor-pointer">
+                    <span class="truncate flex items-center">
+                        Test Chapter 2
+                    </span>
+                    <div class="flex items-center space-x-1">
+                        <button class="p-1 rounded hover:bg-gray-200">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="p-1 rounded hover:bg-red-200 text-red-600">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </button>
+
+                <!-- Another Inactive Chapter -->
+                <button class="w-full text-left px-3 py-2 rounded text-sm font-medium transition-colors flex items-center justify-between text-gray-700 hover:bg-gray-100 border border-transparent cursor-pointer">
+                    <span class="truncate flex items-center">
+                        Test Chapter 3
+                    </span>
+                    <div class="flex items-center space-x-1">
+                        <button class="p-1 rounded hover:bg-gray-200">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="p-1 rounded hover:bg-red-200 text-red-600">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Test No Chapter Selected State -->
+        <div class="mt-8 bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">No Chapter Selected State</h3>
+            
+            <div class="text-center py-4 text-gray-500">
+                <svg class="w-8 h-8 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <p>No chapters available</p>
+                <p class="text-sm">Create a new chapter to get started</p>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p class="text-gray-600">This shows how the chapter display will look in the actual application.</p>
+            <p class="text-sm text-gray-500 mt-2">The active chapter is clearly highlighted with blue styling and "ACTIVE" badge.</p>
+        </div>
+    </div>
+</body>
+</html>

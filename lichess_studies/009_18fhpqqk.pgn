@@ -1,0 +1,213 @@
+[Event "Мат в 2 хода: Привет!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "Привет!"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/wZZmrkL9"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:23:11"]
+
+{ Это студия на мат в 2 хода. Здесь ты найдёшь задачи разного уровня.
+🥉- лёгкий уровень
+🥈- средний уровень
+🥇- сложный уровень
+Желаем удачи и поехали! } { [%cal Gd5d6,Gd6c7,Gc7b7,Gb7a6,Ga6a5,Ga5a4,Ga4a3,Ga3a2,Ga2b1,Gb1c1,Gc1d1,Gd1d2,Gd2d3,Gd3c3,Gf7f6,Gf6f5,Gf5f4,Gf4f3,Gf3f2,Gf2f1,Gf1g1,Gg1h1] }
+ *
+
+
+[Event "Мат в 2 хода: 🥉 #1"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥉 #1"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/M92qhgUt"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "3r2k1/5ppp/8/8/8/8/4QPPP/4RK2 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:31:32"]
+[ChapterMode "gamebook"]
+
+1. Qe8+ Rxe8 2. Rxe8# { Ты лучший(ая)! } *
+
+
+[Event "Мат в 2 хода: 🥉 #2"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥉 #2"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/z3VLylWn"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "r1bqr1k1/ppppbppp/2nn4/4p3/2P5/3QPN2/PPB2PPP/RNB2RK1 w Qq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:38:19"]
+[ChapterMode "gamebook"]
+
+1. Qxh7+ Kf8 2. Qh8# { Продолжай в том же духе! } *
+
+
+[Event "Мат в 2 хода: 🥉 #3"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥉 #3"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/XXyGldPH"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "5rk1/5n2/6p1/6P1/2qn2N1/3b4/PPPP4/2KR3R w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:41:09"]
+[ChapterMode "gamebook"]
+
+1. Nf6+ Kg7 2. Rh7# { У тебя всё прекрасно получается! } *
+
+
+[Event "Мат в 2 хода: 🥉 #4"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥉 #4"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/o9aO9zGD"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "1k6/2p5/8/4Q3/5B2/3np3/PPPb4/1KRrr1q1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:46:10"]
+[ChapterMode "gamebook"]
+
+1. Qxc7+ Ka8 2. Qb8# { Ты очень хорошо справляешься! } *
+
+
+[Event "Мат в 2 хода: 🥉 #5"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥉 #5"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/YIXEOBu3"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "rnb1kbnr/pppppppp/8/8/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "11:50:44"]
+[ChapterMode "gamebook"]
+
+{ Последняя задача из лёгкого уровня }
+1. Qxf7+ Kd8 2. Qxf8# { Ты окончил лёгкий уровень! } *
+
+
+[Event "Мат в 2 хода: 🥈 #6"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥈 #6"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/3Q7GkwTa"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "1k6/1pp4p/p7/6B1/2nP3P/1KPQ4/1P1q4/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "12:35:54"]
+[ChapterMode "gamebook"]
+
+1... Qxb2+ 2. Kxc4 Qb5# { Первая задача среднего уровня пройдена! } *
+
+
+[Event "Мат в 2 хода: 🥈 #7"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥈 #7"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/XaH4Vcqh"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "r3kb2/3p1p1Q/b1p5/Rnq5/4P3/1P1B4/5PPP/1N2K1NR b Kq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "12:59:18"]
+[ChapterMode "gamebook"]
+
+1... Qc1+ 2. Ke2 Nd4# { Поздравляю! } *
+
+
+[Event "Мат в 2 хода: 🥈 #8"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥈 #8"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/tNxTptRb"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "r4rk1/1p3ppp/p3p1n1/1bPp4/P2P4/3n1N2/3BKPPP/R2Q3R b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "13:11:20"]
+[ChapterMode "gamebook"]
+
+{ И ты закончил средний уровень! Но не раслабляйся, впереди ещё 2 сложные задачи! }
+1... Ndf4+ 2. Ke1 Nxg2# *
+
+
+[Event "Мат в 2 хода: 🥇 #9"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥇 #9"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/CJtyD4X9"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "5B2/8/K7/8/kpp5/7R/8/1B6 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "13:15:21"]
+[ChapterMode "gamebook"]
+
+1. Rc3 b3 2. Rxc4# { Ты лучший(ая)! } *
+
+
+[Event "Мат в 2 хода: 🥇 #10"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Мат в 2 хода"]
+[ChapterName "🥇 #10"]
+[ChapterURL "https://lichess.org/study/18fhpqqk/dtDlAy50"]
+[Annotator "https://lichess.org/@/TB-OFICIALL-ACCOUNT"]
+[FEN "8/8/8/6pp/7k/8/4R1K1/3R4 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "13:17:05"]
+[ChapterMode "gamebook"]
+
+1. Re5 g4 2. Rh1# { Поздравляю! Ты окончил(а) эту студию! } *
+
+

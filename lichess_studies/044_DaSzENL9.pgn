@@ -1,0 +1,16 @@
+[Event "The shortest checkmate ever!: Chapter 1"]
+[Date "2025.10.31"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B00"]
+[Opening "Duras Gambit"]
+[StudyName "The shortest checkmate ever!"]
+[ChapterName "Chapter 1"]
+[ChapterURL "https://lichess.org/study/DaSzENL9/iDlFfQen"]
+[Annotator "https://lichess.org/@/DemidAbchess"]
+[UTCDate "2025.10.31"]
+[UTCTime "06:08:09"]
+
+1. e4 (1. c4 e5 2. g3) 1... f5 2. Qh5+ g6 3. Be2 gxh5 4. Bxh5# *
+
+

@@ -1,0 +1,285 @@
+[Event "The Poisonous Ponziani!: 🥳 Hello! 🥳"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "🥳 Hello! 🥳"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/NIGU5kEV"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Hello chess and study lovers! 😃
+
+Today I will present you with... (drumroll please)... 🥁🥁🥁 The Poisonous Ponziani!!! 👏👏👏🥳🥳🥳🎉🎉🎉
+
+😃 The Ponziani is a low risk, high reward opening that is rare and unknown but played by masters and amateurs alike!
+
+😃 It is positionally sound, but also has lots of sly traps and opportunities for amazing tactical feats!
+
+😃 This opening comes from 1. e4 e5 2. Nf3 Nc6, so you can get into it easily without changing your entire repertoire!
+
+🥳 So... check it out and see how you like it!
+
+🩷Also, if you can, please like the study by pressing the 🩷 heart 🩷 button below! 👇
+
+😉 Thanks! Press the space bar or the blue button to continue! }
+ *
+
+
+[Event "The Poisonous Ponziani!: Introducing... The Ponziani! 😃"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C44"]
+[Opening "Ponziani Opening"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "Introducing... The Ponziani! 😃"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/sGkqCuKP"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Play e4 to begin! (Best by test!) }
+1. e4 { We place a pawn in the center, control f5 and d5, and release our queen a bishop. A great move! 😁👍 } { [%csl Be4,Rf5,Rd5][%cal Re4d5,Re4f5,Gf1a6,Gd1h5] } 1... e5 { Black just copies us, and does the same thing back! How can we attack the annoying pawn? 🫤🤔😃 } { [%csl Re5] } 2. Nf3 { Ready to munch if black does not respond! 🍴 Also, we are developing one of our pieces. 😉 } { [%csl Re5][%cal Rf3e5] } 2... Nc6 { Black plays like most people do, developing and defending. Now here comes the crazy 🤯 part. How can we prepare d4 so we can recapture with a pawn? } { [%csl Rd4][%cal Rd2d4] } 3. c3 { Awesome! We are going to take the whole center! Here, black can play Nf6, Bc5? d6?!, and d5! and they are the most common moves. Don't forget to press the heart button below! } (3. d4 { How can we prepare this move? }) *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Nd5 🤠"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C44"]
+[Opening "Ponziani Opening: Jaenisch Counterattack"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Nd5 🤠"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/X9qefONt"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ We will begin on focusing on black's most common and decent move Nf6. }
+3... Nf6 { Black counter attacks our pawn. Now we should probably defend it... 😒 or... 🤔😉 } 4. d4 { We strike back in the center! We now have two attackers on e5, versus the one defender! 😱 } { [%csl Re5][%cal Rd4e5] } 4... exd4 { Black eliminates our threat. How can we make an in-between move to save our e-pawn? } 5. e5 { Kicking the black knight. } { [%csl Rf6][%cal Re5f6,Bf3e5,Bc6e5] } 5... Nd5 { Now we have several options here, so we could take back the d-pawn, but can you find a move instead that attacks the black knight? } 6. Bc4 Nb6 { Our bishop is under fire. Where should we move it? } { [%csl Rc4][%cal Rb6c4] } 7. Bb3 dxc3 { White is slightly better. How should we recapture? } 8. Nxc3 Bb4 { Dubious, but most played. Let's get our king into safety. } { [%csl Gg1][%cal Ge1g1] } 9. O-O O-O { How can we show aggression on the kingside? } { [%csl Rf3] } 10. Ng5 { This is technically a little dubious, but the most common move is a blunder. } 10... Nxe5 { White is already winning. How can we kick the knight? } { [%csl Rf2] } 11. f4 Ng6 { How can we target h7? } { [%csl Rh7] } 12. Qh5 h6 { Can you find a crushing sacrifice? } 13. Nxf7 Rxf7 { Take the rook. } { [%csl Gf7][%cal Gb3f7] } 14. Bxf7+ Kxf7 15. f5 { White is crushing black. +4.7. Great job! 😉 } *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Ng4 🐴"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Ng4 🐴"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/Eld36Wij"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4P3/3p4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ But what if black plays the perilous Ng4? 🤔 Let's find out! 😃 }
+5... Ng4 { Second most played!? (after Nd5) How can we get a free center? } 6. cxd4 { The pawns are insanely powerful. 💪 } { [%csl Rd6,Rf6,Rc5,Re5][%cal Re5d6,Re5f6,Rd4c5,Rd4e5] } 6... Bb4+ { How do we defend this foolish onslaught against our monarch? } 7. Nc3 { Great! Shall we see how black responds? ...............(click the space bar 😉)............. } 7... O-O { Castling into BIG DANGER! ⚠ Let's kick the pesky knight! } { [%csl Rg4] } 8. h3 { Nice. Now the knight is forced to retreat... } 8... Nh6 { And we break black's pawn structure. 💥 } 9. Bxh6 gxh6 { So we have...
+The center and some awesome pawns
+A weak king to target
+Some ripe doubled h-pawns to munch
+What does black have?
+Consequently, we have a +1.5 advantage! 😃 } { [%csl Bd4,Be5,Rg8,Rg7,Rf6,Rh8,Gh6,Gh7][%cal Bd4e5,Be5f6] } *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Qe7 🌵"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Qe7 🌵"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/qtYkjO0e"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4P3/3p4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ But what if Qe7?! 🤔 }
+5... Qe7 { The pin will... not work. Let's eat our free pawn! } { [%csl Gd4][%cal Gc3d4] } 6. cxd4 { Yum yum! 😏 } 6... d6 { Trying to dislodge our annoying frontal assault. (kick us out) What's the play? 🤨 } { [%csl Re8,Rc6] } 7. Bb5 { [%csl Re8,Rc6][%cal Rb5e8] } 7... dxe5 { Well, we take back. } 8. dxe5 Bd7 { Mistake! (most played, very surprising 🙄) We get our king and rook into better spots. } 9. O-O { Unpinning. } { [%csl Re8,Rf6][%cal Re1e8,Re5f6] } 9... Ng4 { Black: "Watch our for your pawn!!!" Should we? 👎 } { [%csl Re5][%cal Rg4e5,Rc6e5] } 10. Bg5 { "Watch out for your queen." 😏 } 10... f6 { What to do.... hmmm..... take? 😃 } 11. exf6 gxf6 { Mr. Pin? 🤔 } { [%csl Re8][%cal Re1e8] } 12. Re1 Nge5 { The knight dives in front of his queen. To no avail. } 13. Nxe5 Nxe5 { Ok this move is very tricky but very worth it! 😃 (You can check the hint.) } 14. Bxf6 Qxf6 { 🚨 BLUNDER ALERT! 🚨 (black was very losing anyway) Is the knight defending d7? 🤔 } { [%csl Bd7,Re8][%cal Be5d7,Re1e8] } 15. Qxd7# { Checkmate. We got an advantage, increased it, and then cashed in 💰. Great job! 😉 } *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Ne4 🏇"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Ne4 🏇"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/veiLHltH"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4P3/3p4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ But.... What about Ne4? 🤔 } { [%csl Be4,Rf6][%cal Bf6e4,Re5f6] }
+5... Ne4 { Now, we can take back with with cxd4 and that's all well and good, but does Mr. Knight have a good spot to go? If not, how can we kick him? } { [%csl Re4] } 6. Qe2 { Yep! 😃 Now, black has to find f5! (8%) to leave white with a small advantage. But... } 6... d5 { They don't. Do you know about... En passent? 🥐 } 7. exd6 { Yes! Now black has to again find f5, but most played is Bf5, which is... } 7... Bf5 { Inaccurate. How can we add pressure on the knight? } { [%csl Re8,Re4][%cal Re2e8] } 8. Nbd2 { Yep! Now we are basically winning. What will black probably play? } 8... Bxd6 { Most played. Take Mr. Knight! } { [%csl Ge4][%cal Gd2e4] } 9. Nxe4 O-O { Smart by black, getting ready to pin. What now? } 10. Nxd6 Qxd6 { How can we pretty much seal the deal? } 11. Nxd4 { Nice! We are +2.5 with an extra piece to show. Great job! 👍 } *
+
+
+[Event "The Poisonous Ponziani!: 4. ...Nxe4 🪐"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "4. ...Nxe4 🪐"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/ntS0mIJm"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Don't forget to like the study! 🩷😉 Let's get on to Nxe4!!!!! }
+4... Nxe4 { So how can we get rid of the defender of e5? } 5. d5 { [%csl Rc6][%cal Rd5c6] } 5... Ne7 { Played most by far. Eat our free snack! } (5... Bc5!! { an interesting but brilliant move } 6. dxc6!? { best move according to stockfish, welcoming the complications } 6... Bxf2+ 7. Ke2 $7 Bb6 8. Qd5! { Only move. } { [%cal Rd5e5,Rd5e4] } 8... Nf2 { [%cal Rf2h1] } 9. Rg1 O-O 10. cxb7 Bxb7 11. Qxb7 { With a crazy position. }) 6. Nxe5 { Uh-oh. Black decided to do } 6... d6 { Uh-oh. Black decided to do a 59% most played game changing blunder! (Another one!) How can we capitalize on this diagonal? } { [%csl Re8][%cal Ra4e8] } 7. Bb5+ { Great check! c6 is basically forced... } 7... c6 { And we're very winning. Just start takin'. } { [%csl Gc6][%cal Gd5c6] } 8. dxc6 bxc6 { How can we best capture the c-pawn? } 9. Nxc6 { Nice! We are preparing a nasty discovery. 😏 } { [%csl Re8][%cal Rb5e8] } 9... Qb6 { Black finds the best move! 😧 Trying to be sneaky and save the game. c6, b5, and f2 are all under pressure. How can we keep our advantage? 🤔 } { [%csl Rf2,Rb5,Rc6][%cal Rb6f2,Re4f2,Rb6b5,Rb6c6] } 10. Nd4+ { Killer knight! 😱 Defending all three threats WITH CHECK! } { [%csl Bc6,Rb5,Bf2,Rd4,Re8][%cal Bb6c6,Rd4b5,Bb6b5,Bb6f2,Rb5e8] } 10... Bd7 { Just eat it. } { [%csl Gd7][%cal Gb5d7] } 11. Bxd7+ Kxd7 { And we C_st_e our king. } 12. O-O { Castle! We are up a pawn, ready to target that king, and have a great position and a +4.2 advantage. Great job! 😃 } *
+
+
+[Event "The Poisonous Ponziani!: 4. ...d6 ✨"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "4. ...d6 ✨"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/c54LGPqP"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Now we will see how to CRUSH the passive... d6. 😏 }
+4... d6 { Just pure defense. How can we defend our d-pawn? } { [%csl Re5,Ge4][%cal Rd6e5] } 5. Bd3 { Yes! 😃 } 5... Bg4 { Black pins our knight. We can just kick their knight! } { [%csl Rc6] } 6. d5 { [%csl Rc6][%cal Rd5c6] } 6... Ne7 { Black is just really passive. Can you kick a different piece? } { [%csl Rf6,Re7,Rf8,Rd8] } 7. h3 { [%csl Rg4][%cal Rh3g4] } 7... Bh5 { Now keep developing. } 8. Be3 c6 { How can we add support to our d-pawn? } { [%csl Rd5][%cal Rc6d5] } 9. c4 { [%csl Rd5][%cal Rc4d5] } 9... cxd5 10. cxd5 Qa5+ { How can we protect our monarch and develop a piece? } { [%csl Re1][%cal Ra5e1] } 11. Nbd2 { Now we have more space, more active pieces, and a great +2.0 advantage. Great job! 😃 } { [%cal Be1g1,Bg2g4,Bd2c4,Bd2b3] } *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Bb5+ 🌕"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Bb5+ 🌕"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/wvHlKguq"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ But what if our opponent plays the mistake... Bc5? }
+3... Bc5 { Take the center!!! (Just like last time) } 4. d4 exd4 { We take back. } 5. cxd4 Bb4+ { Block and develop. } { [%csl Re1][%cal Rb4e1] } 6. Nc3 { We are controlling the position. } { [%cal Re4f5,Re4d5,Rd4e5,Rd4c5] } 6... Nf6 { Which knight to kick? 🤔 } 7. d5 { Yes! This is the correct knight to force back. If the other one, the pin on our knight gets annoying. } (7. e5 { This allow black to pressure our knight a little too much. }) 7... Ne7 { Deal with the threat while... developing! } { [%csl Re4][%cal Rf6e4] } 8. Bd3 d6 { He he actually most played! We were +1.0 anyway but this is dead lost for black. It's time to pull out... } 9. Qa4+ { Mr. Fork. Nc6 fails to dxc6. +4.6, we are up a piece and dominating. Awesome job! 😃 } { [%csl Re8,Rb4][%cal Ra4e8,Ra4b4] } *
+
+
+[Event "The Poisonous Ponziani!: 5. ...Bb6 🌎"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "5. ...Bb6 🌎"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/4gknsa00"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqk1nr/pppp1ppp/2n5/2b5/3PP3/5N2/PP3PPP/RNBQKB1R b KQkq - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Now let's see what happens during... the bishop retreat. }
+5... Bb6 { Same thing. Just develop Mr. Horse. } { [%csl Rb1] } 6. Nc3 d6 { Black again, plays passively. The only good square for Mr. Bishop is g4. How can we stop this? } { [%csl Rc8,Rg4][%cal Rc8g4] } 7. h3 Nf6 { Which knight to pin? } 8. Bb5 { Yes! This is the correct knight! } (8. Bg5 { h6 is kinda annoying 🫤 }) 8... Bd7 { Passive. How can we threaten to trap 🪤 the bishop? } { [%csl Rb6] } 9. a4 { Amazing! Do you see our threat? } { [%csl Rc6,Ra5][%cal Rb5c6,Ra4a5] } 9... a6 { Kicking and making a retreat square. } { [%csl Ra7,Rb5][%cal Rb6a7,Ra6b5] } 10. Bc4 { So... we have:
+a MASSIVE center
+more queenside space
+more active pieces
+and a solid +1.1 advantage to cash in. Great job! 😃 } *
+
+
+[Event "The Poisonous Ponziani!: 3. ...d6 💫"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "3. ...d6 💫"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/xUu1brdp"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkbnr/ppp2ppp/2np4/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ What about passive d6? We push into the center! }
+4. d4 exd4 { We can just take back and enjoy a spacious center. } { [%csl Gd4][%cal Gc3d4] } 5. cxd4 Bg4 { Black pins our knight. What piece should we develop first? } 6. Nc3 { We develop our knight and help take over the center. } { [%csl Rd5,Re4][%cal Rc3d5,Rc3e4] } 6... Bxf3 { Black captures, the most played move?! Which piece should we take back with? } 7. gxf3 { Yes! 😃 We strengthen our center by doubling our pawns!! } (7. Qxf3) 7... Nf6 { What is the best way to pin the c6 knight without getting our piece kicked? } 8. Qa4 { Brilliant! We prepare to play d5... } 8... Be7 { Just allows us to?! Most popular move? You know exactly what to do! 😃 } 9. d5 { Amazing! +3.9! We will get a piece... and a better position. Great job! 😁 } *
+
+
+[Event "The Poisonous Ponziani!: 3. ...d5 🚀"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "3. ...d5 🚀"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/UE01ZBcQ"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkbnr/ppp2ppp/2n5/3pp3/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:19:49"]
+[ChapterMode "gamebook"]
+
+{ But what if 3. ...d5? What is the best way to pin the c6 knight without getting kicked? }
+1. Qa4 { Nice! :) } 1... dxe4 { Most common move. Is the e5 pawn protected? } 2. Nxe5 { Threatening Nxc6. } { [%csl Rc6][%cal Re5c6] } 2... Bd7 { Defending c6. How can we simplify? } { [%csl Rc6][%cal Rd7c6] } 3. Nxd7 { Nice. Black has to take back with the queen. } 3... Qxd7 { What's the plan here? } 4. Qxe4+ { Perfect, we have an extra pawn and a stronger center. +2.0, great job! :) } *
+
+
+[Event "The Poisonous Ponziani!: 😃 Bye! 🩷"]
+[Date "2025.10.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Poisonous Ponziani!"]
+[ChapterName "😃 Bye! 🩷"]
+[ChapterURL "https://lichess.org/study/Je3kmuYC/AZ0WEgag"]
+[Annotator "https://lichess.org/@/FlamingHawk3000"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.25"]
+[UTCTime "23:09:49"]
+[ChapterMode "gamebook"]
+
+{ Thank you everyone for viewing my study! 😃
+
+By the way, it would by great if you could like the study. It is a great motivation for study makers like me and it helps me reach more people with this study. 😉
+
+Also, if you want, you can join my rapidly growing study teams! https://lichess.org/team/study-resource-team https://lichess.org/team/study-creators--friends
+
+Viva Christo Rey! }
+ *
+
+

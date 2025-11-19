@@ -1,0 +1,321 @@
+[Event "The Frankenstein-Dracula!: The Frankenstein-Dracula! 🧟🧛"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "The Frankenstein-Dracula! 🧟🧛"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/EaBGF5sO"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ Welcome to my study on the Frankenstein-Dracula! 🧟🧛 This comes out of the Vienna game, and is Alexander Alekhine’s preferred move! Before we start, don’t forget to join these teams:
+
+Study Creators & Friends:
+https://lichess.org/team/study-creators--friends
+Study Creators & Friends Discord:
+discord.com/invite/gEUMwwKhjp
+
+Study Resource Team:
+https://lichess.org/team/study-resource-team }
+1. e4 { e5. } { [%cal Ge7e5] } 1... e5 2. Nc3 { Vienna, play Nf6. } { [%cal Gg8f6] } 2... Nf6 3. Bc4!? { This falls to... Nxe4!! } { [%cal Rf6e4] } 3... Nxe4!! { Here’s the position. From here it gets really crazy! Go to the next chapter to start learning! 🧟🧛 } *
+
+
+[Event "The Frankenstein-Dracula!: 4. Nxe4?! 🔵"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "4. Nxe4?! 🔵"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/6kbSo7d5"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ What are the first moves? 🤔🧟🧛 }
+1. e4 e5 2. Nc3 Nf6 3. Bc4!? Nxe4!! { 💥💥💥 Now let’s see what happens if they play... } 4. Nxe4?! { Nxe4?! Jump to the next chapter and let’s learn some lines! 🐇🎃 } *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Nxe4?! 5. Bxd5 🔵"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Nxe4?! 5. Bxd5 🔵"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/TYOCPiSt"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/pppp1ppp/8/4p3/2B1n3/2N5/PPPP1PPP/R1BQK1NR w KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+4. Nxe4?! { Spot the tactic! 🎃 } 4... d5! { If Bb5+ play c6 and both pieces are still under attack. 🔱🎃 } { [%cal Gd5e4,Gd5c4] } 5. Bxd5 { Hmm... 🤔 } 5... Qxd5 { There is a pin on g2. 📌 } { [%cal Rd5g2] } 6. d3 { [%cal Gd3e4] } 6... Nc6 (6... f5? { Falls to Qh5+. } { [%cal Rd1h5] }) 7. Nf3 { Develop. 🎃 } 7... Bf5 { Developing while threatening to win a pawn! 🎃 } { [%cal Rd5e4,Rf5e4,Gd3e4] } 8. Nc3 { Qd7. } { [%cal Gd5d7] } 8... Qd7 9. O-O { How to get the king to safety? 🏰 } 9... O-O-O (9... Bc5?! { Castling is a lot better. }) (9... Bd6?! { Castling is better. }) 10. Re1 { How do we support our central pawn? } { [%cal Re1e5,Rf3e5,Gc6e5] } 10... f6 (10... Bd6?! { They can win tempo and possibly the bishop pair with Ne4! ⚠ }) (10... Qd6?! { Why would you do this? }) (10... Qe8? { This disrupts the rooks from connecting! }) (10... Qe6? { This pins the pawn. 📌 }) (10... Re8?! { This just isn’t as good, but good try! }) (10... Qe7? { This pins the pawn and disrupts our development! ⚠📌😵 }) 11. Be3 $17 { Now you launch a kingside pawn storm and run them over! 🏎🧟🧛 } { [%cal Gh7h5,Gh5h4,Gh4h3,Gg7g5,Gg5g4,Gg4g3,Gf8d6,Gd8g8] } *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Nxe4?! 5. Bd3 🔵"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Nxe4?! 5. Bd3 🔵"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/zyejcS6o"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/ppp2ppp/8/3pp3/2B1N3/8/PPPP1PPP/R1BQK1NR w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ Here’s the fork. Now what if they play Bd3? }
+1. Bd3 { You know this. 👍 } 1... dxe4 2. Bxe4 { Attack the bishop! 🪖🎃 } 2... f5 { 💥💥💥 } { [%cal Rf5e4] } (2... Qd4 { Really? With the queen? Bananas. 🍌 }) (2... Qh4 { Really? With the queen? Bananas. 🍌 }) 3. Bd3 { If Bf3 look out for Bh5+. Start developing or else your strong center will mean nothing! 🏎🎃 } { [%cal Re4f3,Rf3h5] } 3... Nc6 4. Bb5 { I don’t even know why this is the most common. Tactic alert! 🚨 🚨 🚨 } 4... Qd5 { Fork! 🔱 } { [%cal Rd5g2,Rd5b5] } 5. Bxc6+ $7 { What to do? So many options! } 5... bxc6! $140 { Nice! Ba6 is a great move now! 🥇🎃🎃 } { [%cal Gc8a6] } (5... Qxc6 { Good try, but out LSB is trapped still. 😔 }) 6. Qf3 { You got this! 👍🎃 } 6... e4 { [%cal Re4f3] } 7. Qb3 { Develop while stopping O-O! } 7... Ba6! $17 { The bishop looks great on this diagonal! Just continue with developing the DSB and O-O and you’re good to go! 😁🎃 } { [%cal Ra6f1] } *
+
+
+[Event "The Frankenstein-Dracula!: 4. Bxf7+?! 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "4. Bxf7+?! 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/g9WR1UA4"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ First moves! 😎🧟🧛 }
+1. e4 e5 2. Nc3 Nf6 3. Bc4!? { What’s the move? 🧟🧛 } 3... Nxe4!! { 💥💥💥 Now let’s see some lines on what happens when they play... } 4. Bxf7+?! { Bxf7+?! If your opponent plays this, you’re in for a crazy game! 🤪 } *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Bxf7+?! 5. Qh5+ 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Bxf7+?! 5. Qh5+ 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/2Wvd5Krp"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ Let’s see if you remember the openings moves! 😁 }
+1. e4 e5 2. Nc3 Nf6 3. Bc4!? Nxe4!! 4. Bxf7+?! Kxf7 5. Qh5+? { And here’s the new position! This is really weak, so let’s destroy them!!! 💥💥💥 } 5... g6 (5... Kg8? { No! This is wrong because the king is too weak here! 😔 }) 6. Qxe5 { Because our knight is still alive in this line, we can block the diagonal with Nf6! 🎃🎃🎃 } { [%cal Re5h8] } 6... Nf6 7. Nf3 { Develop with tempo! 🎃 } 7... Nc6 { [%cal Gc6e5] } 8. Ng5+ Kg7 { Yes! Keeping touch with the knight! 🐴🔗🎃 } { [%cal Gg7f6] } 9. Qg3 d5 { Correct! Striking a claim in the center! ⛏⚱🎃 } 10. O-O $17 { Up a bishop for a pawn and you’ve got a solid position with fast development and tempo gaining moves! At some point it might be time to attack the king! 🏆🏆🏆🧟🧛 } *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Bxf7+?! 5. Nxe4 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Bxf7+?! 5. Nxe4 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/hjxYvw4p"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/pppp1Bpp/8/4p3/4n3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ Take back! 😁🎃 }
+4... Kxf7 5. Nxe4 { How to kick the horse? 🐴 } 5... d5 6. Ng3 { Protect the e pawn! 🛡🛡🛡 } 6... Nc6 { [%cal Gc6e5] } (6... Qd6? { The queen? Bananas. 🍌 This also blocks the DSB. }) (6... Qe7? { The queen? Bananas. 🍌 This also blocks the DSB. }) (6... Qf6!? { The queen? Bananas. 🍌 }) (6... Qg5? { The queen? Bananas. 🍌 The queen is too exposed here. }) (6... Bd6?! { The DSB is better suited elsewhere. 🤔 }) (6... Kf6? { The KING!? 🤯🤯🤯 }) (6... Ke6? { The KING!? 🤯🤯🤯 This also blocks the LSB. }) 7. d3 $17 { And you have a solid position with a strong center. Finish developing and you’re good to go! 😎😎😎🎃🎃🎃 } *
+
+
+[Event "The Frankenstein-Dracula!: // 4. Bxf7+?! 5. Nxe4 6. Qh5+ 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "// 4. Bxf7+?! 5. Nxe4 6. Qh5+ 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/fWzCZNzn"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbq1b1r/ppp2kpp/8/3pp3/4N3/8/PPPP1PPP/R1BQK1NR w KQ - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+1. Qh5+ { Now, maybe they think they can checkmate you, but if you go through this study, they will be doomed! 🧟🧛 Kick that queen! } 1... g6 2. Qxe5 { Now here’s a hard move to find, defending against the many threats! ⚠⚠⚠ } { [%cal Re5d5,Re5h8,Re4g5] } 2... Bh6 $7 { If you found this, give yourself a pat on the back! 🤩👏🎃 } { [%cal Re4g5,Re5h8,Re5d5,Gd8d5,Gd8h8,Gh6g5] } 3. Nf3?? { If they try to save the knight with Ng3, Re8 pin! 📌 If they play anything else, just Re8 and continue developing! 😎🎃 } { [%cal Ye4g3,Bh8e8] } 3... Re8 (3... dxe4!? { Also works, but Re8 first is better. }) 4. Qc3 Rxe4+! $17 { Now they can’t castle, and you have a dominant position! 😆😄😃🎃 } (4... dxe4?! { Take with check so they can’t castle. }) *
+
+
+[Event "The Frankenstein-Dracula!: /// 4. Bxf7+?! 5. Nxe4 6. Qh5+ 7. Qf3+ 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/// 4. Bxf7+?! 5. Nxe4 6. Qh5+ 7. Qf3+ 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/YXJigk9x"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbq1b1r/pppp1k1p/6p1/4p2Q/4n3/2N5/PPPP1PPP/R1B1K1NR w KQ - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+1. Qf3+ { Now they think they can win a horsey with a fork!? 🐴🔱🎃 } { [%cal Rf3f7,Rf3e4] } 1... Nf6 2. Nd5 { Just develop. 😁👍🎃 } { [%cal Rd5f6,Rf3f6] } 2... Nc6 3. Nxf6 Qxf6 4. Qxf6+ Kxf6 $19 { Just take the center, develop, and you’re off to win! 🏆🎃 } *
+
+
+[Event "The Frankenstein-Dracula!: // 4. Bxf7?! 5. Nxe4 6. Qf3+ 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "// 4. Bxf7?! 5. Nxe4 6. Qf3+ 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/3WqSGdhI"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ The first moves please. 🧟🧛 }
+1. e4 e5 2. Nc3 Nf6 3. Bc4!? { What’s the move...? 🤨🧟🧛 } 3... Nxe4!! 4. Bxf7+?! Kxf7 5. Nxe4 { Dream center! 🏆🏆🏆 } 5... d5 6. Qf3+ { This is an important line, with 2 checkmates you must know about to keep a lot of rating points. ⚠⚠⚠ } *
+
+
+[Event "The Frankenstein-Dracula!: /// 4. Bxf7?! 5. Nxe4 6. Qf3+ | Checkmate #1 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/// 4. Bxf7?! 5. Nxe4 6. Qf3+ | Checkmate #1 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/B1sv1x60"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbq1b1r/ppp2kpp/8/3pp3/4N3/8/PPPP1PPP/R1BQK1NR w KQ - 1 6"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+6. Qf3+ Kg8 $7 (6... Qf6 { ...hmm }) (6... Bf5 { ...hmm }) 7. d4 { Here’s the bait. If h3 or a3 or Ne2 or something else that still allows the queen to come to b3, it’s bait, so don’t take the knight! If you take it Qb3+ and you are doomed. } { [%cal Rf3b3,Rb3g8] } 7... exd4! { Yes! Free pawn, and not giving the queen the a2-g8 diagonal! 🥳🎃 } { [%csl Gd5][%cal Rb3g8,Rf3b3] } (7... h6!? { Works too, but isn’t a free pawn better? }) 8. Ng5 { [%csl Rf7][%cal Rf3f7,Rg5f7] } 8... Qd7! { Correct-o!!! Now the king is safe and you just develop and you have a solid position! 🥇 } { [%cal Gd7f7,Gh7h6] } *
+
+
+[Event "The Frankenstein-Dracula!: /// 4. Bxf7?! 5. Nxe4 6. Qf3+ | Checkmate #2 🟢"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/// 4. Bxf7?! 5. Nxe4 6. Qf3+ | Checkmate #2 🟢"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/ioK9E5cy"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbq1b1r/ppp2kpp/8/3pp3/4N3/8/PPPP1PPP/R1BQK1NR w KQ - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+1. Qf3+ Kg8 2. Ng5 { Here’s more bait. 🎣 If you take the free knight with the queen, then Qxd5+ and bye bye. They also threaten Qf7#. There’s only 1 move here. 🥇 Can you find it? } { [%csl Yf7][%cal Gd8g5,Rf3d5,Yf3f7,Yg5f7] } 2... Qd7! { Boom! Watching f7 and protecting the d-pawn! 💥💥💥 } { [%cal Gd7f7,Gd7d5] } 3. d3 $17 { Now you just kick the knight with h6 and develop. You have a solid center and a solid position! 🧱🧱🧱🎃🎃🎃 } { [%cal Rh7h6] } *
+
+
+[Event "The Frankenstein-Dracula!: 4. Qh5 🔴"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Frankenstein-Dracula Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "4. Qh5 🔴"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/OqyXm4iN"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ First moves! 🥇🥇🥇🧛🧟 }
+1. e4 e5 2. Nc3 Nf6 3. Bc4!? { And... } 3... Nxe4!! 4. Qh5! { This is the best response from white! They target f7, and force Nd6, which can get you checkmated if you don’t know what to do! ⚠⚠⚠🎃 } { [%cal Rh5f7,Rc4f7,Ge4d6] } *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Qh5 5. Bb3 🔴"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C27"]
+[Opening "Vienna Game: Stanley Variation, Alekhine Variation"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Qh5 5. Bb3 🔴"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/R3CPhLac"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/pppp1ppp/8/4p2Q/2B1n3/2N5/PPPP1PPP/R1B1K1NR b KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ So what was the move I mentioned in the last chapter? 🎃🤨🎃 }
+4... Nd6! { Yep! Defending f7 and attacking the bishop! 🐴🎃 } { [%cal Gd6f7,Rd6c4] } 5. Bb3 { So we want to castle... 🏰🧛🧟🏰 } { [%cal Ge8g8,Gh8f8] } 5... Be7 { [%cal Ge8g8,Gh8f8] } 6. Nf3 { Take a guess... 🧐🎃 If Qxe5, O-O = } 6... Nc6 { Yep! 🎃🎃🎃 } 7. Nxe5 { To recapture, or not to recapture? 🎃🎃 } 7... g6 { Not to recapture! Recapturing allows an attack from white! ⚠⚠⚠ } (7... Nxe5?! { Not as good because it allows white to generate an attack! ⚠⚠⚠ }) 8. Nxc6 $7 { [%cal Rc6d8] } 8... bxc6! { Yes! Without the opponent’s LSB on the f1-a6 diagonal, Ba6 becomes a good move! 🎃🏆 } { [%cal Gc8a6] } 9. Qf3 O-O! $15 { Easy, developed position, with moves like Nf5, Rb8, among some. 🎃🎃 } { [%cal Gd6f5,Ga8b8] } (9... Ba6?! { Good try, but with d3 the diagonal is blocked and their DSB can develop, possibly coming to h6! ⚠⚠⚠ } { [%csl Gc1][%cal Rd2d3] }) *
+
+
+[Event "The Frankenstein-Dracula!: / 4. Qh5 5. Qxe5+ 🔴"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "/ 4. Qh5 5. Qxe5+ 🔴"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/PC8lt8Kh"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/pppp1ppp/3n4/4p2Q/2B5/2N5/PPPP1PPP/R1B1K1NR w KQkq - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+4. Qxe5+ { Bishop or queen? ✝ or 👑? } 4... Qe7 (4... Be7? { And the g-pawn falls! 🙈 } { [%cal Re5g7] }) 5. Qxe7+ Bxe7 { [%cal Rd6c4] } 6. Bb3 { Lots of acceptable moves here, play Nc6. 🧛🧟🎃 } { [%cal Gb8c6] } 6... Nc6 7. Nf3 { How to win the bishop pair? 🐴🐴🐴 } 7... Na5! { [%cal Ra5b3,Ra5c4,Rd6c4,Rd7e6,Rf7e6,Gb3d5,Gd6e4,Gc7c6] } 8. O-O Nxb3 $10 { Solid with ideas of O-O and b6 Bb7. 🧱🎃🏰 } { [%csl Gc8][%cal Ge8g8,Gh8f8,Gb7b6,Gc8b7] } *
+
+
+[Event "The Frankenstein-Dracula!: Bye Bye! 🧟🧛"]
+[Date "2025.10.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Frankenstein-Dracula!"]
+[ChapterName "Bye Bye! 🧟🧛"]
+[ChapterURL "https://lichess.org/study/NUNyWFGN/QDtrmA7l"]
+[Annotator "https://lichess.org/@/p3RS0n1"]
+[FEN "rnbqkb1r/pppp1ppp/8/4p3/2B1n3/2N5/PPPP1PPP/R1BQK1NR w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.28"]
+[UTCTime "01:51:54"]
+[ChapterMode "gamebook"]
+
+{ Thank you for going through this study! I hope you get to implement this opening in some of your games and DESTROY your opponents! By the way, this opening was named this because someone said this opening was so crazy that it could be from a game between Frankenstein 🧟 and Dracula 🧛! Happy Halloween! (Made around Halloween)
+
+Check out my other studies: lichess.org/study/by/p3RS0n1
+
+Join these teams!
+Study Creators & Friends:
+https://lichess.org/team/study-creators--friends
+Study Creators & Friends Discord:
+discord.com/invite/gEUMwwKhjp
+
+Study Resource Team:
+https://lichess.org/team/study-resource-team }
+ *
+
+

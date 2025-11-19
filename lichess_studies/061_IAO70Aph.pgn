@@ -1,0 +1,950 @@
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 55"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 55"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 55"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/1X1hIZMo"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3kr3/3n4/Pq5P/1N6/7K/6B1/8/4Q3 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Bc7+ Qxc7 2. Qxe8+ Kxe8 3. Nxc7+ *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 56"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 56"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 56"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/Q03b0MZl"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/7k/5p2/4pq1P/8/3Q2pn/5P2/3R1K2 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... g2+ { Şahiçeyi terfi ettirir veya kazanır.Önce Vezir'i almak ve ardından çatalla beyaza vurmak da işe yarar. } 2. Kxg2 Nf4+ *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 57"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 57"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 57"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/IHRzDKTs"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5rk1/3n1ppp/8/4P3/1q2R3/3Q1PPP/3P1K2/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Nc5 { Veziri geri çekmek değil, karşı saldırıya geçmek için çatallanan kareyi kullanmak. } 2. Rxb4 Nxd3+ 3. Ke2 Nxb4 *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 58"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 58"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 58"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/Vom9307w"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "R7/5rk1/2n1q2p/3Npp1n/2P5/4QNP1/6KP/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Ng5 { h6'daki piyonu göz ardı etmek güzel bir fikir. } 1... hxg5 2. Qxg5+ Qg6 3. Rg8+ Kxg8 4. Qxg6+ *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 59"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 59"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 59"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/HWHKW6sl"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r3k1/2q3p1/5p2/5N1p/2n3Q1/7P/5PP1/5RK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gg4][%cal Gh5g4] }
+1. Ne7+ { Kaleyi çift atak at çatalıyla kazanmak. } *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 60"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 60"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 60"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/zSx46s6O"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3rr1k1/ppp2p1p/6p1/4P3/2P2q2/5P1P/PBQn2P1/2R1R1K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gg1][%cal Gh2h3,Gf2f3] }
+1... Nxf3+ { Şah pozisyonunu açıyoruz. } 2. gxf3 { [%csl Gc2][%cal Gf4g3,Gc2g2] } 2... Rd2 { Beyaz, mattan kaçınmak için Vezir'den vazgeçmek zorundadır. } *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 61"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 61"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 61"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/swNCb99S"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6k1/pp3p2/6p1/5q2/8/3n2Q1/PP3PK1/7R b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gf4,Gh5,Gh3][%cal Gd3f4,Gg2h2,Gf5h5,Gg3h3,Gh2g1] }
+1... Nf4+ 2. Kh2 Qh5+ 3. Kg1 { Şahı çatallanan kareye zorluyor. } 3... Ne2+ *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 62"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 62"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 62"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/1VDnKnQW"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5r1k/pq4pp/8/3pN3/4Q3/5N2/PP3rPP/R5K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge5g6,Gh7g6] }
+1. Ng6+ hxg6 { Eğer 1... Şg8 ise, o zaman 2. Ve6+ materyali kazanır. } 2. Qh4+ Kg8 3. Qxf2 *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 63"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 63"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 63"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/jFQlzV9i"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1r6/5ppp/3kb3/pppN4/4P3/P1P2P2/1P3KPP/3R4 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gd5b4,Gd6c7] }
+1. Nb4+ Kc7 { Siyah, takası kaybetmekle kareleri yetersiz olduğundan tam parçayı kaybetmek arasında seçim yapma hakkına sahip. } 2. Na6+ *
+
+
+[Event "Genel Atak Paternleri: Knight Fork/Move Patterns - Isolated Knight Fork Pattern 64"]
+[Date "????.??.??"]
+[White "Knight Fork/Move Patterns"]
+[Black "Isolated Knight Fork Pattern 64"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Knight Fork/Move Patterns - Isolated Knight Fork Pattern 64"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/51ZqvEA1"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7k/8/2b2R1p/8/5b1r/3B2N1/P7/1K6 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gf4][%cal Gf6f8,Gh8g7,Gf8f4,Gh4f4,Gg3h5,Gh5g7] }
+1. Rf8+ { Şahı şövalye çatallama taktiğine zorlamak. } 1... Kg7 2. Rxf4 Rxf4 3. Nh5+ Kf7 4. Nxf4 *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 35"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 35"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 35"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/2gsCj4Tp"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3qk3/4p1pp/3p1p2/n7/P1N5/1PP4P/6P1/3Q3K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qh5+ { F7/f2'deki zayıflığın mümkün kıldığı, oyunda gözden kaçırılması kolay bir açılış yapısı çift saldırı modeli. } 1... Kf8 2. Qxa5 Qxa5 3. Nxa5 *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 36"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 36"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 36"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/d4vQuIu2"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2kr4/pp1p2pp/1qn5/3R4/1b4P1/2N1P1QP/PP6/2K2B2 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Bc7][%cal Gd5b5,Gb6c7,Gg3c7,Gc8c7,Bc3d5,Bc7c8] }
+1. Rb5 { b4'teki filin üzerindeki baskıyı artırıyoruz. } 1... Qc7 { 1...Va6'dan sonra lsb çizgisine adım atmanın tehlikeli göründüğüne dikkat edin, dolayısıyla 2.Ad5'ten sonra matı tehdit ettikten sonra 2...d6 3.Axb4 Axb4 4.Kxc5+ Vezir'i kazanır, 4...dxc5 5.Fxa6 Axa6'dan sonra beyaz kazanır ve beyazın sonu kazanır.Ayrıca 2 ... Fa5 3.Ae7+ Axe7 4. Kc5+ Vc6 5.Kxc6+ ve beyazın daha iyi olduğunu unutmayın. } 2. Qxc7+ Kxc7 3. Nd5+ Kc8 4. Nxb4 *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 37"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 37"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 37"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/I4EHeFx9"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6k1/2q3p1/4b3/2n5/8/B6P/P2Q1PP1/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gd2e3,Ge3c5,Ge3e6] }
+1. Qe3 { Şövalyeyi fazla çalıştırıyorum. } 1... Bxa2 2. Bxc5 *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 38"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 38"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 38"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/D1p3J3Xr"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/8/5nk1/4b2p/4q1r1/5Q2/P5PP/3R1R1K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gg4g5,Gf3f4] }
+1. Rde1 { Fazladan bir saldırgan ekleniyor. } 1... Qxf3 2. gxf3 { İki parça asılı. } 2... Rg5 3. f4 *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 39"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 39"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 39"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/oiNu8jPk"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4k2r/3p2pp/3bpq2/8/4P3/3N4/5PPP/3Q1RK1 w k - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge4e5,Gd6e5,Gd1h5,Gg7g6] }
+1. e5 Bxe5 2. Qh5+ { Piyon çatalı çifte saldırıyı zorluyor. } *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 40"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 40"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 40"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/CUzm6Sje"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1k6/3q2p1/3Ppp2/pP6/2rPQ3/6P1/5PK1/1R6 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gc4c6,Ge4c6,Gb5c6,Gd7d6,Gb1b8] }
+1. Qc6 { Güzel bir fikir.Beyaz, keşfedilen çekle birlikte Vezir'e ve kaleye saldırır. } 1... Rxc6 2. bxc6+ *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 41"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 41"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 41"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/klsBnrlJ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1rq4r/p7/3ppk2/2p5/Q5P1/1P1P4/P1P2P2/R4RK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gb8b4,Ga4a7,Gb4g4,Gg4g1,Gh8h1] }
+1... Rb4 { Arkadaşını tehdit etmek ve Şahiçeye vurmak. } *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 42"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 42"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 42"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/5UPTinSJ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3k3r/p5pp/5p2/4p3/4P3/5P2/Pr4PP/R3K2R w KQ - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. O-O-O+ { Çift saldırı ile O-O-O! } *
+
+
+[Event "Genel Atak Paternleri: Double Attack Patterns - Isolated Double Attack Pattern 43"]
+[Date "????.??.??"]
+[White "Double Attack Patterns"]
+[Black "Isolated Double Attack Pattern 43"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Attack Patterns - Isolated Double Attack Pattern 43"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/vY2W1aKp"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r5/Rn5k/bp6/8/r3p3/6P1/4PPBP/1R4K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Ge4b7,Gb7c8,Gb7a6] }
+1. Rxa6 Rxa6 2. Bxe4+ Kg7 3. Bxb7 *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Relative Pin (Legal's Mate)"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Relative Pin (Legal's Mate)"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Relative Pin (Legal's Mate)"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/Dm2JTvhI"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "rn1qkbnr/ppp2p1p/3p2p1/4p3/2B1P1b1/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Bf3e5,Bg4d1] }
+1. Nxe5 Bxd1 { [%csl Gf7][%cal Gg4d1] } 2. Bxf7+ Ke7 3. Nd5# { Legal'in arkadaşına giden akraba iğnesinin ünlü örneği. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Pins Morphy's Opera Mate"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Pins Morphy's Opera Mate"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Pins Morphy's Opera Mate"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/D9CyTuxq"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Bxd7+ { Pin üzerinden para kazanılıyor. } 1... Nxd7 2. Qb8+ Nxb8 3. Rd8# { Rozeti Morphy'nin ünlü Opera Binası arkadaşıyla tamamlıyoruz.Morphy oyunlarını ezberlemekle ilgileniyor musunuz?Satranç kitabıma bir göz atın: Morphy 25 Ezberlenecek Oyunlar.@@LinkStart@@https://www@@LinkEnd@@.chessable.com/paul-morphy-25-games-to-memorise/course/11229/ } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 1"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 1"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 1"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/60KR4mwc"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2k5/3p4/1Rn5/8/6B1/8/6K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Bg4c8] }
+1. Rxc6+ { Beyaz malzemeyi almak için pimden yararlanır. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 2"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 2"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 2"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/goClnT8z"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7k/6p1/7p/8/8/2B1Q3/6K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qxh6+ Kg8 2. Qxg7# { Tipik bir çiftleşme pimi modeli. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 3"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 3"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 3"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/KqpvV8MQ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3rk3/2Rbpp2/3p4/1B1P4/8/8/3K4/2R5 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Bc7d7,Rd8d7] }
+1. Rxd7 { Kale, eş tehdidi karşısında yakalanmaktan muaftır. } { [%cal Bd8d7] } 1... Rxd7 2. Rc8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 4"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 4"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 4"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/n0yXUdBH"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6k1/5pp1/6b1/8/2B5/6R1/6K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rxg6 { Ücretsiz bir parça alıyorum. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 5"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 5"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 5"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/rNBKuGMq"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4r3/1k6/2p1n3/8/P7/3B4/4R2P/7K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Ge8][%cal Gd3g6] }
+1. Bg6 { Siyah kaleyi 7. sıraya zorlar.Anında yapılan Bf5 veya Fc4, Ac7'ye karşı başarısız olacaktır. } 1... Re7 { [%csl Ge6] } 2. Bf5 { Parçayı kazanmak. } { [%cal Be7f7,Bf7f5] } 2... Rf7 { [%cal Bf5e6] } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 6"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 6"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 6"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/PxBhB3bj"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7k/2q2rp1/7p/8/5Q2/1BB5/6K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%csl Bc3] }
+1. Qxh6+ Kg8 2. Qxg7# { Çift iğneleme deseni. } { [%cal Bc3h8,Bd2h6,Bb3g8] } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 7"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 7"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 7"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/pixyhncD"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6R1/kp6/p5Q1/8/8/5B2/6K1/2q5 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Ra8+ { Şahı tanıdık çiftleşme düzenine çekmek. } 1... Kxa8 2. Qxa6+ Kb8 3. Qxb7# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 8"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 8"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 8"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/42jyhCDQ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1q6/5p1k/5Bp1/3R3p/8/8/2B3K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gd5h5,Gh7g8] }
+1. Rxh5+ Kg8 2. Rh8# { Rozet aracılığıyla kale ve fil ile çiftleşme. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 9"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 9"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 9"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/R9sJq8D8"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5rk1/5pbp/6pB/8/8/1B6/3R4/5QK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qxf7+ Rxf7 2. Rd8+ Bf8 3. Rxf8# { Bir arka sıra pin çiftleşme modeli. } *
+
+
+[Event "Genel Atak Paternleri: Pin Patterns - Isolated Pin Pattern 10"]
+[Date "????.??.??"]
+[White "Pin Patterns"]
+[Black "Isolated Pin Pattern 10"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Pin Patterns - Isolated Pin Pattern 10"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/DRpvG7ZY"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r4/2kr4/P2n4/8/8/5QB1/6K1/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qb7# { Şövalyenin üzerindeki iğne sayesinde çiftleşiyor. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 27"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 27"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/uiNP0671"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6k1/b7/8/8/3n3r/8/6P1/4R1K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Ne2+ { 1...Af3+ kaleyi kazanır, ancak ana hat elbette en iyisidir. } 2. Kf1 Ng3# { 0-1 Black wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 28"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 28"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/HfW5rp7u"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4r3/5k1p/6p1/2nRP3/8/1B6/6PP/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rd7+ { 7. sıradaki kaleyi iki kez kontrol edin. } 1... Kf8 2. Rf1# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 29"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 29"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/bXSVIVDK"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1k1r3r/ppRq4/8/1N6/5Q2/3n1P2/6PP/5RK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rc8+ Kxc8 2. Nxa7# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 30"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 30"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 30"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/C0ge2iR7"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5rk1/1r5p/3q2pQ/3N1p2/8/1B6/8/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Ne7+ Kh8 2. Qxf8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 31"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 31"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 31"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/Xn2QRrS2"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r5kr/5p2/4p1p1/8/1b2N1p1/2Q1P3/5PP1/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Nf6+ { [%csl Gg8][%cal Gg8f8] } 1... Kg7 (1... Kf8 { Eğer 1...Şg7 ise 2.Ae8+ ve ardından h8 kalesi alınır. } 2. Qxb4+ { O kadar beyaz bir tempo kazanıyor ki, arka sıradaki arkadaştan kaçınarak bir parça alıyor. } 2... Kg7 3. Qb2 { [%csl Gf6,Ga1][%cal Gb2f6] }) 2. Ne8+ Kg8 (2... Kf8 3. Qxh8+ Ke7) 3. Qg7# *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 32"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 32"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 32"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/dhDRpVsd"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5k2/2p5/1pK5/3r4/Q3q3/R7/8/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Rc5+ 2. Kd7 Qe8# { 0-1 Black wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 33"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 33"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 33"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/Q9n2jQo9"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4rnk1/8/5BB1/q3p1Qp/6bN/8/3b4/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Bh7+ Kxh7 (1... Kf7 2. Bg8#) 2. Qg7# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 34"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 34"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 34"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/paGZWHTo"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/5p1k/5Pr1/4N2P/8/7R/2b5/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. hxg6+ Kg8 2. gxf7+ Kf8 3. Rh8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 35"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 35"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 35"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/N1pbGkfp"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2RQ4/3npk1p/q4np1/8/8/4B3/r7/3KR3 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qxe7+ Kxe7 2. Bc5+ Kf7 3. Re7# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Double Check Patterns - Isolated Double Check Pattern 36"]
+[Date "????.??.??"]
+[White "Double Check Patterns"]
+[Black "Isolated Double Check Pattern 36"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Double Check Patterns - Isolated Double Check Pattern 36"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/lEAdiCef"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5r1k/2r3p1/7p/3PNBP1/4n3/1P5Q/PBP1q3/1K6 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qxh6+ gxh6 2. Nf7+ Kg8 3. Nxh6# { Fil ve şövalyenin çiftleşme düzeni. } *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 22"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 22"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 22"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/N6elCUCe"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5r2/3k1P2/8/1p1B4/p3R3/6n1/8/2K5 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Re8 Rxe8 2. Bc6+ Kxc6 3. fxe8=Q+ *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 23"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 23"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/sft1AXDz"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4N3/P1k5/2b5/K1B5/8/8/1r6/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Bxe8 2. a8=Q Ra2+ 3. Kb4 Rxa8 { Şiş nedeniyle terfiye izin veriliyor. } *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 24"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 24"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/b9gx0xuZ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2k5/pp2bR2/2n5/8/2q5/1N2P3/PP3PPP/5RK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rxe7 Nxe7 { Dosya açılıyor. } 2. Rc1 Qxc1+ 3. Nxc1 *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 25"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 25"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/xMPYBKia"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2k5/8/8/6Bp/6b1/bP6/1r1N4/2K1R3 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Rxd2+ 2. Kxd2 { Şahı şişin içine sokmaya zorlamak. } 2... Bb4+ 3. Kd3 Bxe1 *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 26"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 26"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/9snFILHh"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r1n1k1/2q3p1/6Bp/4p3/8/3R3P/2P2QP1/7K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rc3 { Şiş/saptırma. } 1... Qxc3 2. Qf7+ Kh8 3. Qf8# { 1-0 White wins by checkmate. } *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 27"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 27"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 27"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/aCBQgFOB"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r5k1/p2R2p1/8/8/6R1/r7/6P1/6K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Rdxg7+ Kf8 { Eğer 1...Şh8 ise, 2.K7g5 ve takip edecek mat. } 2. Rg8+ Kf7 3. Rxa8 *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 28"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 28"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/860c3r12"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/4k2P/R7/5p1r/8/8/5K2/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Ra8 Rxh7 2. Ra7+ Kf6 3. Rxh7 { Tipik oyun sonu şiş taktiği. } *
+
+
+[Event "Genel Atak Paternleri: Skewer Patterns - Isolated Skewer Pattern 29"]
+[Date "????.??.??"]
+[White "Skewer Patterns"]
+[Black "Isolated Skewer Pattern 29"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Genel Atak Paternleri"]
+[ChapterName "Skewer Patterns - Isolated Skewer Pattern 29"]
+[ChapterURL "https://lichess.org/study/IAO70Aph/18Ux6MJO"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3q4/6k1/6P1/5P2/1p6/7Q/8/1K6 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. Qh7+ Kf6 2. Qh4+ { Şahiçeyi kazanmak. } 2... Kg7 3. Qxd8 *
+
+

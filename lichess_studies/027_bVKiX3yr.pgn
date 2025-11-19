@@ -1,0 +1,113 @@
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 1"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 1"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/zuzEiYvC"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.20"]
+[UTCTime "20:38:36"]
+
+1. d4 d5 (1... Nf6 2. Nc3 d5 3. Bf4) 2. Nc3 Nf6 3. Bf4 { This position after 3. Bf4 can arrive from different move orfers such as d4 Nf6 Nc3 d5 Bf4 as well. } *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 2(3.e6)"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 2(3.e6)"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/hhw1N5Cu"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.20"]
+[UTCTime "20:49:13"]
+
+1. d4 d5 (1... Nf6 2. Nc3 d5 3. Bf4 e6) 2. Nc3 Nf6 3. Bf4 e6 4. Nb5 { with 4.Nb5 we target the c7 pawn with the bishop on f4 targetting the same square. } { [%csl Gc7][%cal Gb5c7,Gf4c7] } 4... Na6 { Na6 is the main move to defend c7 with the sidelines including Bb4+ c3 Ba4. } 5. e3 Be7 6. Nf3 { developing our 3rd minor piece. } 6... O-O (6... c6 7. Nc3 Qb6 8. Rb1 O-O 9. h4 (9. Bd3 c5 10. a3 c4 11. Be2 Bd7 12. h4)) 7. h4 { h4 is a recurring theme of the Jobava or the "Danya London". alongside ideas of g4. } 7... c6 { kicking away the strong knight on b5. } 8. Nc3 Qb6 { attacking b2. } { [%cal Gb6b2] } 9. Rb1 { even thought the main move among masters being a3. As the b2 pawn is poisened as Qxb2 is met with Na4. } (9. Qc1 c5) (9. a3 Qxb2 10. Na4) 9... c5 { breaking the center. } { [%cal Gc5d4] } 10. a3 Bd7 11. Bd3 { Looking towards the prematurely castled king. } 11... c4 { [%cal Gc4d3] } 12. Be2 Nc7 { rerouting towards b5 } { [%csl Gb5][%cal Gc7b5,Gd7b5,Gc3b5,Gb6b5] } 13. a4 { [%cal Ga4b5,Gc3b5,Gd7b5,Gc7b5,Gb6b5] } *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 3(3.c5)"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 3(3.c5)"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/RC8zQoB3"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.20"]
+[UTCTime "21:03:49"]
+
+1. d4 d5 (1... Nf6 2. Nc3 d5 3. Bf4 c5 4. e3 { other lines contain e4 yet we choose e3. }) 2. Nc3 Nf6 3. Bf4 c5 4. e3 cxd4 5. exd4 { [%csl Ge3,Gc7] } 5... a6 { [%csl Gb5][%cal Ga6b5,Gc3b5,Gf1b5] } 6. Nf3 Nc6 7. Ne5 Bd7 8. g4!? { [%cal Gg2g4,Gg4g5] } (8. Rg1 { [%cal Gg2g4,Gg4g5] } 8... e6 9. g4 Qb6) 8... h6 { here the engine calls for Nxc6 yet everyone knows that danya wouldve gone for h4. } 9. h4 e6 (9... Nxe5 10. dxe5 Nxg4 11. f3) 10. Qd2 Rc8 11. f3 Nxe5 12. dxe5 Ng8 *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 4(3.a6 4.h6 )"]
+[Date "2025.10.20"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 4(3.a6 4.h6 )"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/Sq9AZHLt"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.20"]
+[UTCTime "21:10:26"]
+
+1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 { preventing Nb5. } { [%csl Gb5][%cal Ga6b5,Gc3b5] } 4. e3 h6 { removing any pins on the g5 and b5 squares. } 5. Nf3 (5. h4 c5 6. Nf3 e6 7. Ne5 b5 8. Qf3 b4 9. Nb1 Bd6 10. Qg3) 5... e6 6. Bd3 c5 7. a4!? { prevents any future b5 for black. } { [%csl Gb5][%cal Ga4b5,Gb7b5] } (7. dxc5 Bxc5 8. a4) 7... Nc6 (7... c4 8. Be2 Bb4 9. O-O Nc6 10. Nb1 Bd7 11. c3 Be7 12. Nbd2 { Thhis resembles a london structure. } 12... Na5) 8. O-O Be7 *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 5(3.c6 4.f3)"]
+[Date "2025.10.21"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 5(3.c6 4.f3)"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/lJnlOXXC"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.21"]
+[UTCTime "06:14:12"]
+
+1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. f3 (4. e3 { though being the most popular move danya loved playing the attacking lines constituing of f3. }) 4... Qb6! 5. Na4! Qa5+ (5... Qb4+ { a slightly inferior option to Qa5. } 6. c3 Qa5 7. Nc5 e6 8. Nb3 Qd8 9. e4!! { sacrificing the pawn. } 9... dxe4 10. fxe4 Nxe4 11. Bd3 Nd6 { taking a lead in development. } 12. Nf3 a5 { [%cal Ga5a4] } 13. a4 Be7 14. O-O Nd7 15. Qc2 Nf6 { [%csl Ge7] } 16. Ne5 Nd5 17. Rae1 Nxf4 18. Rxf4 g6 19. Nc5 O-O 20. Qf2 { attacking chances with Qf2 a danya classic. }) 6. c3 Nbd7 7. e3 Nh5 8. b4 Qd8 9. Bg5 f6 10. f4 fxg5 11. Qxh5+ g6 12. Qxg5 *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Rest in peace daniel naroditsky 6 (3.a6)"]
+[Date "2025.10.21"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Rest in peace daniel naroditsky 6 (3.a6)"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/pNR3zhgX"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.21"]
+[UTCTime "06:31:51"]
+
+1. d4 d5 2. Nc3 Nf6 3. Bf4 a6 { [%csl Gb5][%cal Ga6b5,Gc3b5] } 4. e3 e6 5. g4!? { [%cal Gg2g4,Gg4g5] } 5... h6 6. h4 { [%cal Gg4g5] } 6... c5 (6... b5 { [%cal Gb7b5,Gb5b4] } 7. Qf3 b4 8. Nce2 c5 9. g5 hxg5 (9... Ne4 10. Ng3 Bb7 11. Nh3) 10. hxg5) (6... Bb4 7. Bg2 c5 8. g5 (8. a3 Bxc3+ 9. bxc3 Qa5 10. Ne2 Nxg4 11. Bd6 c4 12. e4 dxe4 13. Ng3 Qxc3+ 14. Kf1 $18 $32 $36) 8... hxg5 9. hxg5) 7. Qf3 Nc6 8. Nge2 Bd7 { [%csl Gb5][%cal Ga2a4,Gb7b5,Gc3b5,Ga4b5] } 9. O-O-O cxd4 10. Nxd4 e5 11. Nxc6 bxc6 12. Bxe5 Bxg4 13. Qf4 Bxd1 14. Nxd1 h5 15. Bh3 $15 *
+
+
+[Event "The \"Danya London\" a tribute to Daniel Naroditsky: Condolences"]
+[Date "2025.10.21"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The \"Danya London\" a tribute to Daniel Naroditsky"]
+[ChapterName "Condolences"]
+[ChapterURL "https://lichess.org/study/bVKiX3yr/JBmU4QfT"]
+[Annotator "https://lichess.org/@/hikaruontwitch1"]
+[UTCDate "2025.10.21"]
+[UTCTime "06:38:56"]
+
+{ i would make this chapter for the community to give our support to danyas family.Thank you as a great human,player,commentator as well as educator. Daniel Naroditsky(1995-2025). }
+ *
+
+

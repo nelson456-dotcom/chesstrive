@@ -1,0 +1,451 @@
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #45  Deflecting the Queen's Bishoр  #3"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D02"]
+[Opening "Queen's Pawn Game: London System"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #45  Deflecting the Queen's Bishoр  #3"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/W3F8y5Cf"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[UTCDate "2025.11.05"]
+[UTCTime "17:22:55"]
+
+{ Bonus
+
+When a pawn on b7 (instead of a bishop) is defending a knight, our tactic can still be highly effective. Although the pattern is slightly different, the same idea applies. Consider the following example:
+
+Sim Maerevoet (2413)
+Predrag Nikolic (2536)
+Netherlands tt 2022/23 }
+1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. e3 Nc6 5. Nbd2 Bg4 6. c3 e6 7. Qa4 Bxf3 8. Nxf3 Bd6? { At the time of writing, eleven players, including four grandmasters, had played this seemingly obvious move. It turns out to be a big mistake. } (8... a6 { Going back, note that 8...a6, to prevent Bb5/Ba6, is the best move, i.e. 9.Ne5 Rc8 10.Nxc6, and now 10...Qd7! is even, but not 10...Rxc6? : } 9. Ne5 Rc8 10. Nxc6 Rxc6? 11. Bxa6! { And there we have our deflection tactic again! This time, the pawn is the defender of a rook instead of a knight. An important point here is that the pinned rook is a poor defender, making 11...Rxa6 impossible. Note that Black is not just losing a pawn, but finds himself in all sorts of trouble, as White is also threatening 12.Bb5 or 12.Bxb7. } { [%cal Ga4e8] }) 9. Ba6! { Suddenly, Black has a big problem. White threatens to capture on b7, while after taking on a6, the knight on c6 is unprotected, leading to the destruction of the pawn structure on the queenside. However, defending b7 with the queen doesn’t alleviate Black’s problems either – the queen would then be overloaded as it has to protect both b7 and d6. This latter point explains why Black’s 8th move is a blunder. } 9... bxa6 (9... Qd7 10. Bxd6 { or } (10. Bxb7)) (9... Qb6 { was the choice of a Greek 2600+ grandmaster: } 10. Bxd6 Qxa6 11. Qxa6 bxa6 12. Bxc5 { and White converted the extra pawn into a win in Blohberger-D.Mastrovasilis, Warsaw blitz 2021; }) (9... Rb8 10. Bxb7! { [%cal Ga4e8] }) 10. Qxc6+ Ke7 11. dxc5 { White has obtained an extra passed pawn, although he eventually allowed Black to escape to a draw.
+White has other moves: } (11. Qb7+ Nd7 12. Bxd6+ Kxd6 13. e4! (13. Qxa6+ { winning a pawn, is a straightforward option, Skoberne-Sebenik, Bled 2016. }) 13... dxe4 { with the point being } (13... Qc8 14. dxc5+ Qxc5 (14... Nxc5?? 15. e5#) 15. exd5 { and the lines open towards the weak black king. }) 14. O-O-O!) *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/7j0ME7sR"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "4k2r/3qnpbp/3pbnp1/3Np3/2P1P3/8/8/2B3K1 w k - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "02:52:12"]
+
+{ 46. Deflecting the king's bishop
+
+Similar to Pattern 45, deflecting the bishop with }
+1. Bh6 { is the prelude to other decisive tactics. If } 1... Bxh6 (1... O-O { If Black castles } 2. Nxf6+ Bxf6 3. Bxf8 { yields White an exchange. }) (1... Nfxd5 { Also, capturing on d5 with a knight doesn't save Black, as after } 2. Bxg7 Rg8 { White recaptures the knight on d5 with an attack on the bishop on e6. } 3. cxd5 { [%cal Gd5e6] }) 2. Nxf6+ { wins the queen. } { [%cal Gf6d7,Gf6e8] } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #1"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #1"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/vkMLll78"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r3k2r/pppq1pbp/3pbnp1/3N4/2PpP3/3P2P1/PP3PBP/R1BQ1RK1 w kq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "02:56:33"]
+
+{ Pattern 46 - Deflecting the king’s bishop
+
+Sliding the bishop to the edge of the board to lure an enemy fianchettoed bishop away from defending a knight can also occur on the other side of the board on squares h6/h3. We now focus on deflecting the king’s bishop with the idea that afterwards, the unprotected knight can be captured with a knight fork on the queen and king.
+
+Frank Erwich (2347)
+Herbert Vetter (2268)
+Germany tt 2008/09 }
+1. Bh6! O-O { Black accepts that he will lose the exchange, but other moves are even worse: } (1... Bxh6 2. Nxf6+ { and the knight fork results in White winning a queen for a piece; } { [%cal Gf6d7,Gf6e8] }) (1... Kf8 { protects the bishop, but also places it in a pin: } 2. Nxf6 { and the pinned bishop turns out to be a poor defender; } { [%cal Gf6d7,Gh6f8] }) (1... Bxd5 2. Bxg7 { and three black pieces are hanging; }) (1... Nxd5 2. Bxg7 Rg8 3. exd5 { better than } (3. cxd5 { as after a possible dxe6, the diagonal for the g2-bishop opens up.)
+- attacking the e6-bishop. After this capturing sequence White has an extra
+piece. })) 2. Nxf6+ Bxf6 3. Bxf8 Rxf8 { And White went on to capitalize on his material advantage and secured victory.
+In the last game, Black found himself unable to prevent material loss in response to the deflection tactic. Let’s go back to that game and see how Black could have defended against this tactic if White had attempted it one move earlier: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #2"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #2"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/UAL4WgAy"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r3k2r/pppq1pbp/3pbnp1/3Np3/2PnP3/3P2P1/PP2NPBP/R1BQ1RK1 w Qkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "12:58:10"]
+
+{ Frank Erwich (2347)
+Herbert Vetter (2268)
+Germany tt (analysis) 2008/09 }
+1. Bh6? { To prevent future counterplay with ...Bg4, White must first eliminate the knight on d4 with } (1. Nxd4 { and after } 1... exd4 { we arrive at the start of Game 206. Sure, Black could have prevented material loss with } (1... Bxd5 { but with the in-between move } 2. Nf5! { White gains a large positional advantage. After } 2... gxf5 3. cxd5 { Black has a bad pawn structure and is very vulnerable on the light squares, particularly the h3-c8 diagonal. White also has the pair of bishops. })) 1... Nxd5 { Now Black comes with a strong counter.
+After both 11.Bxg7 and 11.cxd5, we see why having a knight on d4 changes the situation dramatically compared to what happened in the actual game: } 2. cxd5 (2. Bxg7 Bg4! 3. f3 Ne3 { (made possible by the provocation of f2-f3 with 11...Bg4) } 4. Qd2 (4. Qe1? Nxg2 5. Kxg2 Bh3+) 4... Nxf1 5. Rxf1 Nxe2+ 6. Qxe2 Rg8 { and Black is up an exchange, although White certainly has some compensation; }) (2. Nxd4 { is the best White can do, but after, for example, } 2... Bxh6 3. cxd5 Bg4 4. Ne2 { Black is slightly better due to his pair of bishops. }) 2... Bg4! { The major issue with keeping the knights on the board. } 3. f3 Bxf3 4. Bxf3 Nxf3+ 5. Rxf3 Bxh6 { and Black has a healthy extra pawn; } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #3"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #3"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/3HMBeCWh"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r1bq1rk1/4ppbp/p1np1np1/2p5/2P1P3/2N1B1PP/PP1QNPB1/R4RK1 b Qq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:06:26"]
+
+{ Even with an empty square instead of a knight on f3/f6, the deflection tactic involving B(x)h3/6 can be effective. In the following example, we see that this idea often has to be prepared:
+
+Ekrem Cekro (2408)
+Benjamin Bok (2594)
+Belgium tt 2016/17
+
+With a queen on d2 and a king on g1, square f3 could have some promise for a black knight. }
+1... Ne5 { At the time of writing, this move had been played thirty-eight times. Black attacks c4, cleverly moving his knight with tempo toward the white ‘hole’. } 2. b3 Bxh3! { If White captures the bishop, 14...Nf3+ forks his king and queen.
+However, without a knight on f3, White has an additional attractive option that wouldn’t be available otherwise: the f-pawn is free to move. } { [%cal Ge5f3,Gf3d2,Gf3g1] } 3. f4 { White not only attacks the knight, but also defends the f3-square with his rook, creating the threat of 15.Bxh3. Fortunately for Black, it all fits neatly: } 3... Bxg2 4. fxe5 { The game continued with } (4. Kxg2 Neg4 { after which Black managed to convert his extra pawn into a win. }) 4... Nxe4! { This way, Black saves not only his knight, but also his bishop. } 5. Nxe4 Bxe4 { With a two-pawn advantage and the bishop pair in an open position, Black is winning.
+With a pawn on g2 instead of a bishop, the bishop sortie becomes significantly riskier. After a minor adjustment in the position of the previous game, it becomes evident that White can indeed defend: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #4"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #4"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/NOv3rdSY"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "1r1q1rk1/4ppbp/p2p2p1/2p1n3/2P1P3/1PN1B2b/P2QNPP1/R4RK1 w Q - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:10:15"]
+
+{ With a pawn on g2 instead of a bishop, the bishop sortie becomes significantly riskier. After a minor adjustment in the position of the previous game, it becomes evident that White can indeed defend:
+
+Ekrem Cekro (2408)
+Benjamin Bok (2594)
+Belgium tt (adjusted) 2016/17 }
+1. f4 { The crucial point now is that capturing on g2 with the bishop costs material, as White can calmly take the bishop. However, withdrawing the bishop loses the knight, and after the knight’s retreat, White captures the bishop. In short, White wins a piece! } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #5"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #46   Deflecting the King's Bishop  #5"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/oDrmvrMH"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "3r1rk1/p1pq2pp/1p3p2/3np3/1P1n4/P2P1NPb/3BPPBP/2RQ1RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:12:08"]
+
+{ The following example shows another defensive scenario:
+Alexey Sarana (2668)
+Benik Agasarov (2225)
+Titled Tuesday blitz 2022
+
+Black has just played 17... Be6-h3. Black’s objective is strategic.
+
+His reasoning is that if White takes the bishop, then Black captures on f3 in between, ruining White’s pawn structure before recapturing on h3 with the queen. However, there is a twist. White decides to ‘fall into’ Black’s trap. }
+1. Bxh3! Nxf3+? (1... Qxh3 2. e4! Nf4 3. Bxf4 (3. gxf4?? Nxf3+) 3... exf4 4. Rxc7 { yields White a pawn. }) 2. Kg2! { Capturing is not mandatory! Especially in blitz, where suppressing automatic responses is even more challenging, it is understandable that Black overlooked this possibility. White protects the bishop while simultaneously hitting the black queen and knight, and wins a piece. } 2... Nf4+ 3. Bxf4 { 1-0 } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/2caKp7Yl"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "3qk2r/3pnp1p/2n3p1/3N2B1/3b4/8/8/3Q3K w k - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:20:45"]
+
+{ 47. Exploiting the f3/f6-square
+
+After eliminating the defender of the f6-square with }
+1. Qxd4 { lack is in big trouble. The point is } 1... Nxd4 (1... O-O { A knight+bishop mate can appear also after castling with } 2. Nf6+ Kh8 3. Ng4+ Nxd4 4. Bf6+ Kg8 5. Nh6# { Suffocation Mate. }) 2. Nf6+ Kf8 3. Bh6# *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #1"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #1"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/gzlfVATg"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:22:46"]
+
+{ Pattern 47 - Exploiting the f3/f6-square
+
+Just like in Pattern 46, in this Pattern the f3/f6-square plays an important role. Once again, we aim to put a knight on this square, this time not to fork, but in preparation for the checkmate that follows on the next move.
+
+To achieve this, we must first eliminate the bishop, the defender of the f3/f6-square.
+
+We start with an example from the Scotch Opening:
+Alejandro Barbero Sendic (2344)
+Filemon Cruz Estrada (2355)
+Catalunya tt 2017 }
+1. e4 e5 (1... g6 2. d4 Bg7 3. Nc3 e5 4. dxe5 Bxe5 5. Nf3 Bg7 6. Bg5 Ne7 7. Nd5 Nbc6 8. Nd4 Bxd4 9. Qxd4) 2. Nf3 Nc6 3. d4 (3. Nc3 g6 4. d4 exd4 5. Nd5 Bg7 6. Bg5 Nge7? (6... Nce7 { was required, see Game 213. }) 7. Nxd4 Nxd4 8. Qxd4) 3... exd4 4. Nxd4 Nge7 5. Nc3 g6? { With this move, which seems logical at first glance, Black gets into a serious mess. } 6. Bg5! { A fight between brothers, J.van Foreest-L.van Foreest, Maastricht 2014, continued with 6.Be3, but the continuation in the game is much stronger. } 6... Bg7 7. Nd5! { White ignores the twofold attack on the d4-knight and threatens to remove the defender of the pinned e7-knight with 8. Nxc6. Can’t Black now just take the knight on d4?
+Note that a 2700+ grandmaster missed this chance and played 7.Nxc6 instead (Adams-Landa Playchess.com blitz 2006), which goes to show that the tactic played in the game is far from obvious. } 7... Bxd4 (7... Nxd4 8. Bxe7) (7... f6 8. Nxf6+) 8. Qxd4! { The second point of 7.Nd5, White eliminates the defender of square f6! At the time of writing, this position had occurred seven times, and remarkably the position can be reached in various ways, for example after 1.e4 e5 2.Nf3 Nc6 3.Nc3 g6 4.d4 exd4 5.Nd5 Bg7 6.Bg5 Nge7? ( 6...Nce7 was required, see Game 213) 7.Nxd4 Bxd4 8.Qxd4 or 1.e4 g6 2.d4 Bg7 3.Nc3 e5 4.dxe5 Bxe5 5.Nf3 Bg7 6.Bg5 Ne7 7.Nd5 Nbc6 8.Nd4 Bxd4 9.Qxd4. } 8... Nxd4 { Also after } (8... O-O { a beautiful knight and bishop mate can occur: } 9. Nf6+ Kh8 10. Ng4+ Nxd4 11. Bf6+ Kg8 12. Nh6# { Suffocation Mate. }) 9. Nf6+ Kf8 10. Bh6# { 1-0
+As mentioned on move 8, this tactic can occur in various openings. Below is an example from the English Opening, where we see a former World Championship Challenger succumb to it: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #2"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A27"]
+[Opening "English Opening: King's English Variation, Three Knights System"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #2"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/9r1dSGMb"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:40:56"]
+
+{ Dmitry Andreikin (2683)
+Sergey Karjakin (2760)
+Moscow World Blitz Championship 2010 }
+1. c4 e5 2. Nc3 Nc6 3. Nf3 g6 4. d4 exd4 5. Nd5 Bg7 6. Bg5 { How could it go so wrong? Now it is time to focus on defence as well. Let’s revisit this game, but start one move earlier:
+Any move defending against the attack on the queen would have been preferable to 6...Nge7, although there is a difference in the quality of the available options. Best is: } 6... Nge7 { This time the d5-knight is already in position. } (6... Nce7! { Black maintains control over the f6-square, while keeping the a1-h8 diagonal open (Black doesn’t need to interpose a pawn or piece on f6). For example, after } 7. Nxd4 c6 8. Nc3 h6 9. Bf4 (9. Bh4 Qb6!) 9... d5 { the pressure on Black’s position has been alleviated, and it is Black who takes control of the game now. }) 7. Nxd4! { Once again, threatening 8.Nxc6. } 7... Bxd4 (7... Nxd4 8. Bxe7) (7... f6 8. Nxf6+) 8. Qxd4! { There it is again! White eliminates the defender of the f6-square. } 8... O-O (8... Nxd4 9. Nf6+ Kf8 10. Bh6#) 9. Nf6+ Kh8 10. Ng4+ { Black resigned in light of the Suffocation Mate after } 10... Nxd4 11. Bf6+ Kg8 12. Nh6# *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #3"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #47  Exploiting the f3/f6-Square  #3"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/012Y8k4Y"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r1b2rk1/pp2ppbp/6p1/3Pn3/1BB1P3/q7/P3NPPP/1R1QK2R b Kq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:47:09"]
+
+{ Bonus
+
+The knight and bishop mating pattern can also be used in other scenarios. Below, we see a situation where a pawn, instead of a bishop, defends the f3-square, to no avail:
+
+The queen seems to be trapped, but appearances can be deceiving!
+Waclaw Luczynowicz
+Zbigniew Solecki
+Wroclaw Polish Championship 1955 }
+1... Qf3! 2. O-O { White cannot capture the queen due to } (2. gxf3 Nxf3+ 3. Kf1 Bh3#) 2... Qxe4 { And Black has won a pawn. } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/s1MwiQkP"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "6rk/2q3pp/2n5/8/6n1/5N1P/4QPP1/5RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.06"]
+[UTCTime "13:50:09"]
+
+{ 48. The Smith-Morra Gambit trick
+
+Black attacks the queen and threatens to eliminate the white knight that defends the h2 mating square with }
+1... Nd4 { Since } 2. Nxd4 { fails to } (2. Qd1 Nxf3+ 3. Qxf3 Qh2#) 2... Qh2# { and moving away the queen leads to checkmate one move later after 2...Nxf3+, White has to give up his queen.
+This trick often occurs in, among others, the Smith-Morra Gambit of the Sicilian Defence. } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #1"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B21"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation, Siberian Trap"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #1"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/BZD2Elxw"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[UTCDate "2025.11.07"]
+[UTCTime "01:50:34"]
+
+{ Pattern 48 - The Smith-Morra Gambit trick
+
+Like in Pattern 47, we again focus on eliminating a defender to deliver checkmate. This time, we lure away a knight that defends the h2/h7 mating square. In the Smith-Morra Gambit of the Sicilian Defence, this idea is a well-known trap.
+
+Turmunkh Munkhzul (2318)
+Mariya Kholyavko (1587)
+Almaty Asian Women’s Blitz Championship 2023 }
+1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7 7. O-O Nf6 8. Qe2 Ng4 9. h3? { White has several options here. } (9. Nb5 Qb8 { and then } 10. h3 { to avoid the trick from the game is one of them. }) 9... Nd4! { Black ignores the attack on her knight and goes for a counterattack against the white queen and knight on f3. This knight cannot abandon the protection of square h2 on account of 10... Qh2#. And if White moves her queen away, then Black eliminates this knight with 10... Nxf3+, again delivering checkmate on the next turn with 11... Qh2#.
+It is noteworthy that the strongest player who reached this position with Black (Jaan Ehlvest, Elo 2675), missed the opportunity and instead played 9...Nge5?. } 10. hxg4 Nxe2+ 11. Bxe2 { With the material advantage of a queen against two pieces, Black managed to get the job done, despite the huge rating difference of over 700 points.
+In the following game, once again we see a knight deflection serve as the prelude to a winning tactic, the difference being that things are a bit more complicated this time: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #2"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #2"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/BnSWyc1i"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "2r2rk1/1p2qpp1/p1nbbn1p/3p2N1/1P6/P1N1P3/1BQ1BPPP/3R1RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "01:56:38"]
+
+{ Michal Matuszewski (2366)
+Filip Cukrowski (2133)
+Wroclaw 2012 }
+1. Nxd5! { The knight not only attacks the black queen and knight, but also clears the a1-h8 diagonal for the bishop. The knight on f6 becomes a target that must be taken care of. } { [%cal Gb2f6] } 1... Bxd5 (1... Nxd5 2. Qh7#) 2. Bxf6! Bxh2+ { While this is a creative move, White is not obliged to capture the bishop. } (2... Qxf6 3. Qh7#) 3. Kh1 { However, White could have considered accepting this bishop sacrifice anyway: } (3. Kxh2 Qd6+ 4. Be5! { A remarkable interposition that we will see again in Pattern 87. By luring the queen towards the f2-pawn, White sets up a double attack.
+Meanwhile, Black gets no time to take the knight on g5: } 4... Qxe5+ (4... Nxe5 5. Qh7#) 5. f4 { White now threatens both 22. fxe5 and 22. Qh7#, so Black has to give up a piece with 21...Be4. } { [%cal Gc2h7] } 5... Be4) 3... Be4 4. Qxe4 Qxe4 5. Nxe4 { Black resigned.
+In the next game, we see the same motif, but less effectively: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #3"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #3"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/bUybEyoB"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "1q1r1rk1/pb2Bp1p/1pn1p1p1/8/3P2n1/P1N2N2/1P2QPPP/1B1R1RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "02:02:22"]
+
+{ Alexander Naumann (2478)
+Levon Aronian (2518)
+Yerevan World Championship U20 1999 }
+1... Nxd4 { Opting not to recapture the bishop on e7, Black instead applies pressure on the white queen and the knight on f3. } { [%cal Gd4f3,Gb8h2,Gb7f3,Gg4h2] } 2. Rxd4 Bxf3 3. Rxg4 { A defence that wasn’t possible in the previous two games! While White loses his queen, he gets a lot of material in return. } 3... Bxe2 4. Nxe2 { With three pieces for the queen, White has nothing to complaint about.
+Another defensive approach emerges in the following game: } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #4"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #4"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/MWqPM74m"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "3rkb1r/1bq2ppp/p3B3/1p6/3n2n1/P1N2N2/1P1BQPPP/2R2RK1 w k - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "02:07:05"]
+
+{ Kick Langeweg (2385)
+Manuel Granados Gomez (2400)
+Zaragoza 1995 }
+1. Bxf7+! { White employs the idea from Pattern 34. } 1... Kd7? { Better was } (1... Kxf7 { when White plays } 2. Ng5+ { and Qxg4, ending up a pawn ahead. }) 2. Qd3 { White pins the knight so that Black cannot play ...Nxf3+ followed by ...Qxh2#. } 2... Bc5 3. Nxb5! axb5 4. Rxc5! Qxc5 5. Nxd4 { With an exposed king and numerous threats looming, Black had little hope of salvation and lost the game. } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #5"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #48   Smith-Morra Gambit Trick  #5"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/g4H7kDHN"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r3qrk1/p2nbppp/bp2pn2/4N3/5B2/2N4Q/PPB2PPP/R1R3K1 w Qq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "02:11:17"]
+
+{ Bonus
+
+Even without attacking the queen, the knight deflection can still be effective:
+
+Sergey Kishnev (2520)
+Philipp Schlosser (2465)
+Budapest 1991
+
+This position occurred three times: Payen-Daurelle, Pau 2008 continued with 25.Nxd7, while in this game and in ZajoginDegenhard, Munich 2023, 25.Ne4 was chosen. }
+1. Nd5! { White threatens both 26.Nc7 as well as 26.Nxd7 Qxd7 27.Nxf6+, removing the defender of pawn h7. } 1... exd5 2. Nxd7 Qxd7 3. Bxh7+! { White deflects the knight from its protection of the queen. } 3... Nxh7 { If } (3... Kh8 4. Bf5+ { wins. }) 4. Qxd7 $16 *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #49  Exchanging Queens for Double Threat"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #49  Exchanging Queens for Double Threat"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/4COtSMBO"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[FEN "r3k3/ppp1np2/8/1Nq1n3/8/2P5/PP6/KR1Q1B2 w q - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "02:15:21"]
+
+{ 49. Exchanging queens for a double threat
+
+The black queen is overloaded after }
+1. Qd4! { It cannot protect both the pawn on c7 and the knight on e5. If Black decides to trade queens, then after } { [%cal Gd4e5,Gd4c5,Gb5c7] } 1... Qxd4 2. cxd4 { there is a double threat on the board: both 3.dxe5 and 3.Nxc7+ are on the menu. White wins material. } { [%cal Gd4e5,Gb5c7] } *
+
+
+[Event "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense: Elimination of the Defense: Pattern #49  Exchanging Queens for Double Threat  #1"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C45"]
+[Opening "Scotch Game"]
+[StudyName "100 Tactical Patterns #45-   Chapter 5-6  Elimination of the Defense"]
+[ChapterName "Elimination of the Defense: Pattern #49  Exchanging Queens for Double Threat  #1"]
+[ChapterURL "https://lichess.org/study/RwUenp5D/yPIR4m93"]
+[Annotator "https://lichess.org/@/DIAChessClubStudies"]
+[UTCDate "2025.11.07"]
+[UTCTime "02:16:47"]
+
+{ Pattern 49 - Exchanging queens for a double threat
+
+It is not always necessary to sacrifice material to eliminate a defender. In this Pattern, we will aim for an exchange of queens to bring about a double threat in the position. This idea can arise in various lines of the Scotch Opening.
+
+Tatiana Shadrina (2280)
+Svetlana Struchkova (2315)
+Elista Russian Women’s Championship 1997 }
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Be3 Bc5 6. c3 Nge7 7. Bc4 Ne5 8. Be2 d5 (8... Qg6 { is the main line. }) 9. O-O dxe4 { This move is already imprecise. Better is 9...0-0. } 10. Nb5! { Attacking both the pawn on c7 and the bishop on c5. } { [%cal Gb5c7,Ge3c5] } 10... Qb6? { It is very tempting to defend both c5 and c7 in this manner, but this is precisely what White was hoping for.
+Instead, it was necessary to evacuate the bishop while keeping the pawn on c7 protected with } (10... Bd6 { Now, after } 11. Bc5! { White regains the sacrificed pawn. After } 11... O-O (11... Bxc5? 12. Nxc7+ Kf8 13. Qd8# { is the point. }) 12. Nxd6 cxd6 13. Qxd6 { White, thanks to her bishop pair, has the better game. }) 11. Bxc5 Qxc5 12. Qd4! { This is what White was aiming for. The queen needs to be dislodged from c7. The tricky part for Black is that her queen is now overloaded, as it cannot protect both the c7-pawn and the e5-knight. } 12... Qxd4 { Continuing to cover c7 with } (12... Qc6 { costs a piece after } 13. Qxe5 { Note that without a knight on e7, Black could have simultaneously defended the c-pawn and the knight with ...Qe7. An important detail! } { [%csl Ge7] }) 13. cxd4 { And here lies the point behind White’s concept: not only is the pawn on c7 still attacked, but the knight on e5 is also en prise. This double threat costs Black material. } { [%cal Gd4e5,Gb5c7] } 13... Bg4 14. Bxg4 Nxg4 15. Nxc7+ Kd7 16. Nxa8 { In the analysis of Game 119, Travlos-Lakafosis Pattern 27), we already saw a teaser for this Pattern. Via another variation in the Scotch Opening, we can execute the same idea as shown above: } *
+
+

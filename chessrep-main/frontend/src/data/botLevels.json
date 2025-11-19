@@ -1,0 +1,136 @@
+[
+  {
+    "level": "Beginner",
+    "index": 0,
+    "minRating": 0,
+    "maxRating": 999,
+    "canonicalRating": 900,
+    "engine": {
+      "skillLevel": 1,
+      "uciLimitStrength": true,
+      "uciElo": 900,
+      "randomness": 0.2,
+      "openingBook": "none",
+      "moveTimeMs": 100,
+      "timeMode": "fixed",
+      "depth": 3,
+      "nodes": 5000
+    }
+  },
+  {
+    "level": "Novice",
+    "index": 1,
+    "minRating": 1000,
+    "maxRating": 1299,
+    "canonicalRating": 1150,
+    "engine": {
+      "skillLevel": 4,
+      "uciLimitStrength": true,
+      "uciElo": 1150,
+      "randomness": 0.15,
+      "openingBook": "light",
+      "moveTimeMs": 200,
+      "timeMode": "fixed",
+      "depth": 5,
+      "nodes": 20000
+    }
+  },
+  {
+    "level": "Intermediate",
+    "index": 2,
+    "minRating": 1300,
+    "maxRating": 1599,
+    "canonicalRating": 1450,
+    "engine": {
+      "skillLevel": 7,
+      "uciLimitStrength": true,
+      "uciElo": 1450,
+      "randomness": 0.1,
+      "openingBook": "light",
+      "moveTimeMs": 300,
+      "timeMode": "perPly",
+      "depth": 7,
+      "nodes": 80000
+    }
+  },
+  {
+    "level": "Advanced",
+    "index": 3,
+    "minRating": 1600,
+    "maxRating": 1899,
+    "canonicalRating": 1750,
+    "engine": {
+      "skillLevel": 10,
+      "uciLimitStrength": true,
+      "uciElo": 1750,
+      "randomness": 0.06,
+      "openingBook": "standard",
+      "moveTimeMs": 400,
+      "timeMode": "perPly",
+      "depth": 10,
+      "nodes": 200000
+    }
+  },
+  {
+    "level": "Expert",
+    "index": 4,
+    "minRating": 1900,
+    "maxRating": 2199,
+    "canonicalRating": 2050,
+    "engine": {
+      "skillLevel": 13,
+      "uciLimitStrength": true,
+      "uciElo": 2050,
+      "randomness": 0.03,
+      "openingBook": "standard",
+      "moveTimeMs": 600,
+      "timeMode": "perPly",
+      "depth": 13,
+      "nodes": 500000
+    }
+  },
+  {
+    "level": "Master",
+    "index": 5,
+    "minRating": 2200,
+    "maxRating": 2499,
+    "canonicalRating": 2350,
+    "engine": {
+      "skillLevel": 18,
+      "uciLimitStrength": false,
+      "uciElo": 2350,
+      "randomness": 0.015,
+      "openingBook": "full",
+      "moveTimeMs": 800,
+      "timeMode": "perPly",
+      "depth": 16,
+      "nodes": 1000000
+    }
+  },
+  {
+    "level": "Grandmaster",
+    "index": 6,
+    "minRating": 2500,
+    "maxRating": null,
+    "canonicalRating": 2650,
+    "engine": {
+      "skillLevel": 20,
+      "uciLimitStrength": false,
+      "uciElo": 2650,
+      "randomness": 0.0,
+      "openingBook": "full",
+      "moveTimeMs": 1200,
+      "timeMode": "perPly",
+      "depth": null,
+      "nodes": null
+    }
+  }
+]
+
+
+
+
+
+
+
+

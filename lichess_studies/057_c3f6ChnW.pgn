@@ -1,0 +1,112 @@
+[Event "casual rapid game"]
+[Site "https://lichess.org/OjfBGrW0"]
+[Date "2025.11.07"]
+[White "AaryanJagannath2"]
+[Black "ragav69"]
+[Result "0-1"]
+[WhiteElo "1420"]
+[BlackElo "2090"]
+[TimeControl "1200+5"]
+[Termination "Normal"]
+[GameId "OjfBGrW0"]
+[Variant "Standard"]
+[ECO "A15"]
+[Opening "English Opening: Anglo-Indian Defense"]
+[StudyName "Game study"]
+[ChapterName "AaryanJagannath2 (1420) - ragav69 (2090?)"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/YPPvOPHm"]
+[Annotator "https://lichess.org/@/ragav69"]
+
+1. c4 { [%eval 0.12] [%clk 0:20:00] } 1... Nf6 { [%eval 0.14] [%clk 0:20:00] } 2. g3 { [%eval 0.11] [%clk 0:19:58] } 2... c6 { [%eval 0.2] [%clk 0:19:54] } 3. Bg2 { [%eval 0.13] [%clk 0:20:00] } 3... d5 { [%eval 0.31] [%clk 0:19:56] } 4. b3?! { [%eval -0.58] } { Inaccuracy. Nf3 was best. } { [%clk 0:19:57] } (4. Nf3 g6 5. b3 Bg7 6. Bb2 O-O 7. O-O Re8 8. d4 Bf5) 4... Bf5?! { [%eval 0.0] } { Inaccuracy. e5 was best. } { [%clk 0:19:57] } (4... e5 5. Bb2 Bd6 6. cxd5 cxd5 7. Nc3 Be7 8. e3 Nc6 9. Nge2) 5. Nc3 { [%eval -0.41] [%clk 0:19:54] } 5... e6 { [%eval 0.0] [%clk 0:19:57] } 6. Bb2?! { [%eval -0.56] } { Inaccuracy. Nf3 was best. } { [%clk 0:19:56] } (6. Nf3 Be7 7. O-O h6 8. d4 O-O 9. Nd2 Nbd7 10. Bb2 b5) 6... Be7?! { [%eval 0.03] } { Inaccuracy. d4 was best. } { [%clk 0:19:27] } (6... d4 7. Na4 e5 8. Nf3 Nbd7 9. e3 dxe3 10. dxe3 Bb4+ 11. Bc3) 7. Nf3 { [%eval 0.0] [%clk 0:19:55] } 7... O-O { [%eval 0.0] [%clk 0:19:28] } 8. O-O { [%eval -0.04] [%clk 0:19:57] } 8... h6 { [%eval -0.04] [%clk 0:19:18] } 9. Ne5 { [%eval -0.18] [%clk 0:20:00] } 9... Nbd7 { [%eval -0.21] [%clk 0:16:46] } 10. d4 { [%eval -0.27] [%clk 0:19:59] } 10... Ne4 { [%eval 0.09] [%clk 0:15:48] } 11. Nxe4 { [%eval 0.1] [%clk 0:19:45] } 11... dxe4 { [%eval 0.06] [%clk 0:15:50] } 12. Nxd7 { [%eval 0.14] [%clk 0:19:46] } 12... Qxd7 { [%eval 0.05] [%clk 0:15:52] } 13. e3 { [%eval 0.04] [%clk 0:19:49] } 13... Bf6? { [%eval 1.53] } { Mistake. Bh7 was best. } { [%clk 0:15:40] } (13... Bg6 14. Qc2 f5) (13... Bh7) 14. f3? { [%eval 0.17] } { Mistake. Qc2 was best. } { [%clk 0:19:43] } (14. Qc2 b5) 14... exf3 { [%eval 0.38] [%clk 0:15:29] } 15. Rxf3?? { [%eval -2.23] } { Blunder. Qxf3 was best. } { [%clk 0:19:48] } (15. Bxf3) (15. Qxf3) 15... Rad8?? { [%eval -0.07] } { Blunder. Bg4 was best. } { [%clk 0:15:22] } (15... Bg4 16. Qc2 Bxf3 17. Bxf3 c5 18. Rd1 Rfd8 19. Be4 Qc7 20. Rf1 cxd4 21. Rxf6) 16. Qf1 { [%eval -0.33] [%clk 0:19:18] } 16... Be4?! { [%eval 0.48] } { Inaccuracy. c5 was best. } { [%clk 0:14:35] } (16... c5 17. g4) 17. Rf2 { [%eval -0.01] [%clk 0:19:07] } 17... Bxg2 { [%eval -0.03] [%clk 0:14:36] } 18. Rxg2 { [%eval -0.21] [%clk 0:19:12] } 18... Qc7 { [%eval -0.08] [%clk 0:12:21] } 19. Rf2 { [%eval -0.07] [%clk 0:18:56] } 19... Bg5 { [%eval -0.11] [%clk 0:11:54] } 20. Re2 { [%eval -0.19] [%clk 0:18:48] } (20. e4 Be3 { [%cal Ge4g2,Ge3g1] }) 20... Bf6 { [%eval -0.07] [%clk 0:10:50] } 21. Rf2 { [%eval -0.06] [%clk 0:18:48] } 21... Qe7 { [%eval -0.06] [%clk 0:10:51] } 22. c5?! { [%eval -0.86] } { Inaccuracy. Rd1 was best. } { [%csl Gg2,Gb2][%cal Gd5h1] [%clk 0:18:22] } (22. Rd1 c5 23. Ba3 b6 24. Qe2 Qe8 25. Bb2 Rd7 26. Qg4 Bg5 27. Qf3 f5) 22... Rd7 { [%eval -0.65] [%clk 0:10:24] } 23. Rb1 { [%eval -1.04] } { White offers draw } { [%clk 0:18:09] } 23... e5 { [%eval -0.99] [%clk 0:10:07] } 24. dxe5?! { [%eval -2.08] } { Inaccuracy. Rd1 was best. } { [%clk 0:18:07] } (24. Rd1 Rfd8 25. Rfd2 Rd5 26. Qe2 e4 27. Bc3 Re8 28. Rf1 Qd7 29. b4 h5) 24... Bxe5 { [%eval -2.1] [%csl Ge3,Gc5] [%clk 0:10:09] } 25. Bxe5 { [%eval -2.39] [%clk 0:18:05] } 25... Qxe5 { [%eval -2.33] [%csl Ge3,Gc5] [%clk 0:10:11] } 26. Qc1 { [%eval -2.55] [%clk 0:17:49] } 26... Rfd8 { [%eval -2.47] [%csl Gd1,Gc1][%cal Gc1c5,Gc1e3,Gd8d1,Gd1g1,Gd1c1] [%clk 0:09:59] } 27. Qf1?! { [%eval -3.27] } { Inaccuracy. Re2 was best. } { [%clk 0:17:09] } (27. Re2 Rd3 (27... Rd1+ 28. Qxd1 Rxd1+ 29. Rxd1) 28. b4 Qe4 29. h3 f6 30. Qe1 a6 31. h4 Kf7 32. Kh2 g5) 27... Qxe3 { [%eval -2.88] [%clk 0:08:12] } 28. Qe2?! { [%eval -4.01] } { Inaccuracy. b4 was best. } { [%clk 0:16:46] } (28. b4 Re8 29. Qc4 Re4 30. Qb3 Qd4 31. Qb2 Qd5 32. Qb3 Qxb3 33. Rxb3 a6) 28... Qxc5 { [%eval -3.95] [%clk 0:07:52] } 29. Qc2 { [%eval -4.2] [%csl Gh7][%cal Gc5c2,Gc2h7] [%clk 0:16:10] } 29... Qxc2 { [%eval -4.27] [%clk 0:07:20] } 30. Rxc2 { [%eval -4.17] [%clk 0:16:08] } 30... Rd2 { [%eval -4.17] [%clk 0:07:21] } 31. Rxd2 { [%eval -4.24] [%clk 0:15:48] } 31... Rxd2 { [%eval -4.24] [%clk 0:07:23] } 32. a4 { [%eval -4.36] [%clk 0:15:51] } 32... Kf8 { [%eval -4.28] [%clk 0:07:16] } 33. Re1 { [%eval -4.65] [%clk 0:15:54] } 33... Rb2 { [%eval -4.38] [%clk 0:07:15] } 34. Re3 { [%eval -4.44] [%clk 0:15:56] } 34... b5 { [%eval -3.55] [%clk 0:07:00] } 35. axb5?! { [%eval -4.69] } { Inaccuracy. Rc3 was best. } { [%clk 0:15:54] } (35. Rc3 a5 36. Rxc6 Rxb3 37. axb5 Rxb5 38. Rc7 Rb2 39. Ra7 Ra2 40. g4 Kg8) 35... cxb5 { [%eval -4.48] [%clk 0:07:02] } 36. Rc3 { [%eval -4.46] [%clk 0:15:58] } 36... b4 { [%eval -4.52] [%clk 0:06:53] } 37. Rc8+ { [%eval -5.06] [%clk 0:16:00] } 37... Ke7 { [%eval -4.94] [%clk 0:06:56] } 38. Rc7+ { [%eval -5.0] [%clk 0:16:04] } 38... Ke6 { [%eval -4.88] [%clk 0:06:58] } 39. Rxa7 { [%eval -4.64] [%clk 0:16:08] } 39... Rxb3 { [%eval -4.83] [%clk 0:07:01] } 40. Rb7 { [%eval -5.38] [%clk 0:16:12] } 40... Rb2 { [%eval -5.26] [%clk 0:07:04] } 41. Kf1 { [%eval -5.16] [%clk 0:16:16] } 41... b3 { [%eval -5.12] [%clk 0:07:06] } 42. Ke1 { [%eval -5.43] [%clk 0:16:21] } 42... g6 { [%eval -5.11] [%clk 0:06:55] } 43. Kd1 { [%eval -6.14] [%clk 0:16:24] } 43... Rxh2 { [%eval -6.03] [%clk 0:06:55] } 44. Rxb3 { [%eval -5.68] [%clk 0:16:28] } 44... Rg2 { [%eval -5.09] [%clk 0:06:55] } 45. Re3+?! { [%eval -7.0] } { Inaccuracy. Rf3 was best. } { [%clk 0:16:31] } (45. Rf3 f5 46. Ke1 Ra2 47. Kf1 Kf6 48. g4 Kg5 49. gxf5 Kg4 50. Rb3 Kxf5) 45... Kf5 { [%eval -6.59] [%clk 0:06:57] } 46. Ke1 { [%eval -6.93] [%clk 0:16:35] } 46... Kg4 { [%eval -6.32] [%clk 0:07:00] } 47. Kf1 { [%eval -7.11] [%clk 0:16:38] } 47... Rxg3 { [%eval -6.52] [%clk 0:07:01] } 48. Rxg3+?? { [%eval #-14] } { Checkmate is now unavoidable. Re4+ was best. } { [%clk 0:16:43] } (48. Re4+ Kh3 49. Kf2 h5 50. Ra4 g5 51. Ra5 h4 52. Ke2 f5 53. Rxf5 g4) 48... Kxg3 { [%eval #-13] [%clk 0:07:04] } 49. Kg1 { [%eval #-14] } { 0-1 White resigns. } { [%clk 0:16:47] } 0-1
+
+
+[Event "Game study: Chapter 2"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Game study"]
+[ChapterName "Chapter 2"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/Ywl7woSt"]
+[Annotator "https://lichess.org/@/ragav69"]
+[FEN "5rk1/R1R2pp1/6bp/8/Pq6/6QP/5PP1/1r3BK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "17:29:19"]
+
+1. Qxg6 fxg6 2. Rxg7+ Kh8 3. Rh7+ Kg8 4. Rag7# *
+
+
+[Event "Game study: Chapter 3"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Game study"]
+[ChapterName "Chapter 3"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/TxNx06MZ"]
+[Annotator "https://lichess.org/@/ragav69"]
+[FEN "1r3k2/2R3Rp/1q2p1np/p2pP2B/P4r2/1P6/5P2/2Q3K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "17:35:23"]
+
+1. Qxf4+ { [%eval #2] } 1... Nxf4 { [%eval #2] } (1... Ke8 2. Qf7+ (2. Rg8#) 2... Kd8 3. Qd7#) 2. Rcf7+ { [%eval #1] } 2... Ke8 { [%eval #1] } 3. Rg8# *
+
+
+[Event "Game study: Chapter 4"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Game study"]
+[ChapterName "Chapter 4"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/W70zwIop"]
+[Annotator "https://lichess.org/@/ragav69"]
+[FEN "1r1r2k1/2n1p2p/p4pp1/qp1P4/2p1N2Q/7P/1PP1RPP1/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "17:40:01"]
+
+1. Nxf6+ exf6 (1... Kf7 2. Qxh7+ Kxf6 3. Qxe7+ Kf5 4. Qe5#) 2. Re7 h5 3. Qxf6 Nxd5 4. Qg7# *
+
+
+[Event "Game study: Chapter 5"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Game study"]
+[ChapterName "Chapter 5"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/WfEi5z6v"]
+[Annotator "https://lichess.org/@/ragav69"]
+[FEN "6k1/p1B2ppp/3n1q2/3Q4/3P4/P5P1/1r1r3P/R4RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "17:44:36"]
+
+1... Qxd4+ 2. Qxd4 (2. Kh1 Qxd5+ 3. Kg1 Qg2#) 2... Rg2+ 3. Kh1 Rxh2+ 4. Kg1 Rbg2# *
+
+
+[Event "Game study: Chapter 6"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Game study"]
+[ChapterName "Chapter 6"]
+[ChapterURL "https://lichess.org/study/c3f6ChnW/vmxYyCEl"]
+[Annotator "https://lichess.org/@/ragav69"]
+[FEN "r5k1/2RR3N/2p1rp2/5p2/2b5/p3P1P1/7P/6K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.07"]
+[UTCTime "17:48:44"]
+
+1. Rg7+ Kh8 2. Nf8 Rxf8 (2... Rxe3 3. Ng6#) 3. Rh7+ Kg8 4. Rcg7# *
+
+

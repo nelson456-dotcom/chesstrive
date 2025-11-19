@@ -1,0 +1,18 @@
+
+*** Begin Patch
+*** Update File: chessrep-main/frontend/src/components/PuzzleRushPage.js
+@@
+@@
+-                      <Chessboard
++                      <Chessboard
+@@
+-                        showBoardNotation={false}
+-                        areArrowsAllowed={false}
+-                        customArrows={getAllArrows()}
+-                        customSquareStyles={{}}
++                        showBoardNotation={false}
++                        areArrowsAllowed={false}
++                        customArrows={getAllArrows()}
++                        customSquareStyles={{}}
++                        customBoardStyle={{ touchAction: 'none', WebkitUserSelect: 'none', userSelect: 'none' }}
+*** End Patch

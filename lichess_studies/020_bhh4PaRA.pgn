@@ -1,0 +1,96 @@
+[Event "Ловушки и комбинации: Открытие линии \"h\""]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Открытие линии \"h\""]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/pJmxc0FW"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.02"]
+[UTCTime "17:15:10"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Nc3 O-O 6. Bg5 h6 7. h4!? hxg5 8. hxg5 Ng4 9. g6 Nxf2? 10. Nxe5!! Nxd1 (10... Nxh1 11. gxf7+ Rxf7 12. Bxf7+ Kf8 13. Qh5 Qh4+! 14. Qxh4 Bf2+ 15. Qxf2 Nxf2 16. Kxf2 Nxe5 17. Bb3 $18) 11. gxf7+ Rxf7 12. Bxf7+ Kf8 13. Rh8+ Ke7 14. Nd5+ Kd6 15. Nc4#! *
+
+
+[Event "Ловушки и комбинации: Связанная ладья"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Giuoco Pianissimo, Normal"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Связанная ладья"]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/KUAlXmpp"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.02"]
+[UTCTime "17:20:26"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Bg5 O-O 6. Nc3 d6?! 7. Nd5 Kh8?! 8. Bxf6 gxf6 9. Qd2! f5 10. Qh6 f6 11. Nh4 Rf7 12. Ng6+ Kg8 13. Nxf6+!! { Элегантнейшим ударом белые отвлекают ферзя от защиты 8-ой горизонтали } 13... Qxf6 14. Qf8# *
+
+
+[Event "Ловушки и комбинации: Удержание лишней пешки"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Giuoco Pianissimo"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Удержание лишней пешки"]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/5jzZH6vE"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.02"]
+[UTCTime "17:24:48"]
+
+1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nf3 Bc5 5. c3 O-O (5... d5 6. exd5 Nxd5 7. Qb3!) 6. Bb3 a6 7. h3 d5 8. exd5 Nxd5 9. O-O Nde7 10. Nxe5! { Тактическим маневром белые проводят контрудар d3-d4 } 10... Nxe5 11. d4 Bxd4 12. cxd4 N5c6 13. Bg5! { Слабее } (13. d5) (13. Be3) 13... Be6 14. Nc3! Bxb3 15. Qxb3 Qxd4?! 16. Rfe1 Na5? 17. Qa3 Nec6 18. Rad1 Qa7? 19. Nd5 Nc4 { ... } 20. Nf6+!! gxf6 21. Qg3! fxg5 22. Qxg5+ Kh8 23. Qf6+ Kg8 { В дело вступают белые ладьи } 24. Rd5 N6e5 25. Rdxe5 Nxe5 26. Rxe5 Rfe8 27. Rg5+ Kf8 28. Rf5! { Финальная тонкость! } *
+
+
+[Event "Ловушки и комбинации: Образование проходных пешек"]
+[Date "2025.11.03"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C54"]
+[Opening "Italian Game: Classical Variation, Center Attack"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Образование проходных пешек"]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/DqE93jhJ"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.03"]
+[UTCTime "07:41:19"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. b4!? Bb6 7. e5 d5 8. exf6 dxc4 9. Qe2+ Be6 10. b5 Nb4!? { Новинка! } (10... Na5 11. fxg7 Rg8 12. Bg5? (12. cxd4 Qf6 13. Bb2 Qxg7 14. g3) 12... Qd5 13. Bf6 d3 { И у черных перевес }) 11. fxg7 Rg8 12. cxb4 Qf6 { За фигуру у черных опасные проходные пешки } 13. O-O Qxg7 14. g3 O-O-O 15. a4!? d3 16. Qb2 Qxg3+!! 17. hxg3 Rxg3+ 18. Kh2 Rxf3 19. Bg5? Bd4 20. Qd2 Rg8 21. Ra3 h6 22. Rg1 Rh3+ 23. Kg2 Rxg5+ { Белые просрочили время, оставив красочный финал } *
+
+
+[Event "Ловушки и комбинации: Двойной шах и мат"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C51"]
+[Opening "Italian Game: Evans Gambit Declined"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Двойной шах и мат"]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/2aUpD4mq"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.04"]
+[UTCTime "16:39:32"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. a4 a6 6. a5 Ba7 7. b5 axb5 8. Bxb5 Nf6 9. Ba3 *
+
+
+[Event "Ловушки и комбинации: Мат слоном и конем"]
+[Date "2025.11.06"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C57"]
+[Opening "Italian Game: Two Knights Defense, Fritz, Gruber Variation"]
+[StudyName "Ловушки и комбинации"]
+[ChapterName "Мат слоном и конем"]
+[ChapterURL "https://lichess.org/study/bhh4PaRA/1rZCUgjk"]
+[Annotator "https://lichess.org/@/Account_For_Studios"]
+[UTCDate "2025.11.06"]
+[UTCTime "08:07:42"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4!? 6. c3! { Лучший ответ! } 6... b5 7. Bf1 Nxd5 8. Ne4 Qh4 9. Ng3 Bb7!? { Ответственное решение! } 10. cxd4 O-O-O 11. Bxb5?! Nf4 12. O-O? Qh3!! { Следует не избегаемый мат } { [%cal Gh3g2,Gf4h3,Gg2h3] } *
+
+

@@ -1,0 +1,21 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2025.11.07"]
+[White "Franky"]
+[Black "Gillian"]
+[Result "1-0"]
+[WhiteElo "1115"]
+[BlackElo "916"]
+[TimeControl "900+10"]
+[Termination "ZergMcLerg won by resignation"]
+[Variant "Standard"]
+[ECO "B08"]
+[Opening "Pirc Defense: Classical Variation"]
+[StudyName "10/11/25 Oud Sint-Jozef"]
+[ChapterName "Franky-Gillian"]
+[ChapterURL "https://lichess.org/study/7LZf8P07/M7DCpLrO"]
+[Annotator "https://lichess.org/@/Schudder1995"]
+
+1. e4 { [%eval 0.18] } 1... d6 { [%eval 0.43] } 2. d4 { [%eval 0.43] } 2... Nf6 { [%eval 0.43] } 3. Nc3 { [%eval 0.38] } 3... g6 { [%eval 0.63] } 4. Nf3 { [%eval 0.46] } 4... Bg7 { [%eval 0.44] } 5. Be3 { [%eval 0.4] } 5... O-O { [%eval 0.53] } 6. Bc4 { [%eval 0.01] } 6... Nxe4 { [%eval 0.0] } 7. Nxe4 { [%eval 0.0] } 7... d5 { [%eval 0.0] } 8. Bd3 { [%eval 0.02] } 8... dxe4 { [%eval 0.07] } 9. Bxe4 { [%eval 0.04] } 9... Re8 { [%eval 0.29] } 10. O-O { [%eval 0.4] } 10... e5?! { [%eval 1.13] } { Inaccuracy. c6 was best. } (10... c6 11. c3 a5 12. h3 Be6 13. a4 Bd5 14. Bxd5 Qxd5 15. Qc2 Nd7 16. c4) 11. dxe5 { [%eval 1.08] } 11... Bxe5?? { [%eval 4.91] } { Blunder. Qxd1 was best. } (11... Qxd1 12. Raxd1) 12. Nxe5 { [%eval 4.85] } 12... Qxd1 { [%eval 4.89] } 13. Raxd1 { [%eval 4.87] } 13... Rxe5 { [%eval 5.58] } 14. Bh6?? { [%eval 2.72] } { Blunder. Rd8+ was best. } (14. Rd8+ Kg7 15. Bd4 Nd7 16. f4 c5 17. Bc3 Nb6 18. fxe5 Be6 19. Rxa8 Nxa8) 14... Re8 { [%eval 2.48] } 15. Rd4? { [%eval 0.71] } { Mistake. Rfe1 was best. } (15. Rfe1 Nd7 16. Bf3 Rxe1+ 17. Rxe1 Nf6 18. Re7 c6 19. h3 a5 20. g4 Be6) 15... c6 { [%eval 0.87] } 16. Rfd1 { [%eval 0.83] } 16... Nd7 { [%eval 0.93] } 17. Bf3 { [%eval 0.52] } 17... Rd8?? { [%eval 4.54] } { Blunder. Ne5 was best. } (17... Ne5 18. Be2 Bf5 19. R1d2 f6 20. Be3 h5 21. h3 Kg7 22. Ra4 a6 23. Rb4) 18. Bg5?? { [%eval 0.82] } { Blunder. Bg4 was best. } (18. Bg4 f5 19. Be2 Re8 20. Bc4+ Kh8 21. Rxd7 Bxd7 22. Rxd7 Re1+ 23. Bf1 Rae8) 18... c5?? { [%eval 4.4] } { Blunder. Re8 was best. } (18... Re8 19. Bf4 f6 20. g4 Ne5 21. Bxe5 fxe5 22. Re4 a5 23. a4 h5 24. gxh5) 19. Rd6? { [%eval 2.17] } { Mistake. Re4 was best. } { 1-0 White wins. } (19. Re4 Rf8 20. Bh6 Nf6 21. Re7 Bf5 22. Bxf8 Rxf8 23. c4 Bc2 24. Rde1 b6) 1-0
+
+

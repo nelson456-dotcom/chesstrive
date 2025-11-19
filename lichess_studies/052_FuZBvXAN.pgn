@@ -1,0 +1,16 @@
+[Event "tecnica de jogo 1: Chapter 1"]
+[Date "2025.11.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A00"]
+[Opening "Clemenz Opening"]
+[StudyName "tecnica de jogo 1"]
+[ChapterName "Chapter 1"]
+[ChapterURL "https://lichess.org/study/FuZBvXAN/sWpx0hMw"]
+[Annotator "https://lichess.org/@/MDTECNOL_RAFA"]
+[UTCDate "2025.11.07"]
+[UTCTime "18:06:26"]
+
+1. h3 g5 2. f3 g4 3. hxg4 h5 4. gxh5 Nf6 5. g4 e5 6. h6 Rxh6 7. Bg2 e4 8. fxe4 Nxg4! 9. Rxh6 { [%cal Gg4h6] } 9... Nxh6 10. d3?? { [%csl Gc1][%cal Gc1h6,Gh6g8,Gd8h4] } 10... Qh4+ 11. Kd2 Qg5+ 12. Ke1 Qxg2!? $15 13. Kd2 $7 Qg5+ 14. Kc3 { [%csl Gg5][%cal Gg5g1,Gd1g1] } 14... Qc5+ { [%csl Gc3][%cal Gc3d2] } 15. Kd2 Qb4+ 16. Ke3 Bc5+ 17. Kf4 Bd6+ 18. Kg5 Be7+ 19. Kf4 Qd6+ 20. Ke3 Qc5+ 21. Kd2 f5 22. exf5 Nxf5 23. Qf1 Ne3!! { [%csl Ge3][%cal Ge3f1,Ge3c2,Ge3d5,Ge3f5] } 24. Qf3 Bg5 { [%cal Gg5e3,Gc5e3,Gc5g5] } 25. d4 Nxc2+ 26. Kd3 Qxd4+ 27. Kxc2 $7 Qc4+ 28. Kd1 Bxc1 29. Ke1?? Qb4+ 30. Kd1 Qc4 31. Qh5+ Ke7 32. Qh8 Nc6 33. Qh7+ Kd6 34. Qh6+?? Bxh6 35. Ke1 Qc1+ 36. Kf2 Qxb2 37. Nc3 Qxa1 38. Ne4+ Ke5 39. Nf3+ Kxe4 40. Nd2+ Bxd2 41. a4 Qxa4 42. e3 Bxe3+ 43. Kg3 Bf4+ 44. Kf2 Kd3 45. Kf3 Bh2 46. Kg2 Qc2+ 47. Kh3 Ke3 48. Kh4 Ne5 49. Kg5 Bf4+ 50. Kf6 Qc6+ 51. Ke7 d5 52. Kf8 Bh3+ 53. Ke7 Re8#!! $19 $40 $146 *
+
+

@@ -1,0 +1,249 @@
+[Event "Stop making blunders! Or, at least, how to...: Intro (Jumping on the blunder)"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Intro (Jumping on the blunder)"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/SUZdXOfT"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+1... Nf6?? { We all make blunders. Sorry, nothing personal, it's just that as humans, all of us make mistakes. Some small, some that throw away the several hundred pound cash prize at the U10 British Championships (personal experience). } { [%csl Gf7][%cal Gh5f7] } 2. Qxf7# { Blunders come in all shapes and sizes. I'm here to help you catch them, and exploit them when someone else makes them! } *
+
+
+[Event "Stop making blunders! Or, at least, how to...: The Scholar's Mate: Avoidance"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "The Scholar's Mate: Avoidance"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/lr1TrIuv"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+{ Seeing the slight disaster that happened in the intro, what is the best move here? }
+1... g6! { Is correct! One of the main types of blunder beginners make is related to some sort of tactic. Either a threat, or a GM supported 20 move combination that leads to a lost Queen and Pawn endgame. Either way, basically the same.
+If you had made one of the alternative moves, let me introduce the first rule of the study:
+ALWAYS think ahead.
+In short, NEVER make one-move threats because they make you 'feel good.' NEVER play a move defending something and just call it a day. } (1... Nf6 { Unfortunately, you must have either skipped the Introduction where I explained the premise of this study, or have tried alcohol for the first time. Try again. Not the alcohol, the move. } { [%csl Gf7][%cal Gh5f7] }) (1... Qe7 { At least you had the state of mind to see that f7 was under attack. However, this hems in your f8 Bishop whom is obviously not very happy with your move. Play the correct move, ...g6, instead. }) (1... Qf6 { Is an alternative. At least you had the state of mind to see that f7 was under attack. However, your horse on g8 must be extremely offended that his optimal developing square has been obstructed. Play the correct move, ...g6, instead. }) (1... Nh6 { Is an alternative. At least you had the state of mind to see that f7 was under attack. However, your horse on g8 must be extremely offended that you stuffed him to the edge of the board. Play the correct move, ...g6, instead. }) (1... d5 { Is incorrect. At least you had the state of mind to see that f7 was under attack. However, your soldier is not very happy that he has been sent on a kamikaze mission. Which, doesn't achieve anything as Bxd5 renews the threat on f7. Play the correct move, ...g6, instead. }) 2. Qf3 { Another beginner type move - making useless, one-move threats. Specifically in this scenario, a threat that we have already spent a move to avoid. Develop a piece and prevent the threat to continue. } 2... Nf6 { I will not go into this line any further, as we have pretty much covered the whole thing. Let's continue. } (2... Qf6 { This is totally acceptable, and actually the second best move! The problem is, if the ladies are not traded, you are left with an awkward one on f6 blocking in your steed on g8. Play Nf6 to continue. }) (2... Qe7 { This is alright, at least defending f7. However, you must always think ahead. In this case, this move makes your majestic lady hit a brick wall on e5. Try again. }) (2... d5? { Alright. Blocking the Bishop's eyeline to f7. I like your outside-the-box idea of blocking the Bishop instead of the Queen, but you must always think ahead. In this case, what happens after Bxd5, when the threat is renewed and you have hung a pawn for no reason? }) (2... Nh6?! { This is alright, at least defending f7. However, you must always think ahead. In this case, where will your steed go after being sat on the edge? It has no future there. }) (2... Ke7? { If you thought this can prevent checkmate, think again. You are still hanging the f7 pawn and driving your king to the center. Try again. }) (2... f6?! { This defends against Qxf7#. However, weakening your pawn structure is not recommended when there are better alternative ways to go about it. Try again. }) (2... f5? { This defends against Qxf7#. However, weakening your pawn structure (and hanging a pawn) is not recommended when there are better alternative ways to go about it. Try again. }) *
+
+
+[Event "Stop making blunders! Or, at least, how to...: Saving the draw"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Saving the draw"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/66N5XW4W"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "7R/5p1k/4pb2/6pp/1Q6/6BP/1P3PPK/rq6 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+1... Kxh8?? { Black, an overconfident player, has been attacking you for the whole game, but he makes a bad move that throws away the win. White to move. } 2. Qf8+! { That's the one! } (2. Qb8+ { What checks do you have after Kg7 or Kh7? } { [%csl Gg7,Gh7][%cal Gh8g7,Gh8h7] }) 2... Kh7 $7 { What now? } 3. Qxf7+ { Yes! Black is now terrified. He doesn't want to lose his Bishop so plays } 3... Bg7 { What is the next move? } 4. Qxh5+ { Let's go! } 4... Kg8 { Play the only (safe) check in the position. } 5. Qe8+ { Let him cook!
+Black, seeing that if ...Kh7, then Qh5+ Kg8 Qe8+ and they can sing Kumbaya until the end of time. So he plays } (5. Qh8+ { That's not a (safe) check. Try again. } { [%csl Gh8][%cal Gg7h8,Gg8h8] }) (5. Qh7+ { That's not a (safe) check. Try again. } { [%csl Gh7][%cal Gg8h7,Gb1h7] }) (5. Qf7+ { That's not a (safe) check. Try again. } { [%csl Gf7][%cal Gg8f7] }) 5... Bf8 { Now don't be greedy and go for the 'obvious' check! } { [%csl Rg6][%cal Re8g6] } 6. Qxe6+ { You got it! You can now repeatedly check his king until the heat death of the Universe. Just make sure you don't post your Queen on the 'circles of death'! } { [%csl Rc2,Rd3,Re4,Rf5,Rg6,Rh7] } (6. Qg6+?? { WHAT DID I JUST SAY? } { [%csl Gg6][%cal Gb1g6] }) *
+
+
+[Event "Stop making blunders! Or, at least, how to...: Snatching the win"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Snatching the win"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/KfZjfpIK"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "7R/5p1k/4pb2/6pp/1Q6/6BP/1P3PPK/rq6 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+{ Seeing that ...Kxh8?? draws, what is the correct move here? }
+1... Bxh8! { That's the one! } (1... Kxh8?? { If your name is Elle Driver, and your one eye just got ripped out by Beatrix Kiddo, I can understand this move. But since she is completely fictional, I request you to try again. } { [%csl Gf8][%cal Gb4f8] }) (1... Kg7?? { Nice idea. You are trying to sneakily avoid a draw by ...Kxh8??. The problem is, you just gave White Mate in 3 via Qf8+! Honestly, this could be its own chapter.
+As a bonus, can you find M2 after ...Kg6? } { [%csl Gf8][%cal Gb4f8] }) (1... Kg6!? { An interesting idea. You are trying to sneakily avoid a draw by ...Kxh8??. This move also works, but it requires some technical finesse. Instead, what simple move practically guarantees resignation? }) 2. Bd6 { He's trying to free some space up. Restrict him and threaten mate! } 2... h4! { Yes! He is now helpless. } { [%csl Gg3,Gh1][%cal Gh4g3,Gb1h1] } *
+
+
+[Event "2025 UK Chess Challenge Terafinal Under 12"]
+[Date "2025.11.02"]
+[White "Mystery Player Y"]
+[Black "Mystery Player Z"]
+[Result "*"]
+[WhiteElo "1728"]
+[WhiteFideId "343436234"]
+[BlackElo "2108"]
+[BlackFideId "494437"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Watch out!"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/7FnK7DEQ"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "3r2k1/1p3ppp/p7/P3p1q1/8/1NP1nP2/1P2Q1PP/R5K1 b - - 4 24"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+24... Nd5 { Here we have a game between Mystery Player Y and Mystery Player Z. The reason I have hidden both the names is because I do not want my friend (though she probably wouldn't be after this) to cringe in embarrassment when this study is posted, with her blunder. The reasons I am using this game is because:
+1. I'm evil (heeheeheeha)
+2. This serves as an extremely instructive example of why you should always, ALWAYS, double-check EVERY move. I'm sure after I spectated this, the rule was permanently welded to every neuron in my brain.
+Now. What move posts your Rook on an open file, where a rude Knight happens to block the way? } 25. Rd1 { Now, I'm sure the Knight doesn't want to die by Player Y's death stare. So it moves away. } 25... Nf4 { DANGER! Your Rook is being stared at! How do you resolve the tension? } { [%csl Rd1][%cal Rd8d1] } 26. Rxd8+ Qxd8 { Now that the Rookian missile crisis has been resolved, let me introduce ANOTHER rule:
+Improve your worst placed piece.
+Right now, the Knight wishes that it can be backtracked and planted on one of the two luscious green circles! How to achieve this? } { [%csl Gb6,Ge4,Rc4,Rd2] } 27. Nd2?? { OOPS! I guess it happens to all of us! Even Terafinalists! (*sigh* I wish I can be one)
+I'm not sure what brand of antidepressant Yu... sorry Player Y had tried, but clearly it didn't work. Or maybe I'm wrong and this is just a blunder.
+Most blunders happen for 3 reasons: } (27. Qxe5?? { If you played this, seeing the Knight rudely threatening the lady, you have a sharp eye. However, this loses to ...Qd1+ 28.Kf2 Nd3+!. Play Y's move, Nd2??, to continue the study. }) (27. Nc5?? { Although this is also an instructive move showing the blunder, I must request you play Y's move, Nd2??, to continue the study. }) 27... Nxe2+ { 1. Distraction
+When you are distracted, you are no longer concentrated. Concentration (or a lack thereof) is a killer, but not compared to the other two, as this can be easily fixed. } { [%csl Gf2][%cal Gg1f2] } 28. Kf2 { 2. Recurring Patterns
+Sometimes, blunders happen in reoccurring fashion. If this is happening to you, try to find a key connection between all of the blunders. It may be because of something you haven't studied. If you are scrappy at positional concepts, positional blunders WILL crop up in your games. If you haven't mastered tactics, those will come back to ruin your day at Blenheim Palace. } 28... Qxd2 { 3. Loss of concentration
+This happens by far the most. There are two types. First of all, a player is on top of the world, thinking they have an easy game, and then sitting up to find out that their King has been stuffed in the corner and checkmated by five different pieces.
+Second, exhaustion. Often we play a game and feel insomniated (is that a word?) in the middle. THIS is the real blunder breeder. Once we become 'insomniated' it only takes a couple of moves before our IQ level ends up in China.
+There are a few more types of blunders, but we will cover them later as they are not related to this game, they are a bit more advanced (i.e. more important at professional tournament level) and Player Y has made the wise decision to resign. } *
+
+
+[Event "Chinese League Division A 2025"]
+[Date "2025.10.05"]
+[White "Hou Yifan"]
+[Black "Bai Xue"]
+[Result "*"]
+[WhiteElo "2617"]
+[WhiteTitle "WGM"]
+[BlackElo "2146"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Psychology (or, How to Beat Someone who is 500 rating points higher than you)"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/5WOASAoL"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "r1q2rk1/3b1ppn/p2p2n1/P1pPp1pN/1pP1P3/1P2N1PP/2B1QP1K/R2R4 b - - 0 27"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+27... Ne7 { Many a time we are playing someone who is higher rated than us. Maybe not a gap as extreme as this, but 100-200 rating points. And of course, like me (when I was a little bit younger), you have frozen like a lamb and lost with hardly a whimper.
+Unfortunately, for poor Bai Xue, her opponent was the fearsome Hou Yifan, a female chess player who needs no introduction. Though if she does, I recommend you use Google.
+The duo have reached a fairly balanced position. Bai Xue has just played Ne7, threatening to ensnare the first player's Knight with g6. A normal player in this position would scan this position and find g4, which is the only move to free the Knight from his predicament. But Hou Yifan isn't a 'normal player.' She has realised that after g4 the position is closed and rather easy for Bai Xue to hold a draw. And she likes her rating! She doesn't want to split the point with a 2100-rated scrub! Thus she mixes things up with the radical: } { [%csl Ge7][%cal Gg6e7] } 28. f4?! { Blowing thing up immediately! Now, she has seen the move ...g6, picking up her Knight. Now let's travel across the board to see what Bai Xue is thinking.
+"There must be serious ramifications to ...g6. After all, it could be a trap! She's a world-class player! She CANNOT make blunders like this! SURELY I simply CANNOT take, or I will be totally nuked if I play ...g6 and weaken my Kingside!"
+Were her fears rational? Let's check: ...g6 29. fxg5 (f5 was better, but with similar results) ...gxh5 30. Qxh5 Ng6! and the King looks plenty safe to me.
+EDITOR'S NOTE: I just realised ...Ng6?? is a blunder because of Qh6!. The correct reply was ...Qe8!, threatening ...f6.
+Unfortunately this is not what Snow White thought. As a Disney princess, she responded with the tame: } (28. g4 { Normally I'd commend you for playing a perfectly principled Stockfish recommended move, but in this case I actually have to punish you. You are good at chess, dear boy/girl, but you must READ THE TEXT BEFORE YOU MAKE A MOVE! In this case, I urge you to try again, and read the text this time for the move Hou Yifan chose. }) (28. h4 { I understand this move. It stirs things up, but can you find a better alternative that strikes at Bai Xue's kingside AND center? }) (28. Qg4 { Would you have the state of mind to NOT throw away your Queen for one second? }) (28. Rf1 { Of course, contributing to the Kingside attack and supporting the pawn push to f4. Here my coach, the legendary Lu Shanglei, says: "This move, let's call it A, is supporting move B. But can you play move B without move A? If you can, you will save lots of time." }) 28... f6?? { Still trying to make a draw. Now, I already called her a scrub, so I won't insult her any longer. The reason I have labelled this move as a blunder and not a mistake is because as my coach, the legendary Lu Shanglei, and I were going through this game, he commented on how: "Black had already lost the game psychologically. She bowed down to her WGM superior and refused to even take a winning chance when it was right in front of her."
+He also shares an important piece of advice: "Play the board, not the person. you are not playing a beginner, a 2100, or Magnus Carlsen. You are simply up against the chessboard."
+This was also a turning point for Hou Yifan as, gaining the newfound knowledge that her opponent had given up and bowed down to her, she will activate her inner Goku and torture her opponent for the rest of the game. And a bit after that as well.
+NOTE: If you had played Rf1, supporting f4, here is what Lu has to say about it (as I have played a similar move in one of my games): "This move, let's call it A, is supporting move B. But can you play move B without move A? If you can, you will save lots of time."
+The next few moves will not be important for the next theme. I will give an arrow and text prompt for what move to make next in the shoes (or Chinese slippers) of Hou Yifan. All you have to do, lovely chess study viewer, is play the moves and watch the torturing process that will lead to (MASSIVE PLOT TWIST INCOMING) Hou Yifan's blunder as her torture goes a bit too far.
+Play f5. } { [%csl Gf5][%cal Gf4f5] } 29. f5 Kf7 { Play Kg2. } { [%csl Gg2][%cal Gh2g2] } 30. Kg2 Rg8 { Play Rh1. } { [%csl Gh1][%cal Gd1h1] } 31. Rh1 Ke8 { Play h4. } { [%csl Gh4][%cal Gh3h4] } 32. h4 Kd8 { Play Ng4. } { [%csl Gg4][%cal Ge3g4] } 33. Ng4 Kc7 { Play Raf1. } { [%csl Gf1][%cal Ga1f1] } 34. Raf1 Qf8 { Play Qe3. } { [%csl Ge3][%cal Ge2e3] } 35. Qe3 Kb7 { Play hxg5. } { [%csl Gg5][%cal Gh4g5] } 36. hxg5 Nxg5 { Here we arrive at a critical moment. Hou Yifan is continuing her torture, but has not made much progress. Meanwhile, Bai Xue has been begging for a coup de grace this entire time. And in time, her wish will come true. But will the finishing blow be purely flawless? } 37. Nxe5?? { Lu: "The finishing blow. But not quite finishing. This was the worst move Hou Yifan had made in this entire game."
+Here is the second type of blunder. We had a lack of confidence providing fear which meant Black couldn't take While's sacrificed Knight. Here we have the SECOND type: overconfidence. In this case, she was so confident that nothing could go wrong that she makes a serious mistake. For those interested, in a future chapter we will delve into exactly how to counter this bold blunder.
+In the meantime, Snow White tries to find a "sound" way to capture the sacrificed Knight, which results in: } 37... Nxf5?? { Sacrificing BACK a Knight just to capture the already sacrificed one. Now the position is back to equal, with a slight pull for White. Now Goku will return and Snow White will never get another chance to swindle. } { [%csl Gf5][%cal Ge4f5] } 38. exf5 dxe5 { Wow! That was a LOT of material! There is a small detail later in the game, but I will not cover it as it seems too advanced for my general audience. However, if you are interested in performing your own analysis, here is the game link: https://2700chess.com/games/hou-bai-r11-beijing-2025-10-05 } *
+
+
+[Event "Stop making blunders! Or, at least, how to...: Snow White's Revenge"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Snow White's Revenge"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/H5W9L2RD"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "r4qr1/1k1bn1p1/p2p1p2/P1pPpPnN/1pP1P1N1/1P2Q1P1/2B3K1/5R1R w - - 0 39"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+39. Nxe5?? { It's time to stop bullying Snow White! Now is her time to shine!
+If your opponent was NOT the chess demigoddess Hou Yifan, what would you do to refute that preposterous Knight? } 39... dxe5 { Of course, capturing the preposterous Knight. It is now up to Hou Yifan to justify the sacrifice. } (39... fxe5 { This hangs the Knight to Qxg5. Maybe a different recapture? } { [%csl Gg5][%cal Ge3g5] }) 40. Qxc5 { Here is the key moment. Her idea was to now feast on b4 and open up Black's King. What move can you play to turn the entire game upside down? } 40... Nxd5!! { Wow! A true stunner!
+Hou Yifan is not surprised, though. After Qxf8 Ne3+ wins. But what if she just takes? } 41. Qxd5+ { Now, obviously you are going to want to block the check. } 41... Bc6 { She really only has d1 or d2 for her lady. Let's say she picks d1 (although your next move will always be the same, not dependant on Qd1 or Qd2) } { [%csl Gd2,Gd1] } 42. Qd1 { And now, what move finishes the combination? } 42... Nxe4 { And now it is very easy to see the end for White: we are threatening discovered check, Kg1 fails to Qc5+, and Kh2/3 fail to Rh8. It would be sensible for White to resign here. } (42... Bxe4+ { This inferior capture actually hands the win to White! After Bxe4 Nxe4 Qd5+ ruins your day. Remember, ALWAYS THINK AHEAD! }) *
+
+
+[Event "Stop making blunders! Or, at least, how to...: Can you handle the pressure?"]
+[Date "2025.11.02"]
+[White "Song Yuxin"]
+[Black "Zhao Shengxin"]
+[Result "*"]
+[WhiteElo "2444"]
+[BlackElo "2199"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Can you handle the pressure?"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/YeGr4div"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "5bk1/3R3p/4r1p1/8/1p3P1P/rP1R1KP1/3B4/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+1... Be7 { In some high-level tournaments like this one in China, the time control is in the 'stage' format. In this tournament, after move 40, both sides get extra time. Song Yuxin is in this endgame, up a pawn, and a sure win. Although he only has 1 minute left, he only has to make 2 more moves before the time control, and it would be smooth sailing then. What tactic does Me. Song play to 'decide' the game? } 2. Rxe7?? { A big mistake! Or, colloquially, a blunder...
+This seemed to be a clear winner: if Rxe7 Bxb4 wins a pawn AND simplifies the position. A rule of thumb, SIMPLIFIED POSITIONS ARE EASIER TO WIN.
+However, Lu Shanglei steps in again, and taught me how, when low on time, to NOT TAKE RISKS. It can pay off very much. I also recall funny stories of people hitting an emote in a winning position, only to blunder and draw or, even worse, lose. Personally (forgive me for personal advertising), I never show off or hit emotes when I'm up material or anything, and I (and all of you guys too!) should only do that once the scoresheets have been signed, or the opponent places an order for a new computer once theirs, in a fit of rage, has been embedded inside their wall.
+I have been taught using the saying: "The most dangerous moment in a chess game is when you are about to win." And so, I keep that with me at all times. You guys should, too. It really helps you to win. } (2. Rb7! { Great job if you found this move. Although not a tactic, it wins the game with absolutely no problems. If you played this in less than 1 minute, great job! You are better than a 2400. Unfortunately, I can't change your FIDE rating :P
+Play Song's move, Rxe7, to continue. }) 2... Rxe7 { Of course, Song was here to win. Thus he plays the next move in his combination: } 3. Bxb4 { But, while he was relishing in the sweet joys of victory, Zhao Shengxin hits him with the BOMBSHELL: } 3... Rd7!! { I'm just kidding. In the actual game, once again the lower-rated scrub bows down to the higher-rated superior. He played Rea7?? and went on to lose just a few moves later.
+If he had played this instead, it would've been DRAWN. Why? White must regain his Rook , or else he'd suffer a loss. Not wanted! So, Bxa3 fails to Rxd3+, with mass destruction. But after Rxd7 Zhao plays Rxd3+, forking the King and Bishop and, after K-moves Rxb4, enters a dead drawn 3v2 endgame.
+The lessons lie here: don't take risks unless you can calculate them. You cannot calculate if you are low on time, thus you must not take risks if you are low on time. Save them for another time: preferably a bigger one. (haha) } *
+
+
+[Event "Stop making blunders! Or, at least, how to...: Outro"]
+[Date "2025.11.02"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Outro"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/RzLLwP71"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+[FEN "6k1/5ppp/1p6/1P6/BNN2n2/BP6/P1P1npqb/R2Q1RKr w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.02"]
+[UTCTime "15:48:47"]
+[ChapterMode "gamebook"]
+
+{ Thank you so much for taking your time to visit this study, AND for reaching the end! We have taken our journey from basic chess (Scholar's Mate) to average Lichess player (Chapters 3 and 4), solid tournament level (Watch Out!) to the downright, world champion advanced (Psychology). After that we had a short dessert, a miniature where we saw an example of time pressure and, yet again, bowing down to a superior rated opponent. There is another advanced example but I will not go over it as it covers the same points as Psychology, and it is just a tactic. Maybe I'll upload it if this study becomes popular.
+
+At this point, I hope that everyone, no matter the level, can take something away from this course.
+
+Ms. Y must be cringing right now... }
+ *
+
+
+[Event "Chinese League Division A 2025"]
+[Date "2025.10.05"]
+[White "Hou Yifan"]
+[Black "Bai Xue"]
+[Result "1-0"]
+[WhiteElo "2617"]
+[WhiteTitle "WGM"]
+[BlackElo "2146"]
+[Variant "Standard"]
+[ECO "C86"]
+[Opening "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line"]
+[StudyName "Stop making blunders! Or, at least, how to..."]
+[ChapterName "Psssst! Secret chapter"]
+[ChapterURL "https://lichess.org/study/6B1uz62h/FhfeHzkc"]
+[Annotator "https://lichess.org/@/Yueyue1235"]
+
+{ For those of you too lazy to do your own analysis, I have shared my and Lu's analysis here. }
+1. e4 (1. c4) 1... e5 2. Nf3 Nc6 3. Bb5 a6 (3... Nf6 4. O-O Nxe4 5. d4 Nd6 6. dxe5 Nxb5 7. a4) 4. Ba4 Nf6 5. O-O Be7 6. Qe2 b5 7. Bb3 d6 8. c3 O-O 9. Rd1 Na5 10. Bc2 c5 11. d4 Qc7 12. d5 Nc4 13. b3 Nb6 14. a4 Bd7 15. c4 b4 16. a5 Nc8 17. h3 h6 18. Nbd2 Nh7 19. Nf1 Bf6 20. Ng3 Ne7 21. Nh5 Ng6 22. Kh2 Qd8 23. g3 Be7 24. Ne1 Qc8 25. Ng2 Bg5 26. Bxg5 hxg5 27. Ne3 Ne7 { We have reached the position. Black is threatening ...g6. For extra explanation, see chapter 6. } { [%csl Rg6][%cal Rg7g6] } 28. f4?! f6?? (28... g6! 29. f5 (29. fxg5!? gxh5 30. Qxh5 Qe8! { [%csl Gf6][%cal Gf7f6] }) 29... gxh5 30. Qxh5 f6) 29. f5 Kf7 30. Kg2 { Giving way for the Rh1. } 30... Rg8 31. Rh1 { Preparing h4. Notice how Hou Yifan is not playing h4 right away. She is preparing everything and making sure everything is in its optimal state before going in. This torture process is known as Cat and Mouse. The basic idea is summed up in the sentence: "Do in twenty what you can do in two." Basically, do not rush it if you can take your time and optimally improve your position. } 31... Ke8 32. h4 { Finally! The blow! } 32... Kd8 33. Ng4 Kc7 34. Raf1 Qf8 35. Qe3 Kb7 36. hxg5 { Notice how she has waited one.. two.. three moves before she made the capture. Another stage of Cat and Mouse. } 36... Nxg5 37. Nxe5?? { The blunder. Very rare for Hou Yifan to make a blunder like this, but again she didn't need to rush it. } 37... Nxf5?? (37... dxe5! { The refutation. } 38. Qxc5 Nxd5!! 39. Qxd5+ (39. Qxf8 { Loses to } 39... Ne3+! 40. Kf2 Ng4+! { With Raxf8 to follow. } { [%csl Gf3,Rf8][%cal Gg5f3,Ra8f8] }) 39... Bc6 { In either case the Queen can only move to d1 or d2. } 40. Qd1 (40. Qd2 Nxe4) 40... Nxe4 { There is no escape. Black threatens blue, and if White makes a green move Black responds with green, and same with red. } { [%csl Gh8,Gh3,Gh2,Rg1,Rc5,Bc3,Bd1][%cal Gg8h8,Gg2h3,Gg2h2,Rg2g1,Rf8c5,Be4c3,Bc3d1] }) 38. exf5 dxe5 39. g4 Qd6 40. Ng3 Rh8 41. Be4 Rag8 42. Rh5 Rxh5 43. gxh5 Kb8 44. Bf3 Re8 45. Rh1? { A rare mistake, which throws away her advantage, due to e4. However, Bai Xue missed it. } 45... Qc7?! { Missing an important possibility: e4. This was also because of Bai Xue's fears of her opponent. } (45... e4! 46. Be2 (46. Nxe4?? Nxe4 47. Bxe4 Bxf5 48. Rh4 Qe5 49. Kf3 g5 50. hxg6 Bxg6 { With a passed pawn and massive pressure on the Be4. }) 46... Re5!? (46... Qf8!?)) 46. Ne4 { And from here on, she maintains full control of the position, and the finish should be near. } 46... Nxe4 47. Qxe4 Qd6 48. Kf2 Kc7 49. Rg1 Re7 50. h6 gxh6 51. Rg6 h5 52. Rh6 Rg7 53. Bxh5 Kb7 54. Bg6 { Mental and physical surrender. Qc7 put up much more resistance. } 54... Qf8?? (54... Qc7! { Puts up much more resistance, threatening the morsel on a5. } { [%csl Ra5][%cal Rc7a5] }) 55. Qe3 Kc7 56. Qh3 Kd6 57. Qh4 e4?? { The blunder that causes the collapse of her position. Now it's all over. } 58. Qh2+ 1-0
+
+

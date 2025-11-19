@@ -1,0 +1,575 @@
+[Event "Punish the Philidor Defense!: 🍃 == Introduction  == 🍃"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🍃 == Introduction  == 🍃"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/UpSmT1jo"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ Welcome ladies and gentlemen to my newest study! Hi, I'm Bosburp!
+
+Today, we'll continue our 1. e4 repertoire. In this study we're going to learn how to PUNISH the Philidor Defense. I'll share a incredibly FUN, aggressive gambit with sky-high winrates that will make you look forward to facing it!
+
+If you find this study helpful, please give it a heart 💓 under the pinned comment! It helps more players discover this study and adds it to your favorites so you can always find it easily.💓500 likes for the next study! 😉
+
+If you have any questions or feedback, feel free to DM me! 💬
+
+Also, join our team for more awesome studies: https://lichess.org/team/study-creators--friends
+
+Let's start! Play 1. e4! 🚀 }
+1. e4 { "Best by test" as Bobby Fisher says. } 1... e5 { Play 2. Nf3 :) } { [%csl Gf3][%cal Gg1f3] } 2. Nf3 d6 { Ok, welcome to the Philidor Defense! It is actually quite a popular opening for Black, the second most played move after 2...Nc6. It's known for being a solid choice for Black, already creating a solid pawn chain. Personally, I have found this opening very annoying to face, and that is why this study was created.
+So, I'm gonna show you how to PUNISH it! :D
+The study is divided into 3 sections. Remember that when you're done with the study and revisit it in the future, you can look for your desired move by typing it in the magnifying glass next to the a8 square.
+Feel free to use the engine and the Lichess database, and don't forget to explore the variations! 🕵
+🔥 Get this entire repertoire for FREE in Noctie and practice it through gameplay: https://go.noctie.ai/punish-philidor-full-repertoire 🔥
+There’s a lot packed into this study, so don’t worry about memorizing everything. Focus on understanding the key ideas instead. It’s nearly impossible to remember every single line, but I’ve given you almost everything you need. Take what you can, and trust that the ideas will guide you in your games.
+LSB = Light-Squared-Bishop
+DSB = Dark-Squared-Bishop
+P.S. My lines will not always be the absolute top engine move, they are rather based on which one is more comfortable to play as a human and have a decent winrate.
+P.P.S. The OGs might remember I made a study on this 2–3 years ago. Yes, you're absolutely right! It didn’t get popular back then (bad timing and all), but this is a better version that’ll hopefully reach more people. 🙂
+Hit that space bar! 🚀 } { [%csl Ye5,Yd6,Yc7][%cal Gd6e5,Gc7d6] } *
+
+
+[Event "Punish the Philidor Defense!: 🎯 Section 1: Bird Gambit – Accepted"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Bird Gambit"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🎯 Section 1: Bird Gambit – Accepted"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/R2EE40Zl"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ Welcome to section 1! Let's first introduce you to the gambit we'll play. Follow the arrows! } { [%csl Gd4][%cal Gd2d4] }
+3. d4! { Immediately we are threatening to take e5. } { [%cal Rd4e5] } 3... exd4 { Black takes on d4, breaking down the central tension. This is most popular and the mainline.
+Now we are going to hit black with a much more rarer move which is only being played 3% of the time.
+Play 4. c3! } { [%cal Gc2c3] } 4. c3! { This is the beginning of the Bird Gambit! (Not actually named after Henry Bird, by the way.) We gambit a pawn but in return will get a ton of development and initiative.
+"Hey, this isn't Stockfish's top move!" Yes, that's true, but as I've mentioned in the intro, we are going for FUN + AGGRESSIVE, and this opening absolutely delivers! It's kinda has the Danish, Goring Gambit vibes. } 4... dxc3 { Again, most popular, and actually leads to the most fun stuff.
+We'll be looking at this move in the following chapters. We'll respond with... } { [%csl Gc4][%cal Gf1c4] } 5. Bc4! { Has white gone mad, sacrificing a second pawn!? Yes, we are, but in return, we're get HUGE compensation for it, and this is the move I’m recommending. Of course, White could have just recaptured the the pawn with the knight and white would also get some compensation for it, but 5. Bc4! will lead to way more active and tactical positions. With Bc4 we are aiming at the vulnerable f7 pawn and we are able to castle anytime we want.
+Btw, this position is also reachable directly with the Danish Gambit: 1. e4 e5 2. d4 exd4 3. c3 dxc3 4. Bc4 d6 5. Nf3
+Our winrate is at 58%. The eval is -0.2, so really nothing dubious. I fully recommend you play this OTB.
+🎯 Practice the Bird Gambit through gameplay 🎯
+📕 Double Accepted: https://go.noctie.ai/bird-double-accepted
+📕 Accepted: https://go.noctie.ai/bird-accepted } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...cxb2?! with 6...Be6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...cxb2?! with 6...Be6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/z3CQ145u"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+5... cxb2 { This is the double-accepted variation. } 6. Bxb2 $44 { Advantages for white:
+1. The king is ready to castle
+2. The two bishops are dominating the a1-h8 and a2-g8 diagonals
+3. The queen can come join the attack very easily
+Advantages for Black:
+1. Has 2 extra pawns
+White is almost fully developed and it's still move 6, meanwhile every single piece from black is on the 8th rank.
+With perfect play it's 100% equal, but for humans, I think white's going to have lots of fun :) } { [%csl Gf3,Gc4,Gb2,Bg1,Ra8,Rb8,Rc8,Rd8,Re8,Rg8,Rf8,Rh8,Bd5,Bb3][%cal Rb2a1,Rb2h8,Be1g1,Yc4a2,Yc4g8,Bd1d5,Bd1b3] } 6... Be6 { The most popular move for Black. Looks dubious, but it's totally playable, Black will have to be careful in the following moves. } 7. Bxe6! { We can trade, giving Black a weak e-pawn. } 7... fxe6 { As you can see, e6 and b7 and Black's weak points. We will immediately exploit both with our following move. } { [%csl Re6,Rb7] } 8. Qb3! { Forking both pawns. Black's best option is to accept the fact that they're gonna lose a pawn and develop with Nc6 or another developing move. Just a reminder. The position is still 100% equal, but White has a whopping 64% winrate. } { [%csl Re6,Rb7] } 8... Qc8?? { By far the most popular, but a losing blunder. Black got too greedy here. } (8... Nc6! { Instead of taking one of the pawns (and getting chased away) we can bring the king to safety. } 9. O-O! Qc8 { Never too late to get greedy. Black decides he wants to defend the pawns anyway. } (9... Qd7! { Your opponent is very high level. Do not take b7, Black will skewer the queen and bishop. } 10. Nbd2 { Instead we prioritize finishing development. We have a very comfortable (yet, according to the computer, equal) position. White's winrate is at 56%. o-o-o, is a dubious move here, because we've got the open b and c files to attack the king. if Nf6, follow up with Ng5 - e5 breaking the center and get the rooks on the d file. } { [%csl Gd2,Gf3,Gb2,Gb3][%cal Ba1b1,Bb1d1] }) 10. Ng5! { Adding pressure. } 10... Nd8 11. f4 $16 { And we try to attack along the f-file. Black's king isn't castling to safety any time soon. } { [%csl Gb3,Gb2,Gg5,Gf1,Rd8,Rc8,Ra8,Re8,Rf8,Rg8,Rh8] }) (8... b6? { Also very popular. } 9. Nd4 { Of course not Ng5 as it would leave the knight hanging. ;) it's 2 attackers vs zero defenders. } { [%csl Re6] } 9... e5 { The only way to not lose the pawn, but we just hop the knight in here. } 10. Ne6 $16 { [%csl Ge6] }) 9. Ng5! { Attacking the pawn again. } { [%cal Bg5e6,Yb3e6] } 9... Ke7 { The only way to protect the e6 pawn, but we take it anyway! } (9... Nf6 { A bit too late huh? } 10. Nxe6 Nc6 11. O-O $18 { Stockfish gives white a +3.3 advantage! Our king is much safer, and we got a octopus knight on e6. You don't want to trade the knight for the passive DSB tho, the knights worth much more. Also, Nxe4 leads to Re1 which is absolutely crushing. } { [%csl Gg1,Re8,Ge6,Gb3,Gb2][%cal Be6c7,Be6d8,Be6f8,Be6g7,Be6g5,Be6f4,Be6c5,Be6d4] }) (9... e5?? { Also too late, should have been played a move earlier. } 10. Qf7+ Kd8 11. Qxf8+ Kd7 12. Qf5+ Kd8 13. Nf7+ { Forcing the king away from the queen. } 13... Ke7 14. Qxc8 Kxf7 15. Qxb7 $18) (9... d5?? { Another attempt. } 10. exd5 { Simplifying. } 10... exd5 11. O-O $18 { And Black's just stuck. White has too much development. All the pieces will flow in soon. It's 4.3. } { [%csl Rd5][%cal Bf1e1,Bb1c3,Bg5e6,Bb2a3] }) 10. Nxe6! Qxe6 { Now the queen has left her b pawn hanging. } 11. Qxb7 { The rook is trapped. } { [%csl Ra8] } 11... Nc6! { It's very important that this is covered. A very nice trap from black. DO NOT TAKE THE ROOK! Black will get enough counterplay after Qxe4. If Black plays anything else besides Nc6, just take a8 and be happy with your great position and material advantage. } 12. Qxc6! Rc8 { Keeping c7 defended. } (12... Rb8?? { This is the most played move being played 50% of the time. This just loses immediately. } 13. Qxc7+! { [%cal Rc7e7,Rc7b8] } 13... Qd7 14. Qxb8 $18) 13. O-O Nf6 14. Nd2 { The computer gives white a +3 advantage. Black's king is awkwardly placed and Black's pieces have a hard time developing. White has a great attacking position. } { [%csl Gb2,Gd2,Gc6,Re7,Re6,Rf6,Rf8,Rc8][%cal Bf2f4,Ba1c1,Bc1e1] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...cxb2?! with 6...Nf6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...cxb2?! with 6...Nf6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/SMkR8ot6"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/5N2/PB3PPP/RN1QK2R b KQkq - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+6... Nf6 { Here Black's idea is to castle as quickly as possible. Extinguishing most of White's attack, leaving Black with 2 clean pawns up. } { [%cal Bf8e7] } 7. Qb3!? { Of course we won't allow that. We have to take the initiative. This is the most successful and aggressive option, setting up a battery aiming f7. } { [%csl Gf7][%cal Gb3f7] } 7... Qe7?! { Black defends the f7 pawn, but the downside of this move is that the DSB takes longer to develop longer, resulting that the king isn't castling soon. ;) } { [%csl Rf8][%cal Ge7f7,Ge7e4] } (7... d5! { This is the best move, although rare. } 8. Bxd5 Nxd5 { Black gets rid of the annoying LSB. } 9. exd5 { We keep the queens on the board of course. Note that our DSB is aiming at g7. } { [%csl Gb2] } 9... Qe7+ { Black gives a check, as there is no good way to block it. } 10. Kd1! { A nice resource. Threatening Re1. } { [%csl Be8,Be7][%cal Bh1e1,Be1e8] } 10... Kd8 { Black also forced to move the king, getting out of the e-file. } 11. Re1! { And here Qb4 is forced due to tactical resources that allow White to win some material. Then the queens get traded of and it's a roughly equal game (0.3 for Black), although more double-edged than you might think. }) (7... Be6? { I don't know why people play this, but it's the 2nd most popular move. } 8. Bxe6 fxe6 { Black has voluntarily created these weaknesses. } { [%csl Re6,Rb7] } 9. Ng5 $16 { The best way to exploit it. Taking with a knight is much better than with a queen. } { [%csl Gg5,Re6][%cal Bg5e6] }) 8. O-O! { Bringing the king to safety and indirectly defending the e pawn. If Black would take e4 white plays Re1 and is winning. } 8... Nc6? (8... Qxe4?? 9. Re1 { Bxf7 is even better, but it's more complicated, so Re1 is just the most simple way to win. } 9... Qxe1+ 10. Nxe1 $18) (8... Nxe4?? { Causes so many unnecessary complications. } 9. Re1 { [%csl Ge8,Re4,Re7][%cal Ge1e8] } 9... f5 10. Nc3 { Adding pressure. } 10... Nc6 11. Nxe4 fxe4 12. Bd5 $18 { White's completely winning. } { [%csl Re4,Gb2,Gb3][%cal Rd5e4,Be1e4,Rd5c6] }) (8... Nbd7 9. Ba3! $16 { Nc6 developing also works, but Black has Nc5 which is just a bit annoying, having to move the queen and all. Now the bishop covers c5, if Black plays it anyway just take it and follow up with e5 which is completely winning.
+From here develop normally. Make sure not to trade queens and play aggressively. } { [%csl Re7,Re8,Rf8,Rd7,Rc8][%cal Bb1c3,Ba1d1] }) 9. Nc3 $16 { Here you get a very good game with a 75% winrate. Below are the general ideas and common (pretty much you'll always face them if you reached this point) blunders from Black. I urge you not to attempt to actually memorize all these, but I'm giving you some ideas, if familiarized with a bit, will help you play this opening very successfully. As, many transpositions will lead to this position. But feel free to move on to the next chapter if you want. } 9... g6?? { This is a common attempt to try to bring the king to a safer place, white can just execute the same idea, which is hopping the knight to d5 and try to break open the center. This is a blunder because it opens the diagonal for our DSB to shine! } (9... Na5?? { The most popular option, attempting to get rid of the very strong LSB, but it fails miserably because of Qa4+ and the knight is forced back to c6. } { [%csl Gb3,Gc4][%cal Ga5b3,Ga5c4] } 10. Qa4+! Nc6 11. Nd5! { [%csl Ge7,Gf6][%cal Gd5e7,Gd5f6] } 11... Qd8 (11... Nxd5 12. exd5 { The knight is pinned, so there is no way to save it. } { [%cal Gd5c6,Gf1e1] } 12... Bd7 13. dxc6 Bxc6 14. Qb3 { White is totally winning here. } 14... O-O-O 15. Bxf7 Bxf3 16. Qxf3 $18 { [%csl Gg1,Gb2,Gf7,Rf8,Rd8,Rc8,Re7,Rh8,Rc7,Rb7,Ra7][%cal Bf1c1,Ba1b1] }) 12. Rae1! { The idea of this move is to support pushing the e pawn. } 12... Bd7 (12... h6?? { Now white can demonstrate the power of the rook on the e file. } 13. Nxf6+! gxf6 14. e5!! { Immediately ripping open the center. } 14... dxe5 15. Nxe5! fxe5 16. Bxe5 { White is crushing here, there is no way to stop all white's threats. } { [%csl Gh8][%cal Ge5h8,Ya4e8,Be1e8] } 16... Rg8 17. Bxc7+ $18) 13. Qb3 Na5 14. Bxf6 gxf6 15. Qc3 Nxc4 16. Nxf6+ Ke7 17. Nd5+ Ke8 18. Qxh8) (9... Be6?? 10. Nd5! { We can take the b7 pawn anytime! } { [%csl Ge7,Gc7,Gf6,Yb7][%cal Gd5e7,Gd5c7,Gd5f6,Yb3b7] } 10... Bxd5 11. exd5 Ne5 12. Nxe5 dxe5 13. Qxb7 Rd8 14. Rfe1 { There is to much pressure on e5, and black's largest problem is that the king is still stuck in the center. Stockfish gives white a +8.4 advantage. } { [%csl Re8,Re7,Rd8,Rf8,Rf6,Ge1,Ga1][%cal Bb2e5,Be1e5,Yb7a7,Yb7c6,Yc4b5] }) (9... Bd7?? 10. Nd5 { again hopping in the center. } { [%csl Gc7,Ge7][%cal Gd5c7,Gd5e7] } 10... Nxd5 (10... Qd8 11. Nxf6+ gxf6 12. Bxf7+ Ke7 13. Bh5 $18 { [%csl Re7,Rd7,Rf8,Rd8,Rc6,Gb3,Gb2,Gh5,Gf3] }) 11. exd5 Ne5 12. Nxe5 dxe5 13. Qxb7 { White just grabs the free pawn. } 13... Rd8 14. Bxe5! Qxe5 15. Rfe1 $18 { again skewering the queen. } { [%csl Ge8,Ge5][%cal Ge1e8] }) (9... b6?? 10. Nd5 Nxd5 11. exd5 Na5 12. Qa4+ Bd7 13. Qc2 Nxc4 14. Qxc4 O-O-O 15. Rac1 $18 { White is clearly winning. An idea here if the bishop moves away is to bring the knight to c6 and get a Lolli mate. } { [%cal Gc1c8,Bc4a6,Bf3d4,Bd4c6] }) (9... Bg4?? 10. Qxb7! $18 { a fork! } { [%cal Gb7a8,Gb7c6] }) (9... Qd7 10. Rfe1 Na5 11. Bxf7+!! Qxf7 12. Qb5+ Nc6 13. e5!! dxe5 (13... Ng4 14. exd6+ Be6 (14... Kd8?? 15. Qg5+ Nf6 16. dxc7+ Kxc7 17. Qf4+ Bd6 (17... Kb6 18. Qe3+ Kc7 19. Nb5+ Kd8 20. Rad1+ $18) 18. Nb5+) 15. Qxb7 $18) 14. Nxe5 $18 { There are too many threats for black to deal with. White has a + 8 advantage. }) 10. Nd5! { Immediately opening the diagonal! There is nothing black can do to save their self. } { [%csl Yh8,Yf6][%cal Yb2h8,Bd5f6,Bd5e7] } 10... Nxd5 11. exd5! { [%cal Gd5c6,Gb2h8] } 11... Ne5 { blocking the DSB. } 12. Nxe5 dxe5 13. Bxe5! { We can now take advantage of the fact that the king is stuck in the center and the e file is open. After Qxe5 we play Re1 and win the queen. } 13... f6 { a attempt to save the rook. } 14. Bg3! { Just moving over to let the rooks do their job. } { [%cal Bf1e1,Ba1d1] } 14... Kd8 { Getting out of the e file. } 15. d6 { Now we crush open the d file. } 15... cxd6 16. Rfe1! { White just has to keep hitting the queen. } 16... Qd7 (16... Qc7 17. Bb5 { threatening mate on e8. } { [%csl Ge8][%cal Gb5e8,Ge1e8] } 17... Bd7 18. Rac1 Qb8 19. Bxd7 Kxd7 20. Qf7+ Kd8 21. Re8#) 17. Bb5 Qc7 18. Re8# { [%csl Gd8,Ye8,Yd7,Rc7,Rc8,Ge7][%cal Ge8c8,Yb5e8,Ge8e7] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...cxb2?! with 6...Nc6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...cxb2?! with 6...Nc6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/NBLtOez4"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/5N2/PB3PPP/RN1QK2R b KQkq - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+6... Nc6 { Very often Black will be transposing to the same position as the previous chapter. } 7. Qb3 { Setting up the battery aiming at f7. We will be seeing this Qb3 idea very often :) } { [%csl Gf7][%cal Gb3f7] } 7... Nh6 { Protecting the f7 pawn. } (7... Qe7? 8. O-O Nf6 9. Nc3 { We have transposed to the same position as the previous chapter. }) (7... Be6 8. Bxe6 fxe6 9. O-O $10 { The b-knight will usually develop to a3, where doesn't block any pieces and can reroute somewhere better. } { [%csl Re6,Rb7,Gb2,Gb3][%cal Bb1a3] }) 8. O-O! { We bring our king to safety. } 8... Na5 { The most common move from Black and the engine's top choice. Black wants to get rid of our annoying LSB, we want to keep it, so we only have one good move here: } { [%cal Ra5b3,Ra5c4] } 9. Qa4+! { This way we can move our bishop away. } { [%cal Ra4a5,Ra4e8] } 9... c6 { Blocking check and defending h5. } { [%cal Gd8a5] } (9... Nc6?! { This move just doesn't achieve anything, Black's just horsing around :) } 10. Nbd2! $16 { We just continue developing! Note that 10. Nc3?! would be worse because it blocks the diagonal of our monster on b2. }) 10. Bd3 (10. Be2 { Retreating the bishop. Or Bd3, both are fine. } 10... b5 { Of course, Black won't allow our queen to sit comfortably here. } 11. Qc2 Bd7 12. Nbd2 $10) 10... b5 11. Qc2 $14 { With a very comfortable position. Black's knights are grim on the rim, and castling remains a huge difficulty. from here continue playing aggressively, try to keep Black's king in the center, and refrain from trading material. h4 is an idea, undermining b5, thus Nbd2-c4 reroute is possible. } { [%csl Gd3,Gc2,Gb2,Ye4,Gf3,Rh6,Ra5,Re8,Rf8,Rd8,Rc8,Rh8,Ra8][%cal Bf1e1,Ba2a4,Bb1d2] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...h6? PURE MADNESS"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...h6? PURE MADNESS"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/IIHAM7gZ"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/4P3/2p2N2/PP3PPP/RNBQKB1R w KQkq - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+{ Ok, let's take a few steps back. We've now (pretty much) covered everything about the double-accepted variation. Now we move on to other 5th moves. So this might be considered the beginning of section 1.5. }
+5. Bc4 { WARNING: This is definitely the most crazy line of the entire study. Don’t say I didn’t warn you. ;) } 5... h6? { 5. h6 is played 11% (242,000+ games) of the time. Black was probably scared of a future Bg5, but now we have a INSANE series of BRILLIANT moves that no human would survive and even if Black plays perfectly White will still have an advantage. } 6. Bxf7+!! { Incredibly rare, but top engine move. This isn't some crazy dubious nonsense, the engine approves all this! None of Black's pieces are developed, so we will get a huge attack! } 6... Kxf7 7. Ne5+!! { The pawn is pinned! The most popular move here is Ke8?? which loses immediately. } { [%csl Bd8,Re5][%cal Bd1d8,Rd6e5] } 7... Kf6 (7... Ke8?? { Most popular. Ends things to quickly, we sadly can't go into the crazy lines above. } 8. Qh5+! { White will get the queen to f7, which is checkmate! } { [%cal Bh5f7,Ge5f7,Ge5d7] } 8... Ke7 (8... g6 9. Qxg6+ Ke7 10. Qf7# { [%csl Gd7,Ge8,Ge7,Ge6,Gf6,Rd6,Rd8,Rf8,Bf7][%cal Gf7d7,Gf7e8,Gf7e6,Gf7f6,Be5f7] }) 9. Qf7# { [%csl Gd7,Ge7,Ge8,Ge6,Bf7,Rd6,Rd8,Rf8,Gf6][%cal Gf7d7,Gf7e8,Gf7e6,Be5f7,Gf7f6] }) (7... dxe5? 8. Qxd8 $18 { White is better. We will probably still pick up a few more pawns later on. } { [%csl Gc8,Gc7,Gc3,Bg1][%cal Gd8c8,Gd8c7,Gb1c3,Be1g1] }) (7... Ke7 { Avoids the crazy kinghunt by giving up the rook. } 8. Ng6+ Kd7 9. Nxh8 $18 { it's +2.6. The knight isn't getting trapped here. } { [%cal Bb1c3,Bc3d5,Bh2h4] }) 8. Qf3+!! { Again the only move that keeps the advantage. The king must not move back. } 8... Kxe5 9. Qf7!! { The only winning move again! White now doesn't allow the king to come back home. Bf4+ is a serious threat. } { [%csl Ge6,Gf6][%cal Gf7e6,Gf7f6] } 9... Nf6 { Controlling d5 and cutting of the queen from defending stuff along the f-file. } { [%csl Rd5,Rf7][%cal Rf6d5] } (9... Qf6?? 10. Qd5# { [%csl Gf5,Ge5,Ge6,Gd4,Bd5,Rf6,Rd6,Yf4,Ge4][%cal Gd5f5,Gd5e6,Gd5d4,Be4d5,Yc1f4] }) 10. Nxc3! { From here on, I recommend you don't trust the engine too much. The position is simply too complicated, it often shows a move as best, only for the eval to suddenly drop after you play it. But don’t worry, I’ve dug deep into this line, and what I’m showing here is fully analyzed and practical.
+Now we're supporting the e4 pawn (not allowing the king to take it).
+This point has almost never been reached before, either White doesn’t know the previous key moves, or Black has already fallen into one of the losing lines before getting this far. } { [%cal Rf2f4] } 10... Be6?? { This move seems to be one the most natural, being the most popular of the handful of games that have reached this position. If your opponent plays it, be happy, you’re going to play an Immortal Game worthy of your personal collection.
+There are a too many possible 10th moves here, and we can’t cover them all. But I’ve included a few key examples so you get a feel for the attacking ideas. If Black chooses something else, you’ll need to rely on your attacking skills, but know the position is fully winning for you. } (10... d5! { This will be the PERFECT line for Black. The only move that survives. } 11. Bf4+!! Kxf4 12. Nxd5+ Qxd5!! { The only move that doesn't lose immediately. } (12... Kxe4 13. O-O-O $18) 13. exd5 Bb4+ 14. Kf1 Bd7 15. Qxg7 Bb5+ 16. Kg1 Nbd7 17. Qg3+ Kf5 $14 { White's still a bit better because of Black's horrible king placement. But you'll never face this line. }) (10... Qe8?? { Most times Black will probably play a pretty random move that doesn't address our threat. } 11. f4+! Kd4 $7 12. Qb3! { The key, keep these two in mind. From here it's impossible to stop mate (except sacrifice the queen and a ton of other material). The king's in a mating net. } { [%csl Rc4][%cal Be1g1,Bc3e2,Bc1e3,Rb3c4] }) (10... Qd7?? 11. f4+ Kd4 12. Qb3 { The same thing. } { [%cal Rc3e2,Bc1e3,Ya1c1,Be1g1] }) 11. Bf4+!! { The only move that leads to mate! White forces the king away from the LSB and is always ready to bring the rook into action. } { [%csl Ga1] } 11... Kxf4 (11... Kd4 12. Qxe6 d5 13. O-O-O+ Kc4 14. b3+ Kxc3 15. Bd2+ Kd3 16. Be1+ Ke2 17. Rd2# { Checkmate on the 2nd rank! }) 12. Ne2+!! { The only move that leads to mate. Preparing an f4 push. } { [%cal Bf2f4] } 12... Ke5 { Defending the LSB. } { [%cal Ge5e6] } (12... Kxe4 13. Qxe6+ Kd3 14. O-O-O#) 13. f4+!! { The only move that wins, again. We force the king away from the bishop. } 13... Kxe4 $7 14. Qxe6+! Kd3 $7 15. O-O-O#!! { What a beautiful way to finish of the game! White castle checkmates while being down 7 points in material! } { [%csl Ye2,Yc4,Ye3,Ye4,Gd4,Gd3,Gd2,Bc3,Rc2][%cal Ye6e2,Ye6c4,Gd1d4,Be2c3,Rc1c2] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...Be6?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...Be6?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/KYGmlVmk"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+{ We're still in the 5th moves. Most often, Black doesn't feel safe taking 2 pawns, so they'll play a seemingly "safer" move. This next line will be very similar to chapter 3. The only difference being that Black hasn't taken b2. }
+5... Be6! { This is the most popular move. We can follow our ideas. } 6. Bxe6 fxe6 { [%csl Re6] } 7. Qb3! { [%csl Re6,Rb7,Rc3] } 7... Qc8?? { By far the most popular move, being played 50% of the time. } (7... b6? { Another common mistake } 8. Nxc3! { we don't have to take the e pawn immediately, first let's pick up the hanging c pawn. } 8... Qd7 { [%csl Ge6][%cal Gd7e6] } 9. Nd4! { double attacking the e pawn. } { [%csl Ge6][%cal Gd4e6,Gb3e6] } 9... e5 10. Ne6! Nf6 11. Bg5 Nc6?? (11... c6 12. f4 $16) 12. Bxf6 gxf6 13. Nd5! { [%csl Gf6,Gc7][%cal Gd5f6,Gd5c7,Ge6c7] } 13... Qxe6 14. Nxc7+ { [%csl Ge6,Ge8][%cal Gc7e6,Gc7e8] } 14... Kd7 15. Nxe6 { white is up a queen. }) (7... cxb2 { We simply transpose to the lines in previous chapters. } 8. Bxb2) 8. Ng5! { [%cal Gg5e6,Yb3e6] } 8... Ke7 9. Nxc3! { Nxe6 right away is fine, but Black might get some counterplay with a 10...d5. Now we simply keep the e pawn protected. The Nxe6 idea remains. } { [%csl Ge4][%cal Gc3e4] } 9... h6?? { By far this is the most popular move. } (9... Na6 10. f4! h6 11. Nf3 $18 { White can now castle and try to break open the f file to make the rook active. Meanwhile Black's pieces haven't left the 8th rank except the grim knight on the rim and the king. } { [%csl Gf3,Gc3,Gb3,Bg1,Ra6,Re7,Rf8,Rg8,Rc8][%cal Be1g1] }) (9... b6? 10. Nd5+ { A nice resource. } 10... exd5 11. Qxd5 { Black will have to play Nh6 to prevent Qf7+ and then we take the free rook. } { [%csl Ra8,Rf7][%cal Rd5a8,Rd5f7] }) (9... Nc6 10. Nxe6 Qxe6 11. Qxb7 { Our idea. } 11... Nd4 { A counterattack that looks scary, but it's nothing to fear. } 12. Bg5+ { Bringing the bishop out with tempo, clearing the backrank connecting the rooks. } 12... Nf6 13. Qxa8 Nc2+ 14. Kd2 { [%csl Gh1] } 14... Nxa1 15. Rxa1 { We have an amazing position. We'll still pick up a couple of pawns later on. } { [%csl Ra7,Rc7] }) 10. Nxe6! { Note: we can take e6 after Black plays any move, except after Na6 white has to play f4, and also gets a great position. Or b6, which are in the variations above. } 10... Qxe6 { Now b7 is left undefended, so we can just go ahead and take it! } 11. Qxb7 $18 { Nice, white wins in 11 moves. Whatever black plays just take the rook and you have a sweet advantage. :) } { [%csl Ga8][%cal Gb7a8] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...Be7?"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...Be7?"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/3lBX8xdQ"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+5... Be7? { Black intends to get one step closer to castling, the problem with this move is that the queen can now no longer go to e7 or f6 to defend the f7 pawn. } 6. Qb3! { This is the only move that keeps the advantage! white immediately attacks the f7 pawn and there is no way to defend it! } 6... Be6? { The most popular move, but it doesn't really do anything other than leave the b7 pawn undefended too. } 7. Bxe6 fxe6 { At this point 3 pawns are already ready to grab, but we should be patient and play this very IMPORTANT move. } { [%csl Rc3,Re6,Rb7] } 8. Nd4! { Qxe6 would lose all the advantage because after 8...cxb2 9. Bxb2 Qd7! and White has no attack ongoing anymore. White's dream is to have an octopus knight on e6. } { [%csl Ge6][%cal Gd4e6,Gb3e6] } 8... e5 { Saving the e pawn and hitting the knight. } (8... Qd7? 9. Qxb7 $18 { Black just gave away a free rook! } { [%csl Ga8][%cal Gb7a8] }) (8... d5 { The second most popular move. We can go ahead and grab the free pawn on b7 now. } 9. Qxb7 Nd7 10. Nxe6 { A triple fork. } { [%csl Gd8,Gg7,Gc7][%cal Ge6d8,Ge6g7,Ge6c7] } 10... Qc8 11. Nxc7+ Kf8 12. Qxa8 Qxa8 13. Nxa8 $18 { White has an extra rook on the board. }) (8... Bf6 9. Nxe6 { [%csl Gd8][%cal Ge6d8] } 9... Qc8 (9... Qd7 10. Nxc3 $16 { [%cal Be1g1,Bb2c3,Bf2f4] }) 10. Nxc3 Nc6 11. Nd5 { [%csl Gc7,Gf6][%cal Gd5c7,Ge6c7,Gd5f6] } 11... Nd4 12. Nxf6+ Nxf6 13. Nxd4 $18) 9. Ne6! { We hop in here anyway! } { [%csl Gd8,Gc7,Gf8,Gg7][%cal Ge6d8,Ge6c7,Ge6f8,Ge6g7] } 9... Qd7 (9... Qc8 10. Nxg7+ Kf8 11. Ne6+ Ke8 12. Nxc3 $18) 10. Qxb7! { Even better than Nxg7. } { [%csl Ga8,Yg7,Rc3][%cal Ye6g7,Gb7a8] } 10... Qc6 { A common move out of desperation, but every move loses. } (10... Qxe6 11. Qxa8 Qc8 12. Nxc3 $18) 11. Qxa8! { Of course, Nxc7! works just as well, but isn't this more fancier? ;) } 11... Qxa8 12. Nxc7+ { Winning the queen back immediately with a fork, } { [%csl Ga8,Ge8][%cal Gc7a8,Gc7e8] } 12... Kd7 13. Nxa8 cxb2 14. Bxb2 $18 { White is up a rook, with a great position. Black is probably going to win our trapped knight in the corner though. } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...Nc6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...Nc6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/6xFb7xRU"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+5... Nc6 6. O-O! { Qb3 is also fine, the move order doesn't matter too much. We simply bring the king to safety. Note if Black would ever take b2 we will have transposed to one of the positions in the previous chapters. } 6... Nf6 7. Qb3! { [%csl Rf7] } 7... Qe7?! (7... Qd7! { This is better than Qe7 because now black blocks any future checks from White on the a4-e8 diagonal. } 8. Nxc3! { We develop while recapturing. } 8... Na5 9. Qb5 Nxc4 10. Qxc4 Be7 11. e5! { we want to open up the d file, so that we can place our rook on d1. } 11... dxe5 12. Rd1! { Now our rook dominates the d file. } { [%cal Gd1d8] } 12... Qe6 (12... Qc6 13. Qxc6+ bxc6 { [%csl Rc6,Rc7,Ra7] } 14. Nxe5 $10 { it's an equal game. } { [%csl Rc6,Rc7,Ra7,Ge5,Gd1,Gc3] }) (12... Bd6 13. Nxe5! { White takes advantage of the pinned bishop. } { [%csl Re5,Gd7][%cal Rd6e5,Gd1d7] } 13... Qe7 14. Qb5+! Bd7? { A mistake! it leaves the b7 pawn undefended. } (14... c6?? 15. Nxc6! { [%csl Ge7,Be8][%cal Gc6e7,Bb5e8] } 15... bxc6 16. Qxc6+ { A fork! } { [%csl Ga8,Ge8][%cal Gc6a8,Gc6e8] } 16... Qd7 17. Re1+! Be7 18. Qxa8 $18 { White is up an exchange with an amazing position. }) (14... Kf8 15. Bf4 $10 { It's an equal game. }) 15. Nxd7 Qxd7 16. Re1+! { we can just throw in this check, the rook will be more active on the e file than the d file. } 16... Be7 17. Qxb7 $16) 13. Qxc7 O-O?? { By far the most popular move, being played a whopping 82% of the time! This natural/safe looking move loses due to this simple yet game-winning move. } (13... Bd7 14. Qxb7 O-O { It's an equal game. }) 14. Ng5! $18 { The queen is forced to leave the bishop undefended! The next move white can just take the bishop on e7 } { [%csl Ge6][%cal Gg5e6] }) 8. Nxc3 { At this point, the top 3 most popular moves are really bad for Black. } 8... Na5?? { The most popular move. Black wants to trade their passive knight for our active bishop. We won't allow that of course! } (8... g6?? { Now the g pawn is no longer protecting the knight on c6. We can take advantage of this with this next move: } 9. Bg5! { pinning the knight. } { [%csl Ge7,Gf6][%cal Gg5e7] } 9... Bg7 10. Nd5! { reinforcing the pressure on the f6 knight. } { [%csl Gf6][%cal Gd5f6,Gg5f6] } 10... Qd8 11. e5 dxe5 12. Rad1 { Lining the rook up with the queen. } { [%csl Rd8] } 12... Bd7 13. Nxf6+ { Opening up the diagonal for our battery. } { [%csl Gf7][%cal Gb3f7] } 13... Bxf6 14. Bxf7+ Kf8 15. Bxf6 Qxf6 16. Rxd7 $18 { White has an extra piece on the board. }) (8... Be6?? { This move simply leaves the b7 pawn up for grabs. } 9. Bxe6 fxe6 10. Qxb7 { forking two pieces } { [%csl Gc6,Ga8][%cal Gb7c6,Gb7a8] } 10... Rd8 11. Qxc6+ Nd7 12. Bg5 Qf7 13. Bxd8 $18) (8... Ne5? 9. Nxe5 dxe5 10. Bg5 { Pinning the knight. } { [%csl Ge7,Rf6][%cal Gg5e7] } 10... c6 11. Rfd1! { Now the rook dominates the d file. } 11... h6 12. Bxf6 Qxf6 13. Nb5! { Threatening to fork, and we have a nice trap... } { [%csl Gc7][%cal Gb5c7] } 13... cxb5?? (13... Bc5 14. Nc7+ Kf8 15. Nxa8 $18) 14. Bxb5+ { The rook controls the d file so black is forced to bongcloud or sac the queen! } { [%csl Bd8,Bd7][%cal Bd1d8] } 14... Ke7 15. Qb4+ Qd6 16. Qxd6# { A beautiful checkmate! } { [%csl Ge7,Gd8,Gf6,Ge6,Be8,Bd7,Rf8,Rf7][%cal Gd6f8,Gd6d8,Gd6f6,Yb5e8] }) (8... Qd7! { Black prevents any future checks if the knight were to move away. } 9. Re1 Na5 10. Qb5 Qxb5 11. Bxb5+ c6 (11... Kd8 12. Ng5 Be6 13. e5 dxe5 14. Rxe5 $14 { [%csl Ge5,Gg5,Gb5,Gc3][%cal Bc1e3,Ba1d1] }) 12. Bf1! Be7?? (12... Be6 13. b4 Nc4 14. Nd4 Nb6 15. b5 c5 16. Nxe6 fxe6 17. a4 $16 { [%csl Gc3,Gf1,Gg1,Re6,Rd6] }) 13. b4 $18 { The knight is trapped. }) 9. Qa4+! { The knight is forced back again! } 9... Nc6 10. Ng5! { Double attacking the f7 pawn! There is no way to protect it without losing material. } { [%cal Gg5f7,Yc4f7] } 10... Be6 11. Nxe6 fxe6 12. Ba6!! { This move is not really hard to find, but it's definitely beautiful! If Black takes our bishop we win a full rook with Qxc6 forking the king and rook. } { [%csl Gb7,Rc6,Ra8][%cal Ga6b7] } 12... O-O-O (12... Rb8 13. Bxb7! { The only winning move! White eliminates the defender of the c6 knight. } 13... Rxb7 14. Qxc6+ { [%csl Gb7,Ge8][%cal Gc6b7,Gc6e8] } 14... Qd7 15. Qxb7 $18 { White is up a rook, you should be able to win this easily. :) }) 13. Qxc6! { We can take this free knight because the pawn is pinned. } { [%csl Rb7,Bc8][%cal Rb7c6,Ba6c8] } 13... bxa6 14. Be3! { There is no need to immediately take Black's pawns. White should just bring more pieces into the attack on the weak king. } 14... Kb8 15. Rac1 $18 { White is way better. Black will very probably get mated very soon. An idea is to lift the rook to the b-file. } { [%csl Gc1,Gc6,Ge3,Ra6,Rb8,Ra7,Rc7,Rf8,Rh8,Rf6,Gg1] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...Nf6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...Nf6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/Ryp0ak9i"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+5... Nf6 6. e5!? { An interesting move with a clever idea! } 6... dxe5?! { Most popular again. Black has now opened up the d file. } (6... Ng4! 7. Qb3! { Continuing with our aggressive play. } { [%csl Rf7] } 7... Qd7 (7... Qe7 8. O-O Nxe5 9. Nxc3 $16 { [%csl Gc3][%cal Bf1e1,Bc1g5] }) 8. O-O Nxe5 9. Re1 Nc6 10. Nxc3 Be7 11. Nxe5 Nxe5 12. Rxe5 dxe5 13. Bxf7+ Kf8 14. Be3 $10 { [%csl Rf8,Rc8,Ra8][%cal Ba1d1,Bc3a4,Bc3e4,Bf7c4] }) (6... Qe7 { Leads to a really crazy line. } 7. O-O dxe5 { If you want to play for a win you can play Nxc3. It's an equal position. If you want a quick draw, you can follow the next moves. } 8. Ng5 Be6 { Forced defending f7. } 9. Bxe6 fxe6 10. Qb3 { Hitting b7 and e6. } { [%csl Re6,Rb7] } 10... cxb2 11. Qxb7! { Sacrificing the rook and allowing Black to promote?? } 11... bxa1=Q 12. Qc8+! { Don't take the rook! Then Black is up a queen! } 12... Qd8 13. Qxe6+ Be7 14. Qf7+ Kd7 15. Qe6+ { A draw despite being down 16 points in material. ;) }) 7. Bxf7+! { A classic deflection! Black cannot take the bishop, because otherwise the king will lose his wife. To be clear, with perfect play White only remains with a small advantage, but Black messes up almost all the time. } { [%csl Rd8][%cal Rd1d8] } 7... Ke7 { Here most people mess up. White must play the following key move. } (7... Kxf7 8. Qxd8 $18) 8. Qb3! { Important! Keeping the bishop defended and refusing a queen trade. } { [%csl Gf7][%cal Gb3f7] } 8... Nc6 { [%csl Ge5] } (8... Qd6 9. O-O $16 { White's just better here because of the better placed king and development. 70% winrate. Many people as Black here mess up with Be6. Trade bishops, and then Qxb7 and White's winning. } { [%csl Gf3,Gb3,Gf7][%cal Bb1c3] }) (8... c2! { Top engine. The queen cannot take it because she's busy defending the LSB. } 9. Nc3 Nc6 { Defending the e pawn. } 10. Bc4 $14 { Simply retreating the LSB, so that the queen is no longer tied down. From here it's quite equal. Although much easier to play as White because of active development and Black's misplaced king. The c2 pawn is most likely able to be won at some point, but no need to rush taking it. Also, Na5 for Black is bad here because of Qb4+, winning material. } { [%csl Rc2,Gc4,Gb3,Re7,Rf8][%cal Be1g1,Bc1g5] } 10... Na5) 9. bxc3! { A better recapture than Nxc3, because now the DSB is opened up. } { [%csl Ga3][%cal Gc1a3] } 9... Na5?? { This is the 2nd most popular move. } (9... Qd3 { the best move for black. } 10. Ng5! h6?? { Ignores our threat. } (10... b5! { The only surviving move. Not allowing the bishop to come back to c4. } { [%csl Rc4] } 11. Nd2 $14 { White's a bit better here. It's a nice attacking crazy game. }) 11. Ba3+ Kd8 12. Bc4! { Preparing to put the knight on f7. } { [%csl Yf7][%cal Yg5f7,Bc4d3] } 12... Qg6 13. Nf7+ Ke8 14. Nxh8 Qxg2 15. Rf1 Qe4+ 16. Be2 $18) (9... Qd6?? { For some reason this is the most popular move, it blunders away the queen. } 10. Ba3 $19 { [%csl Ge7,Gd6][%cal Ga3e7] }) 10. Ba3+! Kd7 (10... c5 11. Bxc5+! { Just take it! } 11... Kd7 12. Qe6+ Kc7 $7 13. Qxe5+ Bd6 14. Bxd6+ Qxd6 15. Qxa5+ b6 16. Qe5 $18 { White has an extra horse and will also get the queens of the board, eliminating any counter-play for black. }) 11. Nxe5# { [%csl Gd7,Ye8,Ye6,Be7,Bd6,Rc7,Rd8,Rc8,Gc6][%cal Ge5d7,Yf7e8,Yf7e6,Ba3e7,Ge5c6] } *
+
+
+[Event "Punish the Philidor Defense!: 📕 5...Bg4??"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📕 5...Bg4??"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/9gSp2XhB"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq - 1 5"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+5... Bg4?? { A move that gets played sometimes, mostly by beginners. This move completely ignores our threat of Qb3 forking up 2 pawns. } { [%csl Rf7,Rb7] } 6. Qb3! { [%csl Rf7,Rb7][%cal Gb3f7,Gb3b7] } 6... Be6 (6... Qe7?? 7. Qxb7 $18 { The rook is trapped, we can take it on the next move. } { [%csl Ga8][%cal Gb7a8] }) (6... Bxf3 7. Bxf7+! Ke7 (7... Kd7 8. Qe6+ Kc6 9. Be8+ Nd7 10. Be3 { Stopping the king from going to c5/b6 and threatening mate in 1 with Qd5# or Qc4# } { [%csl Gb6,Gc5,Bd5,Bc4][%cal Ge3b6,Be6d5,Bd5c4] } 10... Kb5 11. Nxc3+ Ka5 12. Qc4 { There is no way to stop mate, we are threatening b4# and Qb5# } { [%csl Bb5,Bb4][%cal Bc4b5,Bb2b4] }) 8. Qe6# { GG } { [%csl Ge8,Ge7,Gd7,Gf7,Rf8,Rd8,Rd6,Gf6][%cal Ge6e8,Ge6d7,Ge6f7,Ge6f6] }) (6... Bh5?? 7. Qb5+ $18 { White wins the bishop. } { [%csl Ge8,Gh5][%cal Gb5e8,Gb5h5] }) 7. Bxe6 { Simplifying. } 7... fxe6 8. Nxc3! { First we can chomp up this pawn, the other two are still hanging. } { [%csl Rb7,Re6] } 8... b6 (8... Qc8 9. Ng5 $18 { Leads to the same ideas we discussed before. ;) } { [%csl Re6] }) (8... Nd7 9. Qxe6+ Qe7 10. Qb3 $16 { [%cal Bc1e3,Be1g1] }) 9. Ng5! { The classic move we've discussed in previous chapters. This is the same stuff. We could have taken e6 immediately with the queen, but wouldn't an octopus knight on e6 be better? } { [%csl Re6][%cal Yb3e6,Bg5e6] } 9... Qe7 { e5 hangs mate in 1 with Qf7# } 10. Nxe6 { This knight is really well placed here! } { [%csl Ge6][%cal Ge6c7,Ge6g7,Ge6f8,Ge6d8] } 10... Nf6 11. Bg5 { Pinning the black horse. Preparing for Nd5 jumps. } { [%cal Bc3d5] } 11... h6 12. Bxf6 gxf6 13. Nd5! { We want to fork on c7 and there isn't anything black can do about it. } { [%csl Rc7][%cal Rd5c7,Re6c7] } 13... Qxe6 14. Nxc7+ { [%csl Ge8,Ge6][%cal Gc7e8,Gc7e6] } 14... Kd8 15. Nxe6+ $18 { White has enough extra material to win the game. } *
+
+
+[Event "Punish the Philidor Defense!: 🌊 Section 2: Black Doesn't Take c3"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Bird Gambit"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🌊 Section 2: Black Doesn't Take c3"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/fsGV9T2B"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ Play the first moves please! :) }
+1. e4 e5 { [%csl Gc3][%cal Gb1c3] } 2. Nf3 (2. Nc3 { Nope. ;) }) 2... d6 3. d4 { Good! If you're enjoying the study, don’t forget to click the heart button under the h1-square! ❤
+This saves the study to your favorites, so you can easily find it again anytime. Plus, it helps more people discover this study. Thanks for the support! 😊 } 3... exd4 4. c3! { Good! In this section, we'll cover some moves if Black decides not to take on c3 on the 4th move.
+🎯 Practice the Bird Gambit Declined through gameplay: https://go.noctie.ai/bird-declined 🎯 } *
+
+
+[Event "Punish the Philidor Defense!: 📘 4...Nf6"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📘 4...Nf6"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/fVW3F8k7"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+4... Nf6 5. Qc2! { This is probably the most simple and non-complicated line for white. } { [%csl Ge4][%cal Gc2e4] } 5... dxc3 { Most times Black will decide to take at some point. This however doesn't transpose to previously covered lines because we've now play Qc2. } (5... Be7 { Black's still to scared to take. In this case we'll just take. } 6. cxd4 { Important not to take immediately but only after Qc2, defending e4. } 6... O-O 7. Nc3 $16 { And this is an amazing position for White. } { [%csl Gf3,Gc3,Gd4,Ge4,Yg1][%cal Bf1d3,Bc1g5,Ye1g1] }) 6. Nxc3 Be7 { Black prepares to castle. It doesn't really matter how Black develops, we'll go for the same ideas. } { [%csl Bg8][%cal Be8g8] } 7. Be3 { Preparing to castle queenside. } { [%csl Bc1][%cal Be1c1] } 7... O-O 8. O-O-O! (8. h3 Nc6 9. a3) 8... Nc6 9. h3 { This is the kind of setup we play pretty much every time, whatever black plays. The point of h3 is to support a future g4. Also, Bg4 is prevented. } { [%csl Bg4][%cal Bg2g4,Bh3g4] } 9... Be6 (9... Nb4 10. Qb1 c6 11. a3 Na6) 10. a3 { We won't let black place a knight on b4, it's just unnecessarily annoying. } { [%csl Bb4][%cal Ba3b4] } 10... a6 11. g4 $14 { White's slightly better here. We'll be launching a huge kingside attack. Black's on the defensive side. } { [%cal Bg4g5,Bh3h4] } *
+
+
+[Event "Punish the Philidor Defense!: 📘 4. Nc6?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📘 4. Nc6?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/n7a99Eny"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+4... Nc6?! { This move allows White to capture d4 and control the center. } 5. cxd4! { [%csl Gf3,Gd5,Gc5,Ge5,Gf5,Rc6][%cal Gd4c5,Ge4d5,Gd4e5,Ge4f5] } 5... Bg4 (5... Nf6 6. Nc3 Be7 7. h3! { White avoids any annoying Bg4/Ng4. } 7... O-O 8. Bd3 h6 9. O-O Bd7 10. Be3 $16 { [%csl Gc3,Gf3,Ge4,Gd4,Gd3,Ge3,Gd1] }) 6. Nc3 { White just continues developing. } 6... Nf6 7. Bb5 { Pinning the knight, threatening d5. } { [%csl Ge8,Rc6][%cal Gb5e8] } 7... a6 8. Ba4 b5 9. Bc2! { Supporting e4. This is the main retreat square for the LSB. } { [%csl Ge4][%cal Gc2e4] } 9... Be7 10. O-O $16 { White has a big white center, the pieces are well placed, and the king is safe. It's +0.8. } { [%csl Gd4,Ge4,Gf3,Gc3] } *
+
+
+[Event "Punish the Philidor Defense!: 📘 4...d3?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📘 4...d3?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/RdNV4MXt"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+4... d3?! { Black doesn't want to take c3, because that would allow White's knight to be placed well. This is an attempt to dis coordinate White's pieces. This isn't a great idea, as the bishop is perfectly fine on d3. } 5. Bxd3! { Yup, we just grab it, and we are ready to castle. } { [%csl Bg1][%cal Be1g1] } 5... Nf6 6. O-O! { The king is safe now. } 6... Be7 7. h3 { As I say in a lot of my studies, h3 is almost always a good move. Preventing Bg4, and creating a breathing hole for the king. } { [%csl Rg4] } 7... O-O 8. Bf4 Nc6 9. Nbd2 h6 10. Re1 $16 { A very comfortable setup. Black's bishops don't have any good squares and his central control isn't too strong. White can now expand on the queenside, and Nf1 is also a good developing idea. } { [%csl Gf4,Gf3,Gd3,Re7][%cal Ba2a4,Bd3c2,Bd2f1] } *
+
+
+[Event "Punish the Philidor Defense!: 📘 4...Be7?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📘 4...Be7?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/HXpEdYPq"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+4... Be7?! { Again, not great, as it voluntarily surrenders the center. } 5. cxd4! { These pawns are controlling really a lot of squares in the center! } { [%csl Gf5,Gd5,Ge5,Gc5][%cal Ge4f5,Ge4d5,Gd4e5,Gd4c5] } 5... Nf6 { Black gets ready to castle } 6. Nc3 { White just continues developing. } 6... O-O 7. Bd3 { [%csl Bg1][%cal Be1g1] } 7... Bg4 8. h3 Bh5 9. O-O Nc6 10. Be3 $16 { White has a pleasant position, everything is developed nicely and White controls the center. Stockfish says +1. } { [%csl Ge4,Gd4,Gc3,Gf3,Ge3,Gd3,Re7,Rf6] } *
+
+
+[Event "Punish the Philidor Defense!: 🌿 Section 3: Move 3 Sidelines"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🌿 Section 3: Move 3 Sidelines"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/y7ep1H7M"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ Play the first moves please! :) }
+1. e4 e5 2. Nf3 d6 3. d4 { In the next section we'll briefly cover 3rd move sidelines. In these cases, we sadly don't get the chance to play the Bird Gambit. But, if you know what to do, these sidelines are nothing to be afraid of.
+🎯 Practice these sidelines through gameplay: https://go.noctie.ai/move3-sidelines 🎯 } { [%csl Yd7,Gf6,Bg4,Rc6,Rf5][%cal Yb8d7,Gg8f6,Bc8g4,Rb8c6,Rf7f5,Yf7f6] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...Bg4?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...Bg4?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/ede22cH3"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... Bg4?! { First we'll look at the most popular, after cxd4. This move actually gets played quite often, usually by beginners but even by intermediate players. Now we have a nice counter: } 4. dxe5! { Black has a bit of a problem. If dxe5, the d-file is opened up, White can trade queens, which loses the Black king's castling rights. } { [%cal Rd1d8] } 4... Bxf3 { Most popular. Forcing White to make the choice of capturing with the queen, so dxe5 doesn't result in a queen trade, or taking with the g-pawn, which ruins White's structure. } (4... Nc6!? { A nice gambit. Has the De Smet Gambit vibes. White can easily go wrong. } 5. exd6 Bxd6 6. Bb5! { Here we play this rather annoying move for Black. The idea here is to simply take f6, giving Black double isolated pawns. This also makes queenside castling for Black much more unattractive. } { [%csl Rc6,Rc7][%cal Rb5c6] } 6... Qe7 (6... Ne7 7. h3 Bh5 8. Be3 O-O 9. g4 Bg6 10. Nbd2 { [%cal Bd1e2,Be1c1,Yh3h4,Yg4g5,Yh4h5] }) (6... Qd7 { The best. Preventing Bcc3 ruining the structure. } 7. Nc3 { There's really too many lines to go into. But the general idea here is to play Be3, and try to castle queenside, because Black will do so too. Castling kingside would be suicide for White. } { [%csl Gc3][%cal Bc1e3] } 7... O-O-O 8. Be3 $16 { [%cal Bd1e2,Be1c1,Yg2g4,Yh2h3] }) 7. Bxc6+ bxc6 8. O-O! { White's king is safe. White still must remain careful, but with cautious play, White should be better with the extra pawn and Black's weak structure. } { [%csl Rc6,Rc7][%cal Bb1d2] }) 5. Qxf3! { We can take with the queen. We have a nice idea of rerouting to b3, which aims at b7 and f7. It's already +2 according to the engine. } { [%csl Rf7][%cal Bf3b3] } 5... dxe5 6. Qb3! { The best move! This is only being played 2% of the time. White immediately aims at the unprotected b7 pawn and stares at the vulnerable f7 pawn. White has the idea of playing Bc4 and castling. } { [%csl Rb7,Rf7][%cal Bf1c4,Be1g1] } 6... b6 { By far the most popular move, Black simply saves the b pawn. We can continue with our idea. } (6... Nf6 { Black accepts the fact that he'll lose b7, and continues development. } 7. Bc4! { The b7 pawn remains hanging. We can continue development first, adding pressure on f7. } 7... Qe7 (7... Qd7 8. Qxb7 $18) 8. Qxb7! { Nc3 is also playable, followed by Bg5 and castle. Going all out to attack. But this line keeps things simple, we end up with a winning endgame. } { [%csl Ra8] } 8... Qb4+ { Black must trade queens in order not to lose material. } 9. Qxb4 Bxb4+ 10. c3 { [%cal Rc3b4] } 10... Bc5 11. f3 $16 { Solidifying. This is just better for White with the extra pawn and 2 pawn islands compared to Black's 3. } { [%csl Gf3,Ge4,Gg2,Ra7,Rc7][%cal Bb1d2,Bc4b3,Bd2c4,Bc1g5] }) (6... Qc8? 7. Bc4 $18 { Black's completely lost. The f7-pawn will fall. If Nh6, we simply get rid of it with Bxh6. And if the queen defends f7, b7 is left hanging. } { [%csl Rf7,Rb7] }) (6... Nd7 7. Qxb7 Rb8 8. Qxa7 Bc5 9. Qa6! $16 { The key move. Other moves may allows Black to get counterplay. Next retreat to e2 and White's better with the 2 extra pawns. } { [%csl Be2][%cal Ba6e2] }) 7. Bc4! { [%csl Rf7][%cal Gb3f7] } 7... Qe7 { Black protects the important f7 pawn. White has a really nice counter move here: } { [%csl Gf7][%cal Ge7f7] } (7... Qd7 8. Nc3 { [%csl Bd5][%cal Bc3d5] } 8... Nf6 (8... a6 { Top engine, stopping Nb5. } 9. Nd5 { White has the bishop pair and nice development. Next up is Qg3, rerouting the queen to a better place. And castle queenside. } { [%csl Gd5,Bg3][%cal Bb3g3,Bc1e3,Be1c1] }) 9. Bg5 $18 { There really isn't anything for black to do now: Be7 hangs the f pawn, c6 results to 10. Rd8! and on the next move we take the knight and black's structure is total trash, and Nc6 results to Bb5! and black is completely miserable. }) (7... Qf6 8. Nc3! { [%cal Bc3d5,Bc3b5] } 8... c6 9. Nd5! cxd5 10. Bb5+!! Nd7 (10... Nc6 11. Bg5!! Qg6 12. Qxd5 { [%csl Rc6] } 12... Rc8 13. O-O-O { [%csl Gd8][%cal Gd2d8] } 13... Qxg5+ 14. f4!! Qxf4+ 15. Kb1 { [%csl Gd7,Gc6] } 15... Bc5 16. Qd7+ Kf8 17. Qxc8+ Ke7 18. Qxc6 $18 { [%csl Re7,Gd8,Gd7,Bf6,Be6,Bd6,Be8][%cal Gd1d8,Bc6f6,Bc6e8] }) 11. Bxd7+ Kxd7 12. Qxd5+ $18 { [%csl Ga8,Gd7][%cal Gd5a8,Gd5d7] }) 8. Bg5! { Sacrificing the bishop! A deflection! If the queen takes the bishop, f7 is left hanging. White wins material after a rather long sequence. (see variation) } 8... f6 (8... Qxg5 9. Bxf7+! Kd8 (9... Ke7 10. Qe6+ Kd8 11. Qe8# { GG } { [%csl Gc8,Gd8,Gd7,Rc7,Ge7,Be8][%cal Ge8c8,Ge8d7,Ge8e7,Bf7e8] }) (9... Kd7 10. Qe6+ Kd8 11. Qe8#) 10. Qd5+ { Forking } { [%csl Gd8,Ga8][%cal Gd5a8,Gd5d8] } 10... Bd6 11. Qxa8 Qc1+ { Black might think that they're okay, because black will win our rook, but now the knight is undefended. } 12. Ke2 Qxh1 (12... Qxc2+ { A attempt to get a 3 fold repetition. } 13. Nd2 $18 { The only move that wins. Black has no checks anymore. White wins a large amount of material. } { [%csl Rb8] }) 13. Qxb8+ Ke7 14. Qe8+ Kf6 15. Qe6+ Kg5 16. Qf5+ Kh4 17. Qh5# { [%csl Yh3,Yg3,Gh4,Gg4,Bh5,Gg5][%cal Yg2h3,Yh2g3,Gh5h4,Gh5g4,Bf7h5,Gh5g5] }) (8... Nf6 9. Nc3! { Getting ready to castle and we want to hop the horse into d5. } { [%csl Bd5][%cal Bc3d5] } 9... Nbd7 10. Nd5 Qd6 11. O-O-O Nxd5 12. Bxd5 $18 { There are too many threats for Black to deal with. If Black saves the rook, White wins the queen with Bxf7!, if Black saves the queen, White happily takes the rook on a8. } { [%csl Ra8,Rf7] }) 9. Bd2 { The knight on g8 is hanging and we prepare for a potential Bb4 in the future. } { [%csl Gb4,Rg8][%cal Gd2b4] } 9... Nh6 { The only move that saves the knight. } 10. Bxh6 gxh6 { [%csl Rh7,Rh6] } 11. Nc3! { Even though material is equal currently, Black is completely lost. His king is much too weak and has no well placed pieces. Moves like Nd5, castling queenside or Bd5 are coming. } { [%csl Bd5,Bc1,Rf8,Rb8,Ra8,Re7,Rf6,Re5,Rc7,Rb6,Gb3,Gc4][%cal Bc3d5,Be1c1] } 11... c6 { Black prevents Nd5, or does he? } { [%csl Rd5][%cal Rc6d5] } 12. Nd5! { Hopping in anyway! } 12... cxd5 13. Bxd5 $18 { It's over. } { [%csl Ra8,Re8,Re7][%cal Gd5a8,Be1c1] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...Nc6?!"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...Nc6?!"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/kY2CgXS5"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... Nc6?! { Quite popular online. Stockfish doesn't like it, but it's quite tricky to handle correctly. } 4. Bb5! { The most successful response. White's threatening two large threats: d5, hitting the pinned knight, and Bxc6, removing the defender of e5. } { [%cal Rd4d5] } 4... exd4 { You have two options here. Both giving about a 60% winrate for White. Nxd4, preferred by Stockfish, but leads to more lines and a bit more complicated. Or Qxd4, a bit more successful according to the database and very simple. } (4... a6? { Loses a clean pawn. } 5. Bxc6+ bxc6 6. dxe5 $16) (4... Bd7 { The second most popular move. } 5. Bxc6 Bxc6 { d5 is tempting, but don't play it! We want to keep the tension in the center. } 6. Nc3! { Defending e4. Remember, Black's e5 pawn is still hanging. } { [%csl Ge4] } 6... exd4 7. Nxd4 Bd7 8. Qe2 Nf6 9. Bf4 $16 { Very comfortable for White. } { [%cal Be1c1,Bh1g1,Bg2g4] }) (4... Bg4 { Counter pinning us. There are many tempting moves here, like d5, dxe5, h3, which are okay, but we have something better. } 5. Nc3! { Played 1% of the time. Keeping things simple. Simply prioritizing development. } 5... a6? { Most popular, but as we saw in a variation above, this leads to something pretty bad. } (5... exd4 6. Qxd4 { Taking with the queen of course! } 6... Bxf3 7. Bxc6+ bxc6 8. gxf3 $16 { The doubled f-pawns are no problem. The open g-file is more of a strength for the rook. We'll castle queenside. } { [%csl Rf8,Rg8,Rh8,Re8,Rd8,Ra8,Gc3,Gd4][%cal Bh1g1,Bc1e3,Be1c1] }) 6. Bxc6+ bxc6 7. dxe5 Bxf3 { dxe5 loses a pawn after we exchange the queens. } 8. Qxf3 dxe5 9. O-O $16 { Black doesn't have a single piece developed and has a disgusting pawn structure. } { [%csl Re5,Rc6,Rc7,Ra6,Gg1,Rf8,Rg8,Rh8,Re8,Rd8,Ra8] }) 5. Qxd4 { I'll be showing this line to keep things simple. The queen can now take here in the center, because there's no way for Black to kick her away. } 5... Bd7 { Black breaks the pin. Now we can follow up by trading the bishop for the knight. Removing the only piece that could chase away the queen. } 6. Bxc6 Bxc6 7. Nc3 { Defending the pawn. From here the plan is simple, develop the DSB on f4 or g5, castle queenside, and attack on the kingside. } { [%cal Gc3e4] } 7... Nf6 8. Bg5 { Bf4 is also perfectly fine. } 8... Be7 9. O-O-O { Even though the computer says is roughly equal, the winrates say otherwise. White has a very comfortable position. } { [%csl Gc1,Gd4,Re7][%cal Bh2h4,Bg2g4] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...Nd7: Hanham Variation"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Hanham Variation"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...Nd7: Hanham Variation"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/jOTA0IRX"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... Nd7 { This is known as the Hanham variation. Black supports e5. } 4. Bc4! { This is the most aggressive approach, white immediately aims f7. } 4... Be7?? { Black develops and gets one step closer to castling, it is a blunder due to the following sequence. } (4... c6 5. O-O Be7 6. dxe5 dxe5 7. Ng5! { It might look at first like we are sacrificing a knight but we win it back immediately } { [%cal Bg5f7,Yc4f7] } 7... Bxg5 8. Qh5! { We win back the sacrificed piece. } { [%csl Gg5,Gf7][%cal Gh5g5,Gh5f7] } 8... Qe7 9. Qxg5 Qxg5 10. Bxg5 Ngf6 11. f3 O-O 12. Nd2 $16 { White's pieces are way better placed than black's. The engine gives white a +2.1 advantage. } { [%csl Gc4,Gg5,Gd2,Rc8,Rd7] }) (4... h6 { Black prevents any Bg5/Ng5 } { [%csl Rg5][%cal Rh6g5] } 5. dxe5 dxe5?? { A huge blunder! It gets played 82% of the time! } 6. Bxf7+!! Kxf7 7. Nxe5+!! { Exploiting the pin. } { [%csl Re5,Bd8][%cal Rd7e5,Bd1d8] } 7... Kf6 8. Nc3!! { The only move that wins. The following is a demonstration of a king hunt. } 8... Kxe5 9. Qd5+ Kf6 10. Qf5+ Ke7 11. Nd5+ Kd6 12. Bf4+ Kc6 13. Qe6+ Bd6 14. Nb4+! Kb6 15. Bxd6 Ndf6 16. Bc5+ Kxc5 17. Nd3+ Qxd3 18. Qe5+ Kc6 19. cxd3) (4... Ngf6?? { A blunder, it allows us to win the important f pawn by force. } 5. dxe5! { Opening the d file. } 5... Nxe5 6. Nxe5 dxe5 7. Bxf7+! { It is important to note that white doesn't win the queen because after 7...Kxf7 8. Qxd8 Bb4+ and black wins the queen back. White is much better though because white has just won the important f pawn. } 7... Ke7 (7... Kxf7 8. Qxd8 Bb4+ 9. Qd2 Bxd2+ 10. Nxd2) 8. Qxd8+ Kxd8 9. f3 $18 { We're gonna break Ben Finegold's rule and play f3. It solidify s everything, 9. Nc3, and we would have to deal with an annoying Bb4 pin. }) (4... exd4 5. Nxd4 Ngf6 6. Nc3 Be7 7. Nf5 O-O 8. O-O $16 { [%csl Gf5,Gc4] }) 5. dxe5! { Opening up the d-file, preparing for a battery with Qd4. } { [%csl Yd5][%cal Gd1d5] } 5... dxe5 (5... Nxe5 6. Nxe5 dxe5 7. Qh5! { The only good move! White simply forks the e and f pawn. } { [%csl Gf7,Ge5][%cal Gh5f7,Gh5e5] } 7... g6 8. Qxe5 Nf6 9. Bh6! { Preventing black from castling. } 9... Qd6 10. Qxd6 cxd6 11. Nc3 Be6 12. Bb5+ Bd7 13. O-O-O $18 { White is up a clean pawn. Also black has a very weak d pawn that we will be able to put some pressure on. } { [%csl Rd6] }) 6. Qd5! { We threaten mate in 1 on f7 and black has no way to defend the f pawn without losing material. The move 4...Be7 has blocked the queen from coming out. } { [%csl Gf7][%cal Gc4f7] } 6... Nh6 7. Bxh6 { It's free! } 7... O-O 8. Be3 $18 { White has an extra knight on the board. } { [%csl Gc4,Re5,Gf3,Ge3,Gd5,Gb1,Bg1,Rc8,Rd8,Re7,Rd7][%cal Be1g1] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...f5?!: Philidor Countergambit"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Philidor Countergambit"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...f5?!: Philidor Countergambit"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/BGw4bYcN"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... f5!? { This is the Philidor Countergambit, if you don't know how to play against it it can be quite tricky. Most people will probably take either f5/e5 but these moves lead to lots of traps for Black. White must play very carefully to retain the advantage. @BunnyMommyIsHappy, a member of our team, actually made a study on this variation from Blacks' perspective: https://lichess.org/study/UeByH3ZL A big problem now for Black is that the king is weakened. We can take advantage of the weak light squares with the move... } { [%csl Rf7] } 4. Bc4! { Played only 3% of the time! Not covered by @BunnyMommyIsHappy. Immediately taking control of the light squares. The absolute best move. } { [%csl Gf7,Ge6][%cal Gc4f7] } 4... fxe4 { Black usually is not prepared for this. exf5 is by far the most popular move being played almost 70% of the time. } (4... f4?? 5. dxe5 dxe5 6. Qxd8+ Kxd8 7. Nxe5 $18 { Just horrible for Black. +4.3. } { [%csl Rf7,Rf4,Rd8] }) 5. Nxe5!! { The only winning move! Freeing up the queen! } { [%csl Gd1,Gh5][%cal Yd1h5] } 5... dxe5 (5... d5 6. Qh5+! { Ke7?? loses due to Qf7+ } { [%csl Ge8,Bg6][%cal Gh5e8,Be5g6] } 6... g6 7. Nxg6 { Exploiting the pin. } { [%csl Yh8,Ye8][%cal Gg6h8,Yh5h8,Yh5e8] } 7... Nf6 8. Qe5+ Be7 9. Nxe7 Qxe7 10. Bg5 Qxe5 11. dxe5 dxc4 12. Bxf6 Rg8 13. Nc3 Rxg2 14. O-O-O $18 { [%csl Gd8,Gc3,Re4,Rc4,Rh7,Re8,Rb8,Rc8,Ra8,Gf6][%cal Gd1d8,Ge5f6] }) 6. Qh5+! { We get the classic rook king fork. } 6... g6 (6... Kd7 7. Qf5+ Kc6 8. Qxe5 { Threatening to go to b5 } { [%csl Gb5][%cal Ge5b5] } 8... a6 { [%csl Rb5][%cal Ra6b5] } 9. d5+! Kb6 10. Be3+ Bc5 11. Bxc5+ Kxc5 12. b4+ Kxc4 13. Qxe4+ Kb5 14. a4+ Kb6 15. Qd4+ c5 16. Qxc5# { [%csl Ga7,Gb6,Gc7,Ga5,Bc5][%cal Gc5a7,Gc5c7,Gc5a5,Bb4c5] }) 7. Qxe5+ Qe7 8. Qxh8 $18 { White is clearly winning. } { [%csl Gh8,Gc4] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...Nf6: Nimzowitsch Variation"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Nimzowitsch Variation, Rellstab Variation"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...Nf6: Nimzowitsch Variation"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/v0CyKIbj"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... Nf6!? { This is the Nimzowitsch variation. An interesting counter. Instead of defending the e5 pawn, Black decides to counter attack e4. } 4. dxe5 Nxe4! (4... dxe5? { surprisingly the most popular move, we can now win a pawn. } 5. Qxd8+! Kxd8 6. Nxe5 { Black won't be able to take e4 because white is threatening to take f7+ } { [%csl Gf7][%cal Ge5f7] } 6... Be6 7. Nc3 Bb4 8. f3 $16 { White solidifies. We now have a nice pawn chain and white is up a pawn! } { [%csl Yg2,Yf3,Ye4][%cal Gg2f3,Gf3e4] }) 5. Qd5! { Our weapon! Bringing the queen to action and we are attacking the knight. Don't worry about it getting attacked, Black won't have time for that. } { [%csl Ge4][%cal Gd5e4] } 5... Nc5 (5... Bf5? { The second most played move, it leaves the b7 pawn undefended. } 6. Bc4! { First we can develop this bishop with tempo. The b7 pawn will still be hanging on the next move. } { [%csl Rf7][%cal Gc4f7] } 6... Qe7 (6... Bg6 7. Qxb7 Nd7 8. Qc6 $16) 7. Qxb7 $18 { We'll get the rook on the next move! } { [%csl Ra8] }) 6. Bg5! { Bringing another piece in the game with tempo. If c6, play the cool Qxf7 to win a pawn and deflect the king from the queen. } { [%csl Rd8][%cal Re5d6] } 6... Be7 (6... Qd7 7. exd6 Bxd6 8. Nc3 { Next up is castling queenside. It's a very comfy position. Remember the To Take is a Mistake rule. So after Qe6+, White can respond with Be3. If Black wants to trade queens, let him make the action. That would help developing the c3 knight. } { [%cal Be1c1] }) (6... c6 7. Qxf7+ Kxf7 8. Bxd8) 7. exd6! Qxd6 (7... Bxg5?? 8. Nxg5 { Threatening mate in one and the knight's unprotected. } { [%csl Gf7,Gc5][%cal Gg5f7,Gd5c5] } 8... Ne6 9. Nxe6 Bxe6 (9... fxe6 10. Qh5+! Kf8 11. dxc7 Qxc7 12. Nc3 $18 { next is O-O-O and white is way better. } { [%csl Bc1,Bd3,Re6,Rf8,Rc8,Rb8][%cal Be1c1,Bf1d3] }) 10. Qxb7 Nd7 11. dxc7 Qc8 12. Ba6 O-O 13. Qxc8 Raxc8 14. Bxc8 Rxc8 $18 { white has an extra 5 points in material. }) (7... cxd6 8. Nc3 Be6 9. Bb5+ Nbd7 10. Qd2 { [%csl Gg5][%cal Gd2g5] } 10... O-O 11. Bxe7 Qxe7 12. O-O-O $16 { [%csl Gc1,Gd1,Gd2,Rd6] }) 8. Nc3 { We continue developing and get ready to castle queenside. } { [%csl Bc1][%cal Be1c1,Bc3d5] } 8... Be6 9. Qxd6 Bxd6 10. Nb5 { We force Black to trade the bishop, the bishop is unable to leave the c pawn undefended. } 10... Nc6 11. Nxd6+ { Creating a weak isolated pawn. } 11... cxd6 12. O-O-O $16 { White's better here due to the better pawn structure, bishop pair, and strong d-rook. } { [%csl Gc1,Rd6,Gg5,Gf3,Gc5,Gc6,Ge6] } *
+
+
+[Event "Punish the Philidor Defense!: 📗 3...f6?"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "📗 3...f6?"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/leoXNlBB"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+
+3... f6? { Not sure why this gets played, but it accounts for 2.5 million games in the database. Clearly, your opponent is not following Ben Finegold's advice. This move weakens the light squares, prevents Nf6 development, and doesn't do anything to improve the position. } { [%csl Rf7,Re6] } 4. Bc4! { A nice idea in these type of positions, as we saw in the Phillidor Countergambit. We immediately control the light squares. } 4... Ne7? { There are many moves here, this one being the most popular. In other cases, continue standard development, you're already positionally better. } (4... c6 { A better move. From here standard development. There's no immediate way to punish Black. } 5. Nc3 g6 { As you can see Black already has to make some unpleasant moves in order to get somewhere. } 6. Be3 Nh6 { Black must reroute this way. Other wise the king cannot castle due to the strong LSB. Black's DSB also has trouble. } { [%csl Bf7][%cal Bg8h6,Bh6f7] } 7. h3 { Here I like h3, preventing an annoying Ng4, hitting our DSB. } { [%csl Rg4] } 7... Qe7 8. Qe2 Nf7 9. O-O-O $16 { [%csl Gc1,Gc4,Gc3,Ge3,Rf8,Re8,Rc8,Rb8,Rf7,Re7,Rf6,Rd6,Gf3] }) (4... Qe7 5. O-O Be6 { Remember the rule: To TAKE is a MISTAKE! If Black really wants to trade, we do it on our terms. } 6. Bb3! { [%cal Ba2b3] } 6... Bxb3 7. axb3 { We get an open a file } { [%cal Ga1a8] } 7... a6 8. Nc3 $16) (4... Bg4 5. h3 Bxf3 6. Qxf3 exd4 7. Qb3! { Forking the knight and b7 pawn. } { [%csl Gb7,Gg8][%cal Gb3b7,Gb3g8] } 7... Qe7 (7... Ne7 8. Bf7+! Kd7 9. Be6+ Ke8 10. c3 dxc3 11. Nxc3 $18 { [%csl Gb3,Gc3,Ge6,Gg1,Rb8,Ra8,Rd8,Re8,Rf8,Re7,Rh8][%cal Ge1g1] }) 8. Qxb7 $18 { On the next move just take the rook! } { [%csl Ra8][%cal Rb7a8] }) 5. dxe5 { in this case, trading in the center is fine because we have some tactics here. } 5... fxe5 (5... dxe5 6. Bf7+! { [%cal Rd1d8] } 6... Kxf7 7. Qxd8 $18 { Same thing. }) 6. Nxe5!! $18 { Threatening mate in 1. And we have the classic following tactic. } { [%cal Ye5f7,Bc4f7] } 6... dxe5 7. Bf7+ { [%csl Ge8,Rd8][%cal Gf7e8,Rd1d8] } 7... Kxf7 $7 8. Qxd8 $18 { White is up a queen! } *
+
+
+[Event "Punish the Philidor Defense!: 🎯 Tool to Improve 🎯"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🎯 Tool to Improve 🎯"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/uNHNSSi2"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ Congrats! You’ve finished the study, but don't go yet! 🎉 This was quite a bit of information, so it's normal to mess things up at first in your games. In my opinion, the best way to learn is by playing real games and analyzing them.
+
+But if you’re like me and have no friends, you probably won’t always get the chance to train this opening, as your opponents won’t always play the Philidor. 😞
+
+🛠 That’s why I recommend Noctie, a chess AI that plays like a real human! It adapts to your level and lets you practice any line whenever you want. 🦉
+
+Get this entire repertoire for FREE in Noctie. Practice it through gameplay:
+📕 Bird Gambit Double Accepted: https://go.noctie.ai/bird-double-accepted
+📕 Bird Gambit Accepted: https://go.noctie.ai/bird-accepted
+📘 Bird Gambit Declined: https://go.noctie.ai/bird-declined
+📗 Move 3 sidelines: https://go.noctie.ai/move3-sidelines
+📖 Full Anti-Philidor Repertoire: https://go.noctie.ai/punish-philidor-full-repertoire
+
+Here are some of the main features:
+
+• Import and practice your openings and custom repertoires against it
+• Analyze your games and turn mistakes and weakness into flashcards
+• Train tactics, endgames, and scenarios
+• Plays at your level and improves as you improve or set a custom strength
+
+Definitely check it out if you want to improve your chess! 💪
+
+🎁 Offer: Get 20% off yearly plan with code: BOSBURPYEAR 🎁
+*Discount code can be applied at checkout on the web browser
+
+Try it out! You might love it! 😉 } { [%csl Yb3,Gg1,Rf7,Rb7,Bb2,Gg5,Rd4,Ge6][%cal Bf1c4,Rc4f7,Yd1b3,Ge1g1,Bc1b2,Gf3g5,Rc3d4,Gg5e6,Yb3b7,Bb1c3,Yf1e1] }
+ *
+
+
+[Event "Punish the Philidor Defense!: 🌍 Cool Puzzle + Community 🌍"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🌍 Cool Puzzle + Community 🌍"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/cxkV5oTA"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "kB4R1/P3pp2/KR4qr/8/1pN5/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ 📚 If you enjoyed this study, join our community for more!
+
+We've just added a "Hall of Studies" section in our discord server. Here you'll find an easy to navigate library of over 100 high quality lichess studies. All this amazing work was created by members of our community which we've shared in the last year and a half.
+
+💬 Discord → https://discord.com/invite/dxf6tuFH3a
+🔹 Lichess Team → lichess.org/team/study-creators--friends
+
+✅ Get exclusive access to high-quality studies!
+✅ Promote your own studies to a 4,600+ audience for free!
+✅ Compete in tournaments!
+✅ Get tips, help, collab, a sparring partner, or just hang out!
+✅ Weekly fun puzzles!
+
+🚀 Let’s elevate our chess together! I hope to meet you there! 😉
+
+Try solving this mate in 2 if you want (Puzzle of the week #18, in our server)! By Henry Bettman 1924. }
+1. Rf6!! { [%csl Rg3,Bb6,Gg8][%cal Rb8g3,Bc4b6,Gg8a8] } (1. Re6? Qxe6+ 2. Bd6+ { [%csl Bc8][%cal Be6c8] }) (1. Rd6? Qg1 { [%csl Rb6,Rg8] }) 1... Qxf6+ (1... exf6 2. Nb6#) 2. Bd6# { Checkmate! } { [%csl Ra8][%cal Rg8a8] } *
+
+
+[Event "Punish the Philidor Defense!: 🎉 == Outro == 🎉"]
+[Date "2025.10.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Punish the Philidor Defense!"]
+[ChapterName "🎉 == Outro == 🎉"]
+[ChapterURL "https://lichess.org/study/0wRf6tr3/vr23X7ij"]
+[Annotator "https://lichess.org/@/Bosburp"]
+[FEN "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4"]
+[SetUp "1"]
+[UTCDate "2025.10.26"]
+[UTCTime "18:16:04"]
+[ChapterMode "gamebook"]
+
+{ You're done! (well... except for the memorizing, understanding, practicing, and analyzing part 😅)
+
+Congratulations! I hope you found this study valuable and you feel confident to PUNISH the Philidor!
+
+As I mentioned before, I recommend playing some casual games with a sparring partner or engine first, a little practice goes a long way. Good luck! I hope you have fun!
+
+A lot of effort was put into this project. So, if you enjoyed the study, drop a like (heart) and share it with a friend to help more people reach this study!💓 I appreciate it! 😀
+
+🦉 Thanks again to Noctie! More details in chapter 24. If you haven’t yet, check it out here: https://go.noctie.ai/punish-philidor-full-repertoire
+
+📚 If you want to see more of my studies, you can check them out here: lichess.org/study/by/Bosburp 📚
+
+If you’d like to support my studies directly, you can do so via PayPal: rjmu@bosburp.com, totally optional, but very much appreciated. :)
+
+Have a great day! }
+ *
+
+

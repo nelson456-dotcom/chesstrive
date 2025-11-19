@@ -1,0 +1,43 @@
+===============================================
+FIX FOR "useRef is not defined" ERROR
+===============================================
+
+The import has been added correctly to the file:
+  Line 1: import React, { useState, useEffect, useCallback, useRef } from 'react';
+
+However, the browser is using a cached hot-reload file.
+
+TO FIX:
+-------
+
+1. In your terminal where the frontend dev server is running:
+   - Press Ctrl+C to stop the server
+
+2. Restart the dev server:
+   cd chessrep-main/frontend
+   npm start
+
+3. In your browser:
+   - Hard refresh the page: Ctrl+Shift+R (or Ctrl+F5)
+   - Or clear browser cache and reload
+
+This will force the browser to load the updated file with the useRef import.
+
+===============================================
+VERIFICATION
+===============================================
+
+After restarting, you should see:
+✅ No "useRef is not defined" errors
+✅ Real-time sync working correctly
+✅ Collaboration section visible
+
+The file has been correctly updated - this is just a browser cache issue.
+
+
+
+
+
+
+
+

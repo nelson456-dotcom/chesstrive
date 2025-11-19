@@ -1,0 +1,388 @@
+[Event "Knight and Bishop Checkmate: Introduction  👋"]
+[Date "2025.10.18"]
+[White "You"]
+[Black "Oponent"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Introduction  👋"]
+[ChapterURL "https://lichess.org/study/33scQVH8/rzUhssrR"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "3k4/8/8/8/8/8/1K6/1BN5 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ Hello everyone!!👋 I am ChesswithChesse In this study, we will learn how to deliver a very important checkmate, the bishop and knight checkmate. It is one of the most difficult in chess, but the only difficult part is remembering it. But you will see how effective it is to learn it in this study. If you like the study, you can leave a like, share it, and practice it with friends. I hope you enjoy it and learn how to deliver the bishop and knight checkmate. }
+1. Ba2 1-0
+
+
+[Event "Knight and Bishop Checkmate: Important topic 1 💎"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Important topic 1 💎"]
+[ChapterURL "https://lichess.org/study/33scQVH8/0zHQD41v"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "7k/8/5K2/8/4B3/8/6N1/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ To do checkmate with a bishop and knight, we have to drive the king to the corner that matches the color of our bishop.
+
+📌If we have a bishop on white squares, we must drive the enemy king to a8 or h1
+
+.📌If we have a bishop on black squares, we must drive the enemy king to a1 or h8. } { [%csl Ga8,Gh1] }
+ *
+
+
+[Event "Knight and Bishop Checkmate: Important topic 2 💎"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Important topic 2 💎"]
+[ChapterURL "https://lichess.org/study/33scQVH8/Kcycc3Pp"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "1k6/8/1K6/8/8/N2B4/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ 📌When the king is in the corner we want, we have to prevent him from moving. It is very important to know this.
+
+The king wants to go to c8 and escape. Can you think of any way to prevent him from getting there? } { [%cal Gb8c8] }
+1. Bf5! { Very well, you have it clear now. } { [%cal Gf5c8] } (1. Ba6! { Well, you have the idea, I prefer that you play Bf5, it's easier. But very good!! } { [%cal Ga6c8] }) *
+
+
+[Event "Knight and Bishop Checkmate: Important topic 3 💎"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Important topic 3 💎"]
+[ChapterURL "https://lichess.org/study/33scQVH8/7eNWe92S"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "k7/8/1K6/5B2/8/N7/8/8 w - - 1 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ 📌When everything is done. That is, when the king can only move to b8 or a8 , we have to move the knight to c5 or b4 because we want to make the jump to A6, which in other corners would be H6, A3, and H3
+Do you have any idea how to quickly get to any of those squares? } { [%csl Gc5,Gb4] }
+1. Nc2! { Well done, that's the route we were looking for } { [%cal Gc2b4] } 1... Kb8 { Now, which square do we want to go to? } 2. Nb4! { Well, in the next chapter, we will see how to finish off this position } { [%csl Gb4][%cal Gb4a6] } *
+
+
+[Event "Knight and Bishop Checkmate: Important topic 4 💎"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Important topic 4 💎"]
+[ChapterURL "https://lichess.org/study/33scQVH8/fw23HFra"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "k7/8/1K6/5B2/1N6/8/8/8 w - - 4 2"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ 📌Now is an important moment. We have to spend some time with the bishop on the diagonal from c8 to h3 because we want to reach this position but with the opponent's king on the opposite color of the bishop, so that Na6 is a check, and not stalemate. Besides, for you to understand, you have to move the bishop to the diagonal from a8 to h1, after giving check on a6. }
+2. Bh3 { Good!! } { [%cal Gh3g2] } (2. Bc8 { No, because Kb8 threatens the bishop }) (2. Bg4 { Good, but play Bh3 for the continuation }) (2. Be6 { Good, but play Bh3 for the continuation }) (2. Bd7 { Good, but play Bh3 for the continuation }) (2. Na6 { Stalemate!! No!! }) 2... Kb8 { Now you think of checkmate in 2? } 3. Na6+ { Yes, check!! } (3. Nc6+ { No, because after Ra8 we have closed the diagonal from h1 to a8, which is very important } { [%csl Gc6][%cal Gh3g2,Gg2a8] }) (3. Bg2 Kc8 { Ups }) 3... Ka8 4. Bg2# { What a beautiful checkmate!! } { [%cal Gg2a8,Ga6b8] } *
+
+
+[Event "Knight and Bishop Checkmate: Practice!! 💪🏼"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Practice!! 💪🏼"]
+[ChapterURL "https://lichess.org/study/33scQVH8/WSNXAKXL"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "1k6/8/1K6/8/4B3/N7/8/8 w - - 9 4"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ Let's see if you already know it.
+No hints!!
+Only the moves I mentioned earlier count.
+If you don't remember, go to the previous chapter. }
+4. Bf5 { Yes } 4... Ka8 5. Nc2 { Yes } 5... Kb8 6. Nb4 { Yes } 6... Ka8 7. Bh3 { Yes } 7... Kb8 8. Na6+ { Yes } 8... Ka8 9. Bg2# { Well, now you know. Now let's learn it by moving the king to the correct corner. } *
+
+
+[Event "Knight and Bishop Checkmate: W Method Introduction"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "W Method Introduction"]
+[ChapterURL "https://lichess.org/study/33scQVH8/BOoOKOml"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "5k2/5N2/5K2/5B2/8/8/8/8 w - - 4 2"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+
+{ We are going to learn the W method, which, as its name suggests, is shaped like a W. To give you an idea, watch this chapter and then we will go through it step by step. } { [%csl Gb7,Gd7,Gc5,Ge5,Gf7][%cal Gf7e5,Ge5d7,Gd7c5,Gc5b7] }
+2. Bh7 { [%csl Gg8][%cal Gh7g8,Rf8e8] } 2... Ke8 3. Ne5! { [%csl Bd7,Rd8][%cal Be5d7,Re8d8] } 3... Kd8 4. Ke6 Kc7 5. Nd7 { [%csl Bc5,Bb6,Bb8][%cal Bd7b8,Bd7b6,Bd7c5] } 5... Kc6 6. Bd3! { [%csl Bd7,Bc5,Bb6,Bb8,Yb5,Yd5,Yd6][%cal Bd7c5,Bd7b6,Bd7b8,Yd3b5,Ye6d5,Ye6d6] } 6... Kc7 7. Be4 { [%cal Ge4a8] } 7... Kd8 8. Kd6 Ke8 9. Bg6+ Kd8 10. Nc5 Kc8 11. Bh5 Kd8 12. Nb7+ Kc8 13. Kc6 Kb8 14. Kb6 Kc8 15. Bg4+ Kb8 16. Nc5 Ka8 17. Bh3 Kb8 18. Na6+ Ka8 19. Bg2# *
+
+
+[Event "Knight and Bishop Checkmate: 📌Step number 1: move the knight to d7"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Step number 1: move the knight to d7"]
+[ChapterURL "https://lichess.org/study/33scQVH8/SgQXfqPI"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "5k2/5N2/5K2/5B2/8/8/8/8 w - - 4 2"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ We have to get the knight to d7. The first thing we need to do is Bh7, taking away the g8 square from the king. }
+2. Bh7! { [%cal Gh7g8] } 2... Ke8 { Now the king wants to go to d7, so we play Ne5 to prevent it } 3. Ne5! { Now the king can go to d8 or f8, let's see what happens if it goes to d8; we will see f8 later. } { [%cal Ge5d7] } 3... Kd8 { The king wants to go to c7, it's inevitable, here comes an important moment, we have to play Ke6 to give the d7 square to the knight } { [%csl Gc7][%cal Gd8c7] } 4. Ke6! { [%csl Gd7][%cal Ge5d7] } 4... Kc7 { Now is the time to play Nd7, taking away the b6 square. In the next step, we will see what happens if the king goes to c6. But first, let's see if you remember, no hints!! } { [%cal Gc7b6] } 5. Nd7! { [%cal Gd7b6] } *
+
+
+[Event "Knight and Bishop Checkmate: 💪🏼Step number 1: practice"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "💪🏼Step number 1: practice"]
+[ChapterURL "https://lichess.org/study/33scQVH8/SqsE4P3W"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "5k2/5N2/5K2/5B2/8/8/8/8 w - - 11 5"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+5. Bh7! { Yes } { [%cal Gh7g8] } 5... Ke8 6. Ne5! { Yes } { [%cal Ge5d7] } 6... Kd8 7. Ke6! { Yes } 7... Kc7 8. Nd7! { Well done, let's go to step number 2 } { [%cal Gd7b6] } *
+
+
+[Event "Knight and Bishop Checkmate: 📌Step number 2: prevent the king from escaping"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Step number 2: prevent the king from escaping"]
+[ChapterURL "https://lichess.org/study/33scQVH8/7oEDIokB"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "8/2kN3B/4K3/8/8/8/8/8 b - - 18 8"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+8... Kc6 { The king tries to escape via b5, then Bd3 preventing it } { [%cal Gc6b5] } 9. Bd3! { [%cal Gd3b5] } 9... Kc7 { The king has to come back, now we play Be4 to prevent it from returning to c6. } 10. Be4! { [%cal Ge4b7,Ge4c6] } 10... Kd8 { Now the king tries to move away from the corner, but we play Kd6 and the coordination of the knight and bishop will lead the enemy king to the white-square corner. } 11. Kd6! { [%cal Gd6c7] } 11... Ke8 { The king tries to escape through f7, but we have a nice check on g6 that forces Black to return. } 12. Bg6+! { Now the next step is coming, but first let's see if you remember, no hints!! } { [%cal Gg6e8,Gd7f8] } *
+
+
+[Event "Knight and Bishop Checkmate: 💪🏼Step number 2: practice"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "💪🏼Step number 2: practice"]
+[ChapterURL "https://lichess.org/study/33scQVH8/OSVYnT3q"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "8/3N3B/2k1K3/8/8/8/8/8 w - - 26 12"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+12. Bd3! { Yes } { [%cal Gd3b5] } 12... Kc7 13. Be4! { Yes } { [%cal Ge4b7,Ge4c6] } 13... Kd8 14. Kd6! { Yes } { [%cal Gd6c7] } 14... Ke8 15. Bg6+! { Well done, let's move on to the next step } { [%cal Gg6e8] } *
+
+
+[Event "Knight and Bishop Checkmate: 📌Step number 3: reach the same position but two squares to the left"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Step number 3: reach the same position but two squares to the left"]
+[ChapterURL "https://lichess.org/study/33scQVH8/y8ZLjaXX"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "3k4/3N4/3K2B1/8/8/8/8/8 w - - 33 15"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ Ok, in this position our idea will be to have our king on b6, the knight on b7, and the opponent's king on b8. So the same thing, but two squares to the left. We will start with Nc5 aiming for the b7 square. } { [%cal Gd6b6,Gd7b7,Gd8b8] }
+15. Nc5! { Looking for the b7 square } { [%cal Gc5b7] } 15... Kc8 { Here we are going to make a move that delivers checkmate in one more move than the others, but it is the easiest, because the others are a bit complicated. The move is Bh5, so that the opponent has to move to a square where the knight gives check. } 16. Bh5! { The king can move to b8 or d8. If it goes to b8, we play Bg4 and the king is in a mating net. Anyway, we will see it in another chapter. } { [%csl Gd8,Gb8] } 16... Kd8 { Now we play Nb7 check and we almost have our plan } { [%csl Gd8] } 17. Nb7+! { Check!! } { [%cal Gb7d8] } 17... Kc8 { The king attacks the knight, but we play Kc6 bringing the king closer } 18. Kc6! { [%cal Gc6b7] } 18... Kb8 { Now we play Kb6 and our plan is complete } 19. Kb6! { Well done, we have already achieved our plan. Before moving on to the next step, let's see if you remember. } *
+
+
+[Event "Knight and Bishop Checkmate: 💪🏼Step number 3: practice"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "💪🏼Step number 3: practice"]
+[ChapterURL "https://lichess.org/study/33scQVH8/G1HlTTFk"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "3k4/3N4/3K2B1/8/8/8/8/8 w - - 34 15"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+15. Nc5! { Yes } 15... Kc8 16. Bh5! { Yes } 16... Kd8 17. Nb7+! { Yes } 17... Kc8 18. Kc6! { Yes } 18... Kb8 19. Kb6! { Well done, let's move on to the next and final step!! } *
+
+
+[Event "Knight and Bishop Checkmate: 📌Step number 4: checkmate!!"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Step number 4: checkmate!!"]
+[ChapterURL "https://lichess.org/study/33scQVH8/ztZqkP1C"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "2k5/1N6/1K6/7B/8/8/8/8 w - - 43 19"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ Now we are going to deliver checkmate, we start with Bg4, taking away the c8 square from the king }
+19. Bg4+! { [%cal Gg4c8] } 19... Kb8 { Let's see if you remember, everything is already done, where we have to go with the knight and the fastest way } 20. Nc5! { Well done!! } { [%cal Gc5a6] } 20... Ka8 { Do you remember how I taught you in this position? } 21. Bh3 { Well done!! } { [%cal Gh3g2] } (21. Na6 { Stalemate!! No!! }) 21... Kb8 { Mate in 2!! } 22. Na6+ { Yes!! } 22... Ka8 23. Bg2# { Checkmate!! Well done!! Let's see if you know it by heart now } *
+
+
+[Event "Knight and Bishop Checkmate: 💪🏼Step number 4: practice"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "💪🏼Step number 4: practice"]
+[ChapterURL "https://lichess.org/study/33scQVH8/j2tshsWp"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "2k5/1N6/1K6/7B/8/8/8/8 w - - 52 23"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+23. Bg4+! { Yes } 23... Kb8 24. Nc5! { Yes } 24... Ka8 25. Bh3! { Yes } 25... Kb8 26. Na6+! { Yes } 26... Ka8 27. Bg2#! { Yes
+Now let's see if you know it from beginning to end!!
+If you don't remember, go over it again. } *
+
+
+[Event "Knight and Bishop Checkmate: 💪🏼W Method: practice"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "💪🏼W Method: practice"]
+[ChapterURL "https://lichess.org/study/33scQVH8/Jw8BpQL3"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "5k2/5N2/5K2/5B2/8/8/8/8 w - - 61 27"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+27. Bh7 { Yes } 27... Ke8 28. Ne5 { Yes } 28... Kd8 29. Ke6 { Yes } 29... Kc7 30. Nd7 { Yes } 30... Kc6 31. Bd3 { Yes } 31... Kc7 32. Be4 { Yes } 32... Kd8 33. Kd6 { Yes } 33... Ke8 34. Bg6+ { Yes } 34... Kd8 35. Nc5 { Yes } 35... Kc8 36. Bh5 { Yes } 36... Kd8 37. Nb7+ { Yes } 37... Kc8 38. Kc6 { Yes } 38... Kb8 39. Kb6 { Yes } 39... Kc8 40. Bg4+ { Yes } 40... Kb8 41. Nc5 { Yes } 41... Ka8 42. Bh3 { Yes } 42... Kb8 43. Na6+ { Yes } 43... Ka8 44. Bg2# { Well done!! Now we will look at secondary lines and how to reach the position we want, but we have the pieces in the first row. } *
+
+
+[Event "Knight and Bishop Checkmate: 📌Secondary lines 🔥"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Secondary lines 🔥"]
+[ChapterURL "https://lichess.org/study/33scQVH8/ldpyvfvo"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "4k3/7B/5K2/4N3/8/8/8/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+
+{ From this position, secondary lines can emerge }
+1... Kf8 { Here we play Nd7 and we have overcome many steps } (1... Kd8 2. Ke6 Ke8 (2... Kc8 3. Kd6 { We advance with the king } { [%cal Gd6c7] } 3... Kb7 4. Be4+ { We deliver a check to then play Bc6 } { [%cal Ge4b7] } 4... Kb6 5. Bc6! { [%cal Gc6b5] } 5... Ka5 6. Kc5! { The king is already trapped }) (2... Kc7 3. Nd7 Kb7 (3... Kd8 4. Kd6 { The king is already trapped }) (3... Kc6 4. Bd3 Kc7 5. Be4 Kd8 6. Kd6 Kc8 { [%csl Gc8] } 7. Nc5 { We transpose } 7... Kd8 8. Bg6 { [%cal Gg6e8] } 8... Kc8 9. Bh5 { [%csl Ge8][%cal Gh5e8] }) 4. Bd3! { We prevent the king from escaping } 4... Kc6 5. Bc4 { We force the king to go to b7 or c7 } { [%cal Gc4b5,Gc4d5] } 5... Kc7 (5... Kb7 { [%csl Gb7] } 6. Kd6 { We trap the enemy king } { [%cal Gd6c7] } 6... Kc8 7. Nc5 { [%cal Gc5b7] } 7... Kd8 8. Bf7 Kc8 9. Bh5 { [%cal Gh5e8] } 9... Kb8 { [%csl Gb8] } 10. Bg4 { and the enemy king is trapped } { [%csl Gc8][%cal Gg4c8] }) 6. Bd5 { We cornered him } { [%cal Gd5a8] } 6... Kd8 7. Kd6 Ke8 8. Ba2 { Then we play Bf7 and the enemy king is trapped } { [%cal Ga2f7] } 8... Kd8 9. Bf7) 3. Nd7! { Here we play Nd7 and we have overcome many steps } { [%cal Gd7f8] } 3... Kd8 4. Kd6 { [%cal Gd6c7] }) 2. Nd7+! { [%cal Gd7f8] } 2... Ke8 3. Ke6 { [%cal Ge6d7] } 3... Kd8 4. Kd6 { [%cal Gd6c7] } *
+
+
+[Event "Knight and Bishop Checkmate: 📌Give the checkmate with the bishop and knight from the starting position!!"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "📌Give the checkmate with the bishop and knight from the starting position!!"]
+[ChapterURL "https://lichess.org/study/33scQVH8/rgYUTMUk"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "4k3/8/8/8/8/8/8/4KBN1 w - - 16 9"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ The first thing we need to do is activate the king quickly } { [%cal Ge1e2] }
+9. Ke2! Ke7 { [%cal Ge2e3] } 10. Ke3! Ke6 { [%cal Ge3e4] } 11. Ke4! Kf6 { Now we prevent it from escaping!! } { [%cal Gg1h3] } 12. Nh3! { [%cal Gh3g5] } 12... Ke6 { We took out the other piece!! } { [%cal Gf1c4] } 13. Bc4+ { [%cal Gc4e6] } 13... Kd6 { We don't let it activate!! } { [%cal Ge4d4] } 14. Kd4! { [%csl Gc5][%cal Gd4c5] } 14... Ke7 { We improved the king!! } { [%cal Gd4e5] } 15. Ke5! { [%cal Ge5d6,Ge5f6] } 15... Kf8 { Move forward a little more!! } { [%csl Gh8][%cal Ge5f6] } 16. Kf6! { [%cal Gf6e7,Gf6g7] } 16... Ke8 { bring another piece!! } { [%cal Gh3f4] } 17. Nf4 Kf8 { [%cal Gf4e6] } 18. Ne6+! { It's starting to resemble the main position more and more!! } 18... Kg8 { Only move, because Ke8, Bb5 is checkmate } { [%cal Ge6g5] } 19. Ng5+! { We have already arrived at F7!! } 19... Kh8 { [%cal Gg5f7] } 20. Nf7+! Kh7 { Bd3 ! } 21. Bd3+! { Check!! } { [%cal Gd3h7] } 21... Kg8 { [%cal Gd3b1] } 22. Bb1 { We have already reached the main position!! } { [%cal Gb1h7] } 22... Kf8 { [%cal Gb1h7,Gh7g8] } 23. Bh7! $18 { Now, you already know how to win this position } { [%cal Gh7g8] } *
+
+
+[Event "Knight and Bishop Checkmate: Outro 👋"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Knight and Bishop Checkmate"]
+[ChapterName "Outro 👋"]
+[ChapterURL "https://lichess.org/study/33scQVH8/qTHIctAt"]
+[Annotator "https://lichess.org/@/ChesswithChesse"]
+[FEN "5k2/5N1B/5K2/8/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "19:08:29"]
+[ChapterMode "gamebook"]
+
+{ I hope you liked the study and that you have learned the bishop and knight checkmate. If you liked the study, share it with your friends and give it a like, it really helps us. For the next study, 300 likes!! ♥
+And now you can surprise your friends because you know how to deliver the bishop and knight checkmate!!
+See you next time!! }
+ *
+
+

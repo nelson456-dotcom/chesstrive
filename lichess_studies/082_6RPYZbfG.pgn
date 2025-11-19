@@ -1,0 +1,22 @@
+[Event "rated classical game"]
+[Site "https://lichess.org/LntLxWee"]
+[Date "2025.11.08"]
+[White "MrKoschei"]
+[Black "rickard-black"]
+[Result "0-1"]
+[WhiteElo "1500"]
+[BlackElo "1623"]
+[TimeControl "1800+5"]
+[Termination "Normal"]
+[GameId "LntLxWee"]
+[Variant "Standard"]
+[ECO "D05"]
+[Opening "Queen's Pawn Game: Colle System"]
+[StudyName "checkmate pattern"]
+[ChapterName "MrKoschei (1500?) - rickard-black (1623)"]
+[ChapterURL "https://lichess.org/study/6RPYZbfG/d8Fdg5O1"]
+[Annotator "https://lichess.org/@/rickard-black"]
+
+1. d4 { [%clk 0:30:00] } 1... d5 { [%clk 0:30:00] } 2. Nf3 { [%clk 0:30:03] } 2... Nf6 { [%clk 0:29:58] } 3. e3 { [%clk 0:30:06] } 3... e6 { [%clk 0:29:49] } 4. Bd3 { [%clk 0:30:09] } 4... Bd6 { [%clk 0:29:39] } 5. Nbd2 { [%clk 0:30:04] } 5... Nbd7 { [%clk 0:29:32] } 6. Ne5 { [%clk 0:30:07] } (6. c4 c5 7. cxd5 exd5 8. b3 O-O 9. O-O b6 10. Bb2 Qe7) 6... Nxe5 { [%clk 0:29:30] } 7. dxe5 { [%clk 0:30:10] } 7... Bxe5 { [%clk 0:29:34] } 8. f4 { [%clk 0:30:13] } 8... Bd6 { [%clk 0:29:36] } 9. O-O { [%clk 0:30:15] } 9... O-O { [%clk 0:29:34] } 10. b3 { [%clk 0:30:16] } (10. Nf3 Bc5 11. b3 Ne4 12. c4 b6 13. Nd4 Nf6 14. Bb2 Bb7 15. a3 a5) 10... c5 { [%clk 0:29:25] } (10... e5 11. fxe5 Bxe5 12. Rb1 Bc3 13. b4 a5 14. b5 Qe7 15. h3 Re8 16. Nf3) 11. Bb2 { [%clk 0:30:19] } 11... a6 { [%clk 0:28:38] } 12. Qe1 { [%clk 0:30:22] } 12... Qc7 { [%clk 0:27:46] } (12... Be7) 13. Bxf6 { [%clk 0:29:57] } 13... gxf6 { [%clk 0:27:38] } 14. Rf3 { [%clk 0:29:54] } (14. Qg3+ Kh8 15. Qh4 f5 16. Qf6+ Kg8 17. Rf3 (17. Qg5+ Kh8 18. Qf6+ Kg8 19. Rf3) 17... Re8 18. Qh6 Be5 19. Rg3+ Kh8) 14... f5 { [%clk 0:27:12] } 15. Rg3+ { [%clk 0:29:54] } (15. c4) 15... Kh8 { [%clk 0:27:13] } 16. Rh3 { [%clk 0:29:56] } 16... f6 { [%clk 0:27:10] } 17. Qh4 { [%clk 0:29:49] } 17... Rf7 { [%clk 0:26:44] } 18. Nf3 { [%clk 0:29:48] } 18... c4 { [%clk 0:26:35] } 19. bxc4 { [%clk 0:29:40] } 19... dxc4 { [%clk 0:26:19] } 20. Ng5 { [%clk 0:29:34] } (20. Be2 Bc5 21. Ne1 Bd7 22. Kh1 Raf8 23. Bxc4 b5 24. Be2 Qa7 25. Qf2 Rg7) 20... cxd3 { [%clk 0:25:17] } (20... fxg5 21. fxg5 cxd3 22. g6 Rg7 23. Qf6 Kg8 24. Rxh7 Rxh7 25. gxh7+ Qxh7 26. Rd1) 21. Nxf7+ { [%clk 0:29:37] } 21... Qxf7 { [%clk 0:25:20] } 22. cxd3 { [%clk 0:29:40] } 22... b5 { [%clk 0:25:10] } 23. Rc1 { [%clk 0:29:40] } 23... Bb7 { [%clk 0:25:13] } 24. g4 { [%clk 0:29:35] } 24... fxg4 { [%clk 0:24:59] } 25. Qxg4 { [%clk 0:29:39] } (25. Rg3 f5 26. h3 Bf3 27. hxg4 fxg4 28. Kf2 Rg8 29. Rxf3 gxf3 30. Rh1 Qg7) 25... Rg8 { [%clk 0:25:02] } 26. Rxh7+ { [%clk 0:29:19] } (26. Qxg8+ Qxg8+ 27. Rg3 Qf8 28. d4 Be4 29. Kf2 h5 30. a3 Kh7 31. Rh3 Qf7) 26... Qxh7 { [%clk 0:25:04] } 27. Qxg8+ { [%clk 0:29:19] } 27... Qxg8+ { [%clk 0:25:07] } 28. Kf2 { [%clk 0:29:19] } 28... Qg2+ { [%clk 0:25:08] } 29. Ke1 { [%clk 0:29:20] } 29... Bb4+ { [%clk 0:25:10] } 30. Kd1 { [%clk 0:29:16] } 30... Bf3# { 0-1 Black wins by checkmate. } { 0-1 Black wins by checkmate. } { [%clk 0:25:08] } 0-1
+
+

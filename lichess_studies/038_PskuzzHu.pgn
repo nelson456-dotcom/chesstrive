@@ -1,0 +1,122 @@
+[Event "How to cook at lichess: Turn on the bakery!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game"]
+[StudyName "How to cook at lichess"]
+[ChapterName "Turn on the bakery!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/5hQMFXzL"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:26:52"]
+[ChapterMode "gamebook"]
+
+1. e4 { [%eval 0.18] } (1. e3) 1... e5 { [%eval 0.22] } 2. Nf3 { [%eval 0.13] } 2... Nc6 { [%eval 0.21] } 3. Bc4 { [%eval 0.11] } *
+
+
+[Event "How to cook at lichess: Add the meat!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A04"]
+[Opening "Zukertort Opening: Ross Gambit"]
+[StudyName "How to cook at lichess"]
+[ChapterName "Add the meat!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/JYZ3t2sY"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:27:18"]
+[ChapterMode "gamebook"]
+
+1. Nf3 e5 2. Nxe5 f6 3. Nc4 d5 4. Ne3 *
+
+
+[Event "How to cook at lichess: Now the vegetables!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A00"]
+[Opening "Van't Kruijs Opening"]
+[StudyName "How to cook at lichess"]
+[ChapterName "Now the vegetables!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/9cb9fLjW"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:27:41"]
+[ChapterMode "gamebook"]
+
+1. e3 e5 2. Bc4 d6 3. Qf3 d5 4. Bd3 e4 *
+
+
+[Event "How to cook at lichess: Nkw the salt and sugar!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C23"]
+[Opening "Bishop's Opening: Philidor Counterattack"]
+[StudyName "How to cook at lichess"]
+[ChapterName "Nkw the salt and sugar!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/WnIeWDHm"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:28:07"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Bc4 c6 3. Qf3 Nh6 4. Nh3 Nf5 5. Qxf5 *
+
+
+[Event "How to cook at lichess: The stove!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+[StudyName "How to cook at lichess"]
+[ChapterName "The stove!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/9HPdeexO"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:28:33"]
+[ChapterMode "gamebook"]
+
+1. Nc3 c5 2. d3 c4 3. dxc4 *
+
+
+[Event "How to cook at lichess: Serve!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "How to cook at lichess"]
+[ChapterName "Serve!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/eHOOTbOx"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[FEN "8/8/8/8/8/8/8/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:28:49"]
+[ChapterMode "gamebook"]
+
+ *
+
+
+[Event "How to cook at lichess: So what did we cook!"]
+[Date "2025.11.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "How to cook at lichess"]
+[ChapterName "So what did we cook!"]
+[ChapterURL "https://lichess.org/study/PskuzzHu/d6qpyxAC"]
+[Annotator "https://lichess.org/@/Samadarshi_ch"]
+[UTCDate "2025.11.05"]
+[UTCTime "08:29:15"]
+[ChapterMode "gamebook"]
+
+{ So what rid we cook?! We have cooked rice! Bye! Enjoy! }
+ *
+
+

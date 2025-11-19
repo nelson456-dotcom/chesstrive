@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessground Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/chessground@9.2.1/assets/chessground.base.css">
+    <link rel="stylesheet" href="https://unpkg.com/chessground@9.2.1/assets/chessground.brown.css">
+    <link rel="stylesheet" href="https://unpkg.com/chessground@9.2.1/assets/chessground.cburnett.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2c3e50;
+        }
+        #board {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+    
+    <script type="module">
+        import { Chessground } from 'https://unpkg.com/chessground@9.2.1/dist/chessground.js';
+        
+        const config = {
+            fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
+            orientation: 'white',
+            draggable: {
+                enabled: true
+            },
+            movable: {
+                color: 'white',
+                free: false
+            }
+        };
+        
+        const board = Chessground(document.getElementById('board'), config);
+        console.log('Board created:', board);
+    </script>
+</body>
+</html>

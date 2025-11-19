@@ -1,0 +1,22 @@
+[Event "rated blitz game"]
+[Site "https://lichess.org/CE8cG1dL"]
+[Date "2025.11.08"]
+[White "UnratedRishabh"]
+[Black "ijhdfg4"]
+[Result "1-0"]
+[WhiteElo "1799"]
+[BlackElo "1656"]
+[TimeControl "180+2"]
+[Termination "Time forfeit"]
+[GameId "CE8cG1dL"]
+[Variant "Standard"]
+[ECO "D08"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Normal Line"]
+[StudyName "Game study"]
+[ChapterName "UnratedRishabh (1799?) - ijhdfg4 (1656?)"]
+[ChapterURL "https://lichess.org/study/xQU7uSZu/uH8jl8CQ"]
+[Annotator "https://lichess.org/@/UnratedRishabh"]
+
+1. d4! $15 { [%clk 0:03:00] } 1... d5 { [%clk 0:03:00] } 2. c4 { [%clk 0:02:53] } 2... e5 { [%clk 0:02:57] } 3. dxe5 { [%clk 0:02:48] } 3... d4 { [%clk 0:02:59] } 4. Nf3 { [%clk 0:02:42] } 4... Nc6 { [%clk 0:03:01] } 5. a3 { [%clk 0:02:33] } 5... Bg4 { [%clk 0:03:02] } 6. Nbd2 { [%clk 0:02:27] } 6... Qe7 { [%clk 0:03:00] } 7. g3 { [%clk 0:02:23] } 7... Nxe5 { [%clk 0:02:56] } 8. Nxe5 { [%clk 0:02:23] } 8... Qxe5 { [%clk 0:02:58] } 9. Bg2 { [%clk 0:02:11] } 9... O-O-O { [%clk 0:02:58] } 10. h3 { [%clk 0:02:06] } 10... Bf5 { [%clk 0:02:38] } 11. O-O { [%clk 0:01:59] } 11... h5 { [%clk 0:02:32] } 12. Qb3 { [%clk 0:01:54] } 12... c6 { [%clk 0:02:29] } 13. Qa4 { [%clk 0:01:49] } 13... Kb8 { [%clk 0:02:27] } 14. Nb3 { [%clk 0:01:43] } 14... Qe6 { [%clk 0:02:19] } 15. Bf4+ { [%clk 0:01:32] } 15... Bd6 { [%clk 0:02:15] } 16. Nxd4! { [%clk 0:01:26] } 16... Qc8 { [%clk 0:02:12] } 17. Nxc6+ { [%clk 0:01:19] } 17... bxc6 { [%clk 0:02:04] } 18. Rfd1 { [%clk 0:01:12] } 18... Qc7 { [%clk 0:01:40] } 19. Rxd6 { [%clk 0:01:06] } 19... Rxd6 { [%clk 0:01:42] } 20. c5 $10 { 1-0 White wins on time. } { [%clk 0:00:59] } 1-0
+
+

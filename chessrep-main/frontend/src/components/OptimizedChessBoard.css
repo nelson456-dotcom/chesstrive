@@ -1,0 +1,153 @@
+/* Optimized Chess Board CSS for maximum performance */
+
+.optimized-chess-board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  cursor: pointer;
+  will-change: transform;
+  contain: layout style paint;
+}
+
+.optimized-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  will-change: background-color, border;
+  contain: layout style paint;
+}
+
+.optimized-square:hover {
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.optimized-square.selected {
+  border: 3px solid #007bff !important;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  z-index: 2;
+}
+
+.optimized-square.last-move {
+  border: 2px solid #ffd700 !important;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  z-index: 1;
+}
+
+.optimized-square.piece-selected {
+  background-color: #fbbf24 !important;
+  border: 3px solid #f59e0b !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+  z-index: 3;
+}
+
+.optimized-piece {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  contain: layout style paint;
+  user-select: none;
+  pointer-events: none;
+}
+
+.optimized-piece.white {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.optimized-piece.black {
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.optimized-coordinates {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
+  contain: layout style paint;
+}
+
+.optimized-file-label {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #8b4513;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
+.optimized-rank-label {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #8b4513;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
+/* Performance optimizations */
+.optimized-chess-board * {
+  box-sizing: border-box;
+}
+
+.optimized-chess-board .optimized-square {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Reduce repaints and reflows */
+.optimized-chess-board {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.optimized-square {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Hardware acceleration for smooth animations */
+.optimized-square:hover,
+.optimized-square.selected,
+.optimized-square.last-move {
+  transform: translateZ(0) scale(1.02);
+  -webkit-transform: translateZ(0) scale(1.02);
+}
+
+/* Optimize for mobile devices */
+@media (max-width: 768px) {
+  .optimized-piece {
+    font-size: 4vw;
+  }
+  
+  .optimized-file-label,
+  .optimized-rank-label {
+    font-size: 10px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .optimized-piece {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

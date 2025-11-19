@@ -1,0 +1,16 @@
+[Event "bachhoang2018Ld's Study: Chapter 1"]
+[Date "2025.11.08"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D08"]
+[Opening "Queen's Gambit Declined: Albin Countergambit, Lasker Trap"]
+[StudyName "bachhoang2018Ld's Study"]
+[ChapterName "Chapter 1"]
+[ChapterURL "https://lichess.org/study/qeHdAMWJ/heWMo5e7"]
+[Annotator "https://lichess.org/@/bachhoang2018Ld"]
+[UTCDate "2025.11.08"]
+[UTCTime "05:49:30"]
+
+1. d4 d5 { [%csl Gd7,Gd5][%cal Gd7d5] } 2. c4 { [%csl Gc2,Gc4][%cal Gc2c4] } 2... e5 { [%csl Ge7,Ge5][%cal Ge7e5] } 3. dxe5 { [%csl Gd4][%cal Gd4e5] } 3... d4 { [%csl Ge2] } 4. e3? { [%csl Ge3][%cal Ge2e3] } 4... Bb4+ { [%csl Gf8,Gb4][%cal Gf8b4] } 5. Bd2? { [%csl Gc1][%cal Gc1d2] } 5... dxe3!! 6. Bxb4?? { [%csl Gd2][%cal Gd2b4] } 6... exf2+! { [%csl Ge3,Gf2][%cal Ge3f2] } 7. Ke2!? { [%csl Ge1,Ge2][%cal Ge1e2] } 7... fxg1=Q?? { [%csl Gf2,Gg1][%cal Gf2g1] } (7... fxg1=N+!! { [%cal Gf2g1] } 8. Rxg1 Bg4+! { [%csl Gc8,Gg4][%cal Gc8g4] } 9. Ke1?? Qd7) *
+
+

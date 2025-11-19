@@ -1,0 +1,311 @@
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: INTRODUCCIÓN"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "INTRODUCCIÓN"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/R1H8Nw35"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ Hola!
+Este estudio es el primero de una saga viendo 3 lecciones por cada campeón del mundo. En este estudio vamos a comenzar por los 4 primeros campeones del mundo. Espero que os guste la serie de lecciones instructivas de los campeones del mundo! }
+ *
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 1 LECCIÓN STEINITZ"]
+[Date "2025.10.18"]
+[White "Wilhem Stenitz"]
+[Black "Mikhail Chigorin"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "1 LECCIÓN STEINITZ"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/EyhY7WGJ"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r1bq1rk1/ppp2pbp/2npn1p1/4p3/4P3/2PPNN2/PPB2PPP/R1BQK2R w KQ - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta partida vamos a ver como Steinitz hace una gran partida estrategicamente como tacticamente.
+En esta posición Steinitz comprendió la posición muy bien e inició un plan de debilitamiento al rey }
+1. h4! { En esta posición, Steinitz entiende muy bien la estructura de peones y plantea un típico ataque de flanco con h4 } { [%cal Rh4h5] } 1... Ne7 { Chigorin responde con algo muy típico contra un ataque de flaco contraataque central. Pero Stienitz sigue con su plan } { [%cal Gd6d5] } 2. h5 { Chigorin contraataca en el centro } 2... d5 { Y Steinitz debilita al rey negro abriendo la columna h para su torre } { [%cal Rh1h8] } 3. hxg6 fxg6 { Steinitz ahora vé que puede aprovechar la diagonal débil g8-a2 .
+Puedes ver la forma más correcta de aprovechar esa diagonal débil } 4. exd5! { Steinitz cambia piezas para que la debilidad en la diagonal sea más débil } 4... Nxd5 { Sigue cambiando } 5. Nxd5 Qxd5 { Y coloca un alfilazo en la diagonal débil } 6. Bb3 { Cada vez se va notando más la debilidad del rey negro. } { [%cal Ra2g8,Rh1h8] } 6... Qc6 { Y ahora Steinitz va a hacer un plan para enrocarse largo } 7. Qe2 { Desarrolla la dama atacando e5 (ganando un tiempo) y despeja una pieza más del enroque largo } 7... Bd7 { Chigorin ignora la amenaza del peón dado que si las blancas lo capturan las negras conseguirian mucha iniciativa asi que Steinitz sigue con su plan de enroque largo y desarrollo largo } 8. Be3 { Chigorin se quita de la diagonal del alfil } 8... Kh8 { Y Steinitz se enroca largo } 9. O-O-O Rae8 { Y ahora Steinitz hace una jugada para incorporar la dama al ataque hacia el flanco de rey. ¿Puedes verla? } 10. Qf1!? { Una jugada muy interesante con un plan claro, pasar la dama por g1y h2 atacando h7. Y quitando a la dama de la columna de la torre de e8 } { [%cal Gf1g1,Gg1h2,Ge8e1] } 10... a5 { Chigorin intenta hacer el ataque de flanco pero llega tarde ahora Steinitz hizo una ruptura buenísima abriendo un montón de lineas } 11. d4! exd4 { ¿De que recapturó Steinitz? } 12. Nxd4! { De caballo por supuesto sin ceder el alfil } 12... Bxd4 { Ahora, es un momento importante con que recapturar ¿Con Alfil o con Torre? } 13. Rxd4!! { Por supestisimo que con Torre el alfil de negras vale un montón dado que ahora las casillas negras son super débiles si hubieramos capturado de alfil las negras nos lo hubieran capturado y habrian conseguido la igualdad } 13... Nxd4?? { El ERRO DEFINITIVO ahora en esta posición hay MATE EN 7 que Steinitz calculó y ejecutó correctamente } 14. Rxh7+!! { Bombazo descubriendo el rey } (14. Bxd4+ { La jugada más normal, que también gana pero no da mate en 7 }) 14... Kxh7 15. Qh1+ { Preciso de jaque de dama llevando la dama al ataque de mate } 15... Kg7 16. Bh6+ { [%cal Gg7f6] } (16. Qh6+ { Esta jugada tambien da mate en 4 pero Steinitz prefirió dar el jaque con el alfil }) 16... Kf6 17. Qh4+ { Ahora el rey solo puede ir a e5 dado que en f5 recibiria mate en 1 } 17... Ke5 18. Qxd4+ $18 { En esta posición Chigorin abandonó porque tras Rf5 recibiria mate con Df4 } { [%cal Ge5f5,Gd4f4] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 2 LECCIÓN STEINITZ"]
+[Date "2025.10.18"]
+[White "Wilhem Steinitz"]
+[Black "Augustus Mongredien"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "2 LECCIÓN STEINITZ"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/uR2AJY3q"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r2q1rk1/pbpnbppp/1p6/3pN3/3P1P2/3BB3/PPP1Q1PP/R4RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Steinitz tiene una gran ventaja, pero puedes ver el plan que ejecutó Steinitz? }
+1. Rf3! { Mongredien cierra la diagonal del alfil que apunta h7 } 1... f5 { Steinitz finaliza su maniobra de torre } 2. Rh3 { Ahora Steinitz amenza Dh5 asi que Mongredien lo evita } { [%csl Gh3][%cal Gf3h3] } 2... g6 { Ahora Steinitz juega una ruptura muy interesante, es verdad que no es la mejor jugada pero es una jugada muy interesante y practica que abre lineas el rey enemigo } 3. g4!? { Aquí Mongredien tenia una unica jugada para sobrevivir que era Cxe5 fxe5 y f4 con una posición equilibrado } 3... fxg4? { EL ERROR DESICIVO AHORA STEINITZ EJECUTA EL BOMBAZO FINAL } 4. Rxh7!! { Otro Sacrificio ganador de torre que gana la partida!! } 4... Nxe5 { Mongredien antes de capturar la torre decide eliminar atacantes } { [%csl Gf5][%cal Gd7f5] } 5. fxe5 Kxh7 { Captura el peón amenzando g6 } 6. Qxg4 Rg8 { Mongredien defiende el peón con la torre, y ahora Steinitz remata la partida facilmente. Encuentra la forma de ganar facilmente } 7. Qh5+ Kg7 8. Qh6+ (8. Qxg6+?? { Nooooo PERDEMOS LA DAMA } { [%cal Gg7h8,Gg8g1] }) 8... Kf7 9. Qh7+ Ke6 10. Qh3+ { Jaque preciso } 10... Kf7 { Trae la torre } 11. Rf1+ Ke8 12. Qe6 Rg7 { Steinitz clava el alfil presionandolo (muchas jugadas ganan) } { [%csl Re8] } 13. Bg5 { [%cal Gg5e7,Ge6e7] } 13... Qd7 { Steinitz ahora encuentra el MATE EN 4 } 14. Bxg6+ Rxg6 15. Qxg6+ Kd8 16. Rf8+ Qe8 17. Qxe8# 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 3 LECCIÓN STEINITZ"]
+[Date "2025.10.18"]
+[White "Wilhem Steinitz"]
+[Black "Emanuel Lasker"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "3 LECCIÓN STEINITZ"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/qbgxjxfq"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r1bq1r1k/ppp3pp/2n1pb2/2P2p2/2BPpB2/P3P3/1PQ2PPP/2KR2NR w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gh6] }
+1. f3! Qe7 { Buena jugada de Lasker, preparando e5 la ruptura que romperia nuestro centro. Entonces Steinitz retira el alfil de la ruptura e5 de las negras. Para que cuando se produzca no gane un tiempo atacando el alfil } { [%cal Gf3e4,Re6e5] } 2. Bg3 f4!? { Jugada interesante de Lasker, dado que si las blancas capturaran del alfil las negras tendrian la ruptura e5 que romperia nuestro centro ganando un tiempo. Pero Steinitz tenia preparado un jugadón que mejora muchísimo nuestra posición de ataque } { [%cal Gg3f4] } 3. Qxe4!! { ABSOLUTAMENTE BRILLANTE! Sacrificando el alfil porque cuando se capture se abrirá la columna h atacando mate. } 3... fxg3 4. hxg3 { ATACANDO MATE. Lasker lo evita } { [%cal Re4h7,Rh1h7] } 4... g6 { Stenitiz captura el peón clavado } 5. Qxg6 Bd7 { Y ahora Stenitz ejecuta un plan maravilloso que mejora su posición de ataque.
+¿Puedes encontrarlo? } 6. f4! { CORRECTO. Empezando a avanzar su masa de peones y abriendo paso al caballo por f3 para que se incorpore al ataque } 6... Rf7 { Steinitz sigue avanzando su masa de peones creando amenzas } 7. g4 { [%csl Gg4,Gf4,Ge3][%cal Rg4g5,Rg6h7,Rh1h7] } 7... Rg7 { Stenitz retira la dama a la columna h siguiendo amenzando mate y apoyando g5 } 8. Qh6 Rxg4 { Lasker captura el peón que estaba amenzando g5. Y ahora Steinitz incorpora una pieza al ataque atacando directamente h7 } 9. Bd3! { Buena jugada, se incrementa mucho más la presión en h7. Lasker se defiende } { [%cal Gd3h7,Gh6h7,Gh1h7] } 9... Rg7 { Y ahora Steinitz desarrolla la ultima pieza que le falta ayudando al ataque } 10. Nf3 Qf7 { Ahora Steinitz vuelve a ejecutar el mismo plan que antes dado que ahora las negras no lo pueden evitar. } 11. g4! { Amenazando otra vez g5-g6 y la presión en h7 es irresistible } { [%csl Rh7][%cal Bg4g5,Bg5g6] } 11... Rag8 { Steinitz avanza el peón } 12. g5 Bd8 { Y ahora Steinitz con toda la calma incorpora la ultima pieza que le falta al ataque atacando h7 } 13. Rh2! { Doblando torres e incrementando la presión en h7. La posición se cae a pedazos } { [%cal Gd1h1] } 13... Rg6 { Lasker, intenta devolver material a cambio de quitarle potencia al ataque, pero Steinitz no le quita respiro y retira la dmaa } 14. Qh5 R6g7 { Lasker propone el cambio de damas, pero a Steinitz no le importa e incorpora la última pieza que le falta al ataque! } 15. Rdh1 { Y H7 CAE!! LA PRESIÓN ES INSOPORTABLE } 15... Qxh5 16. Rxh5 { Stenitz tiene tres piezas atacando h7 y lasker tiene 2 y no puede añadir un tercero cae } { [%cal Gh5h7,Gh1h7,Gd3h7,Gh8h7,Gg7h7] } 16... Rf8 { Stenitiz remata sin despeinarse } 17. Rxh7+ Rxh7 18. Rxh7+ Kg8 { El alfil se pierde } 19. Rxd7 { [%csl Gd4,Gf4,Gg5] } 19... Rf7 20. Bc4 $18 { Y si se captura la torre ganaría el cuarto peón } { [%cal Gf7d7,Rc4e6,Re6d7,Re6g8] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 1 LECCIÓN LASKER"]
+[Date "2025.10.18"]
+[White "Emanuel Lasker"]
+[Black "Johann Hermann Bauer"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "1 LECCIÓN LASKER"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/wAjRzeRb"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r4rk1/1b2bppp/ppq1pn2/2ppB3/5P2/1P1BP1N1/P1PPQ1PP/R4RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Lasker encunetra la mejor idea de la posición para debilitar al rey negro. ¿Puedes encontrarla? }
+1. Nh5! { Eliminando al principal defensor del enroque el caballo de f6 } 1... Nxh5 { Ahora parece que después de Dxh5 no pasa nada, las negras tienen f5 y solucionan los problemas. ¿Puedes ver la combinación que jugó Lasker? } 2. Bxh7+!! Kxh7 3. Qxh5+ Kg8 4. Bxg7!! { BRILLANTE!! Doble sacrificio de alfil para destapar todas las defensas del rey negro. } 4... Kxg7 { ¿Cual es la jugada precisa en esta posición? } 5. Qg4+! { Correcto obligando al rey a irse a la esquina } 5... Kh7 { ¿Y ahora como continuó Lasker? } 6. Rf3 { Con una amenza mortal Th3 jaque mate, las negras encuentran la unica defensa } 6... e5 7. Rh3+ Qh6 8. Rxh6+ Kxh6 { En esta posición resultante pese a la igualdad de material hay muchas jugadas que ganan, pero cual es la más directa que obliga al rival de Lasker ha rendirse? } 9. Qd7 $18 { Con ataque doble se gana pieza } { [%csl Rh6][%cal Gd7b7,Gd7e7] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 2 LECCIÓN LASKER"]
+[Date "2025.10.18"]
+[White "Harry Nelson Pillsbury"]
+[Black "Emanuel Lasker"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "2 LECCIÓN LASKER"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/tSd4NxxJ"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "2r2rk1/pp3pp1/4bb1p/q2p3Q/3P1P2/2N5/PP4PP/1K1R1B1R w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ Esta partida es considerada por muchos y por el propio Lasker "su mejor partida"
+Asi que lo que vamos a ver a continuación es pura brillantez }
+1. f5 { Pillsbury decide atacar el alfil de Lasker, pero Lasker tenia preparada una hermosa combinación ¿Puedes calcularla? } 1... Rxc3!! { Brillante, el sacrificio tipico de torre que destapa las defensas del rey y vulnera las casillas negras que lo rodean } 2. fxe6 $7 { Pilsbury hace la unica jugada pa sobrevivir dado que si se comiera la torre seria un desastre. Pero Lasker lo que hace ahora es absolutamente brillante y una jugada de otro planeta. ¿Puedes verla? } 2... Ra3!! { Si lo has visto te felicito una jugada absolutamente brillante y espectacular coloca la torre en una casilla en la que la pierde en una. La idea es que si no se captura la torre seria un desastre porque entraria en a2 y si se captura la torre, otra vez las casillas negras alrededor del rey blanco quedarian muy debiles } 3. exf7+?! { Pilsbury decide hacer esta jugada intermedia antes de capturar la torre que no es del todo precisa porque las máquinas son capaces de calcular varias variantes de larga extensión, aunque la posición ya era muy dificil despues del doble sacrificio de torre. Obviamente Lasker recaptura con su torre el peón } 3... Rxf7 { Y ahora Pilsbury está practicamente obligado a capturar la torre } 4. bxa3 { Ahora las negras tienen un movimiento importante para no quedar practicamente perdidas ¿Puedes verlo? } 4... Qb6+! { CORRECTO da un jaque con la dama y se cordina con el alfil para atacar d4 } 5. Bb5 $7 { Pilsbury encuentra la unica jugada para sobrevivir dado que si hacia otra jugada las negras podian comer en d4 con mucho dolor. Y ahora obliga a Lasker a capturar en b5 y la dama y el alfil no se cordinan atacando d4 } 5... Qxb5+ 6. Ka1 { Ahora Lasker comete un ERROR lo que mancha un poco esta espectacular partida, las dos unicas jugadas que seguian reportando ventaja era Dc5 y Dc4 presionando el peón de d4. Pero la jugada que realizo era natural incorporando la torre a la ofensiva pero le deja un respiro a Pilsbury para organizar su defensa } 6... Rc7?! 7. Rd2! { Buena jugada evitando Tc2. Lasker sigue mejorando su torre de c7 presionando un peón importante } 7... Rc4 8. Rhd1?! { Pilsbury erra la unica jugada que mantenia la igualdad era Te1 con ideas de entradas en e8, pero esta jugada es la más natural defendiendo d4. Pero ahora Lasker juega Tc3 una jugada natural ahora tocando el peón de a3. } 8... Rc3?! { Pilsbury encuentra la buena } 9. Qf5 { Y ahora Lasker mejora su posición de la dama amenzando Tc1+ } 9... Qc4 10. Kb2? { EL ERROR DESICIVO SOLO FUNCIONABA RB1 una jugada muy rara colgandose el peón de a3. PERO LA COMBINACIÓN QUE EMPLEA LASKER A Continuación te dejara sin palabras. Te reto a calcularala } 10... Rxa3!! { ABSOLUTO ESCANDALO DOBLE SACRFICIO DE TORRE EN A3!!!! Lasker calculo muy bien y vió que la unica jugada factible es Rxa3, y vio la forma de rematar la partida con un jaque mate. } 11. Qe6+ { Primero Pilsbury dió un jaque antes de capturar la torre } 11... Kh7 12. Kxa3 { AHORA SÍ JUEGA COMO LASKEr } 12... Qc3+ { Bien } 13. Ka4 b5+ { Bien } 14. Kxb5 Qc4+ { Bien } 15. Ka5 Bd8+ $19 { Perfecto! Pillsbury abandona } 0-1
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 3 LECCIÓN LASKER"]
+[Date "2025.10.18"]
+[White "Max Euwe"]
+[Black "Emanuel Lasker"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "3 LECCIÓN LASKER"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/w4qZ3UGy"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "3rn1k1/p4p2/2p1p1p1/4P1q1/P1B5/1P3RN1/2nr1PP1/4RQK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta partida vamos a ver como Lasker con negras juega contra Euwe con un desequilibrio de material muy interesante }
+1. Ne4 { Euwe ataca la dama de Lasker haciendo un ataque doble y parece que las negras están totalmente perdidas. ¿Puedes encontrar el recurso que encontró Lasker? } 1... Qxe5!! { BRUTAL! SACRIFICANDO LA DAMA TRAS CF6+ HAY UN JAQUE A LA DESCUBIERTA Y EUWE GANA LA DAMA } 2. Nf6+ { Unica jugada } { [%cal Ge1e5] } 2... Qxf6! { Obviamente si voy a perder la dama que sea por la máxima cantidad de piezas posible } 3. Rxf6 { En esta posición las dos capturas de torre son buenas, pero Lasker decidió capturar para mí la torre correcta dado que despues le da muchos problemas practicos a su rival. } 3... Nxf6 { Esta es la captura para mí mejor porque ahora la unica jugada de las blancas para MEDIO AGUANTAR es Te2 que no tiene ningún tipo de sentido porque se deja la torre en una por eso Lasker decidió capturar esta torre porque luego le es más dificil a su rival jugar } (3... Nxe1 { Según el ordenador este es el mejor movimiento, pero es más fácil
+jugar para las blancas en esta posición no le queda otra a las blancas que jugar Txe6 fxe6 Axe6+ y jugar con el rey expuesto de las negras y con opciones de equivocarse para las negras, por eso a mí me gusta más lo que jugó Lasker porque es más fácil de que se equivoquen las blancas y entonces conseguirá una fuerte iniciativa }) 4. Rc1 { Bueno Euwe erra y ahora Lasker consigue una fuerte iniciativa ¿Puedes ver cómo? } 4... Ne4! { CORRECTO Atacando el peón de f2 que debe ser defendido } { [%cal Re4f2] } 5. Be2 { Y ahora puedes ver la jugada con la que las negras siguen su fuerte iniciativa? } 5... Nd4! { CORRECTO! Ahora atacando el alfil que debe ser defendido } 6. Bf3 { Entonces a Euwe no le queda otra que dejar el peón de f2 desprotegido } 6... Nxf2 { Se come un peón y sigue con esa poderosa iniciativa } 7. Qc4 { Y ahora Lasker no le deja respiro a su rival y sigue amenzando cosas } 7... Nd3 { Ahora amenaza la torre que se tiene que mover } 8. Rf1 { Lasker sigue maniobrando con sus caballos creando amenazas } 8... Ne5 { Ataque doble tiene que mover la dama } { [%cal Gd4f3,Ge5f3] } 9. Qb4 Nexf3+ { Captura el alfil destapando todas las defensas del rey } 10. gxf3 { Da un jaque obligando al rey a quedarse a tiro de descubierta } 10... Ne2+ 11. Kh2 { Pega otro jaque mejorando la posición de ataque de su caballo. Lasker empieza a tejer redes de mate } 11... Nf4+ 12. Kh1 { Fijese que no le deja ni un respiro a su rival sin tener que safarce de sus amenazas todo el rato ahora atacando su dama con T2d4 } 12... R2d4 13. Qe7 { quita la dama y ahora mueve el rey ahora habilitando el pase de la torre por la columna h. Lasker remata sencillamente y sin complicaciones } 13... Kg7 14. Qc7 { Y ahora Lasker mejora su torre de d8 evitando el jaque en e5 } 14... R8d5 { [%cal Gd5h5] } 15. Re1 { Lasker coloca la torre cortando el rey amenzando inminentes redes de mate } 15... Rg5 { [%csl Gh1][%cal Gg5g1] } 16. Qxc6 { Y ahora ejecuta un elegante pase de la torre que obliga a Euwe a rendirse } 16... Rd8 $19 { [%csl Rh1][%cal Rd8h8] } 0-1
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 1 LECCIÓN CAPABLANCA"]
+[Date "2025.10.18"]
+[White "David Janowski"]
+[Black "Jose Raul Capablanca"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "1 LECCIÓN CAPABLANCA"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/yWhVOD0s"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r3kb1r/1p2pppp/1pn5/3p1b2/3P4/4PN2/PP1B1PPP/R3KB1R b KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ Ahora vamos a ver las tres lecciones del genio cubano. En concreto a Capablanca se le daban muy bien los finales y vamos a ver un final muy instructivo que Capablanca juega magistralmente. Ahora empieza con una jugada muy interesante que te reto a encontrarla }
+1... Bd7! { MUY BIEN! Evitando futuras amenazas con Ch4 quitandole la pareja de alfiles o bien entorpeciendo el avance de los peones } 2. Be2 { Y ahora Capablanca cierra la estructura de peones } 2... e6 3. O-O { Desarrolla } 3... Bd6 4. Rfc1 { En esta posición en vez de enrocarse, ¿Qué alternativa interesante tienen las negras? } 4... Ke7! { Correcto! Ya estamos en un final, el Rey cuanto más cerca esté del centro mejor } 5. Bc3 { Capablanca trae su torre al juego } 5... Rhc8 6. a3 { Esta jugada es un poco extraña dado que provoca una debilidad en la casilla b3 y Capablanca sin duda lo aprovecha } { [%csl Rb3] } 6... Na5 { Janowski retira su caballo defendiendo b3 } 7. Nd2 { Y ahora Capablanca pone en marcha sus peones del flanco de rey } 7... f5 { Comienza la expansión en el flanco de Rey } { [%csl Gf5,Ge6,Gd5] } 8. g3 { Capablanca se pone a jugar en ambos flancos y ahora hace una jugada que le deja un casillón al caballo de a5 } 8... b5 { [%csl Gc4][%cal Ga5c4] } 9. f3 { Capablanca salta al casillón que le ha dado al caballo } 9... Nc4 10. Bxc4 { Janowski debido a la fuerza del caballo se ve obligado a eliminarlo.
+¿Con que peon recapturo Capablanca? } 10... bxc4 { SÍ! Dejando al peón retrasado de b2 y con facilidad de ataque por la columna b } { [%csl Bd6,Bd7] } (10... dxc4 { Esta captura no es tan buena como bxc4 porque no dejaria al peón de b2 retrasado con facilidad de ataque por la columna b }) 11. e4 { Janowski decide romper en el centro y Capablanca simplemente retira su rey de la columna que se va a abrir } 11... Kf7 12. e5 { Janowski decide cerrar el centro lo que ahora le deja más facilidad a Capablanca para jugar la posición } 12... Be7 13. f4 { Y ahora empieza el festival de ruptura y el juego en ambos flancos. Comienza en el flanco de dama } 13... b5 14. Kf2 { Y ahora Capablanca decide doblar torre para que la ruptura b4 sea aún más fuerte } 14... Ra4 15. Ke3 { Dobla! } 15... Rca8 { [%csl Gd5,Ge6,Gf5,Gf7,Gg7,Gh7] } 16. Rab1 $7 { Janowski ``evita ́ ́ la ruptura b4 dado que ahora podria capturar. Y ahora Capablanca va a jugar en el flanco de rey preparando la ruptura g5 } 16... h6 17. Nf3 { RUPTURA! } 17... g5 18. Ne1 { Y ahora de repente Capablanca trae todas sus fuerzas al flanco de rey } 18... Rg8 19. Kf3 { Ahora abre la columna g para su beneficio } 19... gxf4 20. gxf4 { Y trae la otra torre al flanco de rey } { [%cal Ga4a8] } 20... Raa8 21. Ng2 { Y ahora increiblemente va a proceder a doblarse en la columna g } 21... Rg4 22. Rg1 Rag8 { [%cal Ge1g2] } 23. Be1 { Ahora que todas las fuerzas blancas están distraidas en el flanco de rey. Te reto a encontrar la magnifica jugada que empleo Capablanca } 23... b4! { Magnifica ruptura ahora se pasa al flanco de dama } 24. axb4 { ¿Ahora que maniobra hizo Capablanca para situar a su alfil en la casilla ideal } 24... Ba4 { MUY BUENA JUGADA! Ese plan es brutal } { [%cal Ga4c2,Gc2e4] } 25. Ra1 Bc2 26. Bg3 Be4+ { YA CONSEGUIMOS METER EL ALFIL EN LA MEJOR CASILLA POSIBLE!! } 27. Kf2 { Y ahora Capablanca avanza su peón creando una amenaza imparable } 27... h5 { Janowski intenta clavar el alfil pero no sirve de nada } { [%cal Gh5h4] } 28. Ra7 { MOMENTO PRECISO ¿Qué jugada empleo Capablanca en esta posición } 28... Bxg2! { Eliminando una de las piezas que evitaba h4 } (28... h4? { Esta jugada no sirve de nada ya que ahora puede capturar gracias a la clavada }) 29. Rxg2 { Y AHORA SÍ CAPABLANCA AVANZA SU PEÓN Y LAS NEGRAS PIERDEN LA TORRE } 29... h4 30. Bxh4 Rxg2+ $19 { Janowski abandona } 0-1
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 2 LECCIÓN CAPABLANCA"]
+[Date "2025.10.18"]
+[White "Jose Raul Capablanca"]
+[Black "Marc Fonaroff"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "2 LECCIÓN CAPABLANCA"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/lDBdist0"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "3r1rk1/ppq2ppp/2pp1b2/4nN2/4PB2/6Q1/PPP2PPP/3RR1K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Capablanca tienes todas sus piezas bien colocadas.
+Entonces aquí inicia una combinación que se ha descubierto que era un error pero no era tan fácil verlo para las negras y gracias a eso Capablanca plamó una brillante combinación en el tablero que empezó con la jugada Txd6!!?? } { [%cal Rg3d6,Rf5g7,Rf5e7,Rf5h6,Rf5d6,Rd1d8,Re1e8] }
+1. Rxd6!! { Brillante o Error? } 1... Rxd6 { Y ahora Capablanca captura el caballo } 2. Bxe5 { En esta posición las negras se salvaban con la única Da5 tocando el alfil y la torre. Y se llegaría a un posición igualada } { [%cal Gc7a5,Ga5e5,Ga5e1] } 2... Rd1? { Pero Fonaroff erra!! Y ahora Capablanca hace una Brillante combinación. Te reto a descubrir todas las jugadas de Capablanca de aquí al final } 3. Rxd1 Bxe5 4. Nh6+! Kh8 5. Qxe5!! { BRILLIANT!! } 5... Qxe5 6. Nxf7+ { [%cal Gf7h8,Gf7e5] } 6... Rxf7 7. Rd8+ Qe8 8. Rxe8+ Rf8 9. Rxf8# { BRILLANTE COMBINACIÓN. Te felicito si la encontraste } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 3 LECCIÓN CAPABLANCA"]
+[Date "2025.10.18"]
+[White "Jose Raul Capablanca"]
+[Black "Saviely Tartakower"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "3 LECCIÓN CAPABLANCA"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/yn7wUISk"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "4k3/p1p2r1p/1p4p1/n2p4/P2P1P1P/2PB2P1/6K1/R7 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta partida Capablanca va a jugar el final de una forma impecable y sencilla. Comenzó con un debilitamiento típico del flanco de rey }
+1. h5! { Las negras no pueden capturar el peón Tartakower encuentra la única para seguir jugando } 1... Rf6 { Capablanca abre la columna } 2. hxg6 hxg6 { Trae la torre. } 3. Rh1 { Tartakower mueve su rey intentando cubrir las entradas de torre } 3... Kf8 { Y Capablanca entra con su torre en séptima } 4. Rh7 { [%cal Gh7b7] } 4... Rc6 { PERO CUIDADO!! CONTRAJUEGO AHORA LAS NEGRAS DEFIENDEN SU PEÓN A LA VES QUE ATACAN EL NUESTRO. ¿Cómo continuó Capablanca? } 5. g4 { Muy bien avanzando sus peones hacia la coronación } 5... Nc4 { Capablanca sigue avanzando sus peones sin quitarle el peón débil g a las negras } 6. g5 { [%csl Gg5] } 6... Ne3+ 7. Kf3 Nf5?? { Tartakower comete el error desicivo que Capablanca aprovecha ¿Qúe jugada hizo Capablanca? } 8. Bxf5! { CORRECTO! Elimina el caballo lo cual parece extraño porque ahora va a caer el peón de c3 y los peones de las blancas parecen que no terminan de llegar a la linea de meta. Pero Capablanca demuestra que este final está ganado } { [%csl Gf5] } 8... gxf5 { Ahora te voy a dejar a Ti que descubras como jugó Capablanca } 9. Kg3! { SÍ única para ganar activando el rey } 9... Rxc3+ 10. Kh4 Rf3 { ¿Cómo siguió Capablanca? } 11. g6 { [%cal Gh4g5] } 11... Rxf4+ 12. Kg5 Re4 { ¿Cómo finalizó Capablanca esta brillante activación de Rey? } 13. Kf6 $18 { CORRECTO! Tartakower abandona } { [%csl Gg6][%cal Gh7h8,Gh7c7] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 1 LECCIÓN DE ALEKHINE"]
+[Date "2025.10.18"]
+[White "Alexander Alekhine"]
+[Black "Oldrich Duras"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "1 LECCIÓN DE ALEKHINE"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/YWUOV5yJ"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "5rk1/2p2ppp/1q3n2/1pb1N1Q1/3p4/1B1P3P/1PP2PP1/R5K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Alekhine tiene una fuerte ventaja porque presiona fuertemente el punto f7 además que domina la columna h.
+¿Puedes encontrar la jugada alienigena que realizó Alekhine? } { [%cal Gb3f7,Ge5f7] }
+1. g4! { Jugada sublime de Alekhine con ideas muy profundas que vamos a ver a continuación } 1... Bd6 { Ahora Alekhine empieza a hacer magia en el tablero } 2. Nxf7 { Buena! Obliga Txf7 } 2... Rxf7 { Y ahora Alekhine hace una jugada en la que ahora se ve más claro lo brillante y profunda que fue su anterior jugada } 3. Qf5! { Con la calma amenaza g5 inevitable poniendo una presión inaguantable en el caballo clavado. Ahora se ve más claro la idea de avanzar el peón a g4 que amenza g5 presionando al caballo y ya las negras están perdidas } { [%cal Rg4g5] } 3... g6 { Las negras intentan el último recurso atacando la dama que ejerce la clavada pero ahora Alekhine la coloca en un casilla en la que obliga a su rival a rendirse } 4. Qe6 $18 { Y la torre es insalvable } { [%cal Rb3f7] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 2 LECCIÓN ALEKHINE"]
+[Date "2025.10.18"]
+[White "Alexander Alekhine"]
+[Black "Fred Dewhirst Yates"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "2 LECCIÓN ALEKHINE"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/7NvjUjJq"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "r4r2/6pk/b3p2p/2RpNp2/p2P3P/Pp2PP2/1P3KP1/2R5 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Alekhine tiene una evidente ventaja dado que tiene un caballazo contra un alfil que choca contra sus propios peones.
+Entonces Alekhine comienza su plan con Rg3 una activación del rey por el flanco de rey muy interesante } { [%csl Be5,Ra6] }
+1. Kg3!? Rfb8 { Alekhine mejora su torre } 2. Rc7 Bb5 { Y mejora la otra } 3. R1c5 Ba6 { Ahora la vuelve a mejorar } 4. R5c6 { Defiende el peón } { [%cal Gc6e6] } 4... Re8 { En esta posición hay muchas jugadas buenas, pero Alekhine continuó con su plan } 5. Kf4 Kg8 { Ahora fija la estructura } { [%csl Gh5][%cal Gh4h5] } 6. h5 Bf1 { Salva el peón } 7. g3 { [%csl Gg3,Gf3,Ge3,Gd4,Ge5] } (7. g4?! { Esto increiblemente seria una imprecisión porque deja que las negras abran la columna f donde pueden molestar al rey. Siguen ganadas pero no tanto como antes }) 7... Ba6 { ¿Qué hizo Alekhine para seguir metiendo más presión a su oponente } 8. Rf7 { Seguido de Tc7 con entradas espantosas para las negras } { [%cal Gc6c7,Gc7g7] } 8... Kh7 { Las negras se intentan defender } 9. Rcc7 Rg8 { Y ahora Alekhine remata muy bien ¿Puedes ver cómo? } 10. Nd7 { Amenaza Cf6 las negras no lo pueden permitir y se quitan } { [%cal Gd7f6] } 10... Kh8 { ¿Cómo siguió? } 11. Nf6 { Igualmente debido al mate, tiene que quitar la torre } 11... Rgf8 { ¿Como jugó Alekhine? } 12. Rxg7 { Y si las negras capturan el caballo } 12... Rxf6 13. Ke5! $18 { Ahora se ve la gran maniobra de rey por el flanco ahora la torre está atrapada debido a que si Tf8 hay mate con las dos torres y las negras abandonan. Un claro ejemplo de un final con un caballazo contra un alfil malo } { [%csl Rf6][%cal Gf2g3,Gg3f4,Gf4e5] } 1-0
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: 3 LECCIÓN ALEKHINE"]
+[Date "2025.10.18"]
+[White "Ernst Gruenfeld"]
+[Black "Alexander Alekhine"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "3 LECCIÓN ALEKHINE"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/TF3gBI7Y"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[FEN "2qr2k1/5pb1/p5pp/1p6/3Np3/P2nP3/NP2QPPP/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ En esta posición Grunfeld juega f3 una jugada que parece normal intentando desestabilizar el caballo de las negras. Pero Alekhine encontró una bonita idea para ganar la partida. ¿Puedes encontrarla? }
+1. f3? Rxd4!! { BRILLIANT! } 2. fxe4 { ¿Y ahora cómo seguimos? } 2... Nf4! { ¡ESPECTACULO! Esta era la jugada clave sacrificando el caballo abriendo paso a la torre } (2... Rd8 { Esto también ganaba pero lo que jugó Alekhine es más demoledor }) (2... Rd7 { Esto también gana pero lo que jugó Alekhine es más demoledor }) (2... Rd6 { Esto también gana pero lo que jugó Alekhine es más demoledor }) 3. exf4 { ¿Cómo remato Alekhine? } 3... Qc4! { CORRECTO! ATAQUE DOBLE Y DESVIACIÓN LAS BLANCAS ESTÁN PERDIDAS } { [%cal Rc4e2,Rc4a2,Rd4d1] } (3... Rxd1+! { No es la mejor pero también gana después del jaque en c5 y la captura en b2 } { [%cal Ge2d1,Gc8c5,Gg7b2] }) 4. Qxc4 { Termina la partida como hizo Alekhine } 4... Rxd1+ 5. Qf1 Bd4+ { JAQUE Y } 6. Kh1 Rxf1# { MATE! } 0-1
+
+
+[Event "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ: FINAL"]
+[Date "2025.10.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "LECCIONES DE CAMPEONES DEL MUNDO DE AJEDREZ"]
+[ChapterName "FINAL"]
+[ChapterURL "https://lichess.org/study/DB3jexYV/W1DgM5pR"]
+[Annotator "https://lichess.org/@/Rafaelpro2013"]
+[UTCDate "2025.10.18"]
+[UTCTime "10:02:59"]
+[ChapterMode "gamebook"]
+
+{ Espero que os haya gustado estas lecciones de los 4 primeros campeones del mundo.
+50 ♥ para la siguiente parte! }
+ *
+
+

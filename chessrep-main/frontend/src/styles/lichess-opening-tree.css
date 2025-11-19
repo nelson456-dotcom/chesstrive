@@ -1,0 +1,441 @@
+/* Lichess Opening Tree Styles */
+
+.lichess-opening-tree {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 16px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Compact version for side panels */
+.lichess-opening-tree.opening-tree-compact {
+  background: transparent;
+  padding: 0;
+  color: #374151;
+  font-size: 12px;
+}
+
+.lichess-opening-tree.opening-tree-compact .opening-header {
+  display: none;
+}
+
+.lichess-opening-tree.opening-tree-compact .opening-controls {
+  margin-bottom: 8px;
+}
+
+.lichess-opening-tree.opening-tree-compact .control-row {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lichess-opening-tree.opening-tree-compact .database-controls,
+.lichess-opening-tree.opening-tree-compact .player-controls {
+  margin-bottom: 4px;
+}
+
+.lichess-opening-tree.opening-tree-compact .database-controls label,
+.lichess-opening-tree.opening-tree-compact .player-controls label {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.lichess-opening-tree.opening-tree-compact .database-controls select,
+.lichess-opening-tree.opening-tree-compact .player-controls input {
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
+.lichess-opening-tree.opening-tree-compact .moves-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.lichess-opening-tree.opening-tree-compact .move-item {
+  padding: 4px 6px;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+
+.lichess-opening-tree.opening-tree-compact .move-stats {
+  font-size: 9px;
+}
+
+.lichess-opening-tree .opening-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.lichess-opening-tree .opening-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.lichess-opening-tree .opening-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.lichess-opening-tree .stat {
+  background: #2a2a2a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #cccccc;
+}
+
+.lichess-opening-tree .stat strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.lichess-opening-tree .opening-controls {
+  margin-bottom: 16px;
+}
+
+.lichess-opening-tree .control-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.lichess-opening-tree .database-controls,
+.lichess-opening-tree .player-controls,
+.lichess-opening-tree .sort-controls,
+.lichess-opening-tree .filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lichess-opening-tree label {
+  font-size: 0.875rem;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+.lichess-opening-tree select,
+.lichess-opening-tree input {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #ffffff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.lichess-opening-tree select:focus,
+.lichess-opening-tree input:focus {
+  outline: none;
+  border-color: #4a9eff;
+  box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+}
+
+.lichess-opening-tree .player-input {
+  min-width: 150px;
+}
+
+.lichess-opening-tree .advanced-toggle {
+  background: #4a9eff;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lichess-opening-tree .advanced-toggle:hover {
+  background: #3a8eef;
+}
+
+.lichess-opening-tree .advanced-controls {
+  background: #2a2a2a;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.lichess-opening-tree .filter-options {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.lichess-opening-tree .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lichess-opening-tree .rating-input {
+  width: 120px;
+}
+
+.lichess-opening-tree .stats-summary {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.lichess-opening-tree .stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lichess-opening-tree .stat-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lichess-opening-tree .stat-value {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.lichess-opening-tree .error-message {
+  background: #4a1a1a;
+  border: 1px solid #6a2a2a;
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lichess-opening-tree .error-message button {
+  background: #6a2a2a;
+  color: #ff6b6b;
+  border: 1px solid #8a4a4a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.lichess-opening-tree .error-message button:hover {
+  background: #8a4a4a;
+}
+
+.lichess-opening-tree .opening-moves {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lichess-opening-tree .opening-move {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lichess-opening-tree .opening-move:hover {
+  background: #333;
+  border-color: #555;
+}
+
+.lichess-opening-tree .opening-move.selected {
+  background: #1a3a5a;
+  border-color: #4a9eff;
+}
+
+.lichess-opening-tree .move-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.lichess-opening-tree .move-number {
+  background: #444;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.lichess-opening-tree .move-san {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: 'Chess Cases', monospace;
+}
+
+.lichess-opening-tree .move-frequency {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.lichess-opening-tree .move-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.lichess-opening-tree .win-rates {
+  display: flex;
+  gap: 12px;
+  font-size: 0.875rem;
+}
+
+.lichess-opening-tree .white-wins {
+  color: #4ade80;
+}
+
+.lichess-opening-tree .draws {
+  color: #fbbf24;
+}
+
+.lichess-opening-tree .black-wins {
+  color: #f87171;
+}
+
+.lichess-opening-tree .move-details {
+  display: flex;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.lichess-opening-tree .popularity-bar {
+  height: 4px;
+  background: #444;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.lichess-opening-tree .popularity-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.lichess-opening-tree .loading-state {
+  text-align: center;
+  padding: 32px;
+  color: #888;
+}
+
+.lichess-opening-tree .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #444;
+  border-top: 3px solid #4a9eff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.lichess-opening-tree .no-opening-data {
+  text-align: center;
+  padding: 32px;
+  color: #888;
+}
+
+.lichess-opening-tree .games-section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #333;
+}
+
+.lichess-opening-tree .top-games,
+.lichess-opening-tree .recent-games {
+  margin-bottom: 16px;
+}
+
+.lichess-opening-tree .top-games h4,
+.lichess-opening-tree .recent-games h4 {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.lichess-opening-tree .games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lichess-opening-tree .game-item {
+  background: #2a2a2a;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.lichess-opening-tree .game-result {
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 40px;
+}
+
+.lichess-opening-tree .game-players {
+  color: #cccccc;
+  flex: 1;
+  margin: 0 12px;
+}
+
+.lichess-opening-tree .game-year {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lichess-opening-tree .control-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .lichess-opening-tree .database-controls,
+  .lichess-opening-tree .player-controls,
+  .lichess-opening-tree .sort-controls,
+  .lichess-opening-tree .filter-controls {
+    justify-content: space-between;
+  }
+  
+  .lichess-opening-tree .stats-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .lichess-opening-tree .move-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .lichess-opening-tree .win-rates {
+    flex-wrap: wrap;
+  }
+}

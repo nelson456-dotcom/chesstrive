@@ -1,0 +1,47 @@
+/* Chess Board Performance Optimizations */
+
+/* Enable hardware acceleration for chess boards */
+.smooth-board {
+  transform: translateZ(0); /* Enable hardware acceleration */
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Optimize piece animations */
+.smooth-board .piece {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Optimize square highlighting */
+.smooth-board .square {
+  transition: background-color 0.1s ease;
+}
+
+/* Disable animations on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .smooth-board .piece,
+  .smooth-board .square {
+    transition: none;
+  }
+}
+
+/* Mobile optimizations for better performance */
+@media (max-width: 768px) {
+  .smooth-board .piece {
+    transition: transform 0.05s ease-out;
+  }
+  
+  .smooth-board .square {
+    transition: background-color 0.05s ease;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .smooth-board {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}

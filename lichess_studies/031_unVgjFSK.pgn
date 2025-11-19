@@ -1,0 +1,294 @@
+[Event "Sicilian Kan — World Champion Ready"]
+[Site "Lichess"]
+[Date "2025.11.04"]
+[Result "*"]
+[Annotator "Universal Kan System"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Sicilian Kan — World Champion Ready"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/Rb3MSaA5"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+{ Core Principles:
+ • Structure: …e6, …a6, …b5, …Bb7, …Qc7, …Nc6, …Nf6, …d5.
+ • Avoid premature tactics — your counterplay comes from pawn breaks.
+ • If White castles short: prepare …d5. If White castles long: prepare …b4–b3.
+ • Always keep …Nf6 flexible — it’s your best defensive and counter-attacking piece. }
+ *
+
+
+[Event "Ch1: Main Line — 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B43"]
+[Opening "Sicilian Defense: Kan Variation, Knight Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch1: Main Line — 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/JnC7PXvt"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 Qc7 6. Be2 b5 7. O-O Bb7 8. Bf3 Nc6 9. Re1 Ne5 10. Bf4 d6 11. Bg3 Nf6 12. a4 b4 13. Na2 a5 *
+
+
+[Event "Ch2: Taimanov/Paulsen Hybrid (Nc3 before Nf3)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B43"]
+[Opening "Sicilian Defense: Kan Variation, Knight Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch2: Taimanov/Paulsen Hybrid (Nc3 before Nf3)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/Q4he1TUV"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nc3 e6 3. Nf3 a6 4. d4 cxd4 5. Nxd4 Qc7 6. Bd3 Nf6 7. O-O b5 8. Re1 d6 9. Nd5 exd5 10. exd5+ Be7 *
+
+
+[Event "Ch3: Kan vs 5.c4 — Maroczy Bind"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B41"]
+[Opening "Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch3: Kan vs 5.c4 — Maroczy Bind"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/su5yO7F8"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Qc7 6. Nc3 Nf6 7. a3 b6 8. Be3 Bb7 9. f3 d6 10. Be2 Nbd7 11. O-O Be7 *
+
+
+[Event "Ch4: Kan vs 5.Be2 — Classical Setup"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B41"]
+[Opening "Sicilian Defense: Kan Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch4: Kan vs 5.Be2 — Classical Setup"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/07kAev6i"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Be2 Qc7 6. O-O Nf6 7. Nc3 Bb4 8. Qd3 O-O 9. Bg5 Be7 10. Qg3 Qxg3 11. hxg3 d6 *
+
+
+[Event "Ch5: Kan vs 5.f4 — Aggressive Attempt"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B41"]
+[Opening "Sicilian Defense: Kan Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch5: Kan vs 5.f4 — Aggressive Attempt"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/a3mZVkL9"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. f4 Qc7 6. Bd3 d6 7. O-O Nf6 8. Qe1 Nbd7 9. Kh1 b5 10. a4 b4 *
+
+
+[Event "Ch6: Kan vs 5.Bd3 — Karpov Setup"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B42"]
+[Opening "Sicilian Defense: Kan Variation, Modern Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch6: Kan vs 5.Bd3 — Karpov Setup"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/EspU9D9W"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Nc6 6. Nxc6 dxc6 7. O-O e5 8. Nd2 Qc7 9. Nc4 Be6 10. a4 a5 *
+
+
+[Event "Ch7: Kan vs 5.g3 — Fianchetto System"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B41"]
+[Opening "Sicilian Defense: Kan Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch7: Kan vs 5.g3 — Fianchetto System"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/9cjKmA2I"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. g3 Nf6 6. Bg2 d6 7. O-O Be7 8. c4 O-O 9. Nc3 Qc7 10. Be3 Nc6 *
+
+
+[Event "Ch8: Kan vs 5.a4 (Anti-…b5)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B41"]
+[Opening "Sicilian Defense: Kan Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch8: Kan vs 5.a4 (Anti-...b5)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/52mUw7RX"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. a4 Nf6 6. Nc3 Qc7 7. Be2 Bb4 8. Qd3 d5 9. exd5 Nxd5 10. Bd2 O-O *
+
+
+[Event "Ch9: Kan vs Alapin (2.c3)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B22"]
+[Opening "Sicilian Defense: Delayed Alapin Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch9: Kan vs Alapin (2.c3)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/uSHqoOe7"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 e6 6. Na3 Nc6 7. Nb5 Qd8 8. Bf4 Nd5 9. Bg3 a6 10. Na3 cxd4 11. Nxd4 Nxd4 12. Qxd4 b5 *
+
+
+[Event "Ch10: Kan vs Grand Prix Attack (2.Nc3 & 3.f4)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B23"]
+[Opening "Sicilian Defense: Closed"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch10: Kan vs Grand Prix Attack (2.Nc3 & 3.f4)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/sJMjs0Oj"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nc3 e6 3. f4 d5 4. Nf3 Nc6 5. Bb5 Ne7 6. O-O a6 7. Bxc6+ Nxc6 8. d3 Be7 9. Qe1 O-O *
+
+
+[Event "Ch11: Kan vs Closed Sicilian (2.Nc3 without d4)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B23"]
+[Opening "Sicilian Defense: Closed"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch11: Kan vs Closed Sicilian (2.Nc3 without d4)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/cLxQysdT"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nc3 e6 3. g3 a6 4. Bg2 b5 5. d3 Bb7 6. f4 Nc6 7. Nf3 d5 *
+
+
+[Event "Ch12: Kan vs Smith-Morra Gambit (2.d4 cxd4 3.c3)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B21"]
+[Opening "Sicilian Defense: Smith-Morra Gambit Declined, Scandinavian Formation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch12: Kan vs Smith-Morra Gambit (2.d4 cxd4 3.c3)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/v5FU9ODG"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. d4 cxd4 3. c3 d5 4. exd5 Qxd5 5. cxd4 Nc6 6. Nc3 Qd6 7. Nf3 Nf6 8. Be2 e6 *
+
+
+[Event "Ch13: Kan vs Wing Gambit (2.b4)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense: Wing Gambit, Marshall Variation"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch13: Kan vs Wing Gambit (2.b4)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/IY4v6vgf"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. Nf3 e5 6. axb4 Bxb4 7. Bb2 Nc6 8. Nc3 Qd8 *
+
+
+[Event "Ch14: Kan vs 2.Nc3 (No Nf3 yet)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B23"]
+[Opening "Sicilian Defense: Closed"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch14: Kan vs 2.Nc3 (No Nf3 yet)"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/E0sAIiaE"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Nc3 e6 3. d4 cxd4 4. Qxd4 Nc6 5. Qe3 Nf6 6. Qg3 d6 7. Bg5 Be7 8. O-O-O a6 *
+
+
+[Event "Ch15: Kan vs 2.g3 or 2.b3"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense: Lasker-Dunne Attack"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch15: Kan vs 2.g3 or 2.b3"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/OgzFKtWg"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. g3 d5 3. exd5 Qxd5 4. Nf3 Nc6 5. Bg2 Qe4+ 6. Qe2 Qxe2+ 7. Kxe2 e5 *
+
+
+[Event "Ch16: Kan vs Englund/Other Oddities"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch16: Kan vs Englund/Other Oddities"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/gnKmAOW4"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 2. Qh5 Nc6 3. Qxc5 e6 4. Qe3 Nf6 5. d4 d5 *
+
+
+[Event "Ch17: Endgame/Strategic Keys"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense"]
+[StudyName "Sicilian Kan"]
+[ChapterName "Ch17: Endgame/Strategic Keys"]
+[ChapterURL "https://lichess.org/study/unVgjFSK/NIkVOYY3"]
+[Annotator "https://lichess.org/@/zachd12345"]
+[UTCDate "2025.11.04"]
+[UTCTime "00:08:09"]
+
+1. e4 c5 *
+
+

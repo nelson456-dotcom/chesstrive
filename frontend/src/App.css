@@ -1,0 +1,367 @@
+/* ChessStrive - Custom Styles */
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111827;
+  min-height: 100vh;
+}
+
+/* Chess Board Custom Styles */
+.chess-board {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Chess Board Performance Optimizations */
+.smooth-board {
+  transform: translateZ(0); /* Enable hardware acceleration */
+  will-change: transform;
+  backface-visibility: hidden;
+  background-color: #f0d9b5; /* Prevent white flashing */
+  transition: none; /* Disable board transitions */
+}
+
+/* Optimize piece animations */
+.smooth-board .piece {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Optimize square highlighting */
+.smooth-board .square {
+  transition: background-color 0.1s ease;
+  background-color: inherit; /* Prevent white flashing */
+}
+
+/* Prevent white flashing during board updates */
+.smooth-board .board-b72b1 {
+  background-color: #f0d9b5 !important;
+  transition: none !important;
+}
+
+/* Ensure consistent square colors */
+.smooth-board .square-55d63 {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board .square-55d63.black-3c85d {
+  background-color: #b58863 !important;
+}
+
+/* Disable animations on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .smooth-board .piece,
+  .smooth-board .square {
+    transition: none;
+  }
+}
+
+/* Mobile optimizations for better performance */
+@media (max-width: 768px) {
+  .smooth-board .piece {
+    transition: transform 0.05s ease-out;
+  }
+  
+  .smooth-board .square {
+    transition: background-color 0.05s ease;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .smooth-board {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Prevent white flashing - more specific targeting */
+.smooth-board .board-b72b1 {
+  background-color: #f0d9b5 !important;
+  background: #f0d9b5 !important;
+}
+
+.smooth-board .square-55d63 {
+  background-color: #f0d9b5 !important;
+  transition: background-color 0.1s ease !important;
+}
+
+.smooth-board .square-55d63.black-3c85d {
+  background-color: #b58863 !important;
+  transition: background-color 0.1s ease !important;
+}
+
+/* Force consistent colors on all board elements */
+.smooth-board [class*="board-"] {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board [class*="square-"] {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board [class*="square-"][class*="black-"] {
+  background-color: #b58863 !important;
+}
+
+/* Advanced Performance Optimizations */
+.smooth-board {
+  contain: layout style paint; /* CSS containment for better performance */
+  isolation: isolate; /* Create new stacking context */
+  background-color: #f0d9b5 !important; /* Force background */
+  background: #f0d9b5 !important; /* Force background */
+}
+
+/* Nuclear option - force all elements to have proper colors */
+.smooth-board,
+.smooth-board *,
+.smooth-board *::before,
+.smooth-board *::after {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board [class*="black-"],
+.smooth-board [class*="black-"] * {
+  background-color: #b58863 !important;
+}
+
+/* Additional white flashing prevention */
+.smooth-board .react-chessboard {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board .react-chessboard * {
+  background-color: #f0d9b5 !important;
+}
+
+.smooth-board .react-chessboard [class*="black-"] {
+  background-color: #b58863 !important;
+}
+
+/* Prevent white flash during React re-renders */
+.smooth-board .board-b72b1,
+.smooth-board .board-b72b1 * {
+  background-color: #f0d9b5 !important;
+  transition: none !important;
+}
+
+.smooth-board .board-b72b1 [class*="black-"] {
+  background-color: #b58863 !important;
+}
+
+/* OptimizedChessBoard specific styles */
+.smooth-board .optimized-board {
+  background-color: #f0d9b5 !important;
+  background: #f0d9b5 !important;
+  contain: layout style paint;
+  isolation: isolate;
+}
+
+.smooth-board .optimized-board * {
+  background-color: inherit !important;
+  transition: none !important;
+}
+
+/* Prevent any white flashing on the custom board */
+.smooth-board [style*="grid"] {
+  background-color: #f0d9b5 !important;
+  background: #f0d9b5 !important;
+}
+
+.smooth-board [style*="grid"] > div {
+  background-color: #f0d9b5 !important;
+  background: #f0d9b5 !important;
+}
+
+.smooth-board [style*="grid"] > div:nth-child(odd) {
+  background-color: #b58863 !important;
+  background: #b58863 !important;
+}
+
+/* Optimize piece rendering */
+.smooth-board .piece {
+  contain: layout style paint;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize square rendering */
+.smooth-board .square {
+  contain: layout style paint;
+  transform: translateZ(0);
+}
+
+/* Reduce repaints during animations */
+.smooth-board .piece:hover {
+  transform: translateZ(0) scale(1.05);
+}
+
+/* Optimize for 60fps animations */
+@media (prefers-reduced-motion: no-preference) {
+  .smooth-board .piece {
+    transition: transform 0.075s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* GPU acceleration for all interactive elements */
+.smooth-board * {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effects */
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus {
+  outline: 2px solid #14b8a6;
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Chess piece hover effects */
+.piece-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Progress bar animation */
+.progress-bar {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effects */
+.course-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+/* Text glow effect for highlights */
+.text-glow {
+  text-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
+}
+
+/* Loading skeleton animation */
+@keyframes skeleton {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background-color: #374151;
+  background-image: linear-gradient(90deg, #374151, #4b5563, #374151);
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: skeleton 1.2s ease-in-out infinite;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .course-card {
+    flex-direction: column;
+  }
+  
+  .chess-board {
+    max-width: 100%;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gray-800 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+  }
+  
+  .text-gray-300 {
+    color: #ffffff;
+  }
+}

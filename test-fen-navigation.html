@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEN Navigation Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .pgn-example {
+            background: #f5f5f5;
+            padding: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            border-radius: 3px;
+        }
+        .expected-behavior {
+            background: #e8f5e8;
+            padding: 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FEN Navigation Fix Test</h1>
+    
+    <div class="test-section">
+        <h2>Test Case: Chapter with Custom FEN Position</h2>
+        
+        <h3>PGN Example:</h3>
+        <div class="pgn-example">[Event "123: Chapter 1"]
+[Date "2025.10.13"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "123"]
+[ChapterName "Chapter 1"]
+[ChapterURL "https://lichess.org/study/WOXhIP98/360MSe5u"]
+[Annotator "https://lichess.org/@/Jacob_chess12"]
+[FEN "rnbqkb1r/ppp2ppp/4pn2/3p4/4P3/2NP4/PPP2PPP/R1BQKBNR w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.10.13"]
+[UTCTime "05:07:12"]
+
+1. exd5 exd5 2. Nf3 *</div>
+        
+        <h3>Expected Behavior:</h3>
+        <div class="expected-behavior">
+            <ul>
+                <li>✅ Chapter should load with the custom FEN position (not the initial position)</li>
+                <li>✅ Navigation buttons (← → ⏮ ⏭) should work correctly</li>
+                <li>✅ Clicking on moves in the notation should navigate to the correct position</li>
+                <li>✅ Board should show the correct position after each move</li>
+                <li>✅ Going back to start should show the custom FEN position, not the initial position</li>
+            </ul>
+        </div>
+        
+        <h3>FEN Position Analysis:</h3>
+        <p><strong>Custom FEN:</strong> <code>rnbqkb1r/ppp2ppp/4pn2/3p4/4P3/2NP4/PPP2PPP/R1BQKBNR w KQkq - 0 1</code></p>
+        <p>This position shows a Sicilian Defense where White has played d4 and Black has responded with e6, and White has played Nc3.</p>
+        
+        <h3>Moves in the Chapter:</h3>
+        <ol>
+            <li><strong>exd5</strong> - White captures the d5 pawn</li>
+            <li><strong>exd5</strong> - Black recaptures with the e-pawn</li>
+            <li><strong>Nf3</strong> - White develops the knight</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>How to Test:</h2>
+        <ol>
+            <li>Go to <code>http://localhost:3000/enhanced-chess-study</code></li>
+            <li>Import the PGN above as a chapter</li>
+            <li>Verify that the board shows the custom FEN position (not the initial position)</li>
+            <li>Use the navigation buttons to move through the moves</li>
+            <li>Click on moves in the notation to navigate</li>
+            <li>Verify that going back to start shows the custom FEN position</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>Technical Changes Made:</h2>
+        <ul>
+            <li>✅ Updated <code>parseMoveTree</code> function to properly handle custom FEN positions</li>
+            <li>✅ Modified <code>useGameTree</code> hook to initialize with custom FEN</li>
+            <li>✅ Fixed <code>reconstructBoard</code> function to start from custom FEN</li>
+            <li>✅ Updated all navigation functions to preserve custom starting position</li>
+            <li>✅ Fixed move click handlers to use custom FEN position</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Key Fixes:</h2>
+        <h3>1. EnhancedChessStudyPage.jsx</h3>
+        <ul>
+            <li>Initialize useGameTree with activeChapter?.position</li>
+            <li>Updated parseMoveTree to handle custom FEN positions</li>
+            <li>Fixed all navigation functions to preserve custom starting position</li>
+        </ul>
+        
+        <h3>2. useGameTree.js</h3>
+        <ul>
+            <li>Updated reconstructBoard to start from custom FEN</li>
+            <li>Fixed reset function to use custom FEN</li>
+            <li>Added proper error handling for invalid FEN positions</li>
+        </ul>
+    </div>
+</body>
+</html>

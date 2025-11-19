@@ -1,0 +1,1280 @@
+[Event "Visualization: Visualise 1 Move Ahead - Position 1, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 1, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 1, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/hrdumM5u"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r2k1/p3b1pp/bp2pp2/8/P2P4/2RNPPP1/1B5P/6K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rc8 2. Kf2, then find the best continuation. }
+1... Rc8 2. Kf2 Rxc3 3. Bxc3 Bxd3 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 2, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 2, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 2, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/IdW8wYSK"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r2k1/pp2rpp1/2bn3p/4p3/1R6/1NP2P2/PPB2KPP/3R4 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Na5 Bb5, then find the best continuation. }
+1. Na5 Bb5 2. Rxb5 Nxb5 3. Rxd8+ { CORRECT! Well done. Note that 2.Rxd6 fails after 2...Rxd6, when 3.Rxb5 is well met by 3...Rd2+ picking up the bishop on c2. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 3, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 3, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 3, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/2RjjvPcY"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/6k1/6p1/8/1Q1bp1q1/8/5BP1/4K3 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Bxf2+ 2. Kxf2, then find the best continuation. }
+1... Bxf2+ 2. Kxf2 e3+ 3. Kxe3 Qxb4 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 4, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 4, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 4, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/8o7Q4zkd"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/1p1b2kp/1q1p2p1/1pr2p2/3pPP2/1RrP2P1/P2Q2BP/1R4K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Bc6 2. exf5, then find the best continuation. }
+1... Bc6 2. exf5 Rc2 3. Qd1 Rxg2+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 5, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 5, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 5, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/5NfjdKLr"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/p5pk/1p4rp/8/5P2/P1PQ3P/1P3R2/4q2K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rf1 Qh4, then find the best continuation. }
+1. Rf1 Qh4 2. Rg1 { CORRECT! Well done.   Pinning the rook. Black has to play  2...Qf6  or is lost, but then White has the option of trading material on  g6  and going into a pawn endgame advantage. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Positon 6, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Positon 6, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Positon 6, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/o5LHXqoi"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/kpQ5/4r1p1/2p5/1n5P/1P4P1/PbPK4/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1...Bc3+ Kxc3, then find the best continuation. }
+1... Bc3+ 2. Kxc3 Nd5+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 7, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 7, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 7, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/tqD2A1KP"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/1p6/p3kpr1/2p5/P3P1r1/1P3RP1/2P5/5R1K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rxg3 2. R1f2, then find the best continuation. }
+1... Rxg3 2. R1f2 Rh6+ 3. Rh2 Rxh2+ 4. Kxh2 Rxf3 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 8, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 8, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 8, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/7FSLgZ1Q"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4k3/4b1p1/4p1n1/p1p1p3/P5Qp/1P1q1N1P/3B1PP1/4K3 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qxe6 e4, then find the best continuation. }
+1. Qxe6 e4 2. Qxg6+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 9, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 9, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 9, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/qJ7Nl494"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/6pk/8/4Q2p/3nP2P/1p1P2P1/6K1/1N2q3 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Qe2+ 2. Kh1, then find the best continuation. }
+1... Qe2+ 2. Kh1 Qf1+ 3. Kh2 Nf3# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 1 Move Ahead - Position 10, 1 Move"]
+[Date "????.??.??"]
+[White "Visualise 1 Move Ahead"]
+[Black "Position 10, 1 Move"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 1 Move Ahead - Position 10, 1 Move"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/rfeyLoWS"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r1b2rk1/1p3ppp/2p2b2/qn6/p1QPP3/5NP1/P4PBP/1RBR2K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bd2 Qc7, then find the best continuation. }
+1. Bd2 Qc7 2. Rxb5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 11, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 11, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 11, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/BPjsXg83"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r5k1/pp3pp1/3r1qn1/5B1Q/8/2PR4/PP5R/7K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rdh3 Kf8 2. Re2 Rad8, then find the best continuation. }
+1. Rdh3 Kf8 2. Re2 Rad8 3. Qh8+ Nxh8 4. Rxh8# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 12, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 12, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 12, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/6jE7RP4o"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1r2b1k1/Q5p1/p3pp2/p2pq3/4P3/2P5/PP6/2KB3R b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rc8 2. Rg1 Rc7 3. Qb8, then find the best continuation. }
+1... Rc8 2. Rg1 Rc7 3. Qb8 Rxc3+ 4. bxc3 Qxb8 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 13, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 13, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 13, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/fnFRjgjk"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2rqR1k1/2p2p1p/1p1p1Pp1/1N1P4/2n2Q2/7P/PR4P1/7K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Qxe8 2. Rf2 Ne5 3. Rc2, then find the best continuation. }
+1... Qxe8 2. Rf2 Ne5 3. Rc2 Qxb5 { CORRECT! Well done. If white now tries to mate with 4. Qh6 black has the resource of 4....Qf1+, followed by taking the f6 pawn. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 14, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 14, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 14, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/BvsMd0HM"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2rr2k1/p4pb1/1p1pp1p1/2q1n1B1/4P3/2P3PB/PP2Q2P/1R1R3K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rd7 2. Rd2 Nc4 3. Rd3, then find the best continuation. }
+1... Rd7 2. Rd2 Nc4 3. Rd3 Qxg5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 15, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 15, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 15, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/l03xyU4C"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2R2bk1/5p2/5p2/3r1Pp1/1p6/1P1P4/2P5/2R2K2 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Ra1 Rxf5+ 2. Kg2 Kg7, then find the best continuation. }
+1. Ra1 Rxf5+ 2. Kg2 Kg7 3. Raa8 { CORRECT! Well done. Winning the bishop or forcing mate if the bishop moves. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 16, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 16, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 16, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/0ZnxxO87"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r1rk1/p1qn1ppp/4p3/1pp1P1P1/2nRNP2/3Q4/P1P3BP/1R5K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Nf6+ gxf6 2. gxf6 cxd4, then find the best continuation. }
+1. Nf6+ gxf6 2. gxf6 cxd4 3. Qg3+ Kh8 4. Qg7# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 17, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 17, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 17, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/XVh2QZFf"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4Rb2/2qN2kp/1p3rb1/pPpQ4/P2p1pB1/7P/5PP1/6K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rf7 2. Ne5 Rf6 3. Nc4, then find the best continuation. }
+1... Rf7 2. Ne5 Rf6 3. Nc4 Bxe8 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 18, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 18, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 18, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/ia6UZM6w"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r1b2rk1/pp2qppp/2p1p3/2Pp1n2/5P2/BP1Q1NP1/P5BP/RN4K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Nbd2 b6 2. Re1 a5, then find the best continuation. }
+1. Nbd2 b6 2. Re1 a5 3. Qxf5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 19, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 19, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 19, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/zbEwXcdu"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2br1rk1/p1q1npbp/2n3p1/2ppp3/4P3/PNPP2P1/4QPBP/1RB1NRK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... c4 2. dxc4 dxe4 3. Qxe4, then find the best continuation. }
+1... c4 2. dxc4 dxe4 3. Qxe4 Bf5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 20, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 20, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 20, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/egW3Wcym"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5b2/2Q5/5ppk/1p1B3p/1q5P/1P2P1PK/5P2/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qb6 Qc5 2. Qxf6 Qxd5 then find the best continuation. }
+1. Qb6 Qc5 2. Qxf6 Qxd5 3. Qh8# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 21, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 21, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 21, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/3nPCWZ6Q"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r3r1k1/1q1bppbp/3p2p1/1p1P4/4n3/N2QB1PP/PP3P2/1R2RBK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Nf6 2. Qb3 b4 3. Bg2, then find the best continuation. }
+1... Nf6 2. Qb3 b4 3. Bg2 Ba4 4. Qd3 bxa3 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 22, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 22, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 22, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/xrv2PeWi"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5k1r/3q4/3p1pB1/p1p1bPp1/1pPnP3/1P1PB3/P5K1/3Q3R b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Qg7 2. Bxd4 Bxd4 3. e5, then find the best continuation. }
+1... Qg7 2. Bxd4 Bxd4 3. e5 Qb7+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 23, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 23, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 23, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/o0UYeYEA"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r4r1k/1R4pp/2p3q1/P2n4/P1N1p3/B1PnP2P/2Q3P1/5BK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Nxe3 2. Nxe3 Qg3 3. Ng4, then find the best continuation. }
+1... Nxe3 2. Nxe3 Qg3 3. Ng4 Rxf1+ 4. Kxf1 Qe1# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 24, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 24, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 24, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/FQodZaVC"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/2rn1pkp/p1N1p1p1/2n5/r2N1P2/4P3/5P1P/1RR3K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Nb8 Ra7 2. Ndc6 Rb7, then find the best continuation. }
+1. Nb8 Ra7 2. Ndc6 Rb7 3. Rxb7 Nxb7 4. Nxd7 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 25, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 25, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 25, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/KseH5ixR"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "q2rrbk1/1b1n1pp1/pp2pn1p/4N3/2PP1P2/P5NP/1B2Q1P1/1BR1R1K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qc2 g6 2. Nxf7 Kxf7, then find the best continuation. }
+1. Qc2 g6 2. Nxf7 Kxf7 3. Qxg6+ Ke7 4. Nf5# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 26, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 26, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 26, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/OrI0BoY8"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1r3q1k/1p6/2n3pp/p1bNp3/P1P1P3/2P3P1/6BP/RQ5K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qb5 Qd6 2. Rf1 Kg7, then find the best continuation. }
+1. Qb5 Qd6 2. Rf1 Kg7 3. Rf6 Qd8 4. Qxc5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 27, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 27, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 27, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/3SfOBna6"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2rn1rk1/2q2ppp/p1p5/P2PbP2/4B3/3P4/Q2BP2P/2R2RK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. dxc6 Bxh2+ 2. Kh1 Qg3 then find the best continuation. }
+1. dxc6 Bxh2+ 2. Kh1 Qg3 3. Bf4 { CORRECT! Well done. With an x-ray attack on the bishop. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 28, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 28, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 28, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/MAWuTEqj"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r1q1k1/p1r2p1p/4pPp1/2p5/3P4/6P1/P1RQ3P/2R3K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rxc5 Rxc5 2. Rxc5 h5, then find the best continuation. }
+1. Rxc5 Rxc5 2. Rxc5 h5 3. Qh6 Qf8 4. Rxc8 Qxc8 5. Qg7# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 29, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 29, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 29, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/dBbMWw24"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4qnk1/p6R/4p1p1/3pPnP1/2p2NQ1/2P5/PP1B1K2/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Nxh7 2. Ne2 Qf7 3. Nd4, then find the best continuation. }
+1... Nxh7 2. Ne2 Qf7 3. Nd4 Nxd4+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 2 Moves Ahead - Position 30, 2 Moves"]
+[Date "????.??.??"]
+[White "Visualise 2 Moves Ahead"]
+[Black "Position 30, 2 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 2 Moves Ahead - Position 30, 2 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/riQOp28j"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r6q/p3kp2/1p2b1nr/2p1p3/P1PpP3/1P1R1QP1/5RB1/5NK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rg8 2. a5 Nf4 3. gxf4, then find the best continuation. } { [%cal Ga8g8,Ga4a5,Gg6f4,Gg3f4] }
+1... Rg8 2. a5 Nf4 3. gxf4 Rh1# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 31, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 31, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 31, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/jj1Fqe8X"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/5R2/p1r2p1k/1p3Ppp/2n3P1/P3P1K1/1B5P/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bxf6 Nd6 2. Bxg5+ Kxg5 3. h4+ Kh6, then find the best continuation. }
+1. Bxf6 Nd6 2. Bxg5+ Kxg5 3. h4+ Kh6 4. g5# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 32, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 32, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 32, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/OUVdkKAR"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3rqrk1/p1p3pp/1p2pb2/4B3/5P2/2P3P1/PPQ3KP/R3R3 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Qc6+ 2. Kg1 Qc5+ 3. Kf1 Bxe5 4. Rxe5, then find the best continuation. }
+1... Qc6+ 2. Kg1 Qc5+ 3. Kf1 Bxe5 4. Rxe5 Qxe5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 33, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 33, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 33, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/KEioeGFv"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4r1k1/3n1q2/2Bn2p1/p4p2/5P2/2Q5/P4P1P/3R2K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Ne4 2. Qb3 Qxb3 3. axb3 Nec5 4. Bxd7, then find the best continuation. }
+1... Ne4 2. Qb3 { [%cal Gf7b3,Ga2b3,Ge4c5,Gc6d7] } 2... Qxb3 3. axb3 { [%cal Be4c5,Rc6d7] } 3... Nec5 4. Bxd7 Rd8 5. Rd5 Nxd7 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 34, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 34, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 34, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/AepTFeVb"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/4Q2p/1p2pppk/1Pn5/6P1/4P2P/4qP1K/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qxf6 Ne4 2. Qf8+ Kg5 3. Qf4+ Kh4, then find the best continuation. }
+1. Qxf6 Ne4 2. Qf8+ Kg5 3. Qf4+ Kh4 4. Qh6# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 35, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 35, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 35, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/qnKEuq88"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7Q/p5p1/4pk1p/1b1pN3/6PP/q6r/5P1K/4R3 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Kg2 Bf1+ 2. Rxf1 Kxe5 3. Qxg7+ Kf4, then find the best continuation. }
+1. Kg2 Bf1+ 2. Rxf1 Kxe5 3. Qxg7+ Kf4 4. Qd4# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 36, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 36, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 36, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/WL9Mfuu5"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r1rk1/1p3ppp/3b4/pP5q/3Np3/P3PbPP/1BR1B2K/2R2Q2 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Bxg3+ 2. Kxg3 Qg5+ 3. Kh2 Qe5+ 4. Kg1, then find the best continuation. }
+1... Bxg3+ 2. Kxg3 Qg5+ 3. Kh2 Qe5+ 4. Kg1 Qg3+ 5. Qg2 Qxg2# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 37, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 37, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 37, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/L2SubsWj"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r7/5k2/1Pn1p3/2Pp3r/p2Pqpp1/R1B3P1/5R1P/6KQ b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... f3 2. h4 Qe3 3. Bb2 Qe1+ 4. Rf1, then find the best continuation. }
+1... f3 2. h4 Qe3 3. Bb2 Qe1+ 4. Rf1 Qxg3+ 5. Qg2 Qxg2# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 38, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 38, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 38, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/ZNJl34ke"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6rk/8/2p1pbq1/ppPp4/3P2pp/1P2P3/P2NQ1PP/5R1K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Bg7 2. Nb1 e5 3. Qf2 g3 4. Qf5, then find the best continuation. }
+1... Bg7 2. Nb1 e5 3. Qf2 g3 4. Qf5 Rf8 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 39, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 39, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 39, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/2jczLmUf"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/4rpbk/6pp/4p2n/2QpP2P/1P1P1NPB/r3qPK1/1R3R2 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rbe1 Qb2 2. Rb1 Qe2 3. Bg4 Nf6, then find the best continuation. }
+1. Rbe1 Qb2 2. Rb1 Qe2 3. Bg4 Nf6 4. Ng5+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 40, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 40, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 40, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/7nYuifKu"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r4r2/p3N3/1pp4k/2Q1R1q1/4P3/3P2P1/b5BK/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qxc6+ Rf6 2. Qxa8 Qxe5 3. Qh8+ Kg5, then find the best continuation. }
+1. Qxc6+ Rf6 2. Qxa8 Qxe5 3. Qh8+ Kg5 4. Qh4# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 41, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 41, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 41, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/RKOVAExl"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r1bk1/pp2q3/2p2p2/4pB1R/4P3/6P1/PPPQ3P/7K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qe2 Bg7 2. Qg4 Qb4 3. Rh8+ Kxh8, then find the best continuation. }
+1. Qe2 Bg7 2. Qg4 Qb4 3. Rh8+ Kxh8 4. Qh5+ Kg8 5. Be6+ Kf8 6. Qf7# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 42, 3 moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 42, 3 moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 42, 3 moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/LcA82mot"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7k/pr2q1bp/2p1B3/1p6/nP3B2/1Q4P1/7P/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bc8 Rb6 2. Qe6 Qxe6 3. Bxe6 Bf6, then find the best continuation. }
+1. Bc8 Rb6 2. Qe6 Qxe6 3. Bxe6 Bf6 4. Rd8+ Bxd8 5. Be5+ Bf6 6. Bxf6# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 43, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 43, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 43, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/BTRa36U0"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1r3nk1/R1R4p/5pp1/4pPrb/1P2P3/2B4P/3N1K2/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rg7+ Kh8 2. Nc4 gxf5 3. Rxg5 fxg5, then find the best continuation. }
+1. Rg7+ Kh8 2. Nc4 gxf5 3. Rxg5 fxg5 4. Bxe5+ Kg8 5. Rg7+ { CORRECT! Well done. And it's mate next move. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 44, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 44, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 44, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/bPmUsmj7"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "7k/R7/4b1PK/2r5/p3B3/5p2/8/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Ra8+ Rc8 2. Rxc8+ Bxc8 3. g7+ Kg8, then find the best continuation. }
+1. Ra8+ Rc8 2. Rxc8+ Bxc8 3. g7+ Kg8 4. Bd5+ Be6 5. Bxe6# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 45, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 45, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 45, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/K7s6QpQu"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/5pk1/1p6/p1p2Bp1/P1Pb2P1/1P3q2/2QK4/8 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves, 1... Be5 2. Qd3 Bf4+ 3. Kc3 Qf2 4. Qc2, then find the best continuation. }
+1... Be5 2. Qd3 Bf4+ 3. Kc3 Qf2 4. Qc2 Qd4# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 46, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 46, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 46, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/cidzDwm1"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r1b2rk1/p3q2p/1ppb3Q/3p1p2/P2P4/1P1BP3/1BP2NPP/5RK1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Qe6 2. Ng4 Qg6 3. h4 Bg3 4. Qg5, then find the best continuation. }
+1... Qe6 2. Ng4 Qg6 3. h4 Bg3 4. Qg5 Qxg5 5. hxg5 fxg4 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 47, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 47, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 47, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/ojnQa8o8"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "q5k1/4b3/1p2p3/1Pp1P3/2P1NP2/3p4/6QP/r3R2K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Kf8 2. Rxa1 Qxa1+ 3. Qg1 Qa8 4. Qe3, then find the best continuation. }
+1... Kf8 2. Rxa1 Qxa1+ 3. Qg1 Qa8 4. Qe3 d2 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 48, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 48, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 48, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/uoCsfrWB"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4r1k1/6p1/Q1p4r/1p3p2/Pb1Pp2p/1q2P1P1/2RB1P1P/4R1K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rxc6 Bxd2 2. Rxh6 Bxe1 3. Qg6 Qf7 then find the best continuation. }
+1. Rxc6 Bxd2 2. Rxh6 Bxe1 3. Qg6 Qf7 4. Rh8+ Kxh8 5. Qxf7 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 49, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 49, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 49, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/DpOVwYfG"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r3k1/p1r1qp1p/1p2p1p1/1P1nP3/4B3/bP3QP1/1B3P1P/2RR2K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rxc7 Nxc7 2. Bxa3 Qxa3 3. Rd7 Qf8, then find the best continuation. }
+1. Rxc7 Nxc7 2. Bxa3 Qxa3 3. Rd7 Qf8 4. Bb7 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 3 Moves Ahead - Position 50, 3 Moves"]
+[Date "????.??.??"]
+[White "Visualise 3 Moves Ahead"]
+[Black "Position 50, 3 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 3 Moves Ahead - Position 50, 3 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/XtxlkPiM"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r2qk2r/pbp2ppp/1p2p3/2b5/4P1n1/5NP1/PPPNQRBP/R1B3K1 b kq - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Bxf2+ 2. Kf1 Bc5 3. Nb3 Ba6 4. Qxa6, then find the best continuation. }
+1... Bxf2+ 2. Kf1 Bc5 3. Nb3 Ba6 4. Qxa6 Qd1+ 5. Ne1 Nxh2# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 51, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 51, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 51, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/Lx3EGvHK"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3rrnk1/p4ppp/2p1q3/2pnPN1b/5P2/6PP/PPQ3BK/R1B2R2 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Ne3 f6 2. Qxc5 fxe5 3. fxe5 Nxe3 4. Bxe3 Qxe5, then find the best continuation. }
+1. Ne3 f6 2. Qxc5 fxe5 3. fxe5 Nxe3 4. Bxe3 Qxe5 5. Rxf8+ Rxf8 6. Qxe5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 52, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 52, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 52, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/NniFeSzZ"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5rk1/ppq2ppp/2p5/3n1Qn1/8/2P3PP/PP3PBN/R3r1K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rxe1 Ne6 2. Bxd5 cxd5 3. Qxd5 Rd8 4. Qb5 Rd2, then find the best continuation. }
+1. Rxe1 Ne6 2. Bxd5 cxd5 3. Qxd5 Rd8 4. Qb5 Rd2 5. Rxe6 fxe6 6. Qe8# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 53, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 53, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 53, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/3rQrShHt"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3r1rk1/1pb1qpp1/2p3bp/p1nPp3/2P1P3/1PB3PB/P2NQ2P/4RR1K w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bf5 Bxf5 2. Rxf5 g6 3. Rff1 Rd6 4. Qe3 Rf6, then find the best continuation. }
+1. Bf5 Bxf5 2. Rxf5 g6 3. Rff1 Rd6 4. Qe3 Rf6 5. Rxf6 Qxf6 6. Qxc5 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 54, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 54, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 54, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/wbqpZo34"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r2b1k/4q3/4Pp2/p4Q1p/n1p5/2P3P1/P2B1P1P/4R1K1 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rc5 2. Qc2 Nb6 3. Be3 Qxe6 4. Qb1 Re5 5. Qxb6, then find the best continuation. }
+1... Rc5 2. Qc2 Nb6 3. Be3 Qxe6 4. Qb1 Re5 5. Qxb6 Qxb6 6. Bxb6 Rxe1+ { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 55, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 55, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 55, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/9LZIinZC"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1n4k1/5rb1/p2qp3/1pp2nQ1/7P/3P1N2/P5B1/4R1RK w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bf1 Kf8 2. Ne5 Bxe5 3. Rxe5 Nc6 4. Re1 Ne5, then find the best continuation. }
+1. Bf1 Kf8 2. Ne5 Bxe5 3. Rxe5 Nc6 4. Re1 Ne5 5. Rxe5 Qxe5 6. Qd8# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 56, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 56, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 56, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/ufugWKv4"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r4k/pq2np1p/4pPr1/1pp1P2Q/3pRP2/3P1K2/PPP2P2/R7 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rh1 h6 2. fxe7 Qxe7 3. Ree1 c4 4. Reg1 Rcg8, then find the best continuation. }
+1. Rh1 h6 2. fxe7 Qxe7 3. Ree1 c4 4. Reg1 Rcg8 5. Qxh6+ Rxh6 6. Rxh6# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 57, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 57, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 57, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/23RP4kWo"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "r2q4/pp2nk1p/6b1/3pQ3/2pP4/2P3P1/P1P2PBP/4R1K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bh3 Nc6 2. Be6+ Ke7 3. Qg7+ Kd6 4. Bh3 Qg8 then find the best continuation. }
+1. Bh3 Nc6 2. Be6+ Ke7 3. Qg7+ Kd6 4. Bh3 Qg8 5. Qd7# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 58, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 58, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 58, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/GOyoezat"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "4q1k1/p3rpb1/6p1/3Q3p/6b1/1PP2NPn/1B4BP/5R1K b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Re2 2. Nd2 Nf2+ 3. Kg1 Qe3 4. Nc4 Nh3+ 5. Kh1 then find the best continuation. }
+1... Re2 2. Nd2 Nf2+ 3. Kg1 Qe3 4. Nc4 Nh3+ 5. Kh1 Qg1+ 6. Rxg1 Nf2# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 59, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 59, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 59, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/aU9pX6GE"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "8/p5k1/1p1q1b2/2pPp1p1/2P4r/6Q1/PP3PB1/4R1K1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Re4 Rf4 2. Qh3 Qe7 3. b3 Kg6 4. Kf1 Qh7 then find the best continuation. }
+1. Re4 Rf4 2. Qh3 Qe7 3. b3 Kg6 4. Kf1 Qh7 5. Rxf4 { Threatening Be4+ } 5... Qxh3 6. Rxf6+ Kxf6 7. Bxh3 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 60, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 60, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 60, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/vFmlzwuz"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "1n1qrr1k/p5pp/1p2Bp2/2b2P2/PpNp1p2/1P1P1QP1/2P4P/R4RK1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Qxf4 Na6 2. Rae1 Nc7 3. Re4 a6 4. Qh4 b5 then find the best continuation. }
+1. Qxf4 Na6 2. Rae1 Nc7 3. Re4 a6 4. Qh4 b5 5. Qxh7+ Kxh7 6. Rh4# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 61, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 61, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 61, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/7VWfInqg"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "6r1/b6k/2r3p1/p2qPpRp/1p3P1P/2pP4/2P3NK/1R1Q4 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rg3 Rb8 2. d4 Bxd4 3. Ne3 Qd8 4. Nxf5 gxf5 then find the best continuation. }
+1. Rg3 Rb8 2. d4 Bxd4 3. Ne3 Qd8 4. Nxf5 gxf5 5. Qxh5+ Rh6 6. Qf7+ Kh8 7. Qg7# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 62, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 62, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 62, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/JYeNwGGG"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "5nrk/pppn1qpp/3p4/6Q1/1PP1pP1P/P2P4/1B5K/4R1R1 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Rxe4 Ne6 2. Rxe6 Ne5 3. Rxe5 dxe5 4. Bxe5 h5 then find the best continuation. }
+1. Rxe4 Ne6 2. Rxe6 Ne5 3. Rxe5 dxe5 4. Bxe5 h5 5. Qh6# { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 63, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 63, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 63, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/FBM6jN3z"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "2r3k1/p6p/1p2bppb/4p3/PqNp4/1P1P2P1/1Q2PPBP/2R2K2 b - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1... Rc7 2. Ra1 Kf8 3. Rb1 Ke7 4. Na3 Rc3 5. Nb5 then find the best continuation. }
+1... Rc7 2. Ra1 Kf8 3. Rb1 Ke7 4. Na3 Rc3 5. Nb5 Rxb3 { CORRECT! Well done. } *
+
+
+[Event "Visualization: Visualise 4 Moves Ahead - Position 64, 4 Moves"]
+[Date "????.??.??"]
+[White "Visualise 4 Moves Ahead"]
+[Black "Position 64, 4 Moves"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Visualization"]
+[ChapterName "Visualise 4 Moves Ahead - Position 64, 4 Moves"]
+[ChapterURL "https://lichess.org/study/Z7Hfkkmz/ScLjb3RT"]
+[Annotator "https://lichess.org/@/Poyrazmeister33"]
+[FEN "3q2k1/pp3ppn/2p4p/2b1Pp2/2P3B1/1P4P1/PB2Q1KP/8 w - - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ Visualise the moves 1. Bxf5 Nf8 2. e6 Nxe6 3. Bxe6 fxe6 4. Qxe6+ Kh8 then find the best continuation. }
+1. Bxf5 Nf8 2. e6 Nxe6 3. Bxe6 fxe6 4. Qxe6+ Kh8 5. Qxh6+ Kg8 6. Qxg7# { CORRECT! Well done. } *
+
+

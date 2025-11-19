@@ -1,0 +1,70 @@
+[Event "The Only Opening you Need as black: Intro"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B00"]
+[Opening "King's Pawn Game"]
+[StudyName "The Only Opening you Need as black"]
+[ChapterName "Intro"]
+[ChapterURL "https://lichess.org/study/FfTKotZs/c0ncxBje"]
+[Annotator "https://lichess.org/@/AdvaitChess65"]
+[UTCDate "2025.11.04"]
+[UTCTime "20:22:33"]
+[ChapterMode "gamebook"]
+
+{ Find the only opening you need as black with the Kings Indian Defense. } { [%csl Ge4][%cal Ge2e4] }
+1. e4 *
+
+
+[Event "The Only Opening you Need as black: Kings Indian Defense"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "E61"]
+[Opening "King's Indian Defense"]
+[StudyName "The Only Opening you Need as black"]
+[ChapterName "Kings Indian Defense"]
+[ChapterURL "https://lichess.org/study/FfTKotZs/lW6u9QdB"]
+[Annotator "https://lichess.org/@/AdvaitChess65"]
+[UTCDate "2025.11.04"]
+[UTCTime "20:24:37"]
+[ChapterMode "gamebook"]
+
+1. d4 { Taking center quickly at the same time allowing the black bishop both knights and the queen to develop. } { [%csl Gf6][%cal Gg8f6] } 1... Nf6 { Indian Defense } 2. c4 { Taking more of center. } { [%csl Gg6][%cal Gg7g6] } 2... g6 { We are playing the Kings Indian Defense. } (2... e6 { Queen's Indian Defense }) 3. Nc3 { Shielding the king from its only weak spot in this position } { [%csl Gg7][%cal Gf8g7] } 3... Bg7 { Getting ready for a nice snuggly castle. } 4. Nf3 { Reinforcing center squares e5 and d4 } { [%csl Gh8][%cal Ge8h8] } 4... O-O { Kings Indian Defense } *
+
+
+[Event "The Only Opening you Need as black: Kings Indian Defense (1.e4)"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B00"]
+[Opening "Pirc Defense"]
+[StudyName "The Only Opening you Need as black"]
+[ChapterName "Kings Indian Defense (1.e4)"]
+[ChapterURL "https://lichess.org/study/FfTKotZs/PQbeTa9L"]
+[Annotator "https://lichess.org/@/AdvaitChess65"]
+[UTCDate "2025.11.04"]
+[UTCTime "20:32:52"]
+[ChapterMode "gamebook"]
+
+1. e4 { Best by Test } { [%csl Gd6][%cal Gd7d6] } 1... d6 { Pirc Defense } 2. Nf3 { Claiming Center } { [%csl Gf6][%cal Gg8f6] } 2... Nf6 3. Nc3 { You know the drill! } 3... g6 4. Bc4 { Keep on going } 4... Bg7 5. Ng5 { Get ready } 5... O-O { You did it! } *
+
+
+[Event "The Only Opening you Need as black: Outro"]
+[Date "2025.11.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "The Only Opening you Need as black"]
+[ChapterName "Outro"]
+[ChapterURL "https://lichess.org/study/FfTKotZs/Tt63Lz2v"]
+[Annotator "https://lichess.org/@/AdvaitChess65"]
+[UTCDate "2025.11.04"]
+[UTCTime "20:37:55"]
+[ChapterMode "gamebook"]
+
+{ Now you know the only opening you need as black!!! I only showed it with the two most common moves I've seen but there are many other ways! Just hit the like button 💓 and win your games BYEEEEEEE!!! 5 likes than I create a new study about the Nimzo Indian Defense. }
+ *
+
+

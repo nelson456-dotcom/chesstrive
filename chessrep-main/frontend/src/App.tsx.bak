@@ -1,0 +1,117 @@
+// Simple working App component
+
+import React, { useState, useCallback } from 'react';
+import { ProductionChessBoard } from './components/ProductionChessBoard';
+import { MoveTree } from './components/MoveTree';
+import { ChessGameService } from './services/ChessGameService';
+import { GameState, MoveNode } from './types/chess';
+
+const App: React.FC = () => {
+  const [gameService] = useState(() => new ChessGameService());
+  const [gameState, setGameState] = useState<GameState>(gameService.getGameState());
+  const [moveTree, setMoveTree] = useState<MoveNode[]>(gameService.getMoveTree());
+  const [currentMoveIndex, setCurrentMoveIndex] = useState(-1);
+  const [orientation, setOrientation] = useState<'white' | 'black'>('white');
+
+  const handleMove = useCallback((from: string, to: string, promotion?: string) => {
+    const success = gameService.makeMove(from, to, promotion);
+    if (success) {
+      const newGameState = gameService.getGameState();
+      const newMoveTree = gameService.getMoveTree();
+      setGameState(newGameState);
+      setMoveTree(newMoveTree);
+      setCurrentMoveIndex(gameService.getCurrentMoveIndex());
+    }
+    return success;
+  }, [gameService]);
+
+  const handleMoveClick = useCallback((moveIndex: number) => {
+    gameService.goToMove(moveIndex);
+    const newGameState = gameService.getGameState();
+    setGameState(newGameState);
+    setCurrentMoveIndex(moveIndex);
+  }, [gameService]);
+
+  const handleVariationClick = useCallback((variationId: string) => {
+    const success = gameService.goToVariation(variationId);
+    if (success) {
+      const newGameState = gameService.getGameState();
+      setGameState(newGameState);
+      setCurrentMoveIndex(gameService.getCurrentMoveIndex());
+    }
+  }, [gameService]);
+
+  const handleSquareClick = useCallback((square: string) => {
+    // Simple click to move logic
+    console.log('Square clicked:', square);
+  }, []);
+
+  const handleSquareRightClick = useCallback((square: string) => {
+    console.log('Square right-clicked:', square);
+  }, []);
+
+  const handleArrowDraw = useCallback((from: string, to: string) => {
+    console.log('Arrow drawn:', from, 'to', to);
+  }, []);
+
+  const handleCircleDraw = useCallback((square: string) => {
+    console.log('Circle drawn on:', square);
+  }, []);
+
+  const flipBoard = useCallback(() => {
+    setOrientation(prev => prev === 'white' ? 'black' : 'white');
+  }, []);
+
+  return (
+    <div className="app" style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <header style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <h1>Chess Analysis Board</h1>
+        <div style={{ marginTop: '10px' }}>
+          <button onClick={flipBoard} style={{ marginRight: '10px', padding: '8px 16px' }}>
+            Flip Board
+          </button>
+          <button onClick={() => gameService.reset()} style={{ padding: '8px 16px' }}>
+            New Game
+          </button>
+        </div>
+      </header>
+
+      <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+        <div>
+          <ProductionChessBoard
+            position={gameState.fen}
+            onMove={handleMove}
+            onSquareClick={handleSquareClick}
+            onSquareRightClick={handleSquareRightClick}
+            onArrowDraw={handleArrowDraw}
+            onCircleDraw={handleCircleDraw}
+            orientation={orientation}
+            showCoordinates={true}
+            showLastMove={true}
+            boardWidth={400}
+          />
+        </div>
+        
+        <div style={{ width: '300px' }}>
+          <MoveTree
+            moveTree={moveTree}
+            currentMoveIndex={currentMoveIndex}
+            onMoveClick={handleMoveClick}
+            onVariationClick={handleVariationClick}
+            onAnnotationClick={() => {}}
+            onAddAnnotation={() => {}}
+            onRemoveAnnotation={() => {}}
+          />
+        </div>
+      </div>
+
+      <div style={{ marginTop: '20px', textAlign: 'center' }}>
+        <p>FEN: {gameState.fen}</p>
+        <p>Turn: {gameState.turn === 'w' ? 'White' : 'Black'}</p>
+        <p>Moves: {moveTree.length}</p>
+      </div>
+    </div>
+  );
+};
+
+export default App;

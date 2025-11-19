@@ -1,0 +1,102 @@
+[Event "The Italian Game (Intro): The Italian Game (Introduction)"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game (Introduction)"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/jQ5iDKJV"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "14:00:27"]
+[ChapterMode "gamebook"]
+
+1. e4 { Attacking the center. } { [%csl Gd5][%cal Ge4d5] } 1... e5 { Attacking the center. } { [%cal Ge5d4] } 2. Nf3 { Developing a minor piece and threatening to take the center pawn. White wins a TEMPO by attacking, forcing their opponent to take time to defend. } { [%csl Ge5,Gd4][%cal Gf3e5,Gf3d4] } 2... Nc6 { Developing a minor piece and defending the pawn. This position happens very often. White's next move will determine the name of the opening. } { [%cal Gc6e5,Gc6d4] } 3. Bc4 { The Italian Game. White develops a bishop that targets the f7 pawn. White is also ready to castle kingside. } { [%csl Rf7][%cal Ge1g1,Gc4f7] } *
+
+
+[Event "The Italian Game (Intro): The Italian Game: Giuoco Piano"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Four Knights Game: Italian Variation"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game: Giuoco Piano"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/8poF7ZYv"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "16:04:58"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 { The Giuoco Piano (meaning "Quiet Game"). The idea is to play the bishop first so that the knight can't move to g5 to attack the f7. } { [%csl Rg5][%cal Rd8g5,Gf3g5] } 4. Nc3 Nf6 5. O-O O-O *
+
+
+[Event "The Italian Game (Intro): The Italian Game: Two Knights Defense"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C55"]
+[Opening "Italian Game: Two Knights Defense"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game: Two Knights Defense"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/6s7XDZ1k"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "16:49:43"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 { This is the Two Knights Defense. While we may transpose back to the Giuoco Piano after 4 Nc3 Bc5, there is a fun attacking line that White can play by using the g5 square. } { [%csl Gg5][%cal Gf3g5] } *
+
+
+[Event "The Italian Game (Intro): The Italian Game: Fried Liver Attack"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C57"]
+[Opening "Italian Game: Two Knights Defense, Fried Liver Attack"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game: Fried Liver Attack"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/Zud9LmQK"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "17:03:13"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 { [%csl Rf7][%cal Gg5f7,Gc4f7] } 4... d5 5. exd5 Nxd5 6. Nxf7!! { The Fried Liver Attack! White sacrifices their knight in order to bring out the black king. } 6... Kxf7 7. Qf3+ { Check and a fork. } { [%cal Gf3f7,Gf3d5] } 7... Ke6 { Black must defend the knight, but their king is in danger. } 8. Nc3 { The knight continues to pile up pressure on the pinned knight on d5. } { [%csl Rd5][%cal Rc4e6,Rf3d5,Rc3d5] } 8... Nb4 { The black knight defends the d5 knight. } 9. O-O { White castles. It is clear that White has a much safer king than their opponenet. } { [%cal Gf1e1,Ge1e6] } *
+
+
+[Event "The Italian Game (Intro): The Italian Game: Anti-Fried Liver Defense"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C50"]
+[Opening "Italian Game: Anti-Fried Liver Defense"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game: Anti-Fried Liver Defense"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/3ZBEAKYD"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "17:10:10"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 { The Anti-Fried Liver Defense. It is clear that Black does not want the knight to come to g5. With that said, there are better ways to develop that still prevent this attack. } { [%csl Rg5][%cal Rh6g5] } *
+
+
+[Event "The Italian Game (Intro): The Italian Game: Polerio Defense"]
+[Date "2025.10.23"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C59"]
+[Opening "Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense"]
+[StudyName "The Italian Game (Intro)"]
+[ChapterName "The Italian Game: Polerio Defense"]
+[ChapterURL "https://lichess.org/study/rjjiFSy9/dj8TUErf"]
+[Annotator "https://lichess.org/@/mmschess9288"]
+[UTCDate "2025.10.23"]
+[UTCTime "17:13:21"]
+[ChapterMode "gamebook"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5! { The Polerio Defense. Moves like these are why we can still play the Two Knights Defense. By keeping the pawn on d5, White is no longer able to play the Fried Liver Attack.
+Black gives up a pawn for development. } 6. Bb5+ c6 7. dxc6 bxc6 { Capturing with a pawn instead of the knight? The idea is too keep attacking with TEMPO. } { [%cal Rc6b5] } 8. Be2 h6 { Attack! } 9. Nf3 e4 { Attack. Black has gotten great control of the center, good development and room for their bishops to develop, and will castle quickly. White has lost some valuable time developing and may need to give back their center pawn to get back in the game. } { [%cal Gf8c5,Ge8g8,Gd8d6,Bf3e5,Bd2d4,Be1g1] } *
+
+

@@ -1,0 +1,23 @@
+[Event "Endgame Strategy: Centralization: Capa and Reshevsky"]
+[Date "2025.11.08"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Endgame Strategy"]
+[ChapterName "Centralization: Capa and Reshevsky"]
+[ChapterURL "https://lichess.org/study/OCgkLiGc/hjkOZp7Y"]
+[Annotator "https://lichess.org/@/EvansChessAccount"]
+[FEN "6k1/6pp/2b2p2/1p1p4/p6P/1P1NPPP1/P5K1/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.08"]
+[UTCTime "05:46:44"]
+
+{ White is better:
+Black has weak dark-squares, especially on the queenside, and isolated d-pawn.
+White getting a knight to c3 and king to d4 would put Black almost in zugzwang.
+
+However, White's h-pawn provides a hook for Black to gain counterplay. If it were on h2 all would be fine. }
+1... g5! 2. hxg5 { White is forced to capture to avoid weakening his structure. } (2. Nc5 gxh4 3. gxh4) (2. h5 { This might also be considered. }) 2... fxg5 3. Nb4 (3. f4 gxf4 4. exf4 d4+!) *
+
+

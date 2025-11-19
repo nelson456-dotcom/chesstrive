@@ -1,0 +1,59 @@
+# Environment variables (NEVER commit these!)
+.env
+.env.local
+.env*.local
+.env.production
+.env.development
+**/.env
+*token.json*
+*credentials.json*
+
+# Dependencies
+node_modules/
+**/node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build files
+build/
+dist/
+/.next/
+/out/
+.cache/
+
+# IDE files
+.idea/
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archives (to prevent large files)
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+
+# System files
+*.pem
+*.deb
+*.dylib
+
+
+
+
+# Large files that shouldn't be in Git
+**/stockfish.exe
+**/puzzles.csv
+**/endgame_sample.txt
+**/lichess_db_puzzle.csv
+**/*.exe
+backend/data/*.csv
+backend/puzzles/*.csv
+backend/engines/*.exe

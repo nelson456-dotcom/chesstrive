@@ -1,0 +1,584 @@
+/* ChessReps.com Clone - Custom Styles */
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111827;
+  min-height: 100vh;
+}
+
+/* Chess Board Custom Styles */
+.chess-board {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Prevent white flashing on chess boards */
+.smooth-board {
+  background-color: #f0d9b5 !important;
+  transition: background-color 0.1s ease;
+}
+
+.smooth-board * {
+  transition: all 0.1s ease;
+}
+
+/* Ensure chess board pieces don't flash */
+.react-chessboard {
+  background-color: #f0d9b5 !important;
+}
+
+.react-chessboard * {
+  transition: all 0.1s ease;
+}
+
+/* Smooth chessboard animations for endgame trainer */
+.smooth-chessboard {
+  will-change: transform;
+  transform: translateZ(0); /* Force hardware acceleration */
+}
+
+.smooth-chessboard .react-chessboard {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.smooth-chessboard .react-chessboard * {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Smooth piece movement */
+.smooth-chessboard .piece {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Smooth square highlighting */
+.smooth-chessboard .square {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: background-color, box-shadow;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+/* Annotation Circle Styles */
+.annotation-circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #10b981;
+  margin-left: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.annotation-circle:hover {
+  background-color: #059669;
+  transform: scale(1.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.annotation-circle:active {
+  transform: scale(0.95);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effects */
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus {
+  outline: 2px solid #14b8a6;
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Chess piece hover effects */
+.piece-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Progress bar animation */
+.progress-bar {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effects */
+.course-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+/* Text glow effect for highlights */
+.text-glow {
+  text-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
+}
+
+/* Loading skeleton animation */
+@keyframes skeleton {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background-color: #374151;
+  background-image: linear-gradient(90deg, #374151, #4b5563, #374151);
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: skeleton 1.2s ease-in-out infinite;
+}
+
+/* Mobile Touch Optimizations for Chess Boards */
+.react-chessboard,
+.chess-board,
+.smooth-board {
+  touch-action: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  cursor: pointer !important;
+}
+
+/* Ensure chess pieces are touchable on mobile */
+.react-chessboard .piece {
+  touch-action: manipulation !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  /* Force a perfect square and full visibility for the board area */
+  .mobile-board-container {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    overflow: visible !important; /* avoid clipping dragged pieces */
+    z-index: 1;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    touch-action: none !important;
+  }
+
+  /* Any common wrappers that may set overflow:hidden around the board */
+  .mobile-board-container .chess-board,
+  .mobile-board-container .smooth-board,
+  .mobile-board-container .react-chessboard {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 2;
+  }
+
+  /* In case a board is mounted directly without our helper class, still help it fit */
+  .react-chessboard {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .react-chessboard canvas,
+  .react-chessboard svg,
+  .react-chessboard > div {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Prevent clipping from generic card wrappers that often use rounded corners */
+  .bg-white,
+  .bg-white\/5,
+  .rounded-xl,
+  .rounded-2xl {
+    overflow: visible !important;
+  }
+
+  .course-card {
+    flex-direction: column;
+  }
+  
+  .chess-board {
+    max-width: 100%;
+  }
+  
+  /* Additional mobile optimizations */
+  .react-chessboard {
+    touch-action: none !important;
+    -webkit-overflow-scrolling: touch;
+    isolation: isolate; /* ensure proper stacking context for pieces */
+    z-index: 2;
+  }
+
+  /* Make sure dragged pieces appear above decorative overlays */
+  .react-chessboard .piece {
+    z-index: 3 !important;
+    position: relative;
+    pointer-events: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gray-800 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+  }
+  
+  .text-gray-300 {
+    color: #ffffff;
+  }
+}
+
+/* Move Tree Vertical Annotation Styles */
+.move-tree {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+}
+
+.move-tree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.move-tree-header h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.move-tree-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.move-tree-controls button {
+  background: #e2e8f0;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.move-tree-controls button:hover {
+  background: #cbd5e1;
+}
+
+/* VERTICAL format specific styles - NO HORIZONTAL PARENTHESES */
+.vertical-format {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #fff;
+  background: #1a1a1a;
+  border-radius: 6px;
+  border: 1px solid #333;
+  padding: 12px;
+}
+
+/* Move line styling */
+.move-line {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  padding: 2px 0;
+  min-height: 24px;
+}
+
+.move-line.main-line {
+  font-weight: 500;
+}
+
+.move-line.variation-line {
+  font-weight: 400;
+  color: #ccc;
+}
+
+.move-line.depth-1 {
+  color: #bbb;
+}
+
+.move-line.depth-2 {
+  color: #aaa;
+}
+
+.move-line.depth-3 {
+  color: #999;
+}
+
+/* Alternative label styling */
+.alternative-label {
+  font-style: italic;
+  color: #888;
+  font-size: 12px;
+  margin: 8px 0 4px 0;
+  font-weight: 500;
+}
+
+.pgn-format .move-number {
+  color: #ccc;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+/* Move button styles for vertical format */
+.move-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  min-width: 40px;
+  text-align: center;
+}
+
+.move-btn:hover {
+  background: #4a4a4a;
+}
+
+.move-btn.active {
+  background: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.move-btn.main-move {
+  color: #fff;
+  font-weight: 500;
+}
+
+.move-btn.variation-move {
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Move number styling */
+.move-number {
+  color: #ccc;
+  font-weight: 500;
+  margin-right: 8px;
+  min-width: 20px;
+  display: inline-block;
+}
+
+/* Move annotations container */
+.move-annotations {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+/* Annotation styles for vertical format */
+.annotation {
+  background: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.annotation:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+.annotation.comment {
+  background: #2196f3;
+}
+
+.annotation.symbol {
+  background: #ff9800;
+}
+
+.annotation.arrow {
+  background: #9c27b0;
+}
+
+.annotation.circle {
+  background: #4caf50;
+}
+
+.annotation.highlight {
+  background: #f44336;
+}
+
+/* Evaluation styles for vertical format */
+.evaluation {
+  background: #333;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  flex-shrink: 0;
+}
+
+.pgn-format .variation-paren {
+  color: #888;
+  font-weight: 500;
+  margin: 0 2px;
+}
+
+/* Different styling for different levels of parentheses */
+.pgn-format .variation-paren:contains("((") {
+  color: #666;
+  font-weight: 600;
+}
+
+.pgn-format .variation-paren:contains("(((") {
+  color: #444;
+  font-weight: 700;
+}
+
+.pgn-format .variation-number {
+  color: #666;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+/* Better indentation for nested variations */
+.pgn-format .variation-move {
+  margin-left: 16px;
+}
+
+.pgn-format .variation-move .variation-move {
+  margin-left: 24px;
+}
+
+/* Indentation based on depth level */
+.pgn-format [class*="var_move"] {
+  margin-left: calc(16px * var(--depth, 1));
+}
+
+/* Ensure proper spacing for different parentheses levels */
+.pgn-format .variation-paren {
+  display: inline;
+  white-space: nowrap;
+}
+
+.no-moves {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+  font-style: italic;
+  font-size: 13px;
+}

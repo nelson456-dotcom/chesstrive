@@ -1,0 +1,18 @@
+--- a/node_modules/chessground/dist/util.js
++++ b/node_modules/chessground/dist/util.js
+@@ -2,7 +2,12 @@ import * as cg from './types.js';
+ export const invRanks = [...cg.ranks].reverse();
+ export const allKeys = Array.prototype.concat(...cg.files.map(c => cg.ranks.map(r => c + r)));
+ export const pos2key = (pos) => allKeys[8 * pos[0] + pos[1]];
+-export const key2pos = (k) => [k.charCodeAt(0) - 97, k.charCodeAt(1) - 49];
++export const key2pos = (k) => {
++  // Add validation to prevent charCodeAt errors
++  if (typeof k !== 'string' || k.length !== 2) {
++    console.warn('Invalid key in key2pos:', k);
++    return [0, 0]; // Return default position
++  }
++  return [k.charCodeAt(0) - 97, k.charCodeAt(1) - 49];
++};
+ export const uciToMove = (uci) => {
+     if (!uci)
+         return undefined;
