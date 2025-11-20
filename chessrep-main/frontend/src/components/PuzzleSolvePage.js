@@ -2111,7 +2111,7 @@ ${puzzle.moves[0]} *`;
                     console.log('🔍 Opening analysis with FEN (after opponent move):', positionAfterOpponentMove);
                     console.log('🔍 Side to move:', color);
                     
-                    window.open(`http://localhost:3000/analysis?fen=${encodedFen}&color=${color}`, '_blank');
+                    window.open(`/analysis?fen=${encodedFen}&color=${color}`, '_blank');
                   }}
                 >
                   🔍 Analyze Position

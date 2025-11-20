@@ -228,7 +228,7 @@ const Navbar = () => {
               label: "Analysis",
               description: "Chess position analysis and evaluation",
               icon: BarChart2,
-              link: "http://localhost:3000/analysis"
+              link: "/analysis"
             },
             {
               label: "40-Game Report",
