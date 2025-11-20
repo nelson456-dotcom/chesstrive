@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const AuthContext = createContext();
 
@@ -15,10 +16,8 @@ export function AuthProvider({ children }) {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await fetch('http://localhost:3001/api/auth/me', {
-        headers: {
-          'x-auth-token': token
-        }
+      const response = await fetch(getApiUrl('/auth/me'), {
+        headers: getAuthHeaders()
       });
 
       if (response.ok) {
@@ -40,11 +39,9 @@ export function AuthProvider({ children }) {
 
   const login = async (identifier, password) => {
     try {
-      const response = await fetch('http://localhost:3001/api/auth/login', {
+      const response = await fetch(getApiUrl('/auth/login'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ identifier, password }),
       });
 
@@ -65,11 +62,9 @@ export function AuthProvider({ children }) {
 
   const signup = async (email, password, username) => {
     try {
-      const response = await fetch('http://localhost:3001/api/auth/signup', {
+      const response = await fetch(getApiUrl('/auth/signup'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ email, password, username }),
       });
 
@@ -96,11 +91,9 @@ export function AuthProvider({ children }) {
 
   const loginWithGoogle = async (idToken) => {
     try {
-      const response = await fetch('http://localhost:3001/api/auth/google', {
+      const response = await fetch(getApiUrl('/auth/google'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ idToken }),
       });
       const data = await response.json();
@@ -118,11 +111,9 @@ export function AuthProvider({ children }) {
 
   const loginWithFacebook = async (accessToken) => {
     try {
-      const response = await fetch('http://localhost:3001/api/auth/facebook', {
+      const response = await fetch(getApiUrl('/auth/facebook'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ accessToken }),
       });
       const data = await response.json();
