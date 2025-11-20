@@ -65,15 +65,12 @@ router.post('/position', async (req, res) => {
       console.error('❌ Stockfish executable not found at:', stockfishPath);
       console.error('❌ Checking alternative locations...');
       
-      // Try alternative paths
+      // Try alternative paths (Linux only - no .exe paths)
       const alternatives = [
         '/usr/games/stockfish',
         '/usr/bin/stockfish',
         '/usr/local/bin/stockfish',
-        path.join(__dirname, '../engines/stockfish'),
-        path.join(__dirname, '../../engines/stockfish.exe'),
-        path.join(process.cwd(), 'engines/stockfish.exe'),
-        path.join(process.cwd(), 'backend/engines/stockfish.exe')
+        path.join(__dirname, '../engines/stockfish')
       ];
       
       for (const altPath of alternatives) {

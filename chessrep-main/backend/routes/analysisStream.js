@@ -171,16 +171,13 @@ async function startStreamingAnalysis(ws, analysisId, config) {
   // Find Stockfish executable
   let stockfishPath = getStockfishPath();
   
-  // Fallback: try alternative paths if primary path doesn't exist
+  // Fallback: try alternative paths if primary path doesn't exist (Linux only - no .exe paths)
   if (!fs.existsSync(stockfishPath)) {
     const alternatives = [
       '/usr/games/stockfish',
       '/usr/bin/stockfish',
       '/usr/local/bin/stockfish',
-      path.join(__dirname, '../engines/stockfish'),
-      path.join(__dirname, '../../engines/stockfish.exe'),
-      path.join(process.cwd(), 'engines/stockfish.exe'),
-      path.join(process.cwd(), 'backend/engines/stockfish.exe')
+      path.join(__dirname, '../engines/stockfish')
     ];
     for (const altPath of alternatives) {
       if (fs.existsSync(altPath)) {
