@@ -6,6 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const { Chess } = require('chess.js');
 const { ratingToLevel, levelToEngineParams } = require('../utils/botLevels');
+const { getTrainingMove, isValidMove } = require('../services/botTrainingService');
 
 // Bot personalities and their move selection strategies
 const botPersonalities = {
@@ -468,62 +469,104 @@ router.post('/move', optionalAuth, async (req, res) => {
       });
     }
     
-    // ALWAYS use Stockfish for quality moves - retry if needed
+    // Try training database first, then fall back to Stockfish
     let sanMove = null;
-    try {
-      console.log('Generating bot move via Stockfish...');
-      console.log('Resolved difficulty:', resolvedEngineParams.canonicalRating);
-      console.log('Engine params:', {
-        depth: resolvedEngineParams.depth,
-        nodes: resolvedEngineParams.nodes,
-        moveTimeMs: resolvedEngineParams.moveTimeMs,
-        skillLevel: resolvedEngineParams.skillLevel,
-        uciElo: resolvedEngineParams.uciElo
-      });
-      
-      // Retry Stockfish multiple times if it fails (more retries for higher levels)
-      let attempts = 0;
-      const maxAttempts = resolvedEngineParams.canonicalRating >= 2000 ? 5 : 3;
-      
-      while (attempts < maxAttempts && !sanMove) {
-        attempts++;
-        console.log(`Stockfish attempt ${attempts}/${maxAttempts}`);
+    const targetRating = resolvedEngineParams.canonicalRating || resolvedEngineParams.appliedRating || 1200;
+    
+    // Determine training usage probability based on rating
+    // Lower ratings use more training data, higher ratings use more Stockfish
+    const trainingUsageProbability = targetRating < 1200 ? 0.7 : targetRating < 1800 ? 0.5 : targetRating < 2400 ? 0.3 : 0.1;
+    const useTraining = Math.random() < trainingUsageProbability;
+    
+    if (useTraining) {
+      try {
+        console.log('🎓 Checking training database for human-like move...');
+        const trainingMove = await getTrainingMove(fen, targetRating, {
+          randomness: resolvedEngineParams.randomness || 0.1
+        });
         
-        try {
-          const { bestUci, elo, movetime } = await getStockfishMove(
-            fen,
-            resolvedEngineParams,
-            personality
-          );
-          console.log('Stockfish bestmove (UCI):', bestUci, 'Elo:', elo, 'movetime:', movetime);
-          
-          if (bestUci) {
-            const temp = new Chess(fen);
-            sanMove = uciToSan(temp, bestUci);
-            if (sanMove) {
-              console.log('✅ Stockfish move converted successfully:', sanMove);
-              break;
+        if (trainingMove && trainingMove.move) {
+          // Validate the move
+          const tempChess = new Chess(fen);
+          try {
+            const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
+            if (chessMove) {
+              sanMove = chessMove.san;
+              console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source})`);
             } else {
-              console.warn('Failed to convert UCI to SAN, retrying...');
+              console.log('⚠️ Training move invalid, falling back to Stockfish');
+            }
+          } catch (moveError) {
+            console.log('⚠️ Training move failed validation, falling back to Stockfish');
+          }
+        } else {
+          console.log('📚 No training data for this position, using Stockfish');
+        }
+      } catch (trainingError) {
+        console.error('❌ Training service error:', trainingError.message);
+        console.log('Falling back to Stockfish...');
+      }
+    } else {
+      console.log('🤖 Using Stockfish (training probability check)');
+    }
+    
+    // Fall back to Stockfish if training didn't provide a move
+    if (!sanMove) {
+      try {
+        console.log('Generating bot move via Stockfish...');
+        console.log('Resolved difficulty:', resolvedEngineParams.canonicalRating);
+        console.log('Engine params:', {
+          depth: resolvedEngineParams.depth,
+          nodes: resolvedEngineParams.nodes,
+          moveTimeMs: resolvedEngineParams.moveTimeMs,
+          skillLevel: resolvedEngineParams.skillLevel,
+          uciElo: resolvedEngineParams.uciElo
+        });
+        
+        // Retry Stockfish multiple times if it fails (more retries for higher levels)
+        let attempts = 0;
+        const maxAttempts = resolvedEngineParams.canonicalRating >= 2000 ? 5 : 3;
+        
+        while (attempts < maxAttempts && !sanMove) {
+          attempts++;
+          console.log(`Stockfish attempt ${attempts}/${maxAttempts}`);
+          
+          try {
+            const { bestUci, elo, movetime } = await getStockfishMove(
+              fen,
+              resolvedEngineParams,
+              personality
+            );
+            console.log('Stockfish bestmove (UCI):', bestUci, 'Elo:', elo, 'movetime:', movetime);
+            
+            if (bestUci) {
+              const temp = new Chess(fen);
+              sanMove = uciToSan(temp, bestUci);
+              if (sanMove) {
+                console.log('✅ Stockfish move converted successfully:', sanMove);
+                break;
+              } else {
+                console.warn('Failed to convert UCI to SAN, retrying...');
+              }
+            }
+          } catch (e) {
+            console.error(`Stockfish attempt ${attempts} failed:`, e.message);
+            if (attempts < maxAttempts) {
+              console.log('Retrying Stockfish...');
+              await new Promise(resolve => setTimeout(resolve, 500)); // Wait 500ms before retry
             }
           }
-        } catch (e) {
-          console.error(`Stockfish attempt ${attempts} failed:`, e.message);
-          if (attempts < maxAttempts) {
-            console.log('Retrying Stockfish...');
-            await new Promise(resolve => setTimeout(resolve, 500)); // Wait 500ms before retry
-          }
         }
+        
+        if (!sanMove) {
+          console.error('❌ CRITICAL: Stockfish failed after all retries! This should not happen.');
+          throw new Error('Stockfish failed - cannot generate quality move');
+        }
+      } catch (e) {
+        console.error('Stockfish failed completely:', e.message);
+        // Don't use fallback - throw error instead to force Stockfish to work
+        throw new Error(`Stockfish engine failed: ${e.message}. Please ensure Stockfish is installed and working.`);
       }
-      
-      if (!sanMove) {
-        console.error('❌ CRITICAL: Stockfish failed after all retries! This should not happen.');
-        throw new Error('Stockfish failed - cannot generate quality move');
-      }
-    } catch (e) {
-      console.error('Stockfish failed completely:', e.message);
-      // Don't use fallback - throw error instead to force Stockfish to work
-      throw new Error(`Stockfish engine failed: ${e.message}. Please ensure Stockfish is installed and working.`);
     }
 
     // Stockfish should always provide a move - if not, something is wrong
