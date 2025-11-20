@@ -8,6 +8,7 @@ import ChessBoard from './ChessBoard';
 import { Chess } from 'chess.js';
 import { completeOpeningEncyclopedia } from '../data/completeOpeningEncyclopedia';
 import OpenInLiveAnalysisButton from './OpenInLiveAnalysisButton';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const OpeningsPage = () => {
   const { user, refreshUser } = useAuth();
@@ -140,8 +141,8 @@ const OpeningsPage = () => {
       if (user?.userType !== 'premium') {
         try {
           // First check the limit before incrementing
-          const checkResponse = await fetch('http://localhost:3001/api/usage-limits/openings', {
-            headers: { 'x-auth-token': token }
+          const checkResponse = await fetch(getApiUrl('usage-limits/openings'), {
+            headers: getAuthHeaders()
           });
           
           if (checkResponse.ok) {
@@ -158,12 +159,9 @@ const OpeningsPage = () => {
           }
           
           // Then increment (backend will handle whether to actually increment or not)
-          const incrementResponse = await fetch('http://localhost:3001/api/usage-limits/openings/increment', {
+          const incrementResponse = await fetch(getApiUrl('usage-limits/openings/increment'), {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'x-auth-token': token
-            },
+            headers: getAuthHeaders(),
             body: JSON.stringify({ openingName, variationName })
           });
           
@@ -207,12 +205,9 @@ const OpeningsPage = () => {
       }
       
       // Track the practice in the openings system
-      const response = await fetch('http://localhost:3001/api/openings/practice', {
+      const response = await fetch(getApiUrl('openings/practice'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({
           openingName,
           variationName
