@@ -6,6 +6,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Volume2, VolumeX, RotateCcw, Eye, ArrowRight, Trophy, Zap, Pencil, Trash, Copy, MoreVertical } from 'lucide-react';
 import UpgradeBanner from './UpgradeBanner';
+import { getApiUrl } from '../config/api';
 import { DropdownMenu } from './ui/dropdown-menu';
 import OpenInLiveAnalysisButton from './OpenInLiveAnalysisButton';
 import { savePuzzleResult, getRecentPuzzles, PUZZLE_TYPES } from '../utils/puzzleTracker';
@@ -380,7 +381,7 @@ const PuzzleSolvePage = () => {
       const headers = token ? { 'x-auth-token': token } : {};
       
       const themeToUse = currentTheme;
-      const url = `http://localhost:3001/api/puzzles/random${themeToUse ? `?theme=${encodeURIComponent(themeToUse)}&count=${count}` : `?count=${count}`}`;
+      const url = `${getApiUrl('/puzzles/random')}${themeToUse ? `?theme=${encodeURIComponent(themeToUse)}&count=${count}` : `?count=${count}`}`;
       
       console.log('🔄 Preloading puzzles from:', url);
       
@@ -492,7 +493,7 @@ const PuzzleSolvePage = () => {
       try {
         const token = localStorage.getItem('token');
         if (token) {
-          const response = await fetch('http://localhost:3001/api/usage-limits/puzzle-trainer', {
+          const response = await fetch(getApiUrl('/usage-limits/puzzle-trainer'), {
             headers: { 'x-auth-token': token }
           });
           
@@ -523,7 +524,7 @@ const PuzzleSolvePage = () => {
       
       // Use state theme first, then URL theme as fallback
       const themeToUse = theme || urlTheme;
-      let url = `http://localhost:3001/api/puzzles/random`;
+      let url = getApiUrl('/puzzles/random');
       const params = new URLSearchParams();
       if (themeToUse) params.append('theme', themeToUse);
       if (selectedDifficulty) params.append('difficulty', selectedDifficulty);
@@ -643,7 +644,7 @@ fetchPuzzleRef.current = fetchPuzzle;
       const token = localStorage.getItem('token');
       if (!token) return;
       
-      const response = await axios.get('http://localhost:3001/api/auth/me', {
+      const response = await axios.get(getApiUrl('/auth/me'), {
         headers: { 'x-auth-token': token }
       });
       
@@ -688,7 +689,7 @@ fetchPuzzleRef.current = fetchPuzzle;
       }
 
       console.log('📡 Sending rating update to backend...');
-      const response = await fetch('http://localhost:3001/api/puzzles/stats/puzzle', {
+      const response = await fetch(getApiUrl('/puzzles/stats/puzzle'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -972,7 +973,7 @@ fetchPuzzleRef.current = fetchPuzzle;
             try {
               const token = localStorage.getItem('token');
               if (token) {
-                fetch('http://localhost:3001/api/usage-limits/puzzle-trainer/increment', {
+                fetch(getApiUrl('/usage-limits/puzzle-trainer/increment'), {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
@@ -1175,7 +1176,7 @@ fetchPuzzleRef.current = fetchPuzzle;
       try {
         const token = localStorage.getItem('token');
         if (token) {
-          const response = await fetch('http://localhost:3001/api/usage-limits/puzzle-trainer', {
+          const response = await fetch(getApiUrl('/usage-limits/puzzle-trainer'), {
             headers: { 'x-auth-token': token }
           });
           
@@ -1256,7 +1257,7 @@ fetchPuzzleRef.current = fetchPuzzle;
     setLoading(true);
     setStatus('');
     try {
-      const url = `http://localhost:3001/api/puzzles/random${theme ? `?theme=${encodeURIComponent(theme)}` : ''}`;
+      const url = `${getApiUrl('/puzzles/random')}${theme ? `?theme=${encodeURIComponent(theme)}` : ''}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch random puzzle');
       const data = await response.json();
@@ -1480,7 +1481,7 @@ ${puzzle.moves[0]} *`;
   // Fetch available themes from backend
   const fetchAvailableThemes = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/puzzles/themes');
+      const response = await fetch(getApiUrl('/puzzles/themes'));
       if (response.ok) {
         const data = await response.json();
         const themes = ['', 'random', ...data.themes.map(theme => theme.code)]; // Add empty and random options
