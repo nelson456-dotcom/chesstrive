@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import { getApiUrl } from '../config/api';
 
 // Theme mapping for display names
 const themeDisplayNames = {
@@ -150,7 +151,7 @@ const PuzzleThemesPage = () => {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('http://localhost:3001/api/auth/me', {
+        const response = await fetch(getApiUrl('/auth/me'), {
           headers: { 'x-auth-token': token }
         });
         
@@ -167,7 +168,7 @@ const PuzzleThemesPage = () => {
 
     const fetchAvailableThemes = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/puzzles/themes');
+        const response = await fetch(getApiUrl('/puzzles/themes'));
         if (!response.ok) {
           throw new Error('Failed to fetch themes');
         }
@@ -211,7 +212,7 @@ const PuzzleThemesPage = () => {
     setRandomPuzzleLoading(true);
     try {
       // Fetch a random puzzle from the API
-      const response = await fetch('http://localhost:3001/api/puzzles/random');
+      const response = await fetch(getApiUrl('/puzzles/random'));
       if (response.ok) {
         const data = await response.json();
         if (data?.puzzles && data.puzzles.length > 0) {
