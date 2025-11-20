@@ -204,10 +204,7 @@ const FortyGameReportPage = () => {
       }
 
       const response = await fetch(getApiUrl(`pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}`), {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
 
       if (!response.ok) {
@@ -251,7 +248,7 @@ const FortyGameReportPage = () => {
         if (user.userType !== 'premium') {
           try {
             const response = await fetch(getApiUrl('usage-limits/report-40'), {
-              headers: { 'x-auth-token': token }
+              headers: getAuthHeaders()
             });
             
             if (response.ok) {
@@ -271,10 +268,7 @@ const FortyGameReportPage = () => {
       // Import last 100 games
       const importRes = await fetch(getApiUrl(`games/import?username=${encodeURIComponent(username)}&platform=${encodeURIComponent(platform)}`), {
         method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
       if (!importRes.ok) {
         const d = await importRes.json().catch(() => ({}));
@@ -291,10 +285,7 @@ const FortyGameReportPage = () => {
               // Fetch 20-game report with cache-busting timestamp
       const timestamp = Date.now();
       const reportRes = await fetch(getApiUrl(`games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`), {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
       if (!reportRes.ok) {
         const d = await reportRes.json().catch(() => ({}));
@@ -319,7 +310,7 @@ const FortyGameReportPage = () => {
         for (let i = 0; i < 10; i++) {
           await new Promise(r => setTimeout(r, 1500));
           const poll = await fetch(getApiUrl(`games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`), {
-            headers: { 'Authorization': `Bearer ${token}`, 'x-auth-token': token }
+            headers: getAuthHeaders()
           });
           if (poll.ok) {
             const data = await poll.json();
@@ -333,10 +324,7 @@ const FortyGameReportPage = () => {
 
       // Fetch Scouting Report (Aimchess-style) with cache-busting
       const scoutRes = await fetch(getApiUrl(`games/report/scouting?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`), {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
       if (!scoutRes.ok) {
         const d = await scoutRes.json().catch(() => ({}));
@@ -357,10 +345,7 @@ const FortyGameReportPage = () => {
           try {
             await fetch(getApiUrl('usage-limits/report-40/increment'), {
               method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'x-auth-token': token
-              }
+              headers: getAuthHeaders()
             });
           } catch (error) {
             console.error('Error incrementing usage limit:', error);
@@ -390,10 +375,7 @@ const FortyGameReportPage = () => {
 
       const response = await fetch(getApiUrl(`pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`), {
         method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
 
       if (!response.ok) {
