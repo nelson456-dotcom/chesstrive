@@ -469,45 +469,37 @@ router.post('/move', optionalAuth, async (req, res) => {
       });
     }
     
-    // Try training database first, then fall back to Stockfish
+    // ALWAYS try training database first - prioritize human-like play
     let sanMove = null;
     const targetRating = resolvedEngineParams.canonicalRating || resolvedEngineParams.appliedRating || 1200;
     
-    // Determine training usage probability based on rating
-    // Lower ratings use more training data, higher ratings use more Stockfish
-    const trainingUsageProbability = targetRating < 1200 ? 0.7 : targetRating < 1800 ? 0.5 : targetRating < 2400 ? 0.3 : 0.1;
-    const useTraining = Math.random() < trainingUsageProbability;
-    
-    if (useTraining) {
-      try {
-        console.log('🎓 Checking training database for human-like move...');
-        const trainingMove = await getTrainingMove(fen, targetRating, {
-          randomness: resolvedEngineParams.randomness || 0.1
-        });
-        
-        if (trainingMove && trainingMove.move) {
-          // Validate the move
-          const tempChess = new Chess(fen);
-          try {
-            const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
-            if (chessMove) {
-              sanMove = chessMove.san;
-              console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source})`);
-            } else {
-              console.log('⚠️ Training move invalid, falling back to Stockfish');
-            }
-          } catch (moveError) {
-            console.log('⚠️ Training move failed validation, falling back to Stockfish');
+    // Always try training first - only use Stockfish if no training data exists
+    try {
+      console.log('🎓 Checking training database for human-like move...');
+      const trainingMove = await getTrainingMove(fen, targetRating, {
+        randomness: resolvedEngineParams.randomness || 0.1
+      });
+      
+      if (trainingMove && trainingMove.move) {
+        // Validate the move
+        const tempChess = new Chess(fen);
+        try {
+          const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
+          if (chessMove) {
+            sanMove = chessMove.san;
+            console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'})`);
+          } else {
+            console.log('⚠️ Training move invalid, falling back to Stockfish');
           }
-        } else {
-          console.log('📚 No training data for this position, using Stockfish');
+        } catch (moveError) {
+          console.log('⚠️ Training move failed validation, falling back to Stockfish');
         }
-      } catch (trainingError) {
-        console.error('❌ Training service error:', trainingError.message);
-        console.log('Falling back to Stockfish...');
+      } else {
+        console.log('📚 No training data for this position, using Stockfish');
       }
-    } else {
-      console.log('🤖 Using Stockfish (training probability check)');
+    } catch (trainingError) {
+      console.error('❌ Training service error:', trainingError.message);
+      console.log('Falling back to Stockfish...');
     }
     
     // Fall back to Stockfish if training didn't provide a move

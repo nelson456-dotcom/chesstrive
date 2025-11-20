@@ -43,9 +43,9 @@ function getRatingRange(targetRating) {
   if (targetRating < 1700) return '1600-1700';
   if (targetRating < 1800) return '1700-1800';
   if (targetRating < 2000) return '1800-2000';
-  if (targetRating < 2400) return '1800-2000';
-  if (targetRating < 2500) return '2400-2800';
-  return '2500-2800';
+  if (targetRating < 2400) return '1800-2500';
+  if (targetRating < 2500) return '1800-2500';
+  return '1800-2500';
 }
 
 // Get similar rating ranges (for fallback)
@@ -58,12 +58,16 @@ function getSimilarRatingRanges(targetRating) {
     ranges.push('500-800', '1200-1400');
   } else if (targetRating < 1600) {
     ranges.push('800-1200', '1600-1700');
+  } else if (targetRating < 1700) {
+    ranges.push('1200-1400', '1600-1700', '1700-1800');
   } else if (targetRating < 1800) {
-    ranges.push('1600-1700', '1800-2000');
+    ranges.push('1600-1700', '1700-1800', '1800-2000');
+  } else if (targetRating < 2000) {
+    ranges.push('1700-1800', '1800-2000', '1800-2500');
   } else if (targetRating < 2400) {
-    ranges.push('1700-1800', '2400-2800');
+    ranges.push('1800-2000', '1800-2500');
   } else {
-    ranges.push('1800-2000', '2500-2800');
+    ranges.push('1800-2500');
   }
   
   return ranges;

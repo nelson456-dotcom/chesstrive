@@ -57,6 +57,7 @@ const RATING_RANGES = {
   '1600-1700.pgn': '1600-1700',
   '1700.pgn': '1700-1800',
   '1800.pgn': '1800-2000',
+  '1800-2500.pgn': '1800-2500',
   'master_games.pgn': '2400-2800',
   'Kasparov.pgn': '2500-2800',
   'Karpov.pgn': '2500-2800'
@@ -255,17 +256,34 @@ async function buildDatabase() {
     await Position.deleteMany({});
     console.log('✅ Cleared existing positions\n');
     
+    // Check both data directory and data/level subdirectory
     const dataDir = path.join(__dirname, '../data');
-    const files = fs.readdirSync(dataDir);
-    const pgnFiles = files.filter(f => f.endsWith('.pgn'));
+    const levelDir = path.join(dataDir, 'level');
+    
+    let pgnFiles = [];
+    
+    // First, try the level subdirectory (preferred location)
+    if (fs.existsSync(levelDir)) {
+      console.log('📁 Found level/ subdirectory, using games from there...\n');
+      const levelFiles = fs.readdirSync(levelDir);
+      pgnFiles = levelFiles
+        .filter(f => f.endsWith('.pgn'))
+        .map(f => path.join(levelDir, f));
+    } else {
+      // Fallback to data directory
+      console.log('📁 Using games from data/ directory...\n');
+      const files = fs.readdirSync(dataDir);
+      const levelPgnFiles = files.filter(f => f.endsWith('.pgn'));
+      pgnFiles = levelPgnFiles.map(f => path.join(dataDir, f));
+    }
     
     console.log(`Found ${pgnFiles.length} PGN files to process\n`);
     
     let totalGames = 0;
     let totalPositions = 0;
     
-    for (const filename of pgnFiles) {
-      const filePath = path.join(dataDir, filename);
+    for (const filePath of pgnFiles) {
+      const filename = path.basename(filePath);
       const ratingRange = getRatingRange(filename);
       
       if (!ratingRange) {
