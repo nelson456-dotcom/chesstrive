@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const csv = require('csv-parser');
 const router = express.Router();
 const auth = require('../middleware/auth');
 const premium = require('../middleware/premium');
@@ -25,35 +26,86 @@ const AdvantagePosition = mongoose.model('AdvantagePosition', advantagePositionS
 let recentlyServedAdvantage = new Set();
 const MAX_RECENT_ADVANTAGE = 50;
 
-// Load checkmate positions from JSON file
-let checkmatePositions = [];
+// Load advantage positions from CSV file (puzzles.csv)
+let advantagePositions = [];
 
-function loadCheckmatePositions() {
+function loadAdvantagePositions() {
   return new Promise((resolve, reject) => {
-    const JSON_PATH = path.join(__dirname, '../data/checkmate.json');
+    const CSV_PATH = path.join(__dirname, '../data/puzzles.csv');
     
-    fs.readFile(JSON_PATH, 'utf8', (err, data) => {
-      if (err) {
-        console.error('Error reading checkmate.json:', err);
-        reject(err);
-        return;
-      }
-      
-      try {
-        checkmatePositions = JSON.parse(data);
-        console.log(`[ADVANTAGE] Loaded ${checkmatePositions.length} checkmate positions`);
+    if (!fs.existsSync(CSV_PATH)) {
+      console.error('[ADVANTAGE] puzzles.csv not found, using empty fallback');
+      advantagePositions = [];
+      resolve();
+      return;
+    }
+    
+    const positions = [];
+    let loadedCount = 0;
+    const MAX_POSITIONS = 500; // Load more positions for better variety
+    
+    console.log('[ADVANTAGE] Loading advantage positions from puzzles.csv...');
+    
+    fs.createReadStream(CSV_PATH)
+      .pipe(csv())
+      .on('data', (row) => {
+        if (loadedCount >= MAX_POSITIONS) return;
+        
+        if (row.FEN && row.Moves && row.Rating) {
+          const rating = parseInt(row.Rating) || 0;
+          
+          // Use puzzles with reasonable ratings
+          if (rating >= 800 && rating <= 2000) {
+            try {
+              const { Chess } = require('chess.js');
+              const chess = new Chess(row.FEN);
+              
+              // CRITICAL: Filter out positions that are already in checkmate
+              // Advantage capitalisation needs positions WITH an advantage, not already won
+              if (!chess.isCheckmate() && 
+                  !chess.isStalemate() && 
+                  chess.moves().length >= 3) {
+                
+                const board = chess.board();
+                const pieceCount = board.flat().filter(p => p).length;
+                
+                // Prefer positions with reasonable piece counts (not too many pieces)
+                if (pieceCount <= 20) {
+                  positions.push({
+                    fen: row.FEN,
+                    moves: row.Moves.split(' ').filter(m => m.trim()),
+                    rating: rating,
+                    puzzleId: row.PuzzleId || `advantage_${loadedCount}`
+                  });
+                  loadedCount++;
+                  
+                  if (loadedCount % 100 === 0) {
+                    console.log(`[ADVANTAGE] Loaded ${loadedCount} advantage positions...`);
+                  }
+                }
+              }
+            } catch (err) {
+              // Skip invalid positions
+            }
+          }
+        }
+      })
+      .on('end', () => {
+        advantagePositions = positions;
+        console.log(`[ADVANTAGE] Loaded ${advantagePositions.length} valid advantage positions from CSV`);
         resolve();
-      } catch (parseErr) {
-        console.error('Error parsing checkmate.json:', parseErr);
-        reject(parseErr);
-      }
-    });
+      })
+      .on('error', (err) => {
+        console.error('[ADVANTAGE] Error loading positions from CSV:', err);
+        advantagePositions = [];
+        resolve(); // Resolve anyway to not block the server
+      });
   });
 }
 
 // Initialize positions on startup
-loadCheckmatePositions().catch(err => {
-  console.error('Failed to load checkmate positions:', err);
+loadAdvantagePositions().catch(err => {
+  console.error('[ADVANTAGE] Failed to load advantage positions:', err);
 });
 
 // Difficulty definitions with progressive complexity
@@ -145,24 +197,34 @@ router.get('/position', auth, premium, async (req, res) => {
       console.log('Database error, falling back to JSON:', dbError.message);
     }
     
-    // Fallback to JSON positions - filter by difficulty
-    if (checkmatePositions.length === 0) {
-      return res.status(500).json({ error: 'No positions available' });
+    // Fallback to CSV positions - filter by difficulty
+    if (advantagePositions.length === 0) {
+      console.log('[ADVANTAGE] No advantage positions loaded, trying to reload...');
+      await loadAdvantagePositions();
+      
+      if (advantagePositions.length === 0) {
+        return res.status(500).json({ error: 'No positions available. Please ensure puzzles.csv exists and contains valid positions.' });
+      }
     }
     
     // Filter positions by difficulty based on piece count
-    const filteredPositions = checkmatePositions.filter(selectedFen => {
-      const fenString = Array.isArray(selectedFen) ? selectedFen[0] : selectedFen;
+    const filteredPositions = advantagePositions.filter(pos => {
       try {
         const { Chess } = require('chess.js');
-        const game = new Chess(fenString);
+        const game = new Chess(pos.fen);
+        
+        // Double-check: ensure position is not in checkmate
+        if (game.isCheckmate() || game.isStalemate()) {
+          return false;
+        }
+        
         const board = game.board();
         const pieceCount = board.flat().filter(p => p).length;
         
         return pieceCount >= difficultyConfig.pieceCountRange[0] && 
                pieceCount <= difficultyConfig.pieceCountRange[1];
       } catch (error) {
-        console.error('Error processing position:', error);
+        console.error('[ADVANTAGE] Error processing position:', error);
         return false;
       }
     });
@@ -175,18 +237,23 @@ router.get('/position', auth, premium, async (req, res) => {
       console.log(`[ADVANTAGE] No positions found for ${difficulty}, finding closest match...`);
       
       // Find positions closest to the difficulty range
-      const sortedPositions = checkmatePositions.map(selectedFen => {
-        const fenString = Array.isArray(selectedFen) ? selectedFen[0] : selectedFen;
+      const sortedPositions = advantagePositions.map(pos => {
         try {
           const { Chess } = require('chess.js');
-          const game = new Chess(fenString);
+          const game = new Chess(pos.fen);
+          
+          // Skip checkmate positions
+          if (game.isCheckmate() || game.isStalemate()) {
+            return null;
+          }
+          
           const board = game.board();
           const pieceCount = board.flat().filter(p => p).length;
-          return { fen: fenString, pieceCount };
+          return { ...pos, pieceCount };
         } catch (error) {
-          return { fen: fenString, pieceCount: 0 };
+          return null;
         }
-      }).sort((a, b) => {
+      }).filter(p => p !== null).sort((a, b) => {
         const aDiff = Math.abs(a.pieceCount - difficultyConfig.pieceCountRange[0]);
         const bDiff = Math.abs(b.pieceCount - difficultyConfig.pieceCountRange[0]);
         return aDiff - bDiff;
@@ -201,21 +268,24 @@ router.get('/position', auth, premium, async (req, res) => {
     
     const randomIndex = Math.floor(Math.random() * positionsToUse.length);
     const selectedPosition = positionsToUse[randomIndex];
-    const fenString = selectedPosition.fen || (Array.isArray(selectedPosition) ? selectedPosition[0] : selectedPosition);
+    const fenString = selectedPosition.fen;
     
     const { Chess } = require('chess.js');
     const game = new Chess(fenString);
     const board = game.board();
     const pieceCount = board.flat().filter(p => p).length;
     
-    const winningMoves = generateWinningMoves(fenString, difficultyConfig.complexity);
+    // Use the actual moves from the puzzle if available, otherwise generate
+    const winningMoves = selectedPosition.moves && selectedPosition.moves.length > 0 
+      ? selectedPosition.moves.slice(0, Math.min(5, selectedPosition.moves.length))
+      : generateWinningMoves(fenString, difficultyConfig.complexity);
     
     const position = {
       fen: fenString,
       moves: winningMoves,
       difficulty: difficulty,
       description: getPositionDescription(difficulty, pieceCount),
-      rating: getDifficultyRating(difficulty)
+      rating: selectedPosition.rating || getDifficultyRating(difficulty)
     };
     
     console.log(`[ADVANTAGE] Serving position: ${difficulty} difficulty, ${pieceCount} pieces, rating: ${position.rating}`);
@@ -286,22 +356,36 @@ router.get('/positions', auth, premium, async (req, res) => {
   try {
     const { count = 5, difficulty = 'intermediate' } = req.query;
     
-    if (checkmatePositions.length === 0) {
-      return res.status(500).json({ error: 'No positions available' });
+    if (advantagePositions.length === 0) {
+      await loadAdvantagePositions();
+      
+      if (advantagePositions.length === 0) {
+        return res.status(500).json({ error: 'No positions available' });
+      }
     }
     
     const positions = [];
-    const maxPositions = Math.min(parseInt(count), checkmatePositions.length);
+    const maxPositions = Math.min(parseInt(count), advantagePositions.length);
+    const usedIndices = new Set();
     
     for (let i = 0; i < maxPositions; i++) {
-      const randomIndex = Math.floor(Math.random() * checkmatePositions.length);
-      const selectedFen = checkmatePositions[randomIndex];
+      let randomIndex;
+      do {
+        randomIndex = Math.floor(Math.random() * advantagePositions.length);
+      } while (usedIndices.has(randomIndex) && usedIndices.size < advantagePositions.length);
       
-      // Handle the case where checkmatePositions is an array of arrays
-      const fenString = Array.isArray(selectedFen) ? selectedFen[0] : selectedFen;
+      usedIndices.add(randomIndex);
+      const selectedPos = advantagePositions[randomIndex];
       
       const { Chess } = require('chess.js');
-      const game = new Chess(fenString);
+      const game = new Chess(selectedPos.fen);
+      
+      // Skip checkmate positions
+      if (game.isCheckmate() || game.isStalemate()) {
+        i--; // Try again
+        continue;
+      }
+      
       const board = game.board();
       const pieceCount = board.flat().filter(p => p).length;
       
@@ -316,13 +400,16 @@ router.get('/positions', auth, premium, async (req, res) => {
         calculatedDifficulty = 'expert';
       }
       
-      const winningMoves = generateWinningMoves(fenString);
+      const winningMoves = selectedPos.moves && selectedPos.moves.length > 0
+        ? selectedPos.moves.slice(0, Math.min(5, selectedPos.moves.length))
+        : generateWinningMoves(selectedPos.fen);
       
       positions.push({
-        fen: fenString,
+        fen: selectedPos.fen,
         moves: winningMoves,
         difficulty: calculatedDifficulty,
-        description: getPositionDescription(calculatedDifficulty, pieceCount)
+        description: getPositionDescription(calculatedDifficulty, pieceCount),
+        rating: selectedPos.rating || getDifficultyRating(calculatedDifficulty)
       });
     }
     

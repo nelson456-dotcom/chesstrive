@@ -4,8 +4,9 @@ import { Chess } from 'chess.js';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { Target, Clock, Zap, Trophy, RotateCcw, Play, Pause, BarChart3, Crown, Sword } from 'lucide-react';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
-const API_BASE = 'http://localhost:3001/api/advantage';
+const API_BASE = getApiUrl('advantage');
 
 // Mobile-optimized chessboard with touch support
 const TOUCH_BOARD_STYLE = {
@@ -170,12 +171,9 @@ const AdvantageCapitalisationPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await fetch('http://localhost:3001/api/advantage/stats', {
+      const response = await fetch(getApiUrl('advantage/stats'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ won: true })
       });
 
@@ -265,11 +263,8 @@ const AdvantageCapitalisationPage = () => {
     try {
       // Use checkmate positions from the CSV data
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:3001/api/advantage/position?difficulty=${difficulty}`, {
-        headers: {
-          'Content-Type': 'application/json',
-          ...(token ? { 'x-auth-token': token, 'Authorization': `Bearer ${token}` } : {})
-        }
+      const response = await fetch(getApiUrl(`advantage/position?difficulty=${difficulty}`), {
+        headers: getAuthHeaders()
       });
       
       if (response.ok) {
@@ -379,9 +374,9 @@ const AdvantageCapitalisationPage = () => {
         timeControl: 'rapid'
       };
 
-      const res = await fetch('http://localhost:3001/api/bot/move', {
+      const res = await fetch(getApiUrl('bot/move'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getAuthHeaders(),
         body: JSON.stringify(payload)
       });
 
@@ -641,8 +636,8 @@ const AdvantageCapitalisationPage = () => {
           console.log('💾 Saving solved positions on game end:', correctMoves);
           
           // Get current user data to see how many wins they already have
-          const userResponse = await fetch('http://localhost:3001/api/auth/me', {
-            headers: { 'x-auth-token': token }
+          const userResponse = await fetch(getApiUrl('auth/me'), {
+            headers: getAuthHeaders()
           });
           
           if (userResponse.ok) {

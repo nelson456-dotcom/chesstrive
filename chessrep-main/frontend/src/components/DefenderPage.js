@@ -6,8 +6,8 @@ import { Chess } from 'chess.js';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { Shield, Clock, Zap, Trophy, RotateCcw, Play, Pause, BarChart3, Crown, Sword } from 'lucide-react';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
-const API_BASE = 'http://localhost:3001/api/defender';
 const DIFFICULTY_TO_RATING = {
   beginner: 800,
   intermediate: 1200,
@@ -159,12 +159,9 @@ const DefenderPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await fetch('http://localhost:3001/api/defender/stats', {
+      const response = await fetch(getApiUrl('defender/stats'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ won: true })
       });
 
@@ -199,11 +196,8 @@ const DefenderPage = () => {
         return;
       }
 
-      const response = await fetch(`http://localhost:3001/api/defender/position?difficulty=${difficulty}`, {
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        }
+      const response = await fetch(getApiUrl(`defender/position?difficulty=${difficulty}`), {
+        headers: getAuthHeaders()
       });
       console.log('[DEFENDER] Response status:', response.status);
       
@@ -237,8 +231,8 @@ const DefenderPage = () => {
       const checkUsageLimits = async () => {
         try {
           const token = localStorage.getItem('token');
-          const response = await fetch('http://localhost:3001/api/usage-limits/defender', {
-            headers: { 'x-auth-token': token }
+          const response = await fetch(getApiUrl('usage-limits/defender'), {
+            headers: getAuthHeaders()
           });
           
           if (response.ok) {
@@ -250,12 +244,9 @@ const DefenderPage = () => {
             }
             
             // Increment usage
-            await fetch('http://localhost:3001/api/usage-limits/defender/increment', {
+            await fetch(getApiUrl('usage-limits/defender/increment'), {
               method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'x-auth-token': token
-              }
+              headers: getAuthHeaders()
             });
           }
         } catch (error) {
@@ -338,9 +329,9 @@ const DefenderPage = () => {
         payload.won = true;
       }
 
-      const response = await fetch(`${API_BASE}/stats`, {
+      const response = await fetch(getApiUrl('defender/stats'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-auth-token': token },
+        headers: getAuthHeaders(),
         body: JSON.stringify(payload)
       });
 
@@ -398,7 +389,7 @@ const DefenderPage = () => {
         timeControl: 'rapid'
       };
 
-      const res = await fetch('http://localhost:3001/api/bot/move', {
+      const res = await fetch(getApiUrl('bot/move'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -649,8 +640,8 @@ const DefenderPage = () => {
     if (user && user.userType !== 'premium') {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:3001/api/usage-limits/defender', {
-          headers: { 'x-auth-token': token }
+        const response = await fetch(getApiUrl('usage-limits/defender'), {
+          headers: getAuthHeaders()
         });
         
         if (response.ok) {
@@ -661,12 +652,9 @@ const DefenderPage = () => {
           }
           
           // Increment usage
-          await fetch('http://localhost:3001/api/usage-limits/defender/increment', {
+          await fetch(getApiUrl('usage-limits/defender/increment'), {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'x-auth-token': token
-            }
+            headers: getAuthHeaders()
           });
         }
       } catch (error) {
@@ -802,11 +790,11 @@ const DefenderPage = () => {
                     try {
                       const token = localStorage.getItem('token');
                       if (token) {
-                        fetch(`${API_BASE}/stats`, {
-                          method: 'POST',
-                          headers: { 'Content-Type': 'application/json', 'x-auth-token': token },
-                          body: JSON.stringify({ solved: false, puzzleRating: 1200 })
-                        }).catch(()=>{});
+                      fetch(getApiUrl('defender/stats'), {
+                        method: 'POST',
+                        headers: getAuthHeaders(),
+                        body: JSON.stringify({ solved: false, puzzleRating: 1200 })
+                      }).catch(()=>{});
                       }
                     } catch(_) {}
                     loadDefensivePosition();
