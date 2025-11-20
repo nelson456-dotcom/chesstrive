@@ -4,7 +4,6 @@ import { useAuth } from '../contexts/AuthContext';
 import RichTextEditor from './RichTextEditor';
 import MarkdownRenderer from './MarkdownRenderer';
 import ProfileIcon from './ProfileIcon';
-import ChessStriveLogo from './ChessStriveLogo';
 import { getApiUrl, getAuthHeaders } from '../config/api';
 import {
   Home,
@@ -220,7 +219,20 @@ const FeedPage = () => {
         {/* Logo */}
         <div className="p-6 border-b border-gray-200">
           <div className="flex items-center gap-2">
-            <ChessStriveLogo size={32} showText={true} className="text-gray-800" />
+            <div className="relative" style={{ width: 32, height: 32 }}>
+              <svg
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full"
+              >
+                <rect x="10" y="10" width="35" height="35" rx="4" fill="#3B82F6" />
+                <rect x="55" y="10" width="35" height="35" rx="4" fill="#334155" />
+                <rect x="10" y="55" width="35" height="35" rx="4" fill="#334155" />
+                <rect x="55" y="55" width="35" height="35" rx="4" fill="#2563EB" />
+              </svg>
+            </div>
+            <span className="text-xl font-bold text-gray-800">ChessStrive</span>
           </div>
         </div>
 
