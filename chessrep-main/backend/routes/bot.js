@@ -634,6 +634,21 @@ router.get('/personalities', optionalAuth, async (req, res) => {
   }
 });
 
+// Get training database statistics
+router.get('/training-stats', optionalAuth, async (req, res) => {
+  try {
+    const { getTrainingStats } = require('../services/botTrainingService');
+    const stats = await getTrainingStats();
+    res.json({
+      success: true,
+      stats: stats
+    });
+  } catch (error) {
+    console.error('Error getting training stats:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
 // Analyze a game position
 router.post('/analyze', optionalAuth, async (req, res) => {
   try {
