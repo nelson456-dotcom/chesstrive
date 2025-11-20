@@ -8,6 +8,17 @@ const router = express.Router();
 const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
+function getStockfishPath() {
+  if (process.platform === 'win32') {
+    return path.join(__dirname, '../engines/stockfish.exe');
+  }
+
+  if (fs.existsSync('/usr/games/stockfish')) return '/usr/games/stockfish';
+  if (fs.existsSync('/usr/bin/stockfish')) return '/usr/bin/stockfish';
+  if (fs.existsSync('/usr/local/bin/stockfish')) return '/usr/local/bin/stockfish';
+  return path.join(__dirname, '../engines/stockfish');
+}
+
 const { Chess } = require('chess.js');
 
 // Store active analysis sessions
@@ -158,21 +169,7 @@ async function startStreamingAnalysis(ws, analysisId, config) {
   }
 
   // Find Stockfish executable
-  let stockfishPath;
-  if (process.platform === 'win32') {
-    stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
-  } else {
-    // Linux: Try system Stockfish first
-    if (fs.existsSync('/usr/games/stockfish')) {
-      stockfishPath = '/usr/games/stockfish';
-    } else if (fs.existsSync('/usr/bin/stockfish')) {
-      stockfishPath = '/usr/bin/stockfish';
-    } else if (fs.existsSync('/usr/local/bin/stockfish')) {
-      stockfishPath = '/usr/local/bin/stockfish';
-    } else {
-      stockfishPath = path.join(__dirname, '../engines/stockfish');
-    }
-  }
+  let stockfishPath = getStockfishPath();
   
   // Fallback: try alternative paths if primary path doesn't exist
   if (!fs.existsSync(stockfishPath)) {

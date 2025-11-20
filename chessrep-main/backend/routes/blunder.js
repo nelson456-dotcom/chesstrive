@@ -167,24 +167,20 @@ function getFallbackGeneralPuzzles() {
 loadGeneralPuzzlesForBlunder().catch(console.error);
 
 // helper: run stockfish once and return array of {move, scoreCp}
+function getStockfishPath() {
+  if (process.platform === 'win32') {
+    return path.join(__dirname, '../engines/stockfish.exe');
+  }
+
+  if (fs.existsSync('/usr/games/stockfish')) return '/usr/games/stockfish';
+  if (fs.existsSync('/usr/bin/stockfish')) return '/usr/bin/stockfish';
+  if (fs.existsSync('/usr/local/bin/stockfish')) return '/usr/local/bin/stockfish';
+  return path.join(__dirname, '../engines/stockfish');
+}
+
 async function analyseFen(fen, depth = 12, multiPv = 8) {
   return new Promise((resolve, reject) => {
-    // Get Stockfish path based on platform
-    let stockPath;
-    if (process.platform === 'win32') {
-      stockPath = path.join(__dirname, '../engines/stockfish.exe');
-    } else {
-      // Linux: Try system Stockfish first
-      if (fs.existsSync('/usr/games/stockfish')) {
-        stockPath = '/usr/games/stockfish';
-      } else if (fs.existsSync('/usr/bin/stockfish')) {
-        stockPath = '/usr/bin/stockfish';
-      } else if (fs.existsSync('/usr/local/bin/stockfish')) {
-        stockPath = '/usr/local/bin/stockfish';
-      } else {
-        stockPath = path.join(__dirname, '../engines/stockfish');
-      }
-    }
+    const stockPath = getStockfishPath();
     const engine = spawn(stockPath);
     const evaluations = [];
 

@@ -66,6 +66,17 @@ function uciToSan(chess, uciMove) {
   return move ? move.san : null;
 }
 
+function getStockfishPath() {
+  if (process.platform === 'win32') {
+    return path.join(__dirname, '../engines/stockfish.exe');
+  }
+
+  if (fs.existsSync('/usr/games/stockfish')) return '/usr/games/stockfish';
+  if (fs.existsSync('/usr/bin/stockfish')) return '/usr/bin/stockfish';
+  if (fs.existsSync('/usr/local/bin/stockfish')) return '/usr/local/bin/stockfish';
+  return path.join(__dirname, '../engines/stockfish');
+}
+
 // Ask Stockfish for a move with level-based scaling
 async function getStockfishMove(fen, engineParams, personality) {
   return new Promise((resolve, reject) => {
@@ -91,21 +102,7 @@ async function getStockfishMove(fen, engineParams, personality) {
     const skill = Math.max(0, Math.min(20, Math.round(typeof skillLevel === 'number' ? skillLevel : 20)));
     const limitedElo = Math.max(800, Math.min(2800, Math.round(uciElo || targetElo)));
     // Get Stockfish path based on platform
-    let stockfishPath;
-    if (process.platform === 'win32') {
-      stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
-    } else {
-      // Linux: Try system Stockfish first
-      if (fs.existsSync('/usr/games/stockfish')) {
-        stockfishPath = '/usr/games/stockfish';
-      } else if (fs.existsSync('/usr/bin/stockfish')) {
-        stockfishPath = '/usr/bin/stockfish';
-      } else if (fs.existsSync('/usr/local/bin/stockfish')) {
-        stockfishPath = '/usr/local/bin/stockfish';
-      } else {
-        stockfishPath = path.join(__dirname, '../engines/stockfish');
-      }
-    }
+    const stockfishPath = getStockfishPath();
     const engine = spawn(stockfishPath);
 
     let bestUci = null;
