@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-
-const API_BASE = 'http://localhost:3001/api/famous-games';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const GuessTheMovePage = () => {
   const { user } = useAuth();
@@ -14,8 +13,8 @@ const GuessTheMovePage = () => {
     const fetchAllGames = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`${API_BASE}/all`);
-      const data = await res.json();
+        const res = await fetch(getApiUrl('famous-games/all'));
+        const data = await res.json();
         setGamesList(data.games || []);
       } catch (error) {
         console.error('Error fetching games:', error);
@@ -122,29 +121,23 @@ const GuessTheMovePage = () => {
                     // Check usage limits for free users
                     if (user && user.userType !== 'premium') {
                       try {
-                        const token = localStorage.getItem('token');
-                        if (token) {
-                          const response = await fetch('http://localhost:3001/api/usage-limits/guess-the-move', {
-                            headers: { 'x-auth-token': token }
-                          });
-                          
-                          if (response.ok) {
-                            const limitData = await response.json();
-                            if (!limitData.allowed) {
-                              alert('You\'ve already played your free game. Upgrade to premium for unlimited access to guess the move!');
-                              navigate('/upgrade');
-                              return;
-                            }
-                            
-                            // Increment usage before navigating
-                            await fetch('http://localhost:3001/api/usage-limits/guess-the-move/increment', {
-                              method: 'POST',
-                              headers: {
-                                'Content-Type': 'application/json',
-                                'x-auth-token': token
-                              }
-                            });
+                        const response = await fetch(getApiUrl('usage-limits/guess-the-move'), {
+                          headers: getAuthHeaders()
+                        });
+                        
+                        if (response.ok) {
+                          const limitData = await response.json();
+                          if (!limitData.allowed) {
+                            alert('You\'ve already played your free game. Upgrade to premium for unlimited access to guess the move!');
+                            navigate('/upgrade');
+                            return;
                           }
+                          
+                          // Increment usage before navigating
+                          await fetch(getApiUrl('usage-limits/guess-the-move/increment'), {
+                            method: 'POST',
+                            headers: getAuthHeaders()
+                          });
                         }
                       } catch (error) {
                         console.error('Error checking usage limits:', error);

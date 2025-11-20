@@ -3,8 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Chessboard } from 'react-chessboard';
 import { Chess } from 'chess.js';
 import OpenInLiveAnalysisButton from './OpenInLiveAnalysisButton';
-
-const API_BASE = 'http://localhost:3001/api/famous-games';
+import { getApiUrl } from '../config/api';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -184,14 +183,14 @@ const GameViewerPage = () => {
     setIsWaitingForGuess(true);
     setCorrectMoves(0);
     setWrongMoves(0);
-    fetch(`${API_BASE}/${file}/games/${gameIndex}`)
+    fetch(getApiUrl(`famous-games/${file}/games/${gameIndex}`))
       .then(res => res.json())
       .then(data => {
         setMoves(data.moves || []);
         setFeedback('Your turn! Guess White\'s first move.');
       });
     // Fetch game metadata
-    fetch(`${API_BASE}/${file}/games`)
+    fetch(getApiUrl(`famous-games/${file}/games`))
       .then(res => res.json())
       .then(data => {
         if (data.games && data.games[gameIndex]) {
