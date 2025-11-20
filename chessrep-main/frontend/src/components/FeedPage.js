@@ -4,6 +4,8 @@ import { useAuth } from '../contexts/AuthContext';
 import RichTextEditor from './RichTextEditor';
 import MarkdownRenderer from './MarkdownRenderer';
 import ProfileIcon from './ProfileIcon';
+import ChessStriveLogo from './ChessStriveLogo';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 import {
   Home,
   BookOpen,
@@ -50,7 +52,7 @@ const FeedPage = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/posts');
+      const response = await fetch(getApiUrl('posts'));
       if (response.ok) {
         const data = await response.json();
         setPosts(data.posts);
@@ -84,12 +86,9 @@ const FeedPage = () => {
 
       console.log('Posting:', { content: newPost, token: token ? 'exists' : 'missing' });
 
-      const response = await fetch('http://localhost:3001/api/posts', {
+      const response = await fetch(getApiUrl('posts'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ content: newPost.trim() })
       });
 
@@ -141,11 +140,9 @@ const FeedPage = () => {
         return;
       }
 
-      const response = await fetch(`http://localhost:3001/api/posts/${postId}/like`, {
+      const response = await fetch(getApiUrl(`posts/${postId}/like`), {
         method: 'POST',
-        headers: {
-          'x-auth-token': token
-        }
+        headers: getAuthHeaders()
       });
 
       if (response.ok) {
@@ -179,12 +176,9 @@ const FeedPage = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:3001/api/posts/${postId}/comment`, {
+      const response = await fetch(getApiUrl(`posts/${postId}/comment`), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ content: commentContent.trim() })
       });
 
@@ -226,10 +220,7 @@ const FeedPage = () => {
         {/* Logo */}
         <div className="p-6 border-b border-gray-200">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-              <Crown className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-800">Chess Upgrade</span>
+            <ChessStriveLogo size={32} showText={true} className="text-gray-800" />
           </div>
         </div>
 
@@ -427,16 +418,25 @@ const FeedPage = () => {
               <div className="font-bold">{user?.username || 'Player'}</div>
               <div className="text-purple-100 text-sm flex items-center gap-1">
                 <span className="inline-block w-2 h-2 bg-green-400 rounded-full"></span>
-                FREE
+                {user?.userType === 'premium' ? (
+                  <span className="flex items-center gap-1">
+                    <Crown className="w-3 h-3" />
+                    PREMIUM
+                  </span>
+                ) : (
+                  'FREE'
+                )}
               </div>
             </div>
           </div>
-          <button
-            onClick={() => navigate('/pricing')}
-            className="w-full bg-white text-purple-600 py-2 rounded-lg font-semibold hover:bg-purple-50 transition-all"
-          >
-            GET PREMIUM
-          </button>
+          {user?.userType !== 'premium' && (
+            <button
+              onClick={() => navigate('/pricing')}
+              className="w-full bg-white text-purple-600 py-2 rounded-lg font-semibold hover:bg-purple-50 transition-all"
+            >
+              GET PREMIUM
+            </button>
+          )}
         </div>
 
         {/* Trending Topics */}
