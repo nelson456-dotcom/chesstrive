@@ -218,7 +218,7 @@ const FeedPage = () => {
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
         {/* Logo */}
         <div className="p-6 border-b border-gray-200">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="relative" style={{ width: 32, height: 32 }}>
               <svg
                 viewBox="0 0 100 100"
@@ -232,7 +232,10 @@ const FeedPage = () => {
                 <rect x="55" y="55" width="35" height="35" rx="4" fill="#2563EB" />
               </svg>
             </div>
-            <span className="text-xl font-bold text-gray-800">ChessStrive</span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-gray-900 leading-none">ChessStrive</span>
+              <span className="text-xs text-gray-600 leading-none mt-0.5">Strive. Improve. Win</span>
+            </div>
           </div>
         </div>
 

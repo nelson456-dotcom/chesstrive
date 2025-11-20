@@ -23,7 +23,6 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import ChessStriveLogo from './ChessStriveLogo';
 import CoachStudentPanel from './CoachStudentPanel';
 import { getApiUrl, getAuthHeaders } from '../config/api';
 
@@ -153,8 +152,24 @@ const DashboardHome = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col lg:flex-row">
       {/* Mobile Header */}
       <div className="lg:hidden bg-white border-b border-gray-200 p-4 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <ChessStriveLogo size={28} />
+        <div className="flex items-center gap-3">
+          <div className="relative" style={{ width: 28, height: 28 }}>
+            <svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full"
+            >
+              <rect x="10" y="10" width="35" height="35" rx="4" fill="#3B82F6" />
+              <rect x="55" y="10" width="35" height="35" rx="4" fill="#334155" />
+              <rect x="10" y="55" width="35" height="35" rx="4" fill="#334155" />
+              <rect x="55" y="55" width="35" height="35" rx="4" fill="#2563EB" />
+            </svg>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-bold text-gray-900 leading-none">ChessStrive</span>
+            <span className="text-xs text-gray-600 leading-none mt-0.5">Strive. Improve. Win</span>
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -184,8 +199,24 @@ const DashboardHome = () => {
       <aside className={`${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 fixed lg:static inset-y-0 left-0 z-50 lg:z-auto w-64 bg-white border-r border-gray-200 flex flex-col transition-transform duration-300 ease-in-out`}>
         {/* Logo */}
         <div className="p-6 border-b border-gray-200 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <ChessStriveLogo size={28} />
+          <div className="flex items-center gap-3">
+            <div className="relative" style={{ width: 28, height: 28 }}>
+              <svg
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full"
+              >
+                <rect x="10" y="10" width="35" height="35" rx="4" fill="#3B82F6" />
+                <rect x="55" y="10" width="35" height="35" rx="4" fill="#334155" />
+                <rect x="10" y="55" width="35" height="35" rx="4" fill="#334155" />
+                <rect x="55" y="55" width="35" height="35" rx="4" fill="#2563EB" />
+              </svg>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-gray-900 leading-none">ChessStrive</span>
+              <span className="text-xs text-gray-600 leading-none mt-0.5">Strive. Improve. Win</span>
+            </div>
           </div>
           <button
             onClick={() => setSidebarOpen(false)}
