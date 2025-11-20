@@ -207,11 +207,60 @@ async function startStreamingAnalysis(ws, analysisId, config) {
     timestamp: startTime
   });
 
+  console.log('🔍 [analysisStream] Spawning Stockfish from path:', stockfishPath);
+  console.log('🔍 [analysisStream] Path exists:', fs.existsSync(stockfishPath));
+  console.log('🔍 [analysisStream] Path is absolute:', path.isAbsolute(stockfishPath));
+
   const stockfishProcess = spawn(stockfishPath, [], {
     stdio: ['pipe', 'pipe', 'pipe'],
     shell: false,
     windowsHide: true
   });
+
+  // Immediate error handler for spawn failures
+  stockfishProcess.on('error', (error) => {
+    console.error('❌ [analysisStream] Stockfish spawn error:', error);
+    console.error('❌ [analysisStream] Error details:', {
+      message: error.message,
+      code: error.code,
+      errno: error.errno,
+      syscall: error.syscall,
+      path: stockfishPath
+    });
+    clearTimeout(timeout);
+    ws.send(JSON.stringify({
+      type: 'analysis_error',
+      analysisId,
+      error: `Failed to start Stockfish: ${error.message}`
+    }));
+    activeAnalyses.delete(analysisId);
+  });
+
+  // Check if process is alive and stdin is writable
+  setTimeout(() => {
+    if (stockfishProcess.killed) {
+      console.error('❌ [analysisStream] Stockfish process died immediately after spawn');
+      clearTimeout(timeout);
+      ws.send(JSON.stringify({
+        type: 'analysis_error',
+        analysisId,
+        error: 'Stockfish process died immediately after spawn'
+      }));
+      activeAnalyses.delete(analysisId);
+      return;
+    }
+    if (!stockfishProcess.stdin || !stockfishProcess.stdin.writable) {
+      console.error('❌ [analysisStream] Stockfish stdin is not writable');
+      console.error('❌ [analysisStream] Process state:', {
+        killed: stockfishProcess.killed,
+        stdin: !!stockfishProcess.stdin,
+        stdinWritable: stockfishProcess.stdin?.writable,
+        stdinDestroyed: stockfishProcess.stdin?.destroyed
+      });
+    } else {
+      console.log('✅ [analysisStream] Stockfish process is alive and stdin is writable');
+    }
+  }, 100);
 
   const analysisResults = new Array(multiPV).fill(null);
   let firstPVReceived = false;
@@ -434,15 +483,8 @@ async function startStreamingAnalysis(ws, analysisId, config) {
     console.error('📛 Stockfish stderr:', data.toString());
   });
 
-  stockfishProcess.on('error', (error) => {
-    clearTimeout(timeout);
-    ws.send(JSON.stringify({
-      type: 'analysis_error',
-      analysisId,
-      error: error.message
-    }));
-    activeAnalyses.delete(analysisId);
-  });
+  // Error handler is already set up immediately after spawn (line 221)
+  // This duplicate handler is removed to avoid conflicts
 
   stockfishProcess.on('close', () => {
     clearTimeout(timeout);
