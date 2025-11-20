@@ -4,6 +4,7 @@ import { Chess } from 'chess.js';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { updateDailyProgress, MODULE_NAMES } from '../utils/dailyProgress';
+import { getApiUrl } from '../config/api';
 
 const TOUCH_BOARD_STYLE = {
   touchAction: 'none',
@@ -12,8 +13,6 @@ const TOUCH_BOARD_STYLE = {
   WebkitTouchCallout: 'none',
   WebkitTapHighlightColor: 'transparent'
 };
-
-const API = 'http://localhost:3001/api/blunder-preventer/random';
 
 const BlunderPreventerPage = () => {
   const navigate = useNavigate();
@@ -45,7 +44,7 @@ const BlunderPreventerPage = () => {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('http://localhost:3001/api/auth/me', {
+        const response = await fetch(getApiUrl('/auth/me'), {
           headers: {
             'x-auth-token': token
           }
@@ -135,7 +134,7 @@ const BlunderPreventerPage = () => {
       if (token) {
         headers['x-auth-token'] = token;
       }
-      const res = await fetch(API, {
+      const res = await fetch(getApiUrl('/blunder-preventer/random'), {
         headers
       });
       if (!res.ok) {
@@ -196,7 +195,7 @@ const BlunderPreventerPage = () => {
       if (token) {
         console.log('Updating blunder rating - isCorrect:', isCorrect, 'token exists:', !!token);
         
-        const response = await fetch('http://localhost:3001/api/blunder-preventer/stats', {
+        const response = await fetch(getApiUrl('/blunder-preventer/stats'), {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -498,7 +497,7 @@ const BlunderPreventerPage = () => {
         const startTime = Date.now();
         console.log('Updating blunder rating - isCorrect:', isCorrect, 'token exists:', !!token);
         
-        const response = await fetch('http://localhost:3001/api/blunder-preventer/stats', {
+        const response = await fetch(getApiUrl('/blunder-preventer/stats'), {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
