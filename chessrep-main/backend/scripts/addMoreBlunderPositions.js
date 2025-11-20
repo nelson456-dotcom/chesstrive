@@ -29,7 +29,18 @@ const BlunderPosition = mongoose.model('BlunderPosition', blunderPositionSchema)
 // Helper function to run Stockfish analysis
 async function analyseFen(fen, depth = 12, multiPv = 8) {
   return new Promise((resolve, reject) => {
-    const stockPath = path.join(__dirname, '../engines/stockfish.exe');
+    // Use system Stockfish on Linux, or local executable
+    let stockPath;
+    if (process.platform === 'win32') {
+      stockPath = path.join(__dirname, '../engines/stockfish.exe');
+    } else {
+      // Try system Stockfish first, then local binary
+      stockPath = fs.existsSync('/usr/bin/stockfish') 
+        ? '/usr/bin/stockfish' 
+        : fs.existsSync('/usr/local/bin/stockfish')
+        ? '/usr/local/bin/stockfish'
+        : path.join(__dirname, '../engines/stockfish');
+    }
     const engine = spawn(stockPath);
     const evaluations = [];
 
