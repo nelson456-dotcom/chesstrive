@@ -252,6 +252,10 @@ router.post('/practice', auth, async (req, res) => {
       // If this is a new distinct opening, add it to the list BEFORE tracking practice
       if (!alreadySeen) {
         console.log(`[OPENINGS] Adding new distinct opening to limit tracking. Current count: ${distinctOpenings.length}, adding: ${openingName}`);
+        // Initialize usageLimits structure if needed
+        if (!user.usageLimits) { user.usageLimits = {}; }
+        if (!user.usageLimits.openings) { user.usageLimits.openings = {}; }
+        if (!user.usageLimits.openings.openingsSeen) { user.usageLimits.openings.openingsSeen = []; }
         user.usageLimits.openings.openingsSeen.push({
           openingName, // Only track opening name, not variation
           seenAt: new Date()

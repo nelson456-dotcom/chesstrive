@@ -254,6 +254,10 @@ router.post('/:feature/increment', auth, async (req, res) => {
             return res.json({ success: true, remaining: 0, limitReached: true, alreadySeen: false });
           } else {
             // Add the new distinct opening (only track opening name, not variation)
+            // Initialize usageLimits structure if needed
+            if (!user.usageLimits) { user.usageLimits = {}; }
+            if (!user.usageLimits.openings) { user.usageLimits.openings = {}; }
+            if (!user.usageLimits.openings.openingsSeen) { user.usageLimits.openings.openingsSeen = []; }
             user.usageLimits.openings.openingsSeen.push({
               openingName, // Only track opening name, not variation
               seenAt: new Date()
