@@ -10,6 +10,8 @@ require('dotenv').config();
 mongoose.set('bufferCommands', true);
 
 const app = express();
+// Trust proxy (needed when behind Nginx)
+app.set('trust proxy', 1);
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
