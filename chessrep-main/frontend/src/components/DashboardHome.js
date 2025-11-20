@@ -112,7 +112,7 @@ const DashboardHome = () => {
     {
       icon: Swords,
       label: 'Defender',
-      path: '/resourcefulness?difficulty=intermediate',
+      path: '/defender',
       progress: todayProgress.defender,
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
@@ -450,19 +450,28 @@ const DashboardHome = () => {
               <div className="font-bold text-sm sm:text-base truncate">{user?.username || 'Player'}</div>
               <div className="text-purple-100 text-xs sm:text-sm flex items-center gap-1">
                 <span className="inline-block w-2 h-2 bg-green-400 rounded-full"></span>
-                FREE
+                {user?.userType === 'premium' ? (
+                  <span className="flex items-center gap-1">
+                    <Crown className="w-3 h-3" />
+                    PREMIUM
+                  </span>
+                ) : (
+                  'FREE'
+                )}
               </div>
             </div>
           </div>
-          <button
-            onClick={() => {
-              navigate('/pricing');
-              setRightSidebarOpen(false);
-            }}
-            className="w-full bg-white text-purple-600 py-2 rounded-lg font-semibold hover:bg-purple-50 transition-all text-sm sm:text-base"
-          >
-            GET PREMIUM
-          </button>
+          {user?.userType !== 'premium' && (
+            <button
+              onClick={() => {
+                navigate('/pricing');
+                setRightSidebarOpen(false);
+              }}
+              className="w-full bg-white text-purple-600 py-2 rounded-lg font-semibold hover:bg-purple-50 transition-all text-sm sm:text-base"
+            >
+              GET PREMIUM
+            </button>
+          )}
         </div>
 
         {/* Streak */}
