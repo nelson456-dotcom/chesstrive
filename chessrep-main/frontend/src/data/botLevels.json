@@ -4,17 +4,17 @@
     "index": 0,
     "minRating": 0,
     "maxRating": 999,
-    "canonicalRating": 900,
+    "canonicalRating": 800,
     "engine": {
-      "skillLevel": 1,
+      "skillLevel": 3,
       "uciLimitStrength": true,
-      "uciElo": 900,
-      "randomness": 0.2,
+      "uciElo": 800,
+      "randomness": 0.05,
       "openingBook": "none",
-      "moveTimeMs": 100,
+      "moveTimeMs": 500,
       "timeMode": "fixed",
-      "depth": 3,
-      "nodes": 5000
+      "depth": 8,
+      "nodes": 100000
     }
   },
   {
@@ -24,15 +24,15 @@
     "maxRating": 1299,
     "canonicalRating": 1150,
     "engine": {
-      "skillLevel": 4,
+      "skillLevel": 5,
       "uciLimitStrength": true,
       "uciElo": 1150,
-      "randomness": 0.15,
+      "randomness": 0.03,
       "openingBook": "light",
-      "moveTimeMs": 200,
+      "moveTimeMs": 600,
       "timeMode": "fixed",
-      "depth": 5,
-      "nodes": 20000
+      "depth": 10,
+      "nodes": 250000
     }
   },
   {
@@ -42,15 +42,15 @@
     "maxRating": 1599,
     "canonicalRating": 1450,
     "engine": {
-      "skillLevel": 7,
+      "skillLevel": 8,
       "uciLimitStrength": true,
       "uciElo": 1450,
-      "randomness": 0.1,
+      "randomness": 0.02,
       "openingBook": "light",
-      "moveTimeMs": 300,
+      "moveTimeMs": 800,
       "timeMode": "perPly",
-      "depth": 7,
-      "nodes": 80000
+      "depth": 12,
+      "nodes": 500000
     }
   },
   {
@@ -60,15 +60,15 @@
     "maxRating": 1899,
     "canonicalRating": 1750,
     "engine": {
-      "skillLevel": 10,
+      "skillLevel": 12,
       "uciLimitStrength": true,
       "uciElo": 1750,
-      "randomness": 0.06,
+      "randomness": 0.01,
       "openingBook": "standard",
-      "moveTimeMs": 400,
+      "moveTimeMs": 1000,
       "timeMode": "perPly",
-      "depth": 10,
-      "nodes": 200000
+      "depth": 14,
+      "nodes": 1000000
     }
   },
   {
@@ -78,15 +78,15 @@
     "maxRating": 2199,
     "canonicalRating": 2050,
     "engine": {
-      "skillLevel": 13,
+      "skillLevel": 16,
       "uciLimitStrength": true,
       "uciElo": 2050,
-      "randomness": 0.03,
+      "randomness": 0.005,
       "openingBook": "standard",
-      "moveTimeMs": 600,
+      "moveTimeMs": 1200,
       "timeMode": "perPly",
-      "depth": 13,
-      "nodes": 500000
+      "depth": 16,
+      "nodes": 2000000
     }
   },
   {
@@ -96,15 +96,15 @@
     "maxRating": 2499,
     "canonicalRating": 2350,
     "engine": {
-      "skillLevel": 18,
+      "skillLevel": 19,
       "uciLimitStrength": false,
       "uciElo": 2350,
-      "randomness": 0.015,
+      "randomness": 0.0,
       "openingBook": "full",
-      "moveTimeMs": 800,
+      "moveTimeMs": 1500,
       "timeMode": "perPly",
-      "depth": 16,
-      "nodes": 1000000
+      "depth": 18,
+      "nodes": 5000000
     }
   },
   {
@@ -119,7 +119,7 @@
       "uciElo": 2650,
       "randomness": 0.0,
       "openingBook": "full",
-      "moveTimeMs": 1200,
+      "moveTimeMs": 2000,
       "timeMode": "perPly",
       "depth": null,
       "nodes": null

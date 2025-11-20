@@ -150,8 +150,11 @@ async function getStockfishMove(fen, engineParams, personality) {
 
     // Configure engine based on derived level parameters
     engine.stdin.write('uci\n');
-    engine.stdin.write('setoption name Hash value 256\n'); // More memory for better play
-    engine.stdin.write('setoption name Threads value 2\n'); // Use 2 threads for faster/stronger analysis
+    // Increase hash and threads for better quality play
+    const hashSize = limitedElo >= 2000 ? 512 : limitedElo >= 1500 ? 256 : 128;
+    const threadCount = limitedElo >= 2000 ? 4 : limitedElo >= 1500 ? 2 : 1;
+    engine.stdin.write(`setoption name Hash value ${hashSize}\n`);
+    engine.stdin.write(`setoption name Threads value ${threadCount}\n`);
     
     if (limitStrength) {
       console.log(`[Stockfish] Using LIMITED strength for Elo ${limitedElo} (level ${level})`);
@@ -237,10 +240,8 @@ const generateStrongBotMove = (chess, engineParams, personality) => {
       score += 150;
     }
     
-    // Minimal randomness for high difficulty
-    const randomnessBaseline = Math.max(0, Math.min(1, engineParams?.randomness ?? 0.02));
-    const randomness = Math.random() * Math.max(5, 10 * randomnessBaseline);
-    score += randomness;
+    // No randomness for high difficulty - pure quality moves only
+    // Stockfish skill level already provides appropriate strength
     
     console.log(`Strong move ${move.san}: score = ${score}`);
     
@@ -276,12 +277,8 @@ const generateBotMove = (chess, engineParams, personality) => {
     return null;
   }
   
-  // For very easy difficulty or high randomness, make occasional random moves
-  if (difficulty <= 900 || Math.random() < randomnessChance) {
-    const randomMove = legalMoves[Math.floor(Math.random() * legalMoves.length)];
-    console.log('Easy difficulty - random move selected:', randomMove.san);
-    return randomMove;
-  }
+  // NEVER make completely random moves - always use evaluation
+  // Even low-level bots should play reasonable moves (Stockfish handles skill level)
   
   // For higher difficulties, use some basic evaluation
   let bestMove = null;
@@ -302,10 +299,12 @@ const generateBotMove = (chess, engineParams, personality) => {
       score += 30;
     }
     
-    // Add some randomness scaled by configured randomness and difficulty gap
-    const difficultyScale = Math.max(0, 2200 - Math.min(difficulty, 2200));
-    const randomnessMagnitude = difficultyScale / 40 * (0.5 + randomnessChance);
-    score += Math.random() * randomnessMagnitude;
+    // Minimal randomness - Stockfish skill level already handles strength variation
+    // Only add tiny amount of randomness for very low levels to simulate human imperfection
+    if (difficulty < 1200 && randomnessChance > 0) {
+      const randomnessMagnitude = Math.min(10, randomnessChance * 20);
+      score += (Math.random() - 0.5) * randomnessMagnitude;
+    }
     
     console.log(`Move ${move.san}: score = ${score}`);
     
@@ -469,16 +468,22 @@ router.post('/move', optionalAuth, async (req, res) => {
       });
     }
     
-    // Try Stockfish first - FORCE IT TO WORK FOR HIGH DIFFICULTY
+    // ALWAYS use Stockfish for quality moves - retry if needed
     let sanMove = null;
     try {
       console.log('Generating bot move via Stockfish...');
       console.log('Resolved difficulty:', resolvedEngineParams.canonicalRating);
+      console.log('Engine params:', {
+        depth: resolvedEngineParams.depth,
+        nodes: resolvedEngineParams.nodes,
+        moveTimeMs: resolvedEngineParams.moveTimeMs,
+        skillLevel: resolvedEngineParams.skillLevel,
+        uciElo: resolvedEngineParams.uciElo
+      });
       
-      // For high difficulty (2000+), retry Stockfish multiple times if it fails
+      // Retry Stockfish multiple times if it fails (more retries for higher levels)
       let attempts = 0;
-      const highLevel = resolvedEngineParams.canonicalRating >= 2000 || resolvedEngineParams.levelIndex >= 4;
-      const maxAttempts = highLevel ? 3 : 1;
+      const maxAttempts = resolvedEngineParams.canonicalRating >= 2000 ? 5 : 3;
       
       while (attempts < maxAttempts && !sanMove) {
         attempts++;
@@ -511,29 +516,26 @@ router.post('/move', optionalAuth, async (req, res) => {
         }
       }
       
-      if (!sanMove && highLevel) {
-        console.error('❌ CRITICAL: Stockfish failed for high difficulty! This should not happen.');
-        throw new Error('Stockfish failed for high difficulty - this is unacceptable');
+      if (!sanMove) {
+        console.error('❌ CRITICAL: Stockfish failed after all retries! This should not happen.');
+        throw new Error('Stockfish failed - cannot generate quality move');
       }
     } catch (e) {
       console.error('Stockfish failed completely:', e.message);
+      // Don't use fallback - throw error instead to force Stockfish to work
+      throw new Error(`Stockfish engine failed: ${e.message}. Please ensure Stockfish is installed and working.`);
     }
 
-    let botMove = null;
-    if (sanMove) {
-      // Use SAN move
-      botMove = { san: sanMove };
-    } else {
-      // Fallback - but make it much stronger for high difficulty
-      console.log('⚠️ Using fallback move generation');
-      if (resolvedEngineParams.canonicalRating >= 2000 || resolvedEngineParams.levelIndex >= 4) {
-        console.log('❌ WARNING: Using fallback for high difficulty - this should not happen!');
-        // For high difficulty, try to use a stronger fallback
-        botMove = generateStrongBotMove(chess, resolvedEngineParams, personality);
-      } else {
-        botMove = generateBotMove(chess, resolvedEngineParams, personality);
-      }
+    // Stockfish should always provide a move - if not, something is wrong
+    if (!sanMove) {
+      console.error('❌ CRITICAL ERROR: No Stockfish move available!');
+      return res.status(500).json({ 
+        success: false, 
+        message: 'Bot engine failed to generate move. Please try again.' 
+      });
     }
+    
+    const botMove = { san: sanMove };
     console.log('Bot move selected:', botMove);
     
     if (!botMove) {
