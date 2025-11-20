@@ -198,19 +198,15 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     try {
       do {
         try {
-          results = await Puzzle.aggregate([
-            { $match: query },
-            { $sample: { size: size * 2 } } // Get more to filter out recent ones
-          ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
-        } catch (sampleError) {
-          console.error(`[PUZZLE] Aggregate error on attempt ${attempts + 1}:`, sampleError.message);
-          // Fallback to find + limit if $sample fails
-          try {
-            results = await Puzzle.find(query).limit(size * 2).lean();
-          } catch (findError) {
-            console.error(`[PUZZLE] Find error on attempt ${attempts + 1}:`, findError.message);
-            results = [];
-          }
+          // For large collections, use simple find().limit() - fastest approach
+          // Skip countDocuments() and skip() as they're slow on 4.9M+ documents
+          results = await Puzzle.find(query)
+            .limit(size * 2)
+            .lean()
+            .maxTimeMS(5000); // 5 second timeout
+        } catch (findError) {
+          console.error(`[PUZZLE] Find error on attempt ${attempts + 1}:`, findError.message);
+          results = [];
         }
         
         // Filter out recently served puzzles
@@ -230,18 +226,14 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
       // If still not enough unique puzzles, use what we have
       if (!results || results.length === 0) {
         try {
-          results = await Puzzle.aggregate([
-            { $match: query },
-            { $sample: { size } }
-          ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
-        } catch (sampleError) {
-          console.error(`[PUZZLE] Fallback aggregate error:`, sampleError.message);
-          try {
-            results = await Puzzle.find(query).limit(size).lean();
-          } catch (findError) {
-            console.error(`[PUZZLE] Fallback find error:`, findError.message);
-            results = [];
-          }
+          // Use simple find().limit() - fastest for large collections
+          results = await Puzzle.find(query)
+            .limit(size)
+            .lean()
+            .maxTimeMS(5000);
+        } catch (findError) {
+          console.error(`[PUZZLE] Fallback find error:`, findError.message);
+          results = [];
         }
       }
     } catch (queryError) {
@@ -271,10 +263,11 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
       }
       
       try {
-        results = await Puzzle.aggregate([
-          { $match: broaderQuery },
-          { $sample: { size } }
-        ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
+        // Use simple find().limit() - fastest for large collections
+        results = await Puzzle.find(broaderQuery)
+          .limit(size)
+          .lean()
+          .maxTimeMS(5000);
         puzzles = results || [];
       } catch (error) {
         console.error(`[PUZZLE] Broader search failed:`, error.message);
@@ -293,7 +286,11 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     if (puzzles.length === 0 && !difficulty) {
       console.log(`[PUZZLE] No puzzles found, using random fallback (no difficulty filter)`);
       try {
-        results = await Puzzle.aggregate([{ $sample: { size } }]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
+        // Use simple find().limit() - fastest for large collections
+        results = await Puzzle.find({})
+          .limit(size)
+          .lean()
+          .maxTimeMS(5000);
         puzzles = results || [];
       } catch (finalError) {
         console.error(`[PUZZLE] Final fallback failed:`, finalError.message);
@@ -371,10 +368,11 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     if (validPuzzles.length < size && validPuzzles.length > 0) {
       console.log(`[PUZZLE] Only ${validPuzzles.length} valid puzzles found, trying to get more...`);
       try {
-        const additionalResults = await Puzzle.aggregate([
-          { $match: query },
-          { $sample: { size: size * 2 } }
-        ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
+        // Use simple find().limit() - fastest for large collections
+        const additionalResults = await Puzzle.find(query)
+          .limit(size * 2)
+          .lean()
+          .maxTimeMS(5000);
         
         const additionalValid = additionalResults.filter(puzzle => {
           if (!isValidPuzzlePosition(puzzle)) {
@@ -515,10 +513,11 @@ router.get('/theme/:theme', async (req, res) => {
     
     console.log(`[PUZZLE] Query:`, JSON.stringify(query, null, 2));
     
-    const results = await Puzzle.aggregate([
-      { $match: query },
-      { $sample: { size: parseInt(count) || 10 } }
-    ]);
+    // Use simple find().limit() - fastest for large collections
+    const results = await Puzzle.find(query)
+      .limit(parseInt(count) || 10)
+      .lean()
+      .maxTimeMS(5000);
     
     const puzzles = results && results.length > 0 ? results : [];
 
