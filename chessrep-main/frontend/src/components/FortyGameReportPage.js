@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Download, BarChart3 } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
-
-const API_BASE = 'http://localhost:3001';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const FortyGameReportPage = () => {
   const navigate = useNavigate();
@@ -39,11 +38,8 @@ const FortyGameReportPage = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await fetch(`${API_BASE}/api/games/reports/${reportId}`, {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-auth-token': token
-        }
+      const response = await fetch(getApiUrl(`games/reports/${reportId}`), {
+        headers: getAuthHeaders()
       });
       
       if (!response.ok) {
@@ -103,11 +99,8 @@ const FortyGameReportPage = () => {
       
       try {
         setLoadingReports(true);
-        const response = await fetch(`${API_BASE}/api/games/reports`, {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'x-auth-token': token
-          }
+        const response = await fetch(getApiUrl('games/reports'), {
+          headers: getAuthHeaders()
         });
         if (response.ok) {
           const data = await response.json();
@@ -144,11 +137,8 @@ const FortyGameReportPage = () => {
         if (!token) return;
         
         try {
-          const response = await fetch(`${API_BASE}/api/games/reports`, {
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'x-auth-token': token
-            }
+          const response = await fetch(getApiUrl('games/reports'), {
+            headers: getAuthHeaders()
           });
           if (response.ok) {
             const data = await response.json();
@@ -213,7 +203,7 @@ const FortyGameReportPage = () => {
         return;
       }
 
-      const response = await fetch(`${API_BASE}/api/pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}`, {
+      const response = await fetch(getApiUrl(`pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}`), {
         headers: {
           'Authorization': `Bearer ${token}`,
           'x-auth-token': token
@@ -260,7 +250,7 @@ const FortyGameReportPage = () => {
         const user = JSON.parse(userData);
         if (user.userType !== 'premium') {
           try {
-            const response = await fetch('http://localhost:3001/api/usage-limits/report-40', {
+            const response = await fetch(getApiUrl('usage-limits/report-40'), {
               headers: { 'x-auth-token': token }
             });
             
@@ -279,7 +269,7 @@ const FortyGameReportPage = () => {
       }
 
       // Import last 100 games
-      const importRes = await fetch(`${API_BASE}/api/games/import?username=${encodeURIComponent(username)}&platform=${encodeURIComponent(platform)}`, {
+      const importRes = await fetch(getApiUrl(`games/import?username=${encodeURIComponent(username)}&platform=${encodeURIComponent(platform)}`), {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -300,7 +290,7 @@ const FortyGameReportPage = () => {
 
               // Fetch 20-game report with cache-busting timestamp
       const timestamp = Date.now();
-      const reportRes = await fetch(`${API_BASE}/api/games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`, {
+      const reportRes = await fetch(getApiUrl(`games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`), {
         headers: {
           'Authorization': `Bearer ${token}`,
           'x-auth-token': token
@@ -328,7 +318,7 @@ const FortyGameReportPage = () => {
         // Poll up to 10x to let backend finish analyzing newly imported games
         for (let i = 0; i < 10; i++) {
           await new Promise(r => setTimeout(r, 1500));
-          const poll = await fetch(`${API_BASE}/api/games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`, {
+          const poll = await fetch(getApiUrl(`games/report/40?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`), {
             headers: { 'Authorization': `Bearer ${token}`, 'x-auth-token': token }
           });
           if (poll.ok) {
@@ -342,7 +332,7 @@ const FortyGameReportPage = () => {
       }
 
       // Fetch Scouting Report (Aimchess-style) with cache-busting
-      const scoutRes = await fetch(`${API_BASE}/api/games/report/scouting?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`, {
+      const scoutRes = await fetch(getApiUrl(`games/report/scouting?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${timestamp}`), {
         headers: {
           'Authorization': `Bearer ${token}`,
           'x-auth-token': token
@@ -365,7 +355,7 @@ const FortyGameReportPage = () => {
         const user = JSON.parse(userDataForIncrement);
         if (user.userType !== 'premium') {
           try {
-            await fetch('http://localhost:3001/api/usage-limits/report-40/increment', {
+            await fetch(getApiUrl('usage-limits/report-40/increment'), {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -398,7 +388,7 @@ const FortyGameReportPage = () => {
         return;
       }
 
-      const response = await fetch(`${API_BASE}/api/pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`, {
+      const response = await fetch(getApiUrl(`pdf/report?username=${encodeURIComponent(username)}&timeClass=${encodeURIComponent(timeClass)}&platform=${encodeURIComponent(platform)}&_t=${Date.now()}`), {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
