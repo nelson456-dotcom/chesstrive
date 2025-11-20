@@ -1,4 +1,4 @@
-const WS_SERVER_URL = 'ws://localhost:3001';
+const WS_SERVER_URL = process.env.REACT_APP_WS_URL || 'ws://localhost:3001';
 let ws = null;
 let callbacks = {};
 let reconnectAttempts = 0;

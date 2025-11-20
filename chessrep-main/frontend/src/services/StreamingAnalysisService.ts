@@ -69,8 +69,10 @@ class StreamingAnalysisService {
   private reconnectAttempts = 0;
   private maxReconnectAttempts = 5;
   private reconnectTimeout: NodeJS.Timeout | null = null;
-  private readonly wsUrl = 'ws://localhost:3001';
-  private readonly httpUrl = 'http://localhost:3001/api/analysis';
+  private readonly wsUrl = process.env.REACT_APP_WS_URL || 'ws://localhost:3001';
+  private readonly httpUrl = process.env.REACT_APP_API_URL 
+    ? `${process.env.REACT_APP_API_URL.replace(/\/api$/, '')}/api/analysis`
+    : 'http://localhost:3001/api/analysis';
 
   constructor() {
     console.log('StreamingAnalysisService: Initialized');
@@ -97,9 +99,7 @@ class StreamingAnalysisService {
 
         this.ws.onerror = (error) => {
           console.error('❌ StreamingAnalysisService: WebSocket error', error);
-          console.error('❌ Make sure the backend server is running on port 3001');
-          console.error('❌ Start it with: cd backend && npm start');
-          reject(new Error('WebSocket connection failed. Is the backend server running on port 3001?'));
+          reject(new Error('WebSocket connection failed. Please check your connection.'));
         };
 
         this.ws.onclose = () => {
@@ -495,7 +495,7 @@ class StreamingAnalysisService {
         if (!cancelled) {
           let finalError = error;
           if (error.name === 'AbortError' || error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
-            finalError = new Error('Cannot connect to backend server. Make sure it is running on port 3001. Start it with: cd backend && npm start');
+            finalError = new Error('Cannot connect to backend server. Please check your connection.');
             console.error('❌', finalError.message);
           }
           this.logTelemetry('analysis_error', {

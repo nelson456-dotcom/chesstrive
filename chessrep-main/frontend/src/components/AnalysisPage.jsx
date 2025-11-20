@@ -11,6 +11,7 @@ import AnalysisNotation from './AnalysisNotation';
 import MultiPVAnalysisPanel from './MultiPVAnalysisPanel';
 import lichessAnalysisEngine from '../services/LichessAnalysisEngine';
 import { EngineMove } from '../types/chess';
+import { getApiUrl } from '../config/api';
 
 /**
  * Dedicated Analysis Board Page
@@ -426,7 +427,7 @@ const AnalysisPage = () => {
       console.log('🤖 Bot color:', botColor, 'Current turn:', currentTurn === 'w' ? 'white' : 'black');
       console.log('🤖 Bot payload:', payload);
 
-      const response = await fetch('http://localhost:3001/api/bot/move', {
+      const response = await fetch(getApiUrl('/bot/move'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1524,20 +1525,20 @@ const AnalysisPage = () => {
     setEngineError(null);
 
     // Test backend connection first
-    fetch('http://localhost:3001/api/health')
+    fetch(getApiUrl('/health'))
       .then(res => res.json())
       .then(data => {
         console.log('✅ Backend health check:', data);
       })
       .catch(err => {
         console.error('❌ Backend health check failed:', err);
-        setEngineError('Cannot connect to backend server. Make sure it is running on port 3001.');
+        setEngineError('Cannot connect to backend server. Please check your connection.');
         return; // Don't proceed if backend is down
       });
 
     // Also test direct HTTP analysis endpoint to see what error we get
     console.log('🧪 Testing direct HTTP analysis endpoint...');
-    fetch('http://localhost:3001/api/analysis/position', {
+    fetch(getApiUrl('/analysis/position'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

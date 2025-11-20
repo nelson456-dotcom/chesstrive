@@ -24,7 +24,9 @@ export interface StockfishCloudConfig {
 
 class StockfishCloudService {
   private isReady = true; // Always ready (using chess.js for move generation)
-  private readonly localBackendUrl = 'http://localhost:3001/api/analysis/position'; // Local backend Stockfish
+  private readonly localBackendUrl = process.env.REACT_APP_API_URL 
+    ? `${process.env.REACT_APP_API_URL}/analysis/position`
+    : 'http://localhost:3001/api/analysis/position'; // Local backend Stockfish
   private readonly baseUrl = 'https://stockfish-api.herokuapp.com'; // Public Stockfish API
   private readonly fallbackUrl = 'https://chess-api.com/v1'; // Fallback API
 
