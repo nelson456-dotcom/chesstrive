@@ -174,15 +174,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
       const range = DIFFICULTY_RANGES[difficulty];
       query.rating = { $gte: range.min, $lte: range.max };
       console.log(`[PUZZLE] Filtering by difficulty '${difficulty}': rating ${range.min}-${range.max}`);
-      
-      // Debug: Check how many puzzles match this difficulty
-      try {
-        const countInRange = await Puzzle.countDocuments(query);
-        console.log(`[PUZZLE] Found ${countInRange} puzzles in rating range ${range.min}-${range.max}`);
-      } catch (countError) {
-        console.error(`[PUZZLE] Error counting puzzles:`, countError);
-        // Continue anyway
-      }
+      // Removed countDocuments() call - too slow on 4.9M documents
     }
     
     console.log(`[PUZZLE] Query:`, JSON.stringify(query, null, 2));
@@ -198,15 +190,30 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     try {
       do {
         try {
-          // For large collections, use simple find().limit() - fastest approach
-          // Skip countDocuments() and skip() as they're slow on 4.9M+ documents
-          results = await Puzzle.find(query)
-            .limit(size * 2)
-            .lean()
-            .maxTimeMS(5000); // 5 second timeout
+          // For large collections, use simple find().limit() with index hint
+          // Use hint to force index usage for better performance
+          let findQuery = Puzzle.find(query).limit(size * 2).lean().maxTimeMS(3000);
+          
+          // Add index hint if theme or rating is in query
+          if (query.theme || query.rating) {
+            if (query.theme && query.rating) {
+              findQuery = findQuery.hint({ theme: 1, rating: 1 });
+            } else if (query.theme) {
+              findQuery = findQuery.hint({ theme: 1 });
+            } else if (query.rating) {
+              findQuery = findQuery.hint({ rating: 1 });
+            }
+          }
+          
+          results = await findQuery;
         } catch (findError) {
           console.error(`[PUZZLE] Find error on attempt ${attempts + 1}:`, findError.message);
-          results = [];
+          // If timeout, return empty and let fallback handle it
+          if (findError.message.includes('timeout') || findError.message.includes('exceeded')) {
+            results = [];
+          } else {
+            results = [];
+          }
         }
         
         // Filter out recently served puzzles
