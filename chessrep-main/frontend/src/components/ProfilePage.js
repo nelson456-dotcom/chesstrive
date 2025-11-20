@@ -7,6 +7,7 @@ import { getSavedGames, deleteGame, exportGameAsFile } from '../utils/gameManage
 import Icons8Icons from './Icons8Icons';
 import ProfileIconSelector from './ProfileIconSelector';
 import ProfileIcon from './ProfileIcon';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const ProfilePage = () => {
   const { user, refreshUser } = useAuth();
@@ -76,8 +77,8 @@ const ProfilePage = () => {
         // Fetch puzzle rush best streak
         const token = localStorage.getItem('token');
         if (token) {
-          const response = await fetch('http://localhost:3001/api/puzzle-rush/user-stats', {
-            headers: { 'x-auth-token': token }
+          const response = await fetch(getApiUrl('puzzle-rush/user-stats'), {
+            headers: getAuthHeaders()
           });
           if (response.ok) {
             const data = await response.json();
@@ -194,12 +195,9 @@ const ProfilePage = () => {
 
       console.log('Updating profile icon to:', selectedIcon);
       
-      const response = await fetch('http://localhost:3001/api/auth/profile-icon', {
+      const response = await fetch(getApiUrl('auth/profile-icon'), {
         method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ profileIcon: selectedIcon })
       });
 
@@ -248,12 +246,9 @@ const ProfilePage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/users/update-password', {
+      const response = await fetch(getApiUrl('users/update-password'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': localStorage.getItem('token')
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({
           currentPassword: passwordData.currentPassword,
           newPassword: passwordData.newPassword
