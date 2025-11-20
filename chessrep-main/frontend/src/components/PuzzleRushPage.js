@@ -3,6 +3,7 @@ import { Chessboard } from 'react-chessboard';
 import { Chess } from 'chess.js';
 import { useAuth } from '../contexts/AuthContext';
 import { Clock, Zap, Trophy, Target, Play, Pause, RotateCcw, BarChart3, Award } from 'lucide-react';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 // Removed Live Analysis imports for a pure board experience
 // Board runs without engine or annotations; only user interaction
 
@@ -26,9 +27,6 @@ function getMoveArrowFromHistory(game) {
   const lastMove = history[history.length - 1];
   return { from: lastMove.from, to: lastMove.to, color: '#2196f3' };
 }
-
-// Base API for puzzle rush endpoints
-const API_BASE = 'http://localhost:3001/api/puzzle-rush';
 
 const PuzzleRushPage = () => {
   const { user, refreshUser } = useAuth();
@@ -167,8 +165,8 @@ const PuzzleRushPage = () => {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        const response = await fetch('http://localhost:3001/api/stats/puzzle-rush-best-streak', {
-          headers: { 'x-auth-token': token }
+        const response = await fetch(getApiUrl('stats/puzzle-rush-best-streak'), {
+          headers: getAuthHeaders()
         });
         if (response.ok) {
           const data = await response.json();
@@ -231,11 +229,11 @@ const PuzzleRushPage = () => {
       const headers = token ? { 'x-auth-token': token } : {};
 
       // Use puzzle rush specific API endpoint - separate from regular puzzles
-      const url = `http://localhost:3001/api/puzzle-rush/random?maxRating=1499`;
+      const url = getApiUrl('puzzle-rush/random?maxRating=1499');
       console.log('🌐 Fetching puzzle from:', url);
 
       const response = await fetch(url, {
-        headers
+        headers: getAuthHeaders()
       });
 
       if (response.ok) {
@@ -438,12 +436,9 @@ const PuzzleRushPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await fetch(`${API_BASE}/update-stats`, {
+      const response = await fetch(getApiUrl('puzzle-rush/update-stats'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify({ solved, timeSpent })
       });
 
@@ -464,10 +459,8 @@ const PuzzleRushPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await fetch(`${API_BASE}/user-stats`, {
-        headers: {
-          'x-auth-token': token
-        }
+      const response = await fetch(getApiUrl('puzzle-rush/user-stats'), {
+        headers: getAuthHeaders()
       });
 
       if (response.ok) {
@@ -671,8 +664,8 @@ const PuzzleRushPage = () => {
     if (user && user.userType !== 'premium') {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:3001/api/usage-limits/puzzle-rush', {
-          headers: { 'x-auth-token': token }
+        const response = await fetch(getApiUrl('usage-limits/puzzle-rush'), {
+          headers: getAuthHeaders()
         });
         
         if (response.ok) {
@@ -683,12 +676,9 @@ const PuzzleRushPage = () => {
           }
           
           // Increment usage
-          await fetch('http://localhost:3001/api/usage-limits/puzzle-rush/increment', {
+          await fetch(getApiUrl('usage-limits/puzzle-rush/increment'), {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'x-auth-token': token
-            }
+            headers: getAuthHeaders()
           });
         }
       } catch (error) {
@@ -740,12 +730,9 @@ const PuzzleRushPage = () => {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        await fetch('http://localhost:3001/api/stats/puzzle-rush-best-streak', {
+        await fetch(getApiUrl('stats/puzzle-rush-best-streak'), {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-auth-token': token
-          },
+          headers: getAuthHeaders(),
           body: JSON.stringify({ bestStreak: streak })
         });
       }
@@ -767,12 +754,9 @@ const PuzzleRushPage = () => {
         streak: currentStreak
       };
 
-      await fetch(`http://localhost:3001/api/puzzles/rush/result`, {
+      await fetch(getApiUrl('puzzles/rush/result'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
+        headers: getAuthHeaders(),
         body: JSON.stringify(gameResult)
       });
     } catch (error) {
