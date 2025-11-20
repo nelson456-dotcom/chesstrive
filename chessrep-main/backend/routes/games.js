@@ -4,6 +4,7 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const { spawn } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 const os = require('os');
 const { Chess } = require('chess.js');
 const mongoose = require('mongoose');
@@ -1039,7 +1040,23 @@ async function analyzeGameWithStockfish(gameData, searchedUsername) {
   console.log(`[Stockfish] Starting fresh analysis for game: ${gameUrl}`);
   
   try {
-    const stockfish = spawn(path.join(__dirname, '../engines/stockfish.exe'));
+    // Get Stockfish path based on platform
+    let stockfishPath;
+    if (process.platform === 'win32') {
+      stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+    } else {
+      // Linux: Try system Stockfish first
+      if (fs.existsSync('/usr/games/stockfish')) {
+        stockfishPath = '/usr/games/stockfish';
+      } else if (fs.existsSync('/usr/bin/stockfish')) {
+        stockfishPath = '/usr/bin/stockfish';
+      } else if (fs.existsSync('/usr/local/bin/stockfish')) {
+        stockfishPath = '/usr/local/bin/stockfish';
+      } else {
+        stockfishPath = path.join(__dirname, '../engines/stockfish');
+      }
+    }
+    const stockfish = spawn(stockfishPath);
     
     let pendingResolve = null;
     let lastEval = { cp: 0, mate: null, bestMove: 'none', pv: [], topMoves: [] }; // Store top 3 moves

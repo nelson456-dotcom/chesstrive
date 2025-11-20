@@ -4,6 +4,24 @@ const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
+// Helper function to get Stockfish path based on platform
+function getStockfishPath() {
+  if (process.platform === 'win32') {
+    return path.join(__dirname, '../engines/stockfish.exe');
+  } else {
+    // Linux: Try system Stockfish first, then local binary
+    if (fs.existsSync('/usr/games/stockfish')) {
+      return '/usr/games/stockfish';
+    } else if (fs.existsSync('/usr/bin/stockfish')) {
+      return '/usr/bin/stockfish';
+    } else if (fs.existsSync('/usr/local/bin/stockfish')) {
+      return '/usr/local/bin/stockfish';
+    } else {
+      return path.join(__dirname, '../engines/stockfish');
+    }
+  }
+}
+
 router.post('/position', async (req, res) => {
   // Priority fix: Use lower defaults for faster testing
   const { fen, depth = 14, multiPV = 3, timeLimit = 750 } = req.body;
@@ -37,7 +55,7 @@ router.post('/position', async (req, res) => {
 
   try {
     // Find Stockfish executable
-    let stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+    let stockfishPath = getStockfishPath();
     stockfishPath = path.normalize(stockfishPath);
     console.log('Stockfish path:', stockfishPath);
     console.log('Absolute path:', path.resolve(stockfishPath));
@@ -49,6 +67,9 @@ router.post('/position', async (req, res) => {
       
       // Try alternative paths
       const alternatives = [
+        '/usr/games/stockfish',
+        '/usr/bin/stockfish',
+        '/usr/local/bin/stockfish',
         path.join(__dirname, '../engines/stockfish'),
         path.join(__dirname, '../../engines/stockfish.exe'),
         path.join(process.cwd(), 'engines/stockfish.exe'),

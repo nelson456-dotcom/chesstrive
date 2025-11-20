@@ -3,6 +3,7 @@ const router = express.Router();
 const optionalAuth = require('../middleware/optionalAuth');
 const { spawn } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 const { Chess } = require('chess.js');
 const { ratingToLevel, levelToEngineParams } = require('../utils/botLevels');
 
@@ -89,7 +90,22 @@ async function getStockfishMove(fen, engineParams, personality) {
     const limitStrength = uciLimitStrength !== false;
     const skill = Math.max(0, Math.min(20, Math.round(typeof skillLevel === 'number' ? skillLevel : 20)));
     const limitedElo = Math.max(800, Math.min(2800, Math.round(uciElo || targetElo)));
-    const stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+    // Get Stockfish path based on platform
+    let stockfishPath;
+    if (process.platform === 'win32') {
+      stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+    } else {
+      // Linux: Try system Stockfish first
+      if (fs.existsSync('/usr/games/stockfish')) {
+        stockfishPath = '/usr/games/stockfish';
+      } else if (fs.existsSync('/usr/bin/stockfish')) {
+        stockfishPath = '/usr/bin/stockfish';
+      } else if (fs.existsSync('/usr/local/bin/stockfish')) {
+        stockfishPath = '/usr/local/bin/stockfish';
+      } else {
+        stockfishPath = path.join(__dirname, '../engines/stockfish');
+      }
+    }
     const engine = spawn(stockfishPath);
 
     let bestUci = null;

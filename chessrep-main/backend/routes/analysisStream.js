@@ -158,9 +158,28 @@ async function startStreamingAnalysis(ws, analysisId, config) {
   }
 
   // Find Stockfish executable
-  let stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+  let stockfishPath;
+  if (process.platform === 'win32') {
+    stockfishPath = path.join(__dirname, '../engines/stockfish.exe');
+  } else {
+    // Linux: Try system Stockfish first
+    if (fs.existsSync('/usr/games/stockfish')) {
+      stockfishPath = '/usr/games/stockfish';
+    } else if (fs.existsSync('/usr/bin/stockfish')) {
+      stockfishPath = '/usr/bin/stockfish';
+    } else if (fs.existsSync('/usr/local/bin/stockfish')) {
+      stockfishPath = '/usr/local/bin/stockfish';
+    } else {
+      stockfishPath = path.join(__dirname, '../engines/stockfish');
+    }
+  }
+  
+  // Fallback: try alternative paths if primary path doesn't exist
   if (!fs.existsSync(stockfishPath)) {
     const alternatives = [
+      '/usr/games/stockfish',
+      '/usr/bin/stockfish',
+      '/usr/local/bin/stockfish',
       path.join(__dirname, '../engines/stockfish'),
       path.join(__dirname, '../../engines/stockfish.exe'),
       path.join(process.cwd(), 'engines/stockfish.exe'),
