@@ -81,6 +81,7 @@ async function getTrainingMove(fen, targetRating, options = {}) {
     const normalizedFen = normalizeFen(fen);
     const ratingRange = getRatingRange(targetRating);
     const similarRanges = getSimilarRatingRanges(targetRating);
+    const chess = new Chess(fen);
     
     // Try primary rating range first
     let position = await Position.findOne({ 
@@ -105,13 +106,84 @@ async function getTrainingMove(fen, targetRating, options = {}) {
     }
     
     // Get moves sorted by frequency (most common first)
-    const moves = position.moves
-      .filter(m => m.count > 0)
-      .sort((a, b) => b.count - a.count);
-    
-    if (moves.length === 0) {
-      return null;
+    // Filter and validate moves - only keep moves that are legal in current position
+    const validMoves = [];
+    for (const moveData of position.moves) {
+      if (moveData.count <= 0) continue;
+      
+      // Try to validate the move (could be SAN or UCI)
+      let isValid = false;
+      let moveSan = null;
+      
+      try {
+        // Try as SAN first
+        const chessMove = chess.move(moveData.move, { sloppy: true });
+        if (chessMove) {
+          isValid = true;
+          moveSan = chessMove.san;
+        }
+      } catch (e) {
+        // Try as UCI
+        try {
+          if (moveData.move.length >= 4) {
+            const from = moveData.move.slice(0, 2);
+            const to = moveData.move.slice(2, 4);
+            const promotion = moveData.move.length > 4 ? moveData.move[4] : undefined;
+            const chessMove = chess.move({ from, to, promotion }, { sloppy: true });
+            if (chessMove) {
+              isValid = true;
+              moveSan = chessMove.san;
+            }
+          }
+        } catch (e2) {
+          // Move is invalid, skip it
+        }
+      }
+      
+      if (isValid && moveSan) {
+        validMoves.push({
+          move: moveSan, // Always return SAN format
+          originalMove: moveData.move,
+          count: moveData.count,
+          rating: moveData.rating
+        });
+      }
     }
+    
+    if (validMoves.length === 0) {
+      return null; // No valid moves found
+    }
+    
+    // Sort by frequency
+    const moves = validMoves.sort((a, b) => b.count - a.count);
+    
+    // Calculate weights based on frequency and rating proximity
+    const weightedMoves = moves.map(move => {
+      let weight = move.count;
+      
+      // Boost weight if move's average rating is close to target rating
+      if (move.rating) {
+        const ratingDiff = Math.abs(move.rating - targetRating);
+        if (ratingDiff < 200) {
+          weight *= 1.5; // Boost moves from similar rating players
+        } else if (ratingDiff > 500) {
+          weight *= 0.5; // Reduce weight for moves from very different ratings
+        }
+      }
+      
+      return {
+        move: move.move,
+        weight: weight,
+        count: move.count,
+        rating: move.rating
+      };
+    });
+    
+    // Normalize weights
+    const totalWeight = weightedMoves.reduce((sum, m) => sum + m.weight, 0);
+    weightedMoves.forEach(m => {
+      m.probability = m.weight / totalWeight;
+    });
     
     // Calculate weights based on frequency and rating proximity
     const weightedMoves = moves.map(move => {
