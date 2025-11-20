@@ -510,13 +510,20 @@ const ProfilePage = () => {
                           <div className="flex gap-2 mt-3">
                             <button
                               onClick={() => {
-                                // Load game in Chess Analysis Board with PGN
-                                const encodedFen = encodeURIComponent(game.fen);
+                                // Load game in Analysis page with PGN
                                 const encodedPgn = encodeURIComponent(game.pgn || '');
-                                navigate(`/chess-analysis-board?fen=${encodedFen}&pgn=${encodedPgn}`);
+                                const encodedFen = encodeURIComponent(game.fen || '');
+                                // Navigate to /analysis with PGN (and FEN if available)
+                                if (game.pgn) {
+                                  navigate(`/analysis?pgn=${encodedPgn}${encodedFen ? `&fen=${encodedFen}` : ''}`);
+                                } else if (game.fen) {
+                                  navigate(`/analysis?fen=${encodedFen}`);
+                                } else {
+                                  navigate('/analysis');
+                                }
                               }}
                               className="flex items-center gap-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white text-xs rounded-md transition-colors flex-1"
-                              title="Load game in Chess Analysis Board"
+                              title="Load game in Analysis Board"
                             >
                               <Icons8Icons.CheckCircle className="h-3 w-3" />
                               Load
