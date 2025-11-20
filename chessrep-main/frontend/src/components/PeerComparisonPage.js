@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, TrendingUp, TrendingDown, Minus, CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
-
-const API_BASE = 'http://localhost:3001';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const PeerComparisonPage = () => {
   const [searchParams] = useSearchParams();
@@ -37,12 +36,9 @@ const PeerComparisonPage = () => {
       }
 
       const response = await fetch(
-        `${API_BASE}/api/games/report/peer-comparison?username=${username}&timeClass=${timeClass}&platform=${platform}`,
+        getApiUrl(`games/report/peer-comparison?username=${username}&timeClass=${timeClass}&platform=${platform}`),
         {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'x-auth-token': token
-          }
+          headers: getAuthHeaders()
         }
       );
 
