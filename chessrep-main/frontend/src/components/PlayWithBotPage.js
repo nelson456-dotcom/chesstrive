@@ -15,7 +15,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Alex is just starting out in chess. Makes frequent mistakes in tactics and opening principles. Great for absolute beginners looking to build confidence.',
     personality: 'beginner',
-    avatar: '/images/bots/bot1.png'
+    avatar: '/images/bots/bot1.webp'
   },
   {
     id: 'casual',
@@ -25,7 +25,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Jordan plays chess casually and knows basic tactics. Understands opening principles but sometimes misses tactical opportunities. Good for practicing fundamentals.',
     personality: 'beginner',
-    avatar: '/images/bots/bot2.png'
+    avatar: '/images/bots/bot2.webp'
   },
   {
     id: 'intermediate',
@@ -35,7 +35,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Morgan is a solid club-level player with good tactical awareness and understanding of common positions. Rarely blunders pieces and plays sound chess.',
     personality: 'intermediate',
-    avatar: '/images/bots/bot3.png'
+    avatar: '/images/bots/bot3.webp'
   },
   {
     id: 'advanced',
@@ -45,7 +45,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Taylor competes in tournaments regularly and has deep tactical vision. Understands complex positional concepts and rarely makes tactical mistakes.',
     personality: 'advanced',
-    avatar: '/images/bots/bot4.png'
+    avatar: '/images/bots/bot4.webp'
   },
   {
     id: 'expert',
@@ -55,7 +55,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Casey is a chess master with exceptional tactical and positional understanding. Calculates deeply and plays with precision. A formidable opponent.',
     personality: 'expert',
-    avatar: '/images/bots/bot5.png'
+    avatar: '/images/bots/bot5.webp'
   },
   {
     id: 'tactical',
@@ -65,7 +65,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Riley loves sharp tactical positions and aggressive play. Always looking for combinations and sacrifices. Can be dangerous in complications but vulnerable in quiet positions.',
     personality: 'tactical',
-    avatar: '/images/bots/bot6.png'
+    avatar: '/images/bots/bot6.webp'
   },
   {
     id: 'positional',
@@ -75,7 +75,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Quinn excels at positional chess and long-term planning. Prefers slow, strategic games where pawn structure and piece placement matter. Strong in endgames.',
     personality: 'positional',
-    avatar: '/images/bots/bot7.png'
+    avatar: '/images/bots/bot7.webp'
   },
   {
     id: 'aggressive',
@@ -85,7 +85,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Sam plays for mate every game! Sacrifices material for initiative and attacks relentlessly. Defense is not in their vocabulary. Can be outplayed with solid defensive play.',
     personality: 'aggressive',
-    avatar: '/images/bots/bot8.png'
+    avatar: '/images/bots/bot8.webp'
   },
   {
     id: 'defensive',
@@ -95,7 +95,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Jamie is incredibly solid and hard to break down. Excellent at finding defensive resources and neutralizing attacks. Patient and resilient player.',
     personality: 'defensive',
-    avatar: '/images/bots/bot9.png'
+    avatar: '/images/bots/bot9.webp'
   },
   {
     id: 'endgame',
@@ -105,7 +105,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Drew is a technical endgame virtuoso. Converts even the smallest advantages with precision. Knows all the critical endgame positions and techniques.',
     personality: 'endgame',
-    avatar: '/images/bots/bot10.png'
+    avatar: '/images/bots/bot10.webp'
   },
   {
     id: 'blitz',
@@ -115,7 +115,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Blake thrives in fast time controls and makes moves quickly. Good intuition but sometimes plays too fast and makes impulsive decisions.',
     personality: 'blitz',
-    avatar: '/images/bots/bot11.png'
+    avatar: '/images/bots/bot11.webp'
   },
   {
     id: 'classical',
@@ -125,7 +125,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Avery is a deep thinker who takes time to find the best moves. Plays principled, classical chess with strong opening preparation and deep calculation.',
     personality: 'classical',
-    avatar: '/images/bots/bot12.png'
+    avatar: '/images/bots/bot12.webp'
   },
   {
     id: 'creative',
@@ -135,7 +135,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Skylar plays unconventional and imaginative chess. Loves off-beat openings and creative ideas. Can surprise you with unexpected moves.',
     personality: 'creative',
-    avatar: '/images/bots/bot13.png'
+    avatar: '/images/bots/bot13.webp'
   },
   {
     id: 'precise',
@@ -145,7 +145,7 @@ const BOT_DEFINITIONS = [
     hoverDescription:
       'Peyton calculates variations with computer-like precision. Rarely misses tactical shots and finds the most accurate moves consistently. Very strong in complex positions.',
     personality: 'precise',
-    avatar: '/images/bots/bot14.png'
+    avatar: '/images/bots/bot14.webp'
   },
   {
     id: 'gambit',
@@ -153,7 +153,7 @@ const BOT_DEFINITIONS = [
     elo: 1350,
     description: 'Loves sacrificing material',
     personality: 'gambit',
-    avatar: '/images/bots/bot15.png'
+    avatar: '/images/bots/bot15.webp'
   },
   {
     id: 'grandmaster',
@@ -161,7 +161,7 @@ const BOT_DEFINITIONS = [
     elo: 2500,
     description: 'World-class chess engine',
     personality: 'grandmaster',
-    avatar: '/images/bots/bot16.png'
+    avatar: '/images/bots/bot16.webp'
   }
 ];
 
