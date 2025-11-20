@@ -90,7 +90,7 @@ router.post('/position', async (req, res) => {
         console.error('❌ Stockfish not found in any location');
         return res.status(500).json({
           success: false,
-          message: `Stockfish executable not found. Expected at: ${stockfishPath}. Please ensure stockfish.exe is in the engines folder.`,
+          message: `Stockfish executable not found. Expected at: ${stockfishPath}. Please ensure Stockfish is installed.`,
           error: 'STOCKFISH_NOT_FOUND'
         });
       }
@@ -176,7 +176,7 @@ router.post('/position', async (req, res) => {
         
         altProcess.on('error', (altError) => {
           console.error('❌ Alternative spawn also failed:', altError.message);
-          reject(new Error(`Failed to start Stockfish: ${spawnError.message}. Path: ${absolutePath}. Make sure stockfish.exe exists and is executable.`));
+          reject(new Error(`Failed to start Stockfish: ${spawnError.message}. Path: ${absolutePath}. Make sure Stockfish exists and is executable.`));
         });
         
         // Check if alternative process works (no error after 200ms)
@@ -190,7 +190,7 @@ router.post('/position', async (req, res) => {
             // Start UCI handshake for the new process
             startUCIHandshake(altProcess);
           } else if (!altProcessWorked) {
-            reject(new Error(`Failed to start Stockfish: ${spawnError.message}. Path: ${absolutePath}. Make sure stockfish.exe exists and is executable.`));
+            reject(new Error(`Failed to start Stockfish: ${spawnError.message}. Path: ${absolutePath}. Make sure Stockfish exists and is executable.`));
           }
         }, 200);
         
@@ -283,8 +283,8 @@ router.post('/position', async (req, res) => {
         if (!hasReceivedAnyOutput || outputBuffer.length === 0) {
           console.error('❌ No output received from Stockfish at all!');
           console.error('❌ This suggests Stockfish is not running or not producing output.');
-          console.error('❌ Check if stockfish.exe is a valid UCI engine.');
-          console.error('❌ Try running stockfish.exe manually to verify it works.');
+          console.error('❌ Check if Stockfish is a valid UCI engine.');
+          console.error('❌ Try running Stockfish manually to verify it works.');
         } else {
           console.error('⚠️ Received output but no valid moves parsed');
           console.error('⚠️ Output buffer length:', outputBuffer.length);
@@ -317,7 +317,7 @@ router.post('/position', async (req, res) => {
           multiPV: multiPV,
           isMate: false,
           mateIn: 0,
-          warning: `Stockfish analysis timed out. No PVs received. Check if stockfish.exe is working. Output received: ${hasReceivedAnyOutput}`
+          warning: `Stockfish analysis timed out. No PVs received. Check if Stockfish is working. Output received: ${hasReceivedAnyOutput}`
         });
         resolve();
       }, timeoutDuration);
