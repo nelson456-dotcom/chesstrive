@@ -201,7 +201,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
           results = await Puzzle.aggregate([
             { $match: query },
             { $sample: { size: size * 2 } } // Get more to filter out recent ones
-          ]).option({ maxTimeMS: 2000 });
+          ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
         } catch (sampleError) {
           console.error(`[PUZZLE] Aggregate error on attempt ${attempts + 1}:`, sampleError.message);
           // Fallback to find + limit if $sample fails
@@ -233,7 +233,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
           results = await Puzzle.aggregate([
             { $match: query },
             { $sample: { size } }
-          ]).option({ maxTimeMS: 2000 });
+          ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
         } catch (sampleError) {
           console.error(`[PUZZLE] Fallback aggregate error:`, sampleError.message);
           try {
@@ -274,7 +274,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
         results = await Puzzle.aggregate([
           { $match: broaderQuery },
           { $sample: { size } }
-        ]).option({ maxTimeMS: 2000 });
+        ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
         puzzles = results || [];
       } catch (error) {
         console.error(`[PUZZLE] Broader search failed:`, error.message);
@@ -293,7 +293,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     if (puzzles.length === 0 && !difficulty) {
       console.log(`[PUZZLE] No puzzles found, using random fallback (no difficulty filter)`);
       try {
-        results = await Puzzle.aggregate([{ $sample: { size } }]).option({ maxTimeMS: 2000 });
+        results = await Puzzle.aggregate([{ $sample: { size } }]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
         puzzles = results || [];
       } catch (finalError) {
         console.error(`[PUZZLE] Final fallback failed:`, finalError.message);
@@ -374,7 +374,7 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
         const additionalResults = await Puzzle.aggregate([
           { $match: query },
           { $sample: { size: size * 2 } }
-        ]).option({ maxTimeMS: 2000 });
+        ]).option({ maxTimeMS: 30000 }); // Increased timeout for large collections
         
         const additionalValid = additionalResults.filter(puzzle => {
           if (!isValidPuzzlePosition(puzzle)) {
