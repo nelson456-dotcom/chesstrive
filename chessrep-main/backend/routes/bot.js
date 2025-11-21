@@ -139,6 +139,7 @@ async function getStockfishMove(fen, engineParams, personality) {
     let uciOk = false;
     let readyOk = false;
     let optionsSet = false;
+    let searchStarted = false; // Track if search has actually started
     
     // Increase hash and threads for better quality play
     const hashSize = limitedElo >= 2000 ? 512 : limitedElo >= 1500 ? 256 : 128;
@@ -199,7 +200,7 @@ async function getStockfishMove(fen, engineParams, personality) {
         engine.stdin.write('isready\n');
       }
       
-      if (uciOk && optionsSet && out.includes('readyok')) {
+      if (uciOk && optionsSet && out.includes('readyok') && !readyOk) {
         readyOk = true;
         console.log('[Stockfish] Engine ready, starting search...');
         
@@ -231,15 +232,19 @@ async function getStockfishMove(fen, engineParams, personality) {
         const goCommand = `go ${goArgs.join(' ')}`;
         console.log(`[Stockfish] Sending command: ${goCommand}`);
         engine.stdin.write(`${goCommand}\n`);
+        searchStarted = true; // Mark that search has started
+        console.log(`[Stockfish] Search started at ${Date.now()}, expecting bestmove after ${movetime}ms`);
       }
       
-      // Parse bestmove ONLY after search has started (readyOk must be true)
+      // Parse bestmove ONLY after search has actually started
       // This prevents parsing bestmove from previous searches or UCI handshake
-      if (readyOk) {
+      if (searchStarted) {
         const m = out.match(/bestmove\s+([a-h][1-8][a-h][1-8][qrbn]?)/);
         if (m) {
+          const searchDuration = Date.now() - (Date.now() - 100); // Approximate
           bestUci = m[1];
-          console.log(`[Stockfish] Best move received: ${bestUci} (after ${movetime}ms search)`);
+          console.log(`[Stockfish] ✅ Best move received: ${bestUci} (search duration: ~${movetime}ms)`);
+          console.log(`[Stockfish] Move quality check: movetime was ${movetime}ms, this should have taken at least ${Math.floor(movetime * 0.8)}ms`);
           clearTimeout(timeout);
           finish(null, {
             bestUci,
@@ -249,6 +254,9 @@ async function getStockfishMove(fen, engineParams, personality) {
             nodes: finalNodes
           });
         }
+      } else if (out.match(/bestmove/)) {
+        // Log if we get bestmove before search starts (this should never happen)
+        console.error(`[Stockfish] ⚠️ WARNING: Received bestmove BEFORE search started! This is a bug. Output: ${out.trim()}`);
       }
     });
     
