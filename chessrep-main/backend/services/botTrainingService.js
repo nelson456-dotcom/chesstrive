@@ -28,9 +28,13 @@ positionSchema.index({ fen: 1, ratingRange: 1 });
 const Position = mongoose.model('BotTrainingPosition', positionSchema);
 
 // Normalize FEN for matching (same as in buildBotTrainingDatabase.js)
+// This removes move counters and halfmove clock for better position matching
 function normalizeFen(fen) {
+  if (!fen) return '';
   const parts = fen.split(' ');
   if (parts.length >= 4) {
+    // Keep: board position, active color, castling rights, en passant square
+    // Remove: halfmove clock, fullmove number
     return `${parts[0]} ${parts[1]} ${parts[2]} ${parts[3]}`;
   }
   return fen;
@@ -89,6 +93,9 @@ async function getTrainingMove(fen, targetRating, options = {}) {
     const similarRanges = getSimilarRatingRanges(targetRating);
     const chess = new Chess(fen);
     
+    console.log(`   🔍 Looking for position: ${normalizedFen.substring(0, 50)}...`);
+    console.log(`   📊 Target rating: ${targetRating}, Rating range: ${ratingRange}`);
+    
     // Try primary rating range first
     let position = await Position.findOne({ 
       fen: normalizedFen, 
@@ -97,19 +104,28 @@ async function getTrainingMove(fen, targetRating, options = {}) {
     
     // If not found, try similar ranges
     if (!position) {
+      console.log(`   🔄 Not found in ${ratingRange}, trying similar ranges: ${similarRanges.join(', ')}`);
       for (const range of similarRanges) {
         if (range === ratingRange) continue; // Already tried
         position = await Position.findOne({ 
           fen: normalizedFen, 
           ratingRange: range 
         });
-        if (position) break;
+        if (position) {
+          console.log(`   ✅ Found position in range: ${range}`);
+          break;
+        }
       }
+    } else {
+      console.log(`   ✅ Found position in primary range: ${ratingRange}`);
     }
     
     if (!position || !position.moves || position.moves.length === 0) {
+      console.log(`   ❌ No training data found for this position`);
       return null; // No training data for this position
     }
+    
+    console.log(`   📈 Found ${position.moves.length} moves in training database`);
     
     // Get moves sorted by frequency (most common first)
     // Filter and validate moves - only keep moves that are legal in current position
