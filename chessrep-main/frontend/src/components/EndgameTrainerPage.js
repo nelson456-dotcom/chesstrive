@@ -889,7 +889,7 @@ const EndgameTrainerPage = () => {
     } catch (error) {
       console.error('❌ Error loading puzzle:', error);
       console.log('🔄 Backend not available, using fallback positions');
-      loadingRef.current = false;
+      isLoadingRef.current = false;
       setLoading(false);
     }
     
