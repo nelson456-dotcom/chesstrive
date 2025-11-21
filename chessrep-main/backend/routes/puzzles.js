@@ -727,29 +727,64 @@ router.get('/themes', async (req, res) => {
     }
     
     // OPTIMIZED: Use aggregation to get themes with counts in a single query
-    // This is much faster than looping through themes and calling countDocuments
+    // Handle both 'theme' (single string) and 'themes' (array) fields
     const themesWithCounts = await Puzzle.aggregate([
       {
+        $project: {
+          // Get theme from single field if it exists
+          singleTheme: { $ifNull: ['$theme', null] },
+          // Get themes from array field if it exists
+          themesArray: { $ifNull: ['$themes', []] }
+        }
+      },
+      {
+        // Unwind themes array to get individual themes
+        $unwind: {
+          path: '$themesArray',
+          preserveNullAndEmptyArrays: true
+        }
+      },
+      {
+        // Combine single theme and array themes into one field
+        $project: {
+          theme: {
+            $cond: {
+              if: { $ne: ['$singleTheme', null] },
+              then: '$singleTheme',
+              else: '$themesArray'
+            }
+          }
+        }
+      },
+      {
+        // Filter out null/empty themes
+        $match: {
+          theme: { $ne: null, $exists: true, $ne: '' }
+        }
+      },
+      {
+        // Normalize theme to lowercase for grouping
+        $project: {
+          normalizedTheme: { $toLower: '$theme' }
+        }
+      },
+      {
+        // Group by normalized theme and count
         $group: {
-          _id: '$theme',
+          _id: '$normalizedTheme',
           count: { $sum: 1 }
         }
       },
       {
+        // Filter out themes with no puzzles (shouldn't happen, but just in case)
         $match: {
-          _id: { $ne: null }, // Exclude null themes
-          count: { $gt: 0 } // Only themes with puzzles
+          count: { $gt: 0 }
         }
       },
       {
+        // Format output
         $project: {
           code: '$_id',
-          label: {
-            $concat: [
-              { $toUpper: { $substr: ['$_id', 0, 1] } },
-              { $substr: ['$_id', 1, -1] }
-            ]
-          },
           count: 1,
           _id: 0
         }
@@ -757,7 +792,7 @@ router.get('/themes', async (req, res) => {
       {
         $sort: { code: 1 } // Sort alphabetically
       }
-    ]).maxTimeMS(5000); // 5 second timeout
+    ]).maxTimeMS(10000); // 10 second timeout (might need more time for unwinding)
     
     // Format labels properly (replace underscores with spaces, capitalize words)
     const availableThemes = themesWithCounts.map(theme => ({
