@@ -27,8 +27,6 @@ interface PricingProps {
   plans: PricingPlan[];
   title?: string;
   description?: string;
-  currency?: string;
-  currencySymbol?: string;
 }
 
 // Simple confetti effect using CSS animations
@@ -86,8 +84,6 @@ export function Pricing({
   plans,
   title = "Simple, Transparent Pricing",
   description = "Choose the plan that works for you\nAll plans include access to our platform, lead generation tools, and dedicated support.",
-  currency = 'USD',
-  currencySymbol = '$',
 }: PricingProps) {
   const [isMonthly, setIsMonthly] = useState(true);
   const [loading, setLoading] = useState<string | null>(null);
@@ -234,7 +230,7 @@ export function Pricing({
               </p>
               <div className="mt-4 flex items-center justify-center gap-x-2">
                 <span className="text-3xl font-bold tracking-tight text-foreground">
-                  {plan.price === "0" ? "Free" : `${(plan as any).currencySymbol || currencySymbol}${isMonthly ? plan.price : plan.yearlyPrice}`}
+                  {plan.price === "0" ? "Free" : `$${isMonthly ? plan.price : plan.yearlyPrice}`}
                 </span>
                 {plan.period !== "Next 3 months" && plan.period !== "forever" && (
                   <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
