@@ -61,8 +61,9 @@ function ChessPricing() {
 
   useEffect(() => {
     // Detect user's currency on component mount
-    getUserCurrency().then(({ currency: userCurrency, symbol, country }) => {
-      console.log(`[Pricing] Setting currency: ${userCurrency} (${symbol}) for country: ${country}`);
+    getUserCurrency().then((result: any) => {
+      const { currency: userCurrency, symbol, country } = result;
+      console.log(`[Pricing] Setting currency: ${userCurrency} (${symbol}) for country: ${country || 'unknown'}`);
       setCurrency(userCurrency);
       setCurrencySymbol(symbol);
       setCurrencyDetected(true);
