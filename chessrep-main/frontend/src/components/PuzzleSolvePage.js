@@ -1252,10 +1252,10 @@ fetchPuzzleRef.current = fetchPuzzle;
     } else {
       // Fallback to regular fetch if no cache available
       console.log('📡 No cache available, fetching puzzle...');
-      // Fetch and immediately preload more
-      fetchPuzzle().then(() => {
-        setTimeout(() => preloadPuzzles(), 100);
-      });
+      // Fetch puzzle (it will cache remaining puzzles automatically)
+      fetchPuzzle();
+      // Preload more puzzles immediately after fetch starts
+      setTimeout(() => preloadPuzzles(), 300);
     }
   };
 
