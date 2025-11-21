@@ -411,14 +411,8 @@ const EndgameTrainerPage = () => {
     }
   }, [fen, currentPuzzle, loading, boardSize]);
 
-  useEffect(() => {
-    if (typeof user?.endgameRating === 'number') {
-      setUserEndgameRating(user.endgameRating);
-    } else if (!user) {
-      setUserEndgameRating(1200);
-    }
-  }, [user]);
-
+  // Get user's endgame rating from AuthContext
+  const userEndgameRating = user?.endgameRating || 1200;
 
   // Combine user-drawn arrows and last move arrow
   const getAllArrows = () => {
