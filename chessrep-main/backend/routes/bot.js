@@ -473,10 +473,7 @@ router.post('/move', optionalAuth, async (req, res) => {
     let sanMove = null;
     const targetRating = resolvedEngineParams.canonicalRating || resolvedEngineParams.appliedRating || 1200;
     
-    // Always try training first - only use Stockfish if no training data exists
-    // For lower ratings (< 2000), prioritize training data even more strongly
-    const useTrainingPriority = targetRating < 2000 ? 0.9 : 0.7; // 90% chance for lower ratings, 70% for higher
-    
+    // Always try training first - ALWAYS use it if available (no random skipping)
     try {
       console.log(`🎓 Checking training database for human-like move (target rating: ${targetRating})...`);
       const trainingMove = await getTrainingMove(fen, targetRating, {
@@ -484,26 +481,19 @@ router.post('/move', optionalAuth, async (req, res) => {
       });
       
       if (trainingMove && trainingMove.move) {
-        // For lower ratings, almost always use training data if available
-        // For higher ratings, use training data most of the time but allow Stockfish for critical positions
-        const useTraining = Math.random() < useTrainingPriority;
-        
-        if (useTraining) {
-          // Validate the move
-          const tempChess = new Chess(fen);
-          try {
-            const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
-            if (chessMove) {
-              sanMove = chessMove.san;
-              console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'}, quality: ${trainingMove.quality || 'N/A'})`);
-            } else {
-              console.log('⚠️ Training move invalid, falling back to Stockfish');
-            }
-          } catch (moveError) {
-            console.log('⚠️ Training move failed validation, falling back to Stockfish');
+        // ALWAYS use training data if available - this is human game data, use it!
+        // Validate the move
+        const tempChess = new Chess(fen);
+        try {
+          const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
+          if (chessMove) {
+            sanMove = chessMove.san;
+            console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'}, quality: ${trainingMove.quality || 'N/A'})`);
+          } else {
+            console.log('⚠️ Training move invalid, falling back to Stockfish');
           }
-        } else {
-          console.log(`📊 Training move available but using Stockfish for this position (${(useTrainingPriority * 100).toFixed(0)}% priority)`);
+        } catch (moveError) {
+          console.log('⚠️ Training move failed validation, falling back to Stockfish');
         }
       } else {
         console.log('📚 No training data for this position, using Stockfish');
@@ -604,6 +594,19 @@ router.post('/move', optionalAuth, async (req, res) => {
     
     console.log('Bot making move:', botMove.san, 'from position:', fen);
     console.log('New FEN after move:', chess.fen());
+    
+    // Add thinking time to make bots feel more human-like
+    // Higher rated bots think longer (they calculate more), lower rated bots think shorter
+    const baseThinkingTime = targetRating < 800 ? 300 : 
+                             targetRating < 1200 ? 500 : 
+                             targetRating < 1600 ? 1000 : 
+                             targetRating < 2000 ? 1500 : 
+                             targetRating < 2400 ? 2000 : 2500;
+    const randomVariation = Math.random() * 800; // Add 0-800ms random variation for realism
+    const thinkingTime = Math.round(baseThinkingTime + randomVariation);
+    
+    console.log(`🤔 Bot thinking for ${thinkingTime}ms (rating: ${targetRating}, simulating human-like delay)...`);
+    await new Promise(resolve => setTimeout(resolve, thinkingTime));
     
     res.json({
       success: true,
