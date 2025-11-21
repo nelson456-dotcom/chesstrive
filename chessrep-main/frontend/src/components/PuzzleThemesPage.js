@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { getApiUrl } from '../config/api';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 // Theme mapping for display names
 const themeDisplayNames = {
@@ -170,6 +170,7 @@ const PuzzleThemesPage = () => {
       try {
         console.log('[PuzzleThemes] Fetching themes from:', getApiUrl('/puzzles/themes'));
         const response = await fetch(getApiUrl('/puzzles/themes'), {
+          headers: getAuthHeaders(),
           credentials: 'include' // Include cookies for CORS
         });
         console.log('[PuzzleThemes] Response status:', response.status);
@@ -222,6 +223,7 @@ const PuzzleThemesPage = () => {
       // Fetch a random puzzle from the API
       console.log('[PuzzleThemes] Fetching random puzzle from:', getApiUrl('/puzzles/random'));
       const response = await fetch(getApiUrl('/puzzles/random'), {
+        headers: getAuthHeaders(),
         credentials: 'include' // Include cookies for CORS
       });
       console.log('[PuzzleThemes] Random puzzle response status:', response.status);
