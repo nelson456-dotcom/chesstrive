@@ -413,15 +413,48 @@ async function buildDatabase() {
       pgnFiles = levelFiles
         .filter(f => f.endsWith('.pgn'))
         .map(f => path.join(levelDir, f));
+      
+      // Filter out files that don't match our rating range pattern
+      // Only keep files that match patterns like "500-800.pgn", "800-1200.pgn", etc.
+      pgnFiles = pgnFiles.filter(filePath => {
+        const filename = path.basename(filePath);
+        // Check if filename matches rating range pattern (e.g., "500-800.pgn", "1800-2500.pgn")
+        const hasRatingPattern = /\d+-\d+\.pgn$/.test(filename) || /^\d+\.pgn$/.test(filename);
+        if (!hasRatingPattern) {
+          console.log(`⚠️  Skipping ${filename} - doesn't match rating range pattern`);
+        }
+        return hasRatingPattern;
+      });
     } else {
-      // Fallback to data directory
-      console.log('📁 Using games from data/ directory...\n');
+      // Fallback to data directory (but warn about it)
+      console.log('⚠️  level/ subdirectory not found, checking data/ directory...\n');
       const files = fs.readdirSync(dataDir);
       const levelPgnFiles = files.filter(f => f.endsWith('.pgn'));
       pgnFiles = levelPgnFiles.map(f => path.join(dataDir, f));
+      
+      // Filter to only include files with rating patterns
+      pgnFiles = pgnFiles.filter(filePath => {
+        const filename = path.basename(filePath);
+        const hasRatingPattern = /\d+-\d+\.pgn$/.test(filename) || /^\d+\.pgn$/.test(filename);
+        if (!hasRatingPattern) {
+          console.log(`⚠️  Skipping ${filename} - doesn't match rating range pattern`);
+        }
+        return hasRatingPattern;
+      });
     }
     
-    console.log(`Found ${pgnFiles.length} PGN files to process\n`);
+    if (pgnFiles.length === 0) {
+      console.log('❌ ERROR: No valid PGN files found!');
+      console.log(`   Expected files in: ${levelDir}`);
+      console.log(`   Or fallback: ${dataDir}`);
+      console.log(`   Files should match pattern: "500-800.pgn", "800-1200.pgn", etc.`);
+      await mongoose.disconnect();
+      process.exit(1);
+    }
+    
+    console.log(`✅ Found ${pgnFiles.length} valid PGN files to process:\n`);
+    pgnFiles.forEach(f => console.log(`   - ${path.basename(f)}`));
+    console.log('');
     
     let totalGames = 0;
     let totalPositions = 0;
