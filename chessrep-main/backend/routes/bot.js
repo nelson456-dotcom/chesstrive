@@ -158,13 +158,27 @@ async function getStockfishMove(fen, engineParams, personality) {
     engine.stdin.write(`setoption name Threads value ${threadCount}\n`);
     
     if (limitStrength) {
-      console.log(`[Stockfish] Using LIMITED strength for Elo ${limitedElo} (level ${level})`);
+      console.log(`[Stockfish] Configuring LIMITED strength:`);
+      console.log(`  - UCI_LimitStrength: true`);
+      console.log(`  - UCI_Elo: ${limitedElo}`);
+      console.log(`  - Skill Level: ${skill}`);
+      console.log(`  - Target Rating: ${targetElo}`);
+      console.log(`  - Move Time: ${movetime}ms`);
+      console.log(`  - Depth: ${searchDepth || 'unlimited'}`);
+      console.log(`  - Nodes: ${nodeCap || 'unlimited'}`);
+      console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
       engine.stdin.write('setoption name UCI_LimitStrength value true\n');
       engine.stdin.write(`setoption name UCI_Elo value ${limitedElo}\n`);
       engine.stdin.write(`setoption name Skill Level value ${skill}\n`);
       engine.stdin.write('setoption name Contempt value 0\n');
     } else {
-      console.log(`[Stockfish] Using FULL STRENGTH for level ${level}`);
+      console.log(`[Stockfish] Using FULL STRENGTH for level ${level}:`);
+      console.log(`  - UCI_LimitStrength: false`);
+      console.log(`  - Skill Level: ${skill}`);
+      console.log(`  - Move Time: ${movetime}ms`);
+      console.log(`  - Depth: ${searchDepth || 'unlimited'}`);
+      console.log(`  - Nodes: ${nodeCap || 'unlimited'}`);
+      console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
       engine.stdin.write('setoption name UCI_LimitStrength value false\n');
       engine.stdin.write(`setoption name Skill Level value ${skill}\n`);
       if (personality === 'aggressive') {
@@ -469,41 +483,40 @@ router.post('/move', optionalAuth, async (req, res) => {
       });
     }
     
-    // ALWAYS try training database first - prioritize human-like play
+    // Use Stockfish as PRIMARY method with proper strength limiting
+    // Training data is optional enhancement (only used 20% of the time for variety)
     let sanMove = null;
     const targetRating = resolvedEngineParams.canonicalRating || resolvedEngineParams.appliedRating || 1200;
     
-    // Always try training first - ALWAYS use it if available (no random skipping)
-    try {
-      console.log(`🎓 Checking training database for human-like move (target rating: ${targetRating})...`);
-      const trainingMove = await getTrainingMove(fen, targetRating, {
-        randomness: resolvedEngineParams.randomness || 0.1
-      });
-      
-      if (trainingMove && trainingMove.move) {
-        // ALWAYS use training data if available - this is human game data, use it!
-        // Validate the move
-        const tempChess = new Chess(fen);
-        try {
-          const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
-          if (chessMove) {
-            sanMove = chessMove.san;
-            console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'}, quality: ${trainingMove.quality || 'N/A'})`);
-          } else {
-            console.log('⚠️ Training move invalid, falling back to Stockfish');
+    // Optional: Try training data as enhancement (not primary)
+    let trainingMove = null;
+    const useTrainingAsEnhancement = Math.random() < 0.2; // 20% chance to use training for variety
+    
+    if (useTrainingAsEnhancement) {
+      try {
+        console.log(`🎓 Checking training database (optional enhancement, 20% chance)...`);
+        trainingMove = await getTrainingMove(fen, targetRating, {
+          randomness: resolvedEngineParams.randomness || 0.1
+        });
+        
+        if (trainingMove && trainingMove.move) {
+          const tempChess = new Chess(fen);
+          try {
+            const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
+            if (chessMove) {
+              sanMove = chessMove.san;
+              console.log(`✅ Using training move (enhancement): ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%)`);
+            }
+          } catch (moveError) {
+            // Invalid move, continue to Stockfish
           }
-        } catch (moveError) {
-          console.log('⚠️ Training move failed validation, falling back to Stockfish');
         }
-      } else {
-        console.log('📚 No training data for this position, using Stockfish');
+      } catch (trainingError) {
+        // Training failed, continue to Stockfish
       }
-    } catch (trainingError) {
-      console.error('❌ Training service error:', trainingError.message);
-      console.log('Falling back to Stockfish...');
     }
     
-    // Fall back to Stockfish if training didn't provide a move
+    // PRIMARY METHOD: Use Stockfish with proper strength limiting
     if (!sanMove) {
       try {
         console.log('Generating bot move via Stockfish...');
