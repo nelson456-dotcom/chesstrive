@@ -1301,7 +1301,6 @@ const EndgameTrainerPage = () => {
             }).catch(error => {
                 console.error('Error incrementing usage limit:', error);
               });
-            }
           }
           
           // Don't auto-load next puzzle - let user choose when to continue
