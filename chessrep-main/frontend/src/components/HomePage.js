@@ -59,7 +59,7 @@ const HomePage = () => {
 
   const handleGetStarted = () => {
     if (user) {
-      navigate('/training-room');
+      navigate('/lessons');
     } else {
       navigate('/login');
     }

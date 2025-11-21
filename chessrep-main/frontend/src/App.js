@@ -80,6 +80,8 @@ import DashboardHome from './components/DashboardHome';
 import FeedPage from './components/FeedPage';
 import ForumPage from './components/ForumPage';
 import ForumTopicPage from './components/ForumTopicPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import TermsOfServicePage from './components/TermsOfServicePage';
 import Navbar from './components/Navbar';
 
 // Protected Route component
@@ -122,6 +124,8 @@ const AppContent = () => {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
           <Route 
             path="/openings" 
             element={

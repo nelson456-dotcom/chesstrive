@@ -55,7 +55,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/training-room" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link to="/lessons" className="text-gray-300 hover:text-white transition-colors text-sm">
                   Training Room
                 </Link>
               </li>
@@ -78,7 +78,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/report/40" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  100-Game Report
+                  40 Game Report
                 </Link>
               </li>
               <li>
@@ -133,15 +133,18 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
+              <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
+                About Us
+              </Link>
             </div>
           </div>
         </div>

@@ -119,7 +119,7 @@ const MainContent = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12">
               <button 
-                onClick={() => navigate('/training-room')} 
+                onClick={() => navigate('/lessons')} 
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-blue-500/25"
               >
                 Start Training Now

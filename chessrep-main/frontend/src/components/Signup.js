@@ -37,7 +37,7 @@ const Signup = () => {
     'Interactive opening trainer',
     'Live game analysis with AI',
     'Personal progress tracking',
-                '100-game performance reports'
+                '40 game performance reports'
   ];
 
   return (

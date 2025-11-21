@@ -401,7 +401,7 @@ const PeerComparisonPage = () => {
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">How to improve</h3>
               <button 
-                onClick={() => navigate('/training-room')}
+                onClick={() => navigate('/lessons')}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors cursor-pointer"
               >
                 TRY PERSONALIZED LESSONS
