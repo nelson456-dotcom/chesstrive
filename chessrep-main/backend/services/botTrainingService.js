@@ -189,34 +189,6 @@ async function getTrainingMove(fen, targetRating, options = {}) {
       m.probability = m.weight / totalWeight;
     });
     
-    // Calculate weights based on frequency and rating proximity
-    const weightedMoves = moves.map(move => {
-      let weight = move.count;
-      
-      // Boost weight if move's average rating is close to target rating
-      if (move.rating) {
-        const ratingDiff = Math.abs(move.rating - targetRating);
-        if (ratingDiff < 200) {
-          weight *= 1.5; // Boost moves from similar rating players
-        } else if (ratingDiff > 500) {
-          weight *= 0.5; // Reduce weight for moves from very different ratings
-        }
-      }
-      
-      return {
-        move: move.move,
-        weight: weight,
-        count: move.count,
-        rating: move.rating
-      };
-    });
-    
-    // Normalize weights
-    const totalWeight = weightedMoves.reduce((sum, m) => sum + m.weight, 0);
-    weightedMoves.forEach(m => {
-      m.probability = m.weight / totalWeight;
-    });
-    
     // Select move based on weighted probability
     // Add some randomness based on rating level (lower ratings = more random)
     const randomness = options.randomness || (targetRating < 1200 ? 0.3 : targetRating < 1800 ? 0.15 : 0.05);
