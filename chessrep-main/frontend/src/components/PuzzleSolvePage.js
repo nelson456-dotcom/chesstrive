@@ -2008,7 +2008,7 @@ ${puzzle.moves[0]} *`;
         </div>
 
         {/* Rating */}
-        <div className="order-3 xl:order-1 xl:col-span-1 space-y-4">
+        <div className="order-2 xl:order-1 xl:col-span-1 space-y-4">
           {/* User Rating Display */}
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl border border-gray-200 p-4 sm:p-6">
             <h2 className="text-lg sm:text-xl font-bold mb-4 text-gray-800 flex items-center">
@@ -2042,7 +2042,7 @@ ${puzzle.moves[0]} *`;
         </div>
 
         {/* Controls and Info - Takes up less space */}
-        <div className="order-2 xl:order-3 xl:col-span-1 space-y-4">
+        <div className="order-3 xl:order-3 xl:col-span-1 space-y-4">
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl border border-gray-200 p-4 sm:p-6">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold text-gray-800 flex items-center">
