@@ -181,17 +181,38 @@ const PuzzleThemesPage = () => {
         }
         const data = await response.json();
         console.log('[PuzzleThemes] Received themes:', data.themes?.length || 0);
+        console.log('[PuzzleThemes] Full response:', data);
+        
+        // Ensure we always have themes - use fallback if empty
+        let themesToUse = data.themes || [];
+        if (!Array.isArray(themesToUse) || themesToUse.length === 0) {
+          console.log('[PuzzleThemes] Empty themes array, using fallback');
+          themesToUse = [
+            { code: 'mate_in_1', label: 'Mate in 1' },
+            { code: 'mate_in_2', label: 'Mate in 2' },
+            { code: 'tactic', label: 'Tactic' },
+            { code: 'fork', label: 'Fork' },
+            { code: 'pin', label: 'Pin' },
+            { code: 'skewer', label: 'Skewer' },
+            { code: 'discovered_attack', label: 'Discovered Attack' },
+            { code: 'deflection', label: 'Deflection' },
+            { code: 'sacrifice', label: 'Sacrifice' },
+            { code: 'back_rank_mate', label: 'Back Rank Mate' },
+            { code: 'endgame', label: 'Endgame' }
+          ];
+        }
         
         // Use the themes directly from the backend (already have code and label)
-        const themesWithLabels = data.themes.map(theme => {
-          const normalizedCode = theme.code.replace(/([A-Z])/g, '_$1').toLowerCase();
+        const themesWithLabels = themesToUse.map(theme => {
+          const normalizedCode = (theme.code || '').replace(/([A-Z])/g, '_$1').toLowerCase();
           return {
-            label: themeDisplayNames[theme.code] || themeDisplayNames[normalizedCode] || theme.label,
+            label: themeDisplayNames[theme.code] || themeDisplayNames[normalizedCode] || theme.label || theme.code,
             code: theme.code,
-            explanation: themeExplanations[theme.code] || themeExplanations[normalizedCode] || themeExplanations[theme.code.replace(/([A-Z])/g, '_$1').toLowerCase()] || ''
+            explanation: themeExplanations[theme.code] || themeExplanations[normalizedCode] || themeExplanations[theme.code?.replace(/([A-Z])/g, '_$1').toLowerCase()] || ''
           };
         });
         
+        console.log('[PuzzleThemes] Setting themes:', themesWithLabels.length);
         setAvailableThemes(themesWithLabels);
       } catch (err) {
         console.error('[PuzzleThemes] Error fetching themes:', err);

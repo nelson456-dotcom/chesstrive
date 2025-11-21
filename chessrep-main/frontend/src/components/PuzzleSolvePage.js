@@ -387,7 +387,7 @@ const PuzzleSolvePage = () => {
       
       const response = await axios.get(url, { 
         headers,
-        timeout: 10000
+        timeout: 5000 // Reduced timeout for faster preloading
       });
       
       if (response.data?.puzzles?.length > 0) {
@@ -416,6 +416,10 @@ const PuzzleSolvePage = () => {
     try {
       const newGame = new Chess(puzzleData.puzzle.fen);
       console.log('✅ Created Chess game with FEN:', puzzleData.puzzle.fen);
+      
+      // Immediately preload next puzzles for instant "Next Puzzle" experience
+      setTimeout(() => preloadPuzzles(), 200);
+      
       let userMoveIndex = 0;
 
       // Only do basic validation, don't auto-skip puzzles unless explicitly broken
@@ -536,7 +540,7 @@ const PuzzleSolvePage = () => {
       
       const response = await axios.get(url, { 
         headers,
-        timeout: 8000 // 8 second timeout
+        timeout: 5000 // Reduced to 5 seconds for faster response
       });
       
       const puzzleData = response.data;
@@ -1242,14 +1246,16 @@ fetchPuzzleRef.current = fetchPuzzle;
       console.log('⚡ Using cached puzzle for instant loading');
       initializePuzzle({ puzzle: nextPuzzle }, true); // Skip validation for cached puzzles
       
-      // Preload more puzzles in the background if cache is getting low
-      if (puzzleCache.length <= 2) {
-        setTimeout(() => preloadPuzzles(), 100);
-      }
+      // ALWAYS preload more puzzles immediately after using cache
+      // This ensures cache is never empty for next click
+      setTimeout(() => preloadPuzzles(), 50);
     } else {
       // Fallback to regular fetch if no cache available
       console.log('📡 No cache available, fetching puzzle...');
-      fetchPuzzle();
+      // Fetch and immediately preload more
+      fetchPuzzle().then(() => {
+        setTimeout(() => preloadPuzzles(), 100);
+      });
     }
   };
 
