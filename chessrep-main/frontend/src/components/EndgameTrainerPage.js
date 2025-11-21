@@ -469,6 +469,21 @@ const EndgameTrainerPage = () => {
     });
   }, [selectedTheme]);
 
+  const getDynamicRatingChange = (currentRating = 1200, puzzleRating = 1200, success = true) => {
+    const baseChange = 20;
+    const difficultyGap = (puzzleRating || 1200) - (currentRating || 1200);
+    const normalizedGap = Math.max(-1, Math.min(1, difficultyGap / 500));
+    const gapBonus = Math.round(normalizedGap * 10);
+
+    if (success) {
+      const change = baseChange + gapBonus;
+      return Math.max(10, Math.min(30, change));
+    }
+
+    const change = -baseChange + gapBonus;
+    return Math.max(-30, Math.min(-10, change));
+  };
+
   // Update user rating when puzzle is solved
   const updateUserRating = useCallback(async (puzzleRating, success) => {
     try {
@@ -486,10 +501,11 @@ const EndgameTrainerPage = () => {
       if (!token) {
         console.log('❌ No auth token found, showing local rating change');
         const currentRating = userEndgameRating || 1200;
-        const ratingChange = success ? Math.floor(Math.random() * 20) + 5 : -Math.floor(Math.random() * 15) - 3;
+        const ratingChange = getDynamicRatingChange(currentRating, puzzleRating, success);
         
         setRatingChange(ratingChange);
         setShowRatingChange(true);
+        setUserEndgameRating(prev => (prev || currentRating) + ratingChange);
         
         const changeText = ratingChange > 0 ? `+${ratingChange}` : `${ratingChange}`;
         setFeedback(prev => `${prev} Rating: ${changeText} (Demo Mode)`);
@@ -539,10 +555,11 @@ const EndgameTrainerPage = () => {
         console.error('❌ Rating update failed:', response.status, response.statusText);
         // Show local rating change as fallback
         const currentRating = userEndgameRating || 1200;
-        const ratingChange = success ? Math.floor(Math.random() * 20) + 5 : -Math.floor(Math.random() * 15) - 3;
+        const ratingChange = getDynamicRatingChange(currentRating, puzzleRating, success);
         
         setRatingChange(ratingChange);
         setShowRatingChange(true);
+        setUserEndgameRating(prev => (prev || currentRating) + ratingChange);
         
         const changeText = ratingChange > 0 ? `+${ratingChange}` : `${ratingChange}`;
         setFeedback(prev => `${prev} Rating: ${changeText} (Offline)`);
@@ -555,10 +572,11 @@ const EndgameTrainerPage = () => {
       console.error('❌ Error updating rating:', error);
       // Show local rating change as fallback
       const currentRating = userEndgameRating || 1200;
-      const ratingChange = success ? Math.floor(Math.random() * 20) + 5 : -Math.floor(Math.random() * 15) - 3;
+      const ratingChange = getDynamicRatingChange(currentRating, puzzleRating, success);
       
       setRatingChange(ratingChange);
       setShowRatingChange(true);
+      setUserEndgameRating(prev => (prev || currentRating) + ratingChange);
       
       const changeText = ratingChange > 0 ? `+${ratingChange}` : `${ratingChange}`;
       setFeedback(prev => `${prev} Rating: ${changeText} (Offline)`);

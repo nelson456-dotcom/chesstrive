@@ -30,18 +30,34 @@ const initializeUserRatings = (user) => {
   return user;
 };
 
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+
 /**
- * Calculate rating change using ELO system
+ * Calculate rating change using a dynamic system
+ * Ensures rating change stays between 10 and 30 points (or -10 and -30 for failures)
+ * and scales with both player rating and puzzle difficulty.
+ *
  * @param {number} userRating - Current user rating
  * @param {number} puzzleRating - Puzzle difficulty rating
  * @param {boolean} solved - Whether the puzzle was solved
- * @param {number} kFactor - K-factor for rating sensitivity (default: 32)
  * @returns {number} Rating change
  */
-const calculateRatingChange = (userRating, puzzleRating, solved, kFactor = 32) => {
-  const expectedScore = 1 / (1 + Math.pow(10, (puzzleRating - userRating) / 400));
-  const actualScore = solved ? 1 : 0;
-  return Math.round(kFactor * (actualScore - expectedScore));
+const calculateRatingChange = (userRating = 1200, puzzleRating = 1200, solved = true) => {
+  const baseChange = 20; // Center point
+  const difficultyGap = puzzleRating - userRating;
+  // Normalize difficulty gap to [-1, 1] (roughly +/-500 rating difference)
+  const normalizedGap = clamp(difficultyGap / 500, -1, 1);
+  const gapBonus = Math.round(normalizedGap * 10); // +/-10 points
+
+  if (solved) {
+    // Harder puzzles (positive gap) give more points, easier puzzles less
+    const change = baseChange + gapBonus;
+    return clamp(change, 10, 30);
+  } else {
+    // Failing easy puzzles hurts more (negative gap), hard puzzles hurt less
+    const change = -baseChange + gapBonus;
+    return clamp(change, -30, -10);
+  }
 };
 
 /**
@@ -80,43 +96,17 @@ const updateUserRating = async (userId, ratingType, puzzleRating, solved) => {
     // CRITICAL: Ensure solved is a boolean
     const solvedBoolean = solved === true || solved === 'true' || solved === 1;
     
-    // Use higher K-factor for failed puzzles to increase penalty
-    // K-factor of 32 for solved, 64 for failed (double penalty)
-    const kFactor = solvedBoolean ? 32 : 64;
-    
-    const ratingChange = calculateRatingChange(oldRating, validPuzzleRating, solvedBoolean, kFactor);
+    const ratingChange = calculateRatingChange(oldRating, validPuzzleRating, solvedBoolean);
     
     console.log('📊 Rating calculation:', {
       oldRating,
       puzzleRating: validPuzzleRating,
       solved: solvedBoolean,
-      kFactor: kFactor,
       ratingChange,
-      expectedScore: 1 / (1 + Math.pow(10, (validPuzzleRating - oldRating) / 400)),
-      actualScore: solvedBoolean ? 1 : 0,
       newRating: oldRating + ratingChange
     });
-    
-    // CRITICAL: Verify rating change is calculated correctly
-    // When puzzle is failed (solved=false), rating MUST decrease
-    if (!solvedBoolean && ratingChange >= 0) {
-      console.error('🚨 WARNING: Rating should decrease when puzzle is failed, but ratingChange is:', ratingChange);
-      console.error('🚨 Calculation details:', {
-        oldRating,
-        validPuzzleRating,
-        expectedScore: 1 / (1 + Math.pow(10, (validPuzzleRating - oldRating) / 400)),
-        calculatedChange: ratingChange
-      });
-      // Force a minimum rating decrease of 1 point if calculation is wrong
-      // This should never happen, but ensures rating always decreases on failure
-      const forcedChange = -1;
-      console.error('🚨 FORCING rating decrease to -1 due to calculation error');
-      user[ratingType] += forcedChange;
-    } else {
-      // Update the specific rating (normal case)
-      user[ratingType] += ratingChange;
-    }
-    
+
+    user[ratingType] += ratingChange;
     console.log('💾 Saving user with updated rating:', {
       oldRating,
       newRating: user[ratingType],

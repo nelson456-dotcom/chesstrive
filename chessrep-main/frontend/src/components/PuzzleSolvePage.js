@@ -660,6 +660,21 @@ fetchPuzzleRef.current = fetchPuzzle;
     }
   }, []);
 
+  const getDynamicRatingChange = (currentRating = 1200, puzzleRating = 1200, success = true) => {
+    const baseChange = 20;
+    const difficultyGap = (puzzleRating || 1200) - (currentRating || 1200);
+    const normalizedGap = Math.max(-1, Math.min(1, difficultyGap / 500));
+    const gapBonus = Math.round(normalizedGap * 10);
+
+    if (success) {
+      const change = baseChange + gapBonus;
+      return Math.max(10, Math.min(30, change));
+    }
+
+    const change = -baseChange + gapBonus;
+    return Math.max(-30, Math.min(-10, change));
+  };
+
   // Update user rating when puzzle is solved - EXACT COPY from EndgameTrainerPage
   const updateUserRating = useCallback(async (puzzleRating, success) => {
     try {
@@ -677,10 +692,11 @@ fetchPuzzleRef.current = fetchPuzzle;
       if (!token) {
         console.log('❌ No auth token found, showing local rating change');
         const currentRating = userRating || 1200;
-        const ratingChange = success ? Math.floor(Math.random() * 20) + 5 : -Math.floor(Math.random() * 15) - 3;
+        const ratingChange = getDynamicRatingChange(currentRating, puzzleRating, success);
         
         setRatingChange(ratingChange);
         setShowRatingChange(true);
+        setUserRating(prev => (prev || currentRating) + ratingChange);
         
         const changeText = ratingChange > 0 ? `+${ratingChange}` : `${ratingChange}`;
         setStatus(prev => `${prev} Rating: ${changeText} (Demo Mode)`);
