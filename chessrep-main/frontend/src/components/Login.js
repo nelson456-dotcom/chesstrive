@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { getApiUrl } from '../config/api';
 import { User, Lock, Eye, EyeOff, LogIn, ArrowRight } from 'lucide-react';
 import ChessUpgradeLogo from './ChessUpgradeLogo';
 
@@ -11,7 +10,7 @@ const Login = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const { login } = useAuth();
+  const { login, loginWithGoogle, loginWithFacebook } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -30,13 +29,6 @@ const Login = () => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const startSocialLogin = (provider) => {
-    setError('');
-    const redirectTarget = '/lessons';
-    const url = `${getApiUrl(`/auth/${provider}/start`)}?redirect=${encodeURIComponent(redirectTarget)}`;
-    window.location.href = url;
   };
 
   return (
@@ -143,14 +135,38 @@ const Login = () => {
             <div className="grid grid-cols-1 gap-3">
               <button
                 type="button"
-                onClick={() => startSocialLogin('google')}
+                onClick={async () => {
+                  setError('');
+                  const token = window.prompt('Enter Google ID token (for testing)');
+                  if (!token) return;
+                  setLoading(true);
+                  const result = await loginWithGoogle(token);
+                  setLoading(false);
+                  if (result.success) {
+                    navigate('/lessons');
+                  } else {
+                    setError(result.error || 'Google login failed');
+                  }
+                }}
                 className="w-full flex items-center justify-center space-x-2 py-3 px-4 bg-white/90 hover:bg-white text-slate-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 <span>Continue with Google</span>
               </button>
               <button
                 type="button"
-                onClick={() => startSocialLogin('facebook')}
+                onClick={async () => {
+                  setError('');
+                  const token = window.prompt('Enter Facebook access token (for testing)');
+                  if (!token) return;
+                  setLoading(true);
+                  const result = await loginWithFacebook(token);
+                  setLoading(false);
+                  if (result.success) {
+                    navigate('/lessons');
+                  } else {
+                    setError(result.error || 'Facebook login failed');
+                  }
+                }}
                 className="w-full flex items-center justify-center space-x-2 py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 <span>Continue with Facebook</span>

@@ -42,7 +42,6 @@ import PracticeVisualisationPage from './components/PracticeVisualisationPage';
 import EnhancedChessStudyIntroPage from './components/EnhancedChessStudyIntroPage';
 import GuessTheMovePage from './components/GuessTheMovePage';
 import GameViewerPage from './components/GameViewerPage';
-import OAuthCallbackPage from './components/OAuthCallbackPage';
 import AdvantageCapitalisationPage from './components/AdvantageCapitalisationPage';
 import ResourcefulnessPage from './components/ResourcefulnessPage';
 import DefenderPage from './components/DefenderPage';
@@ -157,7 +156,6 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/auth/callback" element={<OAuthCallbackPage />} />
           <Route 
             path="/profile" 
             element={
