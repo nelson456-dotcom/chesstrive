@@ -1796,7 +1796,7 @@ const EndgameTrainerPage = () => {
 
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
           {/* Chessboard - Improved layout */}
-          <div className="xl:col-span-3">
+          <div className="order-1 xl:order-1 xl:col-span-3">
             <div ref={boardContainerRef} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-2xl border border-gray-200 p-6 sm:p-8">
               <div className="flex flex-col items-center">
                 {/* Enhanced turn indicator */}
@@ -2035,7 +2035,7 @@ const EndgameTrainerPage = () => {
           </div>
 
           {/* Controls Sidebar */}
-          <div className="xl:col-span-1">
+          <div className="order-2 xl:order-2 xl:col-span-1">
             <div className="bg-gradient-to-br from-slate-800/50 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-6 shadow-2xl">
               <h2 className="text-xl font-bold mb-6 text-white text-center">Controls</h2>
               <div className="space-y-4">
