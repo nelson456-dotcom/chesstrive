@@ -190,6 +190,7 @@ const PuzzleThemesPage = () => {
           themesToUse = [
             { code: 'mate_in_1', label: 'Mate in 1' },
             { code: 'mate_in_2', label: 'Mate in 2' },
+            { code: 'mate_in_3', label: 'Mate in 3' },
             { code: 'tactic', label: 'Tactic' },
             { code: 'fork', label: 'Fork' },
             { code: 'pin', label: 'Pin' },
@@ -198,7 +199,21 @@ const PuzzleThemesPage = () => {
             { code: 'deflection', label: 'Deflection' },
             { code: 'sacrifice', label: 'Sacrifice' },
             { code: 'back_rank_mate', label: 'Back Rank Mate' },
-            { code: 'endgame', label: 'Endgame' }
+            { code: 'endgame', label: 'Endgame' },
+            { code: 'opening', label: 'Opening' },
+            { code: 'middlegame', label: 'Middlegame' },
+            { code: 'interference', label: 'Interference' },
+            { code: 'attraction', label: 'Attraction' },
+            { code: 'smothered_mate', label: 'Smothered Mate' },
+            { code: 'boden_mate', label: 'Boden\'s Mate' },
+            { code: 'advanced_pawn', label: 'Advanced Pawn' },
+            { code: 'hanging_piece', label: 'Hanging Piece' },
+            { code: 'exposed_king', label: 'Exposed King' },
+            { code: 'promotion', label: 'Promotion' },
+            { code: 'zugzwang', label: 'Zugzwang' },
+            { code: 'kingside_attack', label: 'Kingside Attack' },
+            { code: 'queenside_attack', label: 'Queenside Attack' },
+            { code: 'attacking_f2_f7', label: 'Attacking F2/F7' }
           ];
         }
         

@@ -169,12 +169,18 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
       query = { ...buildThemeQuery(theme, normalizedTheme) };
     }
     
-    // Add difficulty filter if specified
+    // Add difficulty filter if specified - with randomization for variety
     if (difficulty && DIFFICULTY_RANGES[difficulty]) {
       const range = DIFFICULTY_RANGES[difficulty];
-      query.rating = { $gte: range.min, $lte: range.max };
-      console.log(`[PUZZLE] Filtering by difficulty '${difficulty}': rating ${range.min}-${range.max}`);
-      // Removed countDocuments() call - too slow on 4.9M documents
+      const rangeSize = range.max - range.min;
+      
+      // Add randomization: use 80% of the range to get variety, not just fixed boundaries
+      const randomOffset = Math.floor(Math.random() * (rangeSize * 0.2)); // 0-20% of range
+      const adjustedMin = range.min + randomOffset;
+      const adjustedMax = range.max - Math.floor(Math.random() * (rangeSize * 0.2));
+      
+      query.rating = { $gte: adjustedMin, $lte: adjustedMax };
+      console.log(`[PUZZLE] Filtering by difficulty '${difficulty}': rating ${adjustedMin}-${adjustedMax} (original range: ${range.min}-${range.max})`);
     }
     
     console.log(`[PUZZLE] Query:`, JSON.stringify(query, null, 2));
@@ -821,7 +827,19 @@ router.get('/themes', async (req, res) => {
         { code: 'back_rank_mate', label: 'Back Rank Mate' },
         { code: 'endgame', label: 'Endgame' },
         { code: 'opening', label: 'Opening' },
-        { code: 'middlegame', label: 'Middlegame' }
+        { code: 'middlegame', label: 'Middlegame' },
+        { code: 'interference', label: 'Interference' },
+        { code: 'attraction', label: 'Attraction' },
+        { code: 'smothered_mate', label: 'Smothered Mate' },
+        { code: 'boden_mate', label: 'Boden\'s Mate' },
+        { code: 'advanced_pawn', label: 'Advanced Pawn' },
+        { code: 'hanging_piece', label: 'Hanging Piece' },
+        { code: 'exposed_king', label: 'Exposed King' },
+        { code: 'promotion', label: 'Promotion' },
+        { code: 'zugzwang', label: 'Zugzwang' },
+        { code: 'kingside_attack', label: 'Kingside Attack' },
+        { code: 'queenside_attack', label: 'Queenside Attack' },
+        { code: 'attacking_f2_f7', label: 'Attacking F2/F7' }
       ];
       return res.json({ themes: fallbackThemes });
     }
