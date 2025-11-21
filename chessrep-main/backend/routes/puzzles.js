@@ -863,7 +863,7 @@ router.get('/themes', async (req, res) => {
     console.error('[Puzzle Route] Error getting themes:', err);
     console.error('[Puzzle Route] Error stack:', err.stack);
     
-    // Return comprehensive fallback themes on error
+    // Return comprehensive fallback themes on error (26 themes)
     const fallbackThemes = [
       { code: 'mate_in_1', label: 'Mate in 1' },
       { code: 'mate_in_2', label: 'Mate in 2' },
@@ -878,7 +878,19 @@ router.get('/themes', async (req, res) => {
       { code: 'back_rank_mate', label: 'Back Rank Mate' },
       { code: 'endgame', label: 'Endgame' },
       { code: 'opening', label: 'Opening' },
-      { code: 'middlegame', label: 'Middlegame' }
+      { code: 'middlegame', label: 'Middlegame' },
+      { code: 'interference', label: 'Interference' },
+      { code: 'attraction', label: 'Attraction' },
+      { code: 'smothered_mate', label: 'Smothered Mate' },
+      { code: 'boden_mate', label: 'Boden\'s Mate' },
+      { code: 'advanced_pawn', label: 'Advanced Pawn' },
+      { code: 'hanging_piece', label: 'Hanging Piece' },
+      { code: 'exposed_king', label: 'Exposed King' },
+      { code: 'promotion', label: 'Promotion' },
+      { code: 'zugzwang', label: 'Zugzwang' },
+      { code: 'kingside_attack', label: 'Kingside Attack' },
+      { code: 'queenside_attack', label: 'Queenside Attack' },
+      { code: 'attacking_f2_f7', label: 'Attacking F2/F7' }
     ];
     console.log('[Puzzle Route] Returning fallback themes due to error');
     res.json({ themes: fallbackThemes });
