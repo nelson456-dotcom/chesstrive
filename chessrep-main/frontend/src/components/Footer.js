@@ -132,17 +132,29 @@ const Footer = () => {
             </div>
 
             {/* Legal Links */}
-            <div className="flex space-x-6 text-sm">
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+            <div className="flex flex-wrap gap-4 md:gap-6 text-sm">
+              <Link 
+                to="/privacy-policy" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
+              <Link 
+                to="/terms-of-service" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
                 Terms of Service
               </Link>
-              <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
+              <Link 
+                to="/contact" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
                 Contact
               </Link>
-              <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
+              <Link 
+                to="/about" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
                 About Us
               </Link>
             </div>
