@@ -260,7 +260,7 @@ const Navbar = () => {
               link: "/contact"
             },
             {
-              label: "About ChessRep",
+              label: "About ChessStrive",
               description: "Learn about our mission",
               icon: Info,
               link: "/about"

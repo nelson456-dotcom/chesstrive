@@ -164,7 +164,7 @@ const ChessMegaMenuDemo = () => {
               icon: Mail,
             },
             {
-              label: "About ChessRep",
+              label: "About ChessStrive",
               description: "Learn about our mission",
               icon: Info,
             },

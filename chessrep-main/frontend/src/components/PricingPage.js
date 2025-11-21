@@ -57,7 +57,7 @@ const PricingPage = () => {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 border border-blue-500">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Improve Your Game?</h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Join thousands of players who are already improving their chess with ChessRep.
+              Join thousands of players who are already improving their chess with ChessStrive.
             </p>
             <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors">
               Start Your Free Trial
