@@ -123,23 +123,6 @@ async function getStockfishMove(fen, engineParams, personality) {
       Math.max(8000, movetime * 4)
     );
 
-    engine.stdout.on('data', (data) => {
-      const out = data.toString();
-      console.log('[Stockfish bot]:', out.trim());
-      const m = out.match(/bestmove\s+([a-h][1-8][a-h][1-8][qrbn]?)/);
-      if (m) {
-        bestUci = m[1];
-        clearTimeout(timeout);
-        finish(null, {
-          bestUci,
-          elo: targetElo,
-          movetime,
-          depth: searchDepth,
-          nodes: nodeCap
-        });
-      }
-    });
-
     engine.stderr.on('data', (d) => {
       console.error('[Stockfish bot stderr]:', d.toString());
     });
@@ -149,62 +132,116 @@ async function getStockfishMove(fen, engineParams, personality) {
       finish(err);
     });
 
-    // Configure engine based on derived level parameters
-    engine.stdin.write('uci\n');
+    // UCI protocol handshake - must wait for responses
+    let uciOk = false;
+    let readyOk = false;
+    let optionsSet = false;
+    
     // Increase hash and threads for better quality play
     const hashSize = limitedElo >= 2000 ? 512 : limitedElo >= 1500 ? 256 : 128;
     const threadCount = limitedElo >= 2000 ? 4 : limitedElo >= 1500 ? 2 : 1;
-    engine.stdin.write(`setoption name Hash value ${hashSize}\n`);
-    engine.stdin.write(`setoption name Threads value ${threadCount}\n`);
     
-    if (limitStrength) {
-      console.log(`[Stockfish] Configuring LIMITED strength:`);
-      console.log(`  - UCI_LimitStrength: true`);
-      console.log(`  - UCI_Elo: ${limitedElo}`);
-      console.log(`  - Skill Level: ${skill}`);
-      console.log(`  - Target Rating: ${targetElo}`);
-      console.log(`  - Move Time: ${movetime}ms`);
-      console.log(`  - Depth: ${searchDepth || 'unlimited'}`);
-      console.log(`  - Nodes: ${nodeCap || 'unlimited'}`);
-      console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
-      engine.stdin.write('setoption name UCI_LimitStrength value true\n');
-      engine.stdin.write(`setoption name UCI_Elo value ${limitedElo}\n`);
-      engine.stdin.write(`setoption name Skill Level value ${skill}\n`);
-      engine.stdin.write('setoption name Contempt value 0\n');
-    } else {
-      console.log(`[Stockfish] Using FULL STRENGTH for level ${level}:`);
-      console.log(`  - UCI_LimitStrength: false`);
-      console.log(`  - Skill Level: ${skill}`);
-      console.log(`  - Move Time: ${movetime}ms`);
-      console.log(`  - Depth: ${searchDepth || 'unlimited'}`);
-      console.log(`  - Nodes: ${nodeCap || 'unlimited'}`);
-      console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
-      engine.stdin.write('setoption name UCI_LimitStrength value false\n');
-      engine.stdin.write(`setoption name Skill Level value ${skill}\n`);
-      if (personality === 'aggressive') {
-        engine.stdin.write('setoption name Contempt value 50\n');
-      } else if (personality === 'defensive') {
-        engine.stdin.write('setoption name Contempt value -50\n');
-      } else {
-        engine.stdin.write('setoption name Contempt value 0\n');
+    // For full strength bots, remove depth/node limits - only use time
+    const useFullStrength = !limitStrength;
+    const finalDepth = useFullStrength ? null : searchDepth;
+    const finalNodes = useFullStrength ? null : nodeCap;
+    
+    engine.stdout.on('data', (data) => {
+      const out = data.toString();
+      console.log('[Stockfish bot]:', out.trim());
+      
+      // Handle UCI handshake
+      if (!uciOk && out.includes('uciok')) {
+        uciOk = true;
+        console.log('[Stockfish] UCI handshake complete');
+        
+        // Set options after UCI handshake
+        engine.stdin.write(`setoption name Hash value ${hashSize}\n`);
+        engine.stdin.write(`setoption name Threads value ${threadCount}\n`);
+        
+        if (limitStrength) {
+          console.log(`[Stockfish] Configuring LIMITED strength:`);
+          console.log(`  - UCI_LimitStrength: true`);
+          console.log(`  - UCI_Elo: ${limitedElo}`);
+          console.log(`  - Skill Level: ${skill}`);
+          console.log(`  - Target Rating: ${targetElo}`);
+          console.log(`  - Move Time: ${movetime}ms`);
+          console.log(`  - Depth: ${finalDepth || 'unlimited'}`);
+          console.log(`  - Nodes: ${finalNodes || 'unlimited'}`);
+          console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
+          engine.stdin.write('setoption name UCI_LimitStrength value true\n');
+          engine.stdin.write(`setoption name UCI_Elo value ${limitedElo}\n`);
+          engine.stdin.write(`setoption name Skill Level value ${skill}\n`);
+          engine.stdin.write('setoption name Contempt value 0\n');
+        } else {
+          console.log(`[Stockfish] Using FULL STRENGTH (no limits):`);
+          console.log(`  - UCI_LimitStrength: false`);
+          console.log(`  - Skill Level: ${skill} (max strength)`);
+          console.log(`  - Move Time: ${movetime}ms`);
+          console.log(`  - Depth: UNLIMITED (full strength)`);
+          console.log(`  - Nodes: UNLIMITED (full strength)`);
+          console.log(`  - Hash: ${hashSize}MB, Threads: ${threadCount}`);
+          engine.stdin.write('setoption name UCI_LimitStrength value false\n');
+          engine.stdin.write(`setoption name Skill Level value 20\n`); // Always max for full strength
+          if (personality === 'aggressive') {
+            engine.stdin.write('setoption name Contempt value 50\n');
+          } else if (personality === 'defensive') {
+            engine.stdin.write('setoption name Contempt value -50\n');
+          } else {
+            engine.stdin.write('setoption name Contempt value 0\n');
+          }
+        }
+        
+        optionsSet = true;
+        engine.stdin.write('isready\n');
       }
-    }
+      
+      if (uciOk && optionsSet && out.includes('readyok')) {
+        readyOk = true;
+        console.log('[Stockfish] Engine ready, starting search...');
+        
+        // Set position and start search
+        engine.stdin.write(`position fen ${fen}\n`);
+        
+        // For full strength: only use movetime (no depth/node limits)
+        // For limited strength: use depth/nodes if specified, otherwise movetime
+        const goArgs = [];
+        if (useFullStrength) {
+          // Full strength: only time control, no limits
+          goArgs.push(`movetime ${movetime}`);
+        } else {
+          // Limited strength: use depth/nodes if specified
+          if (finalDepth) {
+            goArgs.push(`depth ${finalDepth}`);
+          }
+          if (finalNodes) {
+            goArgs.push(`nodes ${finalNodes}`);
+          }
+          if (movetime && !finalDepth && !finalNodes) {
+            goArgs.push(`movetime ${movetime}`);
+          }
+        }
+        
+        engine.stdin.write(`go ${goArgs.join(' ').trim()}\n`);
+      }
+      
+      // Parse bestmove (keep existing logic)
+      const m = out.match(/bestmove\s+([a-h][1-8][a-h][1-8][qrbn]?)/);
+      if (m) {
+        bestUci = m[1];
+        clearTimeout(timeout);
+        finish(null, {
+          bestUci,
+          elo: targetElo,
+          movetime,
+          depth: finalDepth,
+          nodes: finalNodes
+        });
+      }
+    });
     
-    engine.stdin.write('isready\n');
-    engine.stdin.write(`position fen ${fen}\n`);
-    
-    const goArgs = [];
-    if (searchDepth) {
-      goArgs.push(`depth ${searchDepth}`);
-    }
-    if (nodeCap) {
-      goArgs.push(`nodes ${nodeCap}`);
-    }
-    if (movetime) {
-      goArgs.push(`movetime ${movetime}`);
-    }
-
-    engine.stdin.write(`go ${goArgs.join(' ').trim()}\n`);
+    // Start UCI handshake
+    engine.stdin.write('uci\n');
   });
 }
 
