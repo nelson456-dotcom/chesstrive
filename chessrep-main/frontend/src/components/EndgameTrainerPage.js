@@ -757,6 +757,11 @@ const EndgameTrainerPage = () => {
       return;
     }
     
+    // Set loading ref at the start (unless already set by useEffect)
+    if (!isLoadingRef.current) {
+      isLoadingRef.current = true;
+    }
+    
     // Check usage limits for free users when loading a new puzzle
     if (user && user.userType !== 'premium' && !isReplay) {
       try {
@@ -791,8 +796,8 @@ const EndgameTrainerPage = () => {
       console.log('ℹ️ Skipping puzzle but rating already handled (puzzleComplete:', puzzleComplete, ')');
     }
     
-    // Use a ref to track if we're already loading to prevent duplicate calls
-    const loadingRef = { current: true };
+    // Set loading ref to prevent duplicate calls
+    isLoadingRef.current = true;
     
     setLoading(true);
     setFeedback('');
@@ -1082,11 +1087,14 @@ const EndgameTrainerPage = () => {
     
     // Prevent duplicate calls
     if (isLoadingRef.current) {
+      console.log('⚠️ useEffect: Already loading, skipping...');
       return;
     }
     
-    isLoadingRef.current = true;
-    loadNewPuzzle().finally(() => {
+    // Call loadNewPuzzle - it will handle isLoadingRef itself
+    console.log('🔄 useEffect: Calling loadNewPuzzle...');
+    loadNewPuzzle(false).catch(err => {
+      console.error('Error in loadNewPuzzle from useEffect:', err);
       isLoadingRef.current = false;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
