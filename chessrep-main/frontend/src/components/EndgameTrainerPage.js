@@ -763,14 +763,13 @@ const EndgameTrainerPage = () => {
         const response = await fetch(getApiUrl('usage-limits/endgame-trainer'), {
           headers: getAuthHeaders()
         });
-          
-          if (response.ok) {
-            const limitData = await response.json();
-            if (!limitData.allowed) {
-              setFeedback(`You've reached your daily limit of 10 endgame puzzles. Come back tomorrow or upgrade to premium for unlimited access!`);
-              setLoading(false);
-              return;
-            }
+        
+        if (response.ok) {
+          const limitData = await response.json();
+          if (!limitData.allowed) {
+            setFeedback(`You've reached your daily limit of 10 endgame puzzles. Come back tomorrow or upgrade to premium for unlimited access!`);
+            setLoading(false);
+            return;
           }
         }
       } catch (error) {
