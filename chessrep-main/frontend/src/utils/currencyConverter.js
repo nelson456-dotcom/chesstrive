@@ -92,7 +92,10 @@ export async function detectUserCountry() {
     const locale = navigator.language || navigator.userLanguage;
     const countryFromLocale = locale.split('-')[1]?.toUpperCase();
     
+    console.log('[Currency] Browser locale:', locale, 'Country from locale:', countryFromLocale);
+    
     if (countryFromLocale && COUNTRY_TO_CURRENCY[countryFromLocale]) {
+      console.log(`[Currency] Using locale-based detection: ${countryFromLocale} -> ${COUNTRY_TO_CURRENCY[countryFromLocale]}`);
       return countryFromLocale;
     }
 
@@ -110,7 +113,7 @@ export async function detectUserCountry() {
         const data = await response.json();
         console.log('[Currency] IP geolocation result:', data);
         if (data.country_code && COUNTRY_TO_CURRENCY[data.country_code]) {
-          console.log(`[Currency] Detected country: ${data.country_code}, Currency: ${COUNTRY_TO_CURRENCY[data.country_code]}`);
+          console.log(`[Currency] Detected country from IP: ${data.country_code}, Currency: ${COUNTRY_TO_CURRENCY[data.country_code]}`);
           return data.country_code;
         }
       }
@@ -118,10 +121,54 @@ export async function detectUserCountry() {
       console.log('[Currency] IP geolocation failed:', e.message);
     }
 
-    // Default to US if detection fails
+    // Additional fallback: Try timezone-based detection
+    try {
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      console.log('[Currency] Browser timezone:', timezone);
+      
+      // Map common timezones to countries
+      const timezoneToCountry = {
+        'America/Sao_Paulo': 'BR',
+        'America/Argentina': 'AR',
+        'America/Mexico_City': 'MX',
+        'America/New_York': 'US',
+        'America/Los_Angeles': 'US',
+        'America/Toronto': 'CA',
+        'Europe/London': 'GB',
+        'Europe/Paris': 'FR',
+        'Europe/Berlin': 'DE',
+        'Europe/Rome': 'IT',
+        'Europe/Madrid': 'ES',
+        'Asia/Tokyo': 'JP',
+        'Asia/Shanghai': 'CN',
+        'Asia/Kolkata': 'IN',
+        'Australia/Sydney': 'AU',
+      };
+      
+      // Check if timezone matches any known timezone
+      for (const [tz, country] of Object.entries(timezoneToCountry)) {
+        if (timezone.includes(tz.split('/')[1])) {
+          if (COUNTRY_TO_CURRENCY[country]) {
+            console.log(`[Currency] Detected country from timezone: ${country} -> ${COUNTRY_TO_CURRENCY[country]}`);
+            return country;
+          }
+        }
+      }
+      
+      // Special case for Brazil timezone
+      if (timezone.includes('Sao_Paulo') || timezone.includes('Brasilia')) {
+        console.log('[Currency] Detected Brazil from timezone');
+        return 'BR';
+      }
+    } catch (e) {
+      console.log('[Currency] Timezone detection failed:', e.message);
+    }
+
+    // Default to US if all detection methods fail
+    console.log('[Currency] All detection methods failed, defaulting to US');
     return 'US';
   } catch (error) {
-    console.error('Error detecting country:', error);
+    console.error('[Currency] Error detecting country:', error);
     return 'US';
   }
 }
