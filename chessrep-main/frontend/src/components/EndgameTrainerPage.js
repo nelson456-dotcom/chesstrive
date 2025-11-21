@@ -504,8 +504,7 @@ const EndgameTrainerPage = () => {
       console.log('📡 Sending rating update to backend...');
       const response = await fetch(getApiUrl('endgames/stats'), {
         method: 'POST',
-        headers: getAuthHeaders({ 'Content-Type': 'application/json' })
-        },
+        headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
         body: JSON.stringify({
           puzzleRating: puzzleRating,
           solved: success
