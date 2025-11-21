@@ -257,7 +257,10 @@ const PuzzleThemesPage = () => {
         <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
           Tactical Puzzles
         </h1>
-        <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-4">
+          Quality puzzles to help you improve fast. Real life puzzles taken from real games.
+        </p>
+        <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed mb-8">
           Sharpen your tactical vision with thousands of chess puzzles. Choose a theme to focus on specific patterns and improve your calculation skills.
         </p>
 

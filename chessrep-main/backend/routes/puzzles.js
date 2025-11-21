@@ -726,23 +726,49 @@ router.get('/themes', async (req, res) => {
       return res.json({ themes: fallbackThemes });
     }
     
-    // Get all unique themes from the database
-    const themes = await Puzzle.distinct('theme');
-    
-    // Filter out themes that don't have any puzzles
-    const availableThemes = [];
-    
-    for (const theme of themes) {
-      const count = await Puzzle.countDocuments({ theme: theme });
-      if (count > 0) {
-        availableThemes.push({
-          code: theme,
-          label: theme.charAt(0).toUpperCase() + theme.slice(1).replace(/_/g, ' ')
-        });
+    // OPTIMIZED: Use aggregation to get themes with counts in a single query
+    // This is much faster than looping through themes and calling countDocuments
+    const themesWithCounts = await Puzzle.aggregate([
+      {
+        $group: {
+          _id: '$theme',
+          count: { $sum: 1 }
+        }
+      },
+      {
+        $match: {
+          _id: { $ne: null }, // Exclude null themes
+          count: { $gt: 0 } // Only themes with puzzles
+        }
+      },
+      {
+        $project: {
+          code: '$_id',
+          label: {
+            $concat: [
+              { $toUpper: { $substr: ['$_id', 0, 1] } },
+              { $substr: ['$_id', 1, -1] }
+            ]
+          },
+          count: 1,
+          _id: 0
+        }
+      },
+      {
+        $sort: { code: 1 } // Sort alphabetically
       }
-    }
+    ]).maxTimeMS(5000); // 5 second timeout
     
-    console.log(`[PUZZLE] Found ${availableThemes.length} themes with puzzles`);
+    // Format labels properly (replace underscores with spaces, capitalize words)
+    const availableThemes = themesWithCounts.map(theme => ({
+      code: theme.code,
+      label: theme.code
+        .split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ')
+    }));
+    
+    console.log(`[PUZZLE] Found ${availableThemes.length} themes with puzzles (optimized query)`);
     res.json({ themes: availableThemes });
   } catch (err) {
     console.error('[Puzzle Route] Error getting themes:', err);
