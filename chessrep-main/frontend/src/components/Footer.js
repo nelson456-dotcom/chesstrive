@@ -132,7 +132,7 @@ const Footer = () => {
             </div>
 
             {/* Legal Links */}
-            <div className="flex flex-wrap gap-4 md:gap-6 text-sm">
+            <div className="flex flex-wrap gap-3 md:gap-4 text-sm">
               <Link 
                 to="/privacy-policy" 
                 className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
@@ -144,6 +144,42 @@ const Footer = () => {
                 className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
               >
                 Terms of Service
+              </Link>
+              <Link 
+                to="/cookie-policy" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                Cookie Policy
+              </Link>
+              <Link 
+                to="/refund-policy" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                Refund Policy
+              </Link>
+              <Link 
+                to="/dmca-policy" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                DMCA
+              </Link>
+              <Link 
+                to="/faq" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                FAQ
+              </Link>
+              <Link 
+                to="/community-guidelines" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                Community Guidelines
+              </Link>
+              <Link 
+                to="/accessibility" 
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer relative z-10"
+              >
+                Accessibility
               </Link>
               <Link 
                 to="/contact" 

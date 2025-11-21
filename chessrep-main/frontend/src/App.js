@@ -82,6 +82,12 @@ import ForumPage from './components/ForumPage';
 import ForumTopicPage from './components/ForumTopicPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import TermsOfServicePage from './components/TermsOfServicePage';
+import CookiePolicyPage from './components/CookiePolicyPage';
+import RefundPolicyPage from './components/RefundPolicyPage';
+import DMCAPolicyPage from './components/DMCAPolicyPage';
+import FAQPage from './components/FAQPage';
+import CommunityGuidelinesPage from './components/CommunityGuidelinesPage';
+import AccessibilityStatementPage from './components/AccessibilityStatementPage';
 import Navbar from './components/Navbar';
 
 // Protected Route component
@@ -126,6 +132,12 @@ const AppContent = () => {
           <Route path="/contact" element={<ContactsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="/refund-policy" element={<RefundPolicyPage />} />
+          <Route path="/dmca-policy" element={<DMCAPolicyPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/community-guidelines" element={<CommunityGuidelinesPage />} />
+          <Route path="/accessibility" element={<AccessibilityStatementPage />} />
           <Route 
             path="/openings" 
             element={
