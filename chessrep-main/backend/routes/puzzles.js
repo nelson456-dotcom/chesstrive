@@ -804,6 +804,28 @@ router.get('/themes', async (req, res) => {
     console.log(`[PUZZLE] Found ${availableThemes.length} unique themes total (${themesFromSingleField?.length || 0} from theme field, ${themesFromArray?.length || 0} from themes array)`);
     console.log(`[PUZZLE] Theme codes:`, availableThemes.map(t => t.code).join(', '));
     
+    // If no themes found, return fallback themes
+    if (availableThemes.length === 0) {
+      console.log('[PUZZLE] No themes found in database, returning fallback themes');
+      const fallbackThemes = [
+        { code: 'mate_in_1', label: 'Mate in 1' },
+        { code: 'mate_in_2', label: 'Mate in 2' },
+        { code: 'mate_in_3', label: 'Mate in 3' },
+        { code: 'tactic', label: 'Tactic' },
+        { code: 'fork', label: 'Fork' },
+        { code: 'pin', label: 'Pin' },
+        { code: 'skewer', label: 'Skewer' },
+        { code: 'discovered_attack', label: 'Discovered Attack' },
+        { code: 'deflection', label: 'Deflection' },
+        { code: 'sacrifice', label: 'Sacrifice' },
+        { code: 'back_rank_mate', label: 'Back Rank Mate' },
+        { code: 'endgame', label: 'Endgame' },
+        { code: 'opening', label: 'Opening' },
+        { code: 'middlegame', label: 'Middlegame' }
+      ];
+      return res.json({ themes: fallbackThemes });
+    }
+    
     res.json({ themes: availableThemes });
   } catch (err) {
     console.error('[Puzzle Route] Error getting themes:', err);
