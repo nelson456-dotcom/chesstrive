@@ -50,8 +50,9 @@ const resolveEngineParams = ({ rating, level, engineParams: overrides }) => {
     safeOverrides.canonicalRating ?? baseParams.canonicalRating ?? (numericRating || 1200);
   merged.appliedRating = numericRating || merged.canonicalRating;
 
+  // Ensure minimum move time for quality (at least 1.5 seconds)
   if (typeof merged.moveTimeMs !== 'number' || merged.moveTimeMs <= 0) {
-    merged.moveTimeMs = 400;
+    merged.moveTimeMs = 1500; // Default to 1.5 seconds minimum
   }
 
   return merged;
@@ -232,18 +233,22 @@ async function getStockfishMove(fen, engineParams, personality) {
         engine.stdin.write(`${goCommand}\n`);
       }
       
-      // Parse bestmove (keep existing logic)
-      const m = out.match(/bestmove\s+([a-h][1-8][a-h][1-8][qrbn]?)/);
-      if (m) {
-        bestUci = m[1];
-        clearTimeout(timeout);
-        finish(null, {
-          bestUci,
-          elo: targetElo,
-          movetime,
-          depth: finalDepth,
-          nodes: finalNodes
-        });
+      // Parse bestmove ONLY after search has started (readyOk must be true)
+      // This prevents parsing bestmove from previous searches or UCI handshake
+      if (readyOk) {
+        const m = out.match(/bestmove\s+([a-h][1-8][a-h][1-8][qrbn]?)/);
+        if (m) {
+          bestUci = m[1];
+          console.log(`[Stockfish] Best move received: ${bestUci} (after ${movetime}ms search)`);
+          clearTimeout(timeout);
+          finish(null, {
+            bestUci,
+            elo: targetElo,
+            movetime,
+            depth: finalDepth,
+            nodes: finalNodes
+          });
+        }
       }
     });
     
