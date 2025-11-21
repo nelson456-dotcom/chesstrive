@@ -11,7 +11,7 @@
       "uciElo": 800,
       "randomness": 0.05,
       "openingBook": "none",
-      "moveTimeMs": 800,
+      "moveTimeMs": 1500,
       "timeMode": "fixed",
       "depth": 12,
       "nodes": 300000
@@ -29,7 +29,7 @@
       "uciElo": 1150,
       "randomness": 0.03,
       "openingBook": "light",
-      "moveTimeMs": 900,
+      "moveTimeMs": 2000,
       "timeMode": "fixed",
       "depth": 14,
       "nodes": 500000
@@ -47,7 +47,7 @@
       "uciElo": 1450,
       "randomness": 0.02,
       "openingBook": "light",
-      "moveTimeMs": 1200,
+      "moveTimeMs": 3000,
       "timeMode": "perPly",
       "depth": 16,
       "nodes": 1000000
@@ -65,7 +65,7 @@
       "uciElo": 1750,
       "randomness": 0.01,
       "openingBook": "standard",
-      "moveTimeMs": 1500,
+      "moveTimeMs": 4000,
       "timeMode": "perPly",
       "depth": 18,
       "nodes": 2000000
@@ -83,7 +83,7 @@
       "uciElo": 2050,
       "randomness": 0.005,
       "openingBook": "standard",
-      "moveTimeMs": 1800,
+      "moveTimeMs": 5000,
       "timeMode": "perPly",
       "depth": 20,
       "nodes": 4000000
@@ -101,7 +101,7 @@
       "uciElo": 2350,
       "randomness": 0.0,
       "openingBook": "full",
-      "moveTimeMs": 2000,
+      "moveTimeMs": 8000,
       "timeMode": "perPly",
       "depth": 22,
       "nodes": 10000000
@@ -119,7 +119,7 @@
       "uciElo": 2650,
       "randomness": 0.0,
       "openingBook": "full",
-      "moveTimeMs": 3000,
+      "moveTimeMs": 10000,
       "timeMode": "perPly",
       "depth": null,
       "nodes": null
