@@ -729,31 +729,44 @@ router.get('/themes', async (req, res) => {
     // FAST & SIMPLE: Get themes from both fields separately, then combine
     // This is much faster than complex aggregation and more reliable
     
-    // Get distinct themes from 'theme' field (uses index, very fast)
-    const themesFromSingleField = await Puzzle.distinct('theme', { theme: { $ne: null, $exists: true, $ne: '' } }).maxTimeMS(5000);
+    let themesFromSingleField = [];
+    let themesFromArray = [];
     
-    // Get distinct themes from 'themes' array field (simple aggregation)
-    const themesFromArray = await Puzzle.aggregate([
-      {
-        $match: {
-          themes: { $exists: true, $ne: [], $ne: null }
+    try {
+      // Get distinct themes from 'theme' field (uses index, very fast)
+      themesFromSingleField = await Puzzle.distinct('theme', { theme: { $ne: null, $exists: true, $ne: '' } }).maxTimeMS(10000);
+      console.log(`[PUZZLE] Found ${themesFromSingleField?.length || 0} themes from 'theme' field`);
+    } catch (err) {
+      console.error('[PUZZLE] Error getting themes from theme field:', err);
+    }
+    
+    try {
+      // Get distinct themes from 'themes' array field (simple aggregation)
+      themesFromArray = await Puzzle.aggregate([
+        {
+          $match: {
+            themes: { $exists: true, $ne: [], $ne: null }
+          }
+        },
+        {
+          $unwind: '$themes'
+        },
+        {
+          $group: {
+            _id: '$themes'
+          }
+        },
+        {
+          $project: {
+            _id: 0,
+            theme: '$_id'
+          }
         }
-      },
-      {
-        $unwind: '$themes'
-      },
-      {
-        $group: {
-          _id: '$themes'
-        }
-      },
-      {
-        $project: {
-          _id: 0,
-          theme: '$_id'
-        }
-      }
-    ]).maxTimeMS(5000);
+      ]).maxTimeMS(10000);
+      console.log(`[PUZZLE] Found ${themesFromArray?.length || 0} themes from 'themes' array`);
+    } catch (err) {
+      console.error('[PUZZLE] Error getting themes from themes array:', err);
+    }
     
     // Combine both lists and remove duplicates
     const allThemesSet = new Set();
@@ -788,9 +801,9 @@ router.get('/themes', async (req, res) => {
           .join(' ')
       }));
     
-    console.log(`[PUZZLE] Found ${availableThemes.length} unique themes (${themesFromSingleField?.length || 0} from theme field, ${themesFromArray?.length || 0} from themes array)`);
+    console.log(`[PUZZLE] Found ${availableThemes.length} unique themes total (${themesFromSingleField?.length || 0} from theme field, ${themesFromArray?.length || 0} from themes array)`);
+    console.log(`[PUZZLE] Theme codes:`, availableThemes.map(t => t.code).join(', '));
     
-    console.log(`[PUZZLE] Found ${availableThemes.length} themes with puzzles (optimized query)`);
     res.json({ themes: availableThemes });
   } catch (err) {
     console.error('[Puzzle Route] Error getting themes:', err);

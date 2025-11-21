@@ -743,8 +743,19 @@ const EndgameTrainerPage = () => {
   }, [playMoveSound]);
 
   // Load a new puzzle from the backend or use fallback positions
-  const loadNewPuzzle = useCallback(async () => {
-    console.log('🔄 Loading new puzzle...', { selectedTheme, selectedDifficulty });
+  const loadNewPuzzle = useCallback(async (force = false) => {
+    console.log('🔄 Loading new puzzle...', { selectedTheme, selectedDifficulty, force });
+    
+    // If force is true (manual button click), reset loading ref
+    if (force) {
+      isLoadingRef.current = false;
+    }
+    
+    // Prevent duplicate calls unless forced
+    if (!force && isLoadingRef.current) {
+      console.log('⚠️ Already loading, skipping...');
+      return;
+    }
     
     // Check usage limits for free users when loading a new puzzle
     if (user && user.userType !== 'premium' && !isReplay) {
@@ -2038,11 +2049,15 @@ const EndgameTrainerPage = () => {
                   </button>
                 )}
                 <button 
-                  onClick={() => loadNewPuzzle()}
-                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  onClick={() => {
+                    console.log('🔄 New Puzzle button clicked');
+                    loadNewPuzzle(true); // Force load even if already loading
+                  }}
+                  disabled={loading}
+                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:scale-100 disabled:cursor-not-allowed"
                 >
                   <RotateCcw className="w-5 h-5" />
-                  <span>New Puzzle</span>
+                  <span>{loading ? 'Loading...' : 'New Puzzle'}</span>
                 </button>
               </div>
 

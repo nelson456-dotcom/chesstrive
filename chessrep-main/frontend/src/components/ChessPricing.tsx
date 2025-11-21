@@ -57,6 +57,7 @@ function ChessPricing() {
   const [plans, setPlans] = useState(chessPricingPlansBase);
   const [currency, setCurrency] = useState('USD');
   const [currencySymbol, setCurrencySymbol] = useState('$');
+  const [currencyDetected, setCurrencyDetected] = useState(false);
 
   useEffect(() => {
     // Detect user's currency on component mount
@@ -64,6 +65,7 @@ function ChessPricing() {
       console.log(`[Pricing] Setting currency: ${userCurrency} (${symbol}) for country: ${country}`);
       setCurrency(userCurrency);
       setCurrencySymbol(symbol);
+      setCurrencyDetected(true);
       
       // Update plans with converted prices
       const updatedPlans = chessPricingPlansBase.map(plan => {
@@ -107,7 +109,46 @@ function ChessPricing() {
       setPlans(updatedPlans);
     }).catch(err => {
       console.error('[Pricing] Error detecting currency:', err);
-      // Keep USD as default
+      // Keep USD as default but still try to detect
+      setCurrencyDetected(false);
+      // Retry after a short delay
+      setTimeout(() => {
+        getUserCurrency().then(({ currency: userCurrency, symbol, country }) => {
+          console.log(`[Pricing] Retry - Setting currency: ${userCurrency} (${symbol}) for country: ${country}`);
+          setCurrency(userCurrency);
+          setCurrencySymbol(symbol);
+          setCurrencyDetected(true);
+          
+          // Update plans again
+          const updatedPlans = chessPricingPlansBase.map(plan => {
+            if (plan.isFree) {
+              return { ...plan, currency: userCurrency, currencySymbol: symbol };
+            }
+            const monthlyPrice = parseFloat(plan.price);
+            const yearlyPrice = parseFloat(plan.yearlyPrice);
+            const convertedMonthly = convertCurrency(monthlyPrice, userCurrency);
+            const convertedYearly = convertCurrency(yearlyPrice, userCurrency);
+            let monthlyStr, yearlyStr;
+            if (userCurrency === 'JPY' || userCurrency === 'KRW') {
+              monthlyStr = Math.round(convertedMonthly).toString();
+              yearlyStr = Math.round(convertedYearly).toString();
+            } else {
+              monthlyStr = convertedMonthly.toFixed(2);
+              yearlyStr = convertedYearly.toFixed(2);
+            }
+            return {
+              ...plan,
+              price: monthlyStr,
+              yearlyPrice: yearlyStr,
+              currency: userCurrency,
+              currencySymbol: symbol,
+            };
+          });
+          setPlans(updatedPlans);
+        }).catch(e => {
+          console.error('[Pricing] Retry also failed:', e);
+        });
+      }, 1000);
     });
   }, []);
 

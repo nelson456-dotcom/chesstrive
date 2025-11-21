@@ -98,6 +98,17 @@ export async function detectUserCountry() {
       console.log(`[Currency] Using locale-based detection: ${countryFromLocale} -> ${COUNTRY_TO_CURRENCY[countryFromLocale]}`);
       return countryFromLocale;
     }
+    
+    // Also check all locales (some browsers have multiple)
+    if (navigator.languages && Array.isArray(navigator.languages)) {
+      for (const lang of navigator.languages) {
+        const country = lang.split('-')[1]?.toUpperCase();
+        if (country && COUNTRY_TO_CURRENCY[country]) {
+          console.log(`[Currency] Using locale from languages array: ${country} -> ${COUNTRY_TO_CURRENCY[country]}`);
+          return country;
+        }
+      }
+    }
 
     // Fallback: Try IP geolocation (free API)
     try {
