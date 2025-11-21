@@ -466,13 +466,14 @@ const PlayWithBotPage = () => {
       console.log('🤖 Sending bot move request:', payload);
 
       // Add thinking delay based on bot level (simulate human-like thinking time)
+      // Max 10 seconds for highest level, shorter for lower levels
       const botElo = gameSettings.selectedBot.elo || 1400;
-      const thinkingDelay = botElo < 1000 ? 1000 : 
-                           botElo < 1500 ? 2000 : 
-                           botElo < 2000 ? 3000 : 
-                           botElo < 2500 ? 5000 : 8000; // Grandmaster thinks longer
+      const thinkingDelay = botElo < 1000 ? 500 :      // Beginner: 0.5s
+                           botElo < 1500 ? 1000 :       // Novice: 1s
+                           botElo < 2000 ? 2000 :       // Intermediate: 2s
+                           botElo < 2500 ? 4000 : 6000; // Advanced: 4s, Grandmaster: 6s (max)
       
-      console.log(`🤔 Bot thinking for ${thinkingDelay}ms (simulating ${botElo} ELO player)...`);
+      console.log(`🤔 Bot thinking for ${thinkingDelay}ms (${botElo} ELO player)...`);
       await new Promise(resolve => setTimeout(resolve, thinkingDelay));
 
       const response = await fetch(getApiUrl('bot/move'), {
