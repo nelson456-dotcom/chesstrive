@@ -53,6 +53,7 @@ positionSchema.index({ fen: 1, ratingRange: 1 });
 const Position = mongoose.model('BotTrainingPosition', positionSchema);
 
 // Rating range mapping from PGN files
+// Only includes files that actually exist in backend/data/level/
 const RATING_RANGES = {
   '500-800.pgn': '500-800',
   '800-1200.pgn': '800-1200',
@@ -60,10 +61,7 @@ const RATING_RANGES = {
   '1600-1700.pgn': '1600-1700',
   '1700.pgn': '1700-1800',
   '1800.pgn': '1800-2000',
-  '1800-2500.pgn': '1800-2500',
-  'master_games.pgn': '2400-2800',
-  'Kasparov.pgn': '2500-2800',
-  'Karpov.pgn': '2500-2800'
+  '1800-2500.pgn': '1800-2500'
 };
 
 // Also map the old files
@@ -430,6 +428,13 @@ async function buildDatabase() {
     
     for (const filePath of pgnFiles) {
       const filename = path.basename(filePath);
+      
+      // Skip files that don't exist
+      if (!fs.existsSync(filePath)) {
+        console.log(`⚠️  Skipping ${filename} - file does not exist`);
+        continue;
+      }
+      
       const ratingRange = getRatingRange(filename);
       
       if (!ratingRange) {
@@ -437,6 +442,7 @@ async function buildDatabase() {
         continue;
       }
       
+      console.log(`\n📂 Processing: ${filename} → Rating range: ${ratingRange}`);
       const result = await processPGNFile(filePath, ratingRange);
       totalGames += result.games;
       totalPositions += result.positions;
