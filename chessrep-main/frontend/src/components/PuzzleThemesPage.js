@@ -205,6 +205,7 @@ const PuzzleThemesPage = () => {
           code: themeCode,
           explanation: themeExplanations[themeCode] || ''
         }));
+        console.log('[PuzzleThemes] Using fallback themes:', fallbackThemes.length);
         setAvailableThemes(fallbackThemes);
       }
     };
@@ -229,35 +230,54 @@ const PuzzleThemesPage = () => {
       console.log('[PuzzleThemes] Random puzzle response status:', response.status);
       if (response.ok) {
         const data = await response.json();
+        console.log('[PuzzleThemes] Random puzzle data:', data);
         if (data?.puzzles && data.puzzles.length > 0) {
           // Select a random puzzle from the returned puzzles
           const randomIndex = Math.floor(Math.random() * data.puzzles.length);
           const selectedPuzzle = data.puzzles[randomIndex];
+          console.log('[PuzzleThemes] Selected puzzle:', selectedPuzzle);
           // Navigate to the puzzle solve page with the puzzle data
           navigate(`/puzzles/random`, { state: { puzzle: selectedPuzzle } });
         } else if (data?.puzzle) {
           // Fallback for old format
+          console.log('[PuzzleThemes] Using old format puzzle:', data.puzzle);
           navigate(`/puzzles/random`, { state: { puzzle: data.puzzle } });
         } else {
           // Fallback to theme-based random puzzle using available themes
+          console.log('[PuzzleThemes] No puzzle in response, falling back to random theme');
           if (availableThemes.length > 0) {
             const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
+            console.log('[PuzzleThemes] Navigating to random theme:', randomTheme.code);
             navigate(`/puzzles/${encodeURIComponent(randomTheme.code)}`);
+          } else {
+            console.error('[PuzzleThemes] No themes available for fallback');
+            alert('No puzzles available. Please try again later.');
           }
         }
       } else {
+        const errorText = await response.text();
+        console.error('[PuzzleThemes] API error:', response.status, errorText);
         // Fallback to theme-based random puzzle if API fails
         if (availableThemes.length > 0) {
           const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
+          console.log('[PuzzleThemes] API failed, navigating to random theme:', randomTheme.code);
           navigate(`/puzzles/${encodeURIComponent(randomTheme.code)}`);
+        } else {
+          console.error('[PuzzleThemes] No themes available for fallback');
+          alert('Failed to load puzzle. Please try again later.');
         }
       }
     } catch (error) {
-      console.error('Error loading random puzzle:', error);
+      console.error('[PuzzleThemes] Error loading random puzzle:', error);
+      console.error('[PuzzleThemes] Error details:', error.message, error.stack);
       // Fallback to theme-based random puzzle
       if (availableThemes.length > 0) {
         const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
+        console.log('[PuzzleThemes] Exception caught, navigating to random theme:', randomTheme.code);
         navigate(`/puzzles/${encodeURIComponent(randomTheme.code)}`);
+      } else {
+        console.error('[PuzzleThemes] No themes available for fallback');
+        alert('Error loading puzzle. Please try again later.');
       }
     } finally {
       setRandomPuzzleLoading(false);
