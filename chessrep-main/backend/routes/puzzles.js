@@ -829,17 +829,26 @@ router.get('/themes', async (req, res) => {
     res.json({ themes: availableThemes });
   } catch (err) {
     console.error('[Puzzle Route] Error getting themes:', err);
+    console.error('[Puzzle Route] Error stack:', err.stack);
     
-    // Return fallback themes on error
+    // Return comprehensive fallback themes on error
     const fallbackThemes = [
       { code: 'mate_in_1', label: 'Mate in 1' },
       { code: 'mate_in_2', label: 'Mate in 2' },
       { code: 'mate_in_3', label: 'Mate in 3' },
-      { code: 'tactics', label: 'Tactics' },
+      { code: 'tactic', label: 'Tactic' },
+      { code: 'fork', label: 'Fork' },
+      { code: 'pin', label: 'Pin' },
+      { code: 'skewer', label: 'Skewer' },
+      { code: 'discovered_attack', label: 'Discovered Attack' },
+      { code: 'deflection', label: 'Deflection' },
+      { code: 'sacrifice', label: 'Sacrifice' },
+      { code: 'back_rank_mate', label: 'Back Rank Mate' },
       { code: 'endgame', label: 'Endgame' },
       { code: 'opening', label: 'Opening' },
       { code: 'middlegame', label: 'Middlegame' }
     ];
+    console.log('[Puzzle Route] Returning fallback themes due to error');
     res.json({ themes: fallbackThemes });
   }
 });
