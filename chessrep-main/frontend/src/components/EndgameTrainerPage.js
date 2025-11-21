@@ -816,7 +816,12 @@ const EndgameTrainerPage = () => {
       // Try to fetch from backend first - use the random endpoint with strict difficulty filtering
       const url = `${getApiUrl('endgames/random')}?category=${encodeURIComponent(selectedTheme)}&difficulty=${encodeURIComponent(selectedDifficulty)}`;
       console.log(`🌐 Fetching from: ${url}`);
-      const response = await fetch(url, { headers });
+      console.log(`🌐 Headers:`, headers);
+      
+      const response = await fetch(url, { 
+        headers,
+        credentials: 'include' // Include cookies for CORS
+      });
       
       console.log('📡 Response status:', response.status);
       
@@ -897,7 +902,8 @@ const EndgameTrainerPage = () => {
       }
     } catch (error) {
       console.error('❌ Error loading puzzle:', error);
-      console.log('🔄 Backend not available, using fallback positions');
+      console.error('❌ Error details:', error.message, error.stack);
+      setFeedback(`Error loading puzzle: ${error.message}. Trying fallback positions...`);
       isLoadingRef.current = false;
       setLoading(false);
     }

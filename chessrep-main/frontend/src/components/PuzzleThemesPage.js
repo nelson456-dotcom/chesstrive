@@ -168,11 +168,18 @@ const PuzzleThemesPage = () => {
 
     const fetchAvailableThemes = async () => {
       try {
-        const response = await fetch(getApiUrl('/puzzles/themes'));
+        console.log('[PuzzleThemes] Fetching themes from:', getApiUrl('/puzzles/themes'));
+        const response = await fetch(getApiUrl('/puzzles/themes'), {
+          credentials: 'include' // Include cookies for CORS
+        });
+        console.log('[PuzzleThemes] Response status:', response.status);
         if (!response.ok) {
-          throw new Error('Failed to fetch themes');
+          const errorText = await response.text();
+          console.error('[PuzzleThemes] Error response:', errorText);
+          throw new Error(`Failed to fetch themes: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
+        console.log('[PuzzleThemes] Received themes:', data.themes?.length || 0);
         
         // Use the themes directly from the backend (already have code and label)
         const themesWithLabels = data.themes.map(theme => {
@@ -186,7 +193,9 @@ const PuzzleThemesPage = () => {
         
         setAvailableThemes(themesWithLabels);
       } catch (err) {
-        console.error('Error fetching themes:', err);
+        console.error('[PuzzleThemes] Error fetching themes:', err);
+        console.error('[PuzzleThemes] Error details:', err.message, err.stack);
+        setThemesLoading(false);
         // Fallback to current database themes
         const fallbackThemes = [
           'back_rank_mate', 'deflection', 'discovered_attack', 'endgame', 'fork',
@@ -212,7 +221,11 @@ const PuzzleThemesPage = () => {
     setRandomPuzzleLoading(true);
     try {
       // Fetch a random puzzle from the API
-      const response = await fetch(getApiUrl('/puzzles/random'));
+      console.log('[PuzzleThemes] Fetching random puzzle from:', getApiUrl('/puzzles/random'));
+      const response = await fetch(getApiUrl('/puzzles/random'), {
+        credentials: 'include' // Include cookies for CORS
+      });
+      console.log('[PuzzleThemes] Random puzzle response status:', response.status);
       if (response.ok) {
         const data = await response.json();
         if (data?.puzzles && data.puzzles.length > 0) {
