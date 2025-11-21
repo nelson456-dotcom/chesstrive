@@ -196,9 +196,10 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
     try {
       do {
         try {
-          // For large collections, use simple find().limit() with index hint
-          // Use hint to force index usage for better performance
-          let findQuery = Puzzle.find(query).limit(size * 2).lean().maxTimeMS(3000);
+          // For large collections, get more results than needed for variety
+          // Then randomly shuffle and select for better puzzle variety
+          const fetchSize = size * 5; // Get 5x more puzzles for better variety
+          let findQuery = Puzzle.find(query).limit(fetchSize).lean().maxTimeMS(5000);
           
           // Add index hint if theme or rating is in query
           if (query.theme || query.rating) {
@@ -211,7 +212,20 @@ router.get('/random', auth, asyncHandler(puzzleLimit), asyncHandler(async (req, 
             }
           }
           
-          results = await findQuery;
+          const allResults = await findQuery;
+          
+          // Randomly shuffle and select puzzles for variety
+          if (allResults && allResults.length > 0) {
+            // Shuffle array using Fisher-Yates algorithm
+            for (let i = allResults.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [allResults[i], allResults[j]] = [allResults[j], allResults[i]];
+            }
+            // Take the requested size
+            results = allResults.slice(0, size);
+          } else {
+            results = [];
+          }
         } catch (findError) {
           console.error(`[PUZZLE] Find error on attempt ${attempts + 1}:`, findError.message);
           // If timeout, return empty and let fallback handle it
