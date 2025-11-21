@@ -474,25 +474,36 @@ router.post('/move', optionalAuth, async (req, res) => {
     const targetRating = resolvedEngineParams.canonicalRating || resolvedEngineParams.appliedRating || 1200;
     
     // Always try training first - only use Stockfish if no training data exists
+    // For lower ratings (< 2000), prioritize training data even more strongly
+    const useTrainingPriority = targetRating < 2000 ? 0.9 : 0.7; // 90% chance for lower ratings, 70% for higher
+    
     try {
-      console.log('🎓 Checking training database for human-like move...');
+      console.log(`🎓 Checking training database for human-like move (target rating: ${targetRating})...`);
       const trainingMove = await getTrainingMove(fen, targetRating, {
         randomness: resolvedEngineParams.randomness || 0.1
       });
       
       if (trainingMove && trainingMove.move) {
-        // Validate the move
-        const tempChess = new Chess(fen);
-        try {
-          const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
-          if (chessMove) {
-            sanMove = chessMove.san;
-            console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'})`);
-          } else {
-            console.log('⚠️ Training move invalid, falling back to Stockfish');
+        // For lower ratings, almost always use training data if available
+        // For higher ratings, use training data most of the time but allow Stockfish for critical positions
+        const useTraining = Math.random() < useTrainingPriority;
+        
+        if (useTraining) {
+          // Validate the move
+          const tempChess = new Chess(fen);
+          try {
+            const chessMove = tempChess.move(trainingMove.move, { sloppy: true });
+            if (chessMove) {
+              sanMove = chessMove.san;
+              console.log(`✅ Using training move: ${sanMove} (confidence: ${(trainingMove.confidence * 100).toFixed(1)}%, source: ${trainingMove.source}, rating: ${trainingMove.rating || 'N/A'}, quality: ${trainingMove.quality || 'N/A'})`);
+            } else {
+              console.log('⚠️ Training move invalid, falling back to Stockfish');
+            }
+          } catch (moveError) {
+            console.log('⚠️ Training move failed validation, falling back to Stockfish');
           }
-        } catch (moveError) {
-          console.log('⚠️ Training move failed validation, falling back to Stockfish');
+        } else {
+          console.log(`📊 Training move available but using Stockfish for this position (${(useTrainingPriority * 100).toFixed(0)}% priority)`);
         }
       } else {
         console.log('📚 No training data for this position, using Stockfish');

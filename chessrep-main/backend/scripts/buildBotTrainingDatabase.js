@@ -15,6 +15,7 @@ const path = require('path');
 const { Chess } = require('chess.js');
 const PGNParser = require('pgn-parser');
 const mongoose = require('mongoose');
+const { spawn } = require('child_process');
 require('dotenv').config();
 
 // Connect to MongoDB
@@ -38,7 +39,9 @@ const positionSchema = new mongoose.Schema({
   moves: [{
     move: { type: String, required: true },
     count: { type: Number, default: 1 },
-    rating: { type: Number } // Average rating of players who played this move
+    rating: { type: Number }, // Average rating of players who played this move
+    avgEval: { type: Number }, // Average Stockfish evaluation after this move (in centipawns)
+    quality: { type: String } // 'excellent', 'good', 'average', 'poor' based on Stockfish analysis
   }],
   totalGames: { type: Number, default: 1 },
   lastUpdated: { type: Date, default: Date.now }
@@ -245,6 +248,149 @@ function normalizeFen(fen) {
     return `${parts[0]} ${parts[1]} ${parts[2]} ${parts[3]}`;
   }
   return fen;
+}
+
+// Get Stockfish path
+function getStockfishPath() {
+  if (process.platform === 'win32') {
+    return path.join(__dirname, '../engines/stockfish.exe');
+  }
+  if (fs.existsSync('/usr/games/stockfish')) return '/usr/games/stockfish';
+  if (fs.existsSync('/usr/bin/stockfish')) return '/usr/bin/stockfish';
+  if (fs.existsSync('/usr/local/bin/stockfish')) return '/usr/local/bin/stockfish';
+  return path.join(__dirname, '../engines/stockfish');
+}
+
+// Analyze a position with Stockfish to get move evaluation
+async function analyzeMoveWithStockfish(fen, move, depth = 8) {
+  return new Promise((resolve, reject) => {
+    const stockfishPath = getStockfishPath();
+    if (!fs.existsSync(stockfishPath)) {
+      console.warn(`⚠️  Stockfish not found at ${stockfishPath}, skipping analysis`);
+      resolve(null);
+      return;
+    }
+
+    const engine = spawn(stockfishPath);
+    let output = '';
+    let bestMove = null;
+    let evaluation = null;
+    let timeout;
+
+    const cleanup = () => {
+      clearTimeout(timeout);
+      if (engine && !engine.killed) {
+        engine.kill();
+      }
+    };
+
+    timeout = setTimeout(() => {
+      cleanup();
+      resolve(null);
+    }, 5000); // 5 second timeout
+
+    engine.stdout.on('data', (data) => {
+      output += data.toString();
+      const lines = output.split('\n');
+      
+      for (const line of lines) {
+        // Look for bestmove
+        if (line.startsWith('bestmove')) {
+          const match = line.match(/bestmove\s+(\S+)/);
+          if (match) {
+            bestMove = match[1];
+          }
+        }
+        
+        // Look for evaluation in info lines
+        if (line.includes('depth') && line.includes('score')) {
+          const cpMatch = line.match(/score\s+cp\s+(-?\d+)/);
+          if (cpMatch) {
+            evaluation = parseInt(cpMatch[1]);
+          }
+        }
+      }
+    });
+
+    engine.stderr.on('data', (data) => {
+      // Ignore stderr
+    });
+
+    engine.on('error', (error) => {
+      cleanup();
+      resolve(null);
+    });
+
+    engine.on('close', () => {
+      cleanup();
+      // Make the move and evaluate the resulting position
+      try {
+        const chess = new Chess(fen);
+        const chessMove = chess.move(move, { sloppy: true });
+        if (chessMove) {
+          // If we got an evaluation, use it; otherwise return null
+          resolve(evaluation);
+        } else {
+          resolve(null);
+        }
+      } catch (e) {
+        resolve(null);
+      }
+    });
+
+    // Initialize Stockfish
+    engine.stdin.write('uci\n');
+    engine.stdin.write('isready\n');
+    
+    setTimeout(() => {
+      // Make the move first
+      const chess = new Chess(fen);
+      try {
+        const chessMove = chess.move(move, { sloppy: true });
+        if (chessMove) {
+          const newFen = chess.fen();
+          engine.stdin.write(`position fen ${newFen}\n`);
+          engine.stdin.write(`go depth ${depth}\n`);
+        } else {
+          cleanup();
+          resolve(null);
+        }
+      } catch (e) {
+        cleanup();
+        resolve(null);
+      }
+    }, 100);
+  });
+}
+
+// Determine move quality based on Stockfish evaluation
+function getMoveQuality(evalBefore, evalAfter, ratingRange) {
+  if (evalAfter === null || evalBefore === null) return 'average';
+  
+  const evalDiff = evalAfter - evalBefore;
+  const rating = parseInt(ratingRange.split('-')[0]) || 1200;
+  
+  // For lower ratings, moves can be worse and still be "good" for that level
+  // For higher ratings, we expect better moves
+  if (rating < 1200) {
+    // Beginner: moves that lose less than 200cp are "good"
+    if (evalDiff > -50) return 'excellent';
+    if (evalDiff > -150) return 'good';
+    if (evalDiff > -300) return 'average';
+    return 'poor';
+  } else if (rating < 1800) {
+    // Intermediate: moves that lose less than 100cp are "good"
+    if (evalDiff > -30) return 'excellent';
+    if (evalDiff > -100) return 'good';
+    if (evalDiff > -200) return 'average';
+    return 'poor';
+  } else {
+    // Advanced: moves that lose less than 50cp are "good"
+    if (evalDiff > -20) return 'excellent';
+    if (evalDiff > -50) return 'good';
+    if (evalDiff > -100) return 'average';
+    return 'poor';
+  }
 }
 
 async function buildDatabase() {

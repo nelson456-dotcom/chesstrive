@@ -15,7 +15,9 @@ const positionSchema = new mongoose.Schema({
   moves: [{
     move: { type: String, required: true },
     count: { type: Number, default: 1 },
-    rating: { type: Number }
+    rating: { type: Number },
+    avgEval: { type: Number }, // Average Stockfish evaluation after this move
+    quality: { type: String } // 'excellent', 'good', 'average', 'poor'
   }],
   totalGames: { type: Number, default: 1 },
   lastUpdated: { type: Date, default: Date.now }
@@ -149,7 +151,9 @@ async function getTrainingMove(fen, targetRating, options = {}) {
           move: moveSan, // Always return SAN format
           originalMove: moveData.move,
           count: moveData.count,
-          rating: moveData.rating
+          rating: moveData.rating,
+          quality: moveData.quality,
+          avgEval: moveData.avgEval
         });
       }
     }
@@ -161,25 +165,49 @@ async function getTrainingMove(fen, targetRating, options = {}) {
     // Sort by frequency
     const moves = validMoves.sort((a, b) => b.count - a.count);
     
-    // Calculate weights based on frequency and rating proximity
+    // Calculate weights based on frequency, rating proximity, and move quality
     const weightedMoves = moves.map(move => {
       let weight = move.count;
       
       // Boost weight if move's average rating is close to target rating
       if (move.rating) {
         const ratingDiff = Math.abs(move.rating - targetRating);
-        if (ratingDiff < 200) {
+        if (ratingDiff < 100) {
+          weight *= 2.0; // Strong boost for exact rating match
+        } else if (ratingDiff < 200) {
           weight *= 1.5; // Boost moves from similar rating players
+        } else if (ratingDiff < 300) {
+          weight *= 1.2; // Small boost for nearby ratings
         } else if (ratingDiff > 500) {
-          weight *= 0.5; // Reduce weight for moves from very different ratings
+          weight *= 0.3; // Strongly reduce weight for very different ratings
+        } else {
+          weight *= 0.7; // Reduce for moderately different ratings
         }
+      }
+      
+      // Boost weight for higher quality moves (if quality data exists)
+      if (move.quality) {
+        if (move.quality === 'excellent') weight *= 1.5;
+        else if (move.quality === 'good') weight *= 1.2;
+        else if (move.quality === 'poor') weight *= 0.5;
+      }
+      
+      // Boost weight for moves with better average evaluation (if available)
+      if (move.avgEval !== undefined && move.avgEval !== null) {
+        // Moves that maintain or improve position are better
+        if (move.avgEval > -50) weight *= 1.3;
+        else if (move.avgEval > -100) weight *= 1.1;
+        else if (move.avgEval < -300) weight *= 0.4; // Heavily penalize very bad moves
+        else if (move.avgEval < -200) weight *= 0.6;
       }
       
       return {
         move: move.move,
         weight: weight,
         count: move.count,
-        rating: move.rating
+        rating: move.rating,
+        quality: move.quality,
+        avgEval: move.avgEval
       };
     });
     
