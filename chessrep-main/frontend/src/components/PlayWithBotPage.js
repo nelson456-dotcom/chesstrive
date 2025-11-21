@@ -5,6 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { saveGame, createGame } from '../utils/gameManager';
 import ProductionChessBoard from './ProductionChessBoard';
 import { deriveBotLevelMeta } from '../utils/botLevels';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const BOT_DEFINITIONS = [
   {
@@ -464,9 +465,19 @@ const PlayWithBotPage = () => {
 
       console.log('🤖 Sending bot move request:', payload);
 
-      const response = await fetch('http://localhost:3001/api/bot/move', {
+      // Add thinking delay based on bot level (simulate human-like thinking time)
+      const botElo = gameSettings.selectedBot.elo || 1400;
+      const thinkingDelay = botElo < 1000 ? 1000 : 
+                           botElo < 1500 ? 2000 : 
+                           botElo < 2000 ? 3000 : 
+                           botElo < 2500 ? 5000 : 8000; // Grandmaster thinks longer
+      
+      console.log(`🤔 Bot thinking for ${thinkingDelay}ms (simulating ${botElo} ELO player)...`);
+      await new Promise(resolve => setTimeout(resolve, thinkingDelay));
+
+      const response = await fetch(getApiUrl('bot/move'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
         body: JSON.stringify(payload)
       });
 
