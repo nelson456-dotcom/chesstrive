@@ -726,82 +726,69 @@ router.get('/themes', async (req, res) => {
       return res.json({ themes: fallbackThemes });
     }
     
-    // OPTIMIZED: Use aggregation to get themes with counts in a single query
-    // Handle both 'theme' (single string) and 'themes' (array) fields
-    const themesWithCounts = await Puzzle.aggregate([
-      {
-        $project: {
-          // Get theme from single field if it exists
-          singleTheme: { $ifNull: ['$theme', null] },
-          // Get themes from array field if it exists
-          themesArray: { $ifNull: ['$themes', []] }
-        }
-      },
-      {
-        // Unwind themes array to get individual themes
-        $unwind: {
-          path: '$themesArray',
-          preserveNullAndEmptyArrays: true
-        }
-      },
-      {
-        // Combine single theme and array themes into one field
-        $project: {
-          theme: {
-            $cond: {
-              if: { $ne: ['$singleTheme', null] },
-              then: '$singleTheme',
-              else: '$themesArray'
-            }
-          }
-        }
-      },
-      {
-        // Filter out null/empty themes
-        $match: {
-          theme: { $ne: null, $exists: true, $ne: '' }
-        }
-      },
-      {
-        // Normalize theme to lowercase for grouping
-        $project: {
-          normalizedTheme: { $toLower: '$theme' }
-        }
-      },
-      {
-        // Group by normalized theme and count
-        $group: {
-          _id: '$normalizedTheme',
-          count: { $sum: 1 }
-        }
-      },
-      {
-        // Filter out themes with no puzzles (shouldn't happen, but just in case)
-        $match: {
-          count: { $gt: 0 }
-        }
-      },
-      {
-        // Format output
-        $project: {
-          code: '$_id',
-          count: 1,
-          _id: 0
-        }
-      },
-      {
-        $sort: { code: 1 } // Sort alphabetically
-      }
-    ]).maxTimeMS(10000); // 10 second timeout (might need more time for unwinding)
+    // FAST & SIMPLE: Get themes from both fields separately, then combine
+    // This is much faster than complex aggregation and more reliable
     
-    // Format labels properly (replace underscores with spaces, capitalize words)
-    const availableThemes = themesWithCounts.map(theme => ({
-      code: theme.code,
-      label: theme.code
-        .split('_')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-        .join(' ')
-    }));
+    // Get distinct themes from 'theme' field (uses index, very fast)
+    const themesFromSingleField = await Puzzle.distinct('theme', { theme: { $ne: null, $exists: true, $ne: '' } }).maxTimeMS(5000);
+    
+    // Get distinct themes from 'themes' array field (simple aggregation)
+    const themesFromArray = await Puzzle.aggregate([
+      {
+        $match: {
+          themes: { $exists: true, $ne: [], $ne: null }
+        }
+      },
+      {
+        $unwind: '$themes'
+      },
+      {
+        $group: {
+          _id: '$themes'
+        }
+      },
+      {
+        $project: {
+          _id: 0,
+          theme: '$_id'
+        }
+      }
+    ]).maxTimeMS(5000);
+    
+    // Combine both lists and remove duplicates
+    const allThemesSet = new Set();
+    
+    // Add themes from single field
+    if (themesFromSingleField && Array.isArray(themesFromSingleField)) {
+      themesFromSingleField.forEach(theme => {
+        if (theme && typeof theme === 'string' && theme.trim()) {
+          allThemesSet.add(theme.toLowerCase().trim());
+        }
+      });
+    }
+    
+    // Add themes from array field
+    if (themesFromArray && Array.isArray(themesFromArray)) {
+      themesFromArray.forEach(item => {
+        const theme = item.theme;
+        if (theme && typeof theme === 'string' && theme.trim()) {
+          allThemesSet.add(theme.toLowerCase().trim());
+        }
+      });
+    }
+    
+    // Convert to sorted array and format
+    const availableThemes = Array.from(allThemesSet)
+      .sort()
+      .map(themeCode => ({
+        code: themeCode,
+        label: themeCode
+          .split('_')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+          .join(' ')
+      }));
+    
+    console.log(`[PUZZLE] Found ${availableThemes.length} unique themes (${themesFromSingleField?.length || 0} from theme field, ${themesFromArray?.length || 0} from themes array)`);
     
     console.log(`[PUZZLE] Found ${availableThemes.length} themes with puzzles (optimized query)`);
     res.json({ themes: availableThemes });
