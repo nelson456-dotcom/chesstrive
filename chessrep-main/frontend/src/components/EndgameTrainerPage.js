@@ -66,6 +66,7 @@ const EndgameTrainerPage = () => {
   const [puzzleHistory, setPuzzleHistory] = useState([]);
   const [drawnArrows, setDrawnArrows] = useState([]);
   const [isReplay, setIsReplay] = useState(false); // Track if this is a replay from history
+  const [userEndgameRating, setUserEndgameRating] = useState(user?.endgameRating || 1200);
   const boardRef = useRef(null);
   const boardAreaRef = useRef(null);
   const boardContainerRef = useRef(null);
@@ -411,8 +412,13 @@ const EndgameTrainerPage = () => {
     }
   }, [fen, currentPuzzle, loading, boardSize]);
 
-  // Get user's endgame rating from AuthContext
-  const userEndgameRating = user?.endgameRating || 1200;
+  useEffect(() => {
+    if (typeof user?.endgameRating === 'number') {
+      setUserEndgameRating(user.endgameRating);
+    } else if (!user) {
+      setUserEndgameRating(1200);
+    }
+  }, [user]);
 
   // Combine user-drawn arrows and last move arrow
   const getAllArrows = () => {
