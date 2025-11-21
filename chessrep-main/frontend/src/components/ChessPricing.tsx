@@ -60,7 +60,8 @@ function ChessPricing() {
 
   useEffect(() => {
     // Detect user's currency on component mount
-    getUserCurrency().then(({ currency: userCurrency, symbol }) => {
+    getUserCurrency().then(({ currency: userCurrency, symbol, country }) => {
+      console.log(`[Pricing] Setting currency: ${userCurrency} (${symbol}) for country: ${country}`);
       setCurrency(userCurrency);
       setCurrencySymbol(symbol);
       
@@ -81,6 +82,8 @@ function ChessPricing() {
         const convertedMonthly = convertCurrency(monthlyPrice, userCurrency);
         const convertedYearly = convertCurrency(yearlyPrice, userCurrency);
         
+        console.log(`[Pricing] Converting ${monthlyPrice} USD to ${convertedMonthly} ${userCurrency}`);
+        
         // Format numbers (remove decimals for JPY/KRW, 2 decimals for others)
         let monthlyStr, yearlyStr;
         if (userCurrency === 'JPY' || userCurrency === 'KRW') {
@@ -100,9 +103,10 @@ function ChessPricing() {
         };
       });
       
+      console.log('[Pricing] Updated plans:', updatedPlans);
       setPlans(updatedPlans);
     }).catch(err => {
-      console.error('Error detecting currency:', err);
+      console.error('[Pricing] Error detecting currency:', err);
       // Keep USD as default
     });
   }, []);

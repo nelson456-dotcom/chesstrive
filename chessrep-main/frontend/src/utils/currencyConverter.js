@@ -98,15 +98,24 @@ export async function detectUserCountry() {
 
     // Fallback: Try IP geolocation (free API)
     try {
-      const response = await fetch('https://ipapi.co/json/', { timeout: 3000 });
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000);
+      
+      const response = await fetch('https://ipapi.co/json/', { 
+        signal: controller.signal 
+      });
+      clearTimeout(timeoutId);
+      
       if (response.ok) {
         const data = await response.json();
+        console.log('[Currency] IP geolocation result:', data);
         if (data.country_code && COUNTRY_TO_CURRENCY[data.country_code]) {
+          console.log(`[Currency] Detected country: ${data.country_code}, Currency: ${COUNTRY_TO_CURRENCY[data.country_code]}`);
           return data.country_code;
         }
       }
     } catch (e) {
-      console.log('IP geolocation failed, using locale');
+      console.log('[Currency] IP geolocation failed:', e.message);
     }
 
     // Default to US if detection fails
@@ -166,10 +175,16 @@ export function formatPrice(amount, currency = 'USD') {
  * @returns {Promise<{currency: string, symbol: string}>}
  */
 export async function getUserCurrency() {
-  const country = await detectUserCountry();
-  const currency = getCurrencyForCountry(country);
-  const symbol = CURRENCY_SYMBOLS[currency] || '$';
-  
-  return { currency, symbol, country };
+  try {
+    const country = await detectUserCountry();
+    const currency = getCurrencyForCountry(country);
+    const symbol = CURRENCY_SYMBOLS[currency] || '$';
+    
+    console.log(`[Currency] User currency detected: ${currency} (${symbol}) for country: ${country}`);
+    return { currency, symbol, country };
+  } catch (error) {
+    console.error('[Currency] Error getting user currency:', error);
+    return { currency: 'USD', symbol: '$', country: 'US' };
+  }
 }
 
