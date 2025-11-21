@@ -1007,7 +1007,12 @@ const EndgameTrainerPage = () => {
     if (!initSuccess) {
       console.error('Failed to initialize fallback puzzle');
       setFeedback('Error loading puzzle. Please try again.');
+      isLoadingRef.current = false;
+      setLoading(false);
+      return;
     }
+    
+    isLoadingRef.current = false;
     setLoading(false);
   }, [selectedTheme, selectedDifficulty, validatePuzzleDifficulty, initializePuzzle, endgamePositions, currentPuzzle, puzzleComplete, isReplay, updateUserRating, savePuzzleHistory]);
 
