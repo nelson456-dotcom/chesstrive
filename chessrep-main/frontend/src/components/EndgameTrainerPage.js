@@ -7,6 +7,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { Trophy, Target, Clock, RotateCcw, Eye } from 'lucide-react';
 import { savePuzzleResult, getRecentPuzzles, PUZZLE_TYPES } from '../utils/puzzleTracker';
 import { updateDailyProgress, MODULE_NAMES } from '../utils/dailyProgress';
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 const TOUCH_BOARD_STYLE = {
   // Use 'manipulation' to allow panning (dragging) while preventing zoom/scroll
@@ -501,11 +502,9 @@ const EndgameTrainerPage = () => {
       }
 
       console.log('📡 Sending rating update to backend...');
-      const response = await fetch('http://localhost:3001/api/endgames/stats', {
+      const response = await fetch(getApiUrl('endgames/stats'), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
+        headers: getAuthHeaders({ 'Content-Type': 'application/json' })
         },
         body: JSON.stringify({
           puzzleRating: puzzleRating,
@@ -751,11 +750,9 @@ const EndgameTrainerPage = () => {
     // Check usage limits for free users when loading a new puzzle
     if (user && user.userType !== 'premium' && !isReplay) {
       try {
-        const token = localStorage.getItem('token');
-        if (token) {
-          const response = await fetch('http://localhost:3001/api/usage-limits/endgame-trainer', {
-            headers: { 'x-auth-token': token }
-          });
+        const response = await fetch(getApiUrl('usage-limits/endgame-trainer'), {
+          headers: getAuthHeaders()
+        });
           
           if (response.ok) {
             const limitData = await response.json();
@@ -808,8 +805,9 @@ const EndgameTrainerPage = () => {
       };
       
       // Try to fetch from backend first - use the random endpoint with strict difficulty filtering
-      console.log(`🌐 Fetching from: http://localhost:3001/api/endgames/random?category=${selectedTheme}&difficulty=${selectedDifficulty}`);
-      const response = await fetch(`http://localhost:3001/api/endgames/random?category=${selectedTheme}&difficulty=${selectedDifficulty}`, { headers });
+      const url = `${getApiUrl('endgames/random')}?category=${encodeURIComponent(selectedTheme)}&difficulty=${encodeURIComponent(selectedDifficulty)}`;
+      console.log(`🌐 Fetching from: ${url}`);
+      const response = await fetch(url, { headers });
       
       console.log('📡 Response status:', response.status);
       
@@ -840,20 +838,20 @@ const EndgameTrainerPage = () => {
           console.log(`✅ Loaded puzzle with rating ${normalizedPuzzle.rating} for difficulty ${selectedDifficulty}`);
           const initSuccess = initializePuzzle(normalizedPuzzle);
           if (initSuccess) {
-            loadingRef.current = false;
+            isLoadingRef.current = false;
             setLoading(false);
             return;
           } else {
             console.error('Failed to initialize puzzle, trying fallback...');
             setFeedback('Error initializing puzzle. Trying fallback...');
-            loadingRef.current = false;
+            isLoadingRef.current = false;
             setLoading(false);
             // Continue to fallback
           }
         } else {
           console.error('❌ Invalid puzzle data received:', puzzle);
           setFeedback('Invalid puzzle data received. Trying fallback...');
-          loadingRef.current = false;
+          isLoadingRef.current = false;
           setLoading(false);
           // Continue to fallback
         }
@@ -869,23 +867,23 @@ const EndgameTrainerPage = () => {
         
         if (response.status === 404 && errorData.error && errorData.error.includes('No puzzles found for difficulty level')) {
           setFeedback(`No puzzles available for ${selectedDifficulty} difficulty (rating ${errorData.minRating}-${errorData.maxRating}). Try a different difficulty level.`);
-          loadingRef.current = false;
+          isLoadingRef.current = false;
           setLoading(false);
           return;
         } else if (response.status === 400 && errorData.error && errorData.error.includes('Invalid difficulty level')) {
           setFeedback('Invalid difficulty level selected. Please refresh the page.');
-          loadingRef.current = false;
+          isLoadingRef.current = false;
           setLoading(false);
           return;
         } else if (response.status === 401 || response.status === 403) {
           setFeedback('Authentication required. Please log in again.');
-          loadingRef.current = false;
+          isLoadingRef.current = false;
           setLoading(false);
           return;
         }
         // For other errors, continue to fallback
         console.log('Backend error, falling back to local puzzles');
-        loadingRef.current = false;
+        isLoadingRef.current = false;
         setLoading(false);
       }
     } catch (error) {
@@ -1287,16 +1285,11 @@ const EndgameTrainerPage = () => {
           
           // Increment usage limit for free users when puzzle is completed
           if (user && user.userType !== 'premium' && !isReplay) {
-            const token = localStorage.getItem('token');
-            if (token) {
-              // Fire-and-forget: increment usage limit asynchronously
-              fetch('http://localhost:3001/api/usage-limits/endgame-trainer/increment', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'x-auth-token': token
-                }
-              }).catch(error => {
+            // Fire-and-forget: increment usage limit asynchronously
+            fetch(getApiUrl('usage-limits/endgame-trainer/increment'), {
+              method: 'POST',
+              headers: getAuthHeaders({ 'Content-Type': 'application/json' })
+            }).catch(error => {
                 console.error('Error incrementing usage limit:', error);
               });
             }
@@ -1357,7 +1350,8 @@ const EndgameTrainerPage = () => {
       console.log(`Loading endgame category: ${endgameType} with difficulty: ${selectedDifficulty}`);
       
       // Fetch from backend API with difficulty parameter - use category endpoint (doesn't require auth)
-      const response = await fetch(`http://localhost:3001/api/endgames/category/${endgameType}?difficulty=${selectedDifficulty}`);
+      const url = `${getApiUrl(`endgames/category/${encodeURIComponent(endgameType)}`)}?difficulty=${encodeURIComponent(selectedDifficulty)}`;
+      const response = await fetch(url);
       
       if (!response.ok) {
         // Try to parse error message from response
@@ -1480,7 +1474,7 @@ const EndgameTrainerPage = () => {
   useEffect(() => {
     const fetchThemes = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/endgames/themes');
+        const response = await fetch(getApiUrl('endgames/themes'));
         if (response.ok) {
           const data = await response.json();
           setEndgameThemes(data.themes || []);
