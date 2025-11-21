@@ -195,7 +195,6 @@ const PuzzleThemesPage = () => {
       } catch (err) {
         console.error('[PuzzleThemes] Error fetching themes:', err);
         console.error('[PuzzleThemes] Error details:', err.message, err.stack);
-        setThemesLoading(false);
         // Fallback to current database themes
         const fallbackThemes = [
           'back_rank_mate', 'deflection', 'discovered_attack', 'endgame', 'fork',
