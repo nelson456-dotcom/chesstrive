@@ -9,6 +9,18 @@ const rateLimit = require('express-rate-limit');
 const { body, validationResult } = require('express-validator');
 const axios = require('axios');
 
+const FRONTEND_URL = (process.env.FRONTEND_URL || 'http://localhost:3000').replace(/\/$/, '');
+const BACKEND_URL = (process.env.BACKEND_URL || 'http://localhost:3001').replace(/\/$/, '');
+const OAUTH_SUCCESS_REDIRECT = process.env.OAUTH_SUCCESS_REDIRECT || `${FRONTEND_URL}/auth/callback`;
+
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
+const GOOGLE_CALLBACK_URL = process.env.GOOGLE_CALLBACK_URL;
+
+const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID;
+const FACEBOOK_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
+const FACEBOOK_CALLBACK_URL = process.env.FACEBOOK_CALLBACK_URL;
+
 // Rate limiters
 const loginLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -406,7 +418,268 @@ router.post('/upgrade', auth, async (req, res) => {
   }
 });
 
-// Helper to build response payload user object
+const encodeState = (payload) => {
+  try {
+    return Buffer.from(JSON.stringify(payload || {})).toString('base64url');
+  } catch (error) {
+    console.error('Failed to encode OAuth state:', error);
+    return '';
+  }
+};
+
+const decodeState = (state) => {
+  if (!state) return {};
+  try {
+    return JSON.parse(Buffer.from(state, 'base64url').toString('utf8'));
+  } catch (error) {
+    console.error('Failed to decode OAuth state:', error);
+    return {};
+  }
+};
+
+const sanitizeRedirectPath = (path) => {
+  if (!path || typeof path !== 'string') return '/lessons';
+  if (!path.startsWith('/')) return '/lessons';
+  return path;
+};
+
+const getGoogleRedirectUri = () =>
+  (GOOGLE_CALLBACK_URL && GOOGLE_CALLBACK_URL.trim()) ||
+  `${BACKEND_URL}/api/auth/google/callback`;
+
+const getFacebookRedirectUri = () =>
+  (FACEBOOK_CALLBACK_URL && FACEBOOK_CALLBACK_URL.trim()) ||
+  `${BACKEND_URL}/api/auth/facebook/callback`;
+
+function buildOAuthRedirect({ token, provider, redirect, error }) {
+  const url = new URL(OAUTH_SUCCESS_REDIRECT);
+  if (token) url.searchParams.set('token', token);
+  if (provider) url.searchParams.set('provider', provider);
+  if (redirect) url.searchParams.set('redirect', sanitizeRedirectPath(redirect));
+  if (error) url.searchParams.set('error', error);
+  return url.toString();
+}
+
+async function findOrCreateGoogleUser({ email, googleId, name }) {
+  if (!email || !googleId) {
+    throw new Error('Google profile missing email or id');
+  }
+
+  let user = await User.findOne({ $or: [{ googleId }, { email }] });
+  if (!user) {
+    const baseUsername = (email.split('@')[0] || 'user')
+      .toLowerCase()
+      .replace(/[^a-z0-9_]/g, '_')
+      .slice(0, 32) || 'user';
+    let candidate = baseUsername;
+    let suffix = 0;
+    // eslint-disable-next-line no-constant-condition
+    while (true) {
+      // eslint-disable-next-line no-await-in-loop
+      const exists = await User.findOne({ username: candidate });
+      if (!exists) break;
+      suffix += 1;
+      candidate = `${baseUsername}_${suffix}`;
+    }
+
+    user = new User({
+      email,
+      username: candidate,
+      name,
+      googleId
+    });
+    await user.save();
+  } else if (!user.googleId) {
+    user.googleId = googleId;
+    await user.save();
+  }
+
+  return user;
+}
+
+async function findOrCreateFacebookUser({ facebookId, email, name }) {
+  if (!facebookId) {
+    throw new Error('Facebook profile missing id');
+  }
+
+  const conditions = [{ facebookId }];
+  if (email) conditions.push({ email });
+
+  let user = await User.findOne({ $or: conditions });
+  if (!user) {
+    const fallbackEmail = email || `fb_${facebookId}@placeholder.facebook.local`;
+    const baseName = (name || fallbackEmail.split('@')[0] || 'user')
+      .toLowerCase()
+      .replace(/[^a-z0-9_]/g, '_')
+      .slice(0, 32) || 'user';
+    let candidate = baseName;
+    let suffix = 0;
+    // eslint-disable-next-line no-constant-condition
+    while (true) {
+      // eslint-disable-next-line no-await-in-loop
+      const exists = await User.findOne({ username: candidate });
+      if (!exists) break;
+      suffix += 1;
+      candidate = `${baseName}_${suffix}`;
+    }
+
+    user = new User({
+      email: fallbackEmail,
+      username: candidate,
+      name,
+      facebookId
+    });
+    await user.save();
+  } else if (!user.facebookId) {
+    user.facebookId = facebookId;
+    await user.save();
+  }
+
+  return user;
+}
+
+// ----- OAuth redirect flows -----
+router.get('/google/start', (req, res) => {
+  if (!GOOGLE_CLIENT_ID) {
+    return res.status(500).json({ message: 'Google OAuth is not configured.' });
+  }
+
+  const redirectParam = sanitizeRedirectPath(req.query.redirect);
+  const state = encodeState({ redirect: redirectParam });
+
+  const params = new URLSearchParams({
+    client_id: GOOGLE_CLIENT_ID,
+    redirect_uri: getGoogleRedirectUri(),
+    response_type: 'code',
+    scope: 'openid email profile',
+    access_type: 'offline',
+    prompt: 'select_account',
+    state
+  });
+
+  return res.redirect(`https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`);
+});
+
+router.get('/google/callback', async (req, res) => {
+  const { code, state, error } = req.query;
+
+  if (error) {
+    return res.redirect(buildOAuthRedirect({ provider: 'google', error }));
+  }
+
+  if (!code) {
+    return res.redirect(buildOAuthRedirect({ provider: 'google', error: 'Missing authorization code' }));
+  }
+
+  if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET) {
+    return res.redirect(buildOAuthRedirect({ provider: 'google', error: 'Google OAuth not configured' }));
+  }
+
+  try {
+    const tokenResponse = await axios.post(
+      'https://oauth2.googleapis.com/token',
+      new URLSearchParams({
+        code,
+        client_id: GOOGLE_CLIENT_ID,
+        client_secret: GOOGLE_CLIENT_SECRET,
+        redirect_uri: getGoogleRedirectUri(),
+        grant_type: 'authorization_code'
+      }).toString(),
+      {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+    );
+
+    const { access_token } = tokenResponse.data;
+    const profileResponse = await axios.get('https://openidconnect.googleapis.com/v1/userinfo', {
+      headers: { Authorization: `Bearer ${access_token}` }
+    });
+
+    const { email, sub: googleId, name } = profileResponse.data;
+    const user = await findOrCreateGoogleUser({ email, googleId, name });
+    const token = issueJwtForUser(user);
+
+    const stateData = decodeState(state);
+    const redirectPath = sanitizeRedirectPath(stateData.redirect);
+
+    return res.redirect(buildOAuthRedirect({ token, provider: 'google', redirect: redirectPath }));
+  } catch (err) {
+    console.error('Google OAuth callback error:', err.response?.data || err.message);
+    return res.redirect(buildOAuthRedirect({ provider: 'google', error: 'Google authentication failed' }));
+  }
+});
+
+router.get('/facebook/start', (req, res) => {
+  if (!FACEBOOK_APP_ID) {
+    return res.status(500).json({ message: 'Facebook OAuth is not configured.' });
+  }
+
+  const redirectParam = sanitizeRedirectPath(req.query.redirect);
+  const state = encodeState({ redirect: redirectParam });
+
+  const params = new URLSearchParams({
+    client_id: FACEBOOK_APP_ID,
+    redirect_uri: getFacebookRedirectUri(),
+    response_type: 'code',
+    scope: 'email,public_profile',
+    state
+  });
+
+  return res.redirect(`https://www.facebook.com/v17.0/dialog/oauth?${params.toString()}`);
+});
+
+router.get('/facebook/callback', async (req, res) => {
+  const { code, state, error, error_description } = req.query;
+
+  if (error) {
+    return res.redirect(
+      buildOAuthRedirect({
+        provider: 'facebook',
+        error: error_description || error || 'Facebook authentication failed'
+      })
+    );
+  }
+
+  if (!code) {
+    return res.redirect(buildOAuthRedirect({ provider: 'facebook', error: 'Missing authorization code' }));
+  }
+
+  if (!FACEBOOK_APP_ID || !FACEBOOK_APP_SECRET) {
+    return res.redirect(buildOAuthRedirect({ provider: 'facebook', error: 'Facebook OAuth not configured' }));
+  }
+
+  try {
+    const tokenResponse = await axios.get('https://graph.facebook.com/v17.0/oauth/access_token', {
+      params: {
+        client_id: FACEBOOK_APP_ID,
+        client_secret: FACEBOOK_APP_SECRET,
+        redirect_uri: getFacebookRedirectUri(),
+        code
+      }
+    });
+
+    const accessToken = tokenResponse.data.access_token;
+    const profileResponse = await axios.get('https://graph.facebook.com/me', {
+      params: {
+        access_token: accessToken,
+        fields: 'id,name,email'
+      }
+    });
+
+    const { id: facebookId, email, name } = profileResponse.data;
+    const user = await findOrCreateFacebookUser({ facebookId, email, name });
+    const token = issueJwtForUser(user);
+
+    const stateData = decodeState(state);
+    const redirectPath = sanitizeRedirectPath(stateData.redirect);
+
+    return res.redirect(buildOAuthRedirect({ token, provider: 'facebook', redirect: redirectPath }));
+  } catch (err) {
+    console.error('Facebook OAuth callback error:', err.response?.data || err.message);
+    return res.redirect(buildOAuthRedirect({ provider: 'facebook', error: 'Facebook authentication failed' }));
+  }
+});
+
 function buildUserResponse(user) {
   return {
     id: user._id.toString(),
@@ -466,37 +739,7 @@ router.post('/google', async (req, res) => {
       return res.status(400).json({ message: 'Invalid Google token' });
     }
 
-    // Find by googleId or email
-    let user = await User.findOne({ $or: [{ googleId }, { email }] });
-    if (!user) {
-      // Derive username (unique) from email local-part
-      const baseUsername = (email.split('@')[0] || 'user').toLowerCase().replace(/[^a-z0-9_]/g, '_').slice(0, 32);
-      let candidate = baseUsername || 'user';
-      let suffix = 0;
-      // ensure unique username
-      // eslint-disable-next-line no-constant-condition
-      while (true) {
-        // eslint-disable-next-line no-await-in-loop
-        const exists = await User.findOne({ username: candidate });
-        if (!exists) break;
-        suffix += 1;
-        candidate = `${baseUsername}_${suffix}`;
-      }
-
-      user = new User({
-        email,
-        username: candidate,
-        name,
-        googleId
-      });
-      await user.save();
-    } else {
-      // Attach googleId if missing
-      if (!user.googleId) {
-        user.googleId = googleId;
-        await user.save();
-      }
-    }
+    const user = await findOrCreateGoogleUser({ email, googleId, name });
 
     const token = issueJwtForUser(user);
     const userObj = await User.findById(user._id).select('-password');
@@ -530,43 +773,7 @@ router.post('/facebook', async (req, res) => {
       return res.status(400).json({ message: 'Invalid Facebook token' });
     }
 
-    // Prefer matching by facebookId, otherwise by email if available
-    let query = [{ facebookId }];
-    if (email) {
-      query.push({ email });
-    }
-
-    let user = await User.findOne({ $or: query });
-    if (!user) {
-      // If no email, synthesize a placeholder to satisfy schema uniqueness constraints
-      const synthesizedEmail = email || `fb_${facebookId}@placeholder.facebook.local`;
-      const baseUsernameFromName = (name || 'user').toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '_').slice(0, 32);
-      const baseUsername = (email ? (email.split('@')[0] || baseUsernameFromName) : baseUsernameFromName) || 'user';
-      let candidate = baseUsername;
-      let suffix = 0;
-      // eslint-disable-next-line no-constant-condition
-      while (true) {
-        // eslint-disable-next-line no-await-in-loop
-        const exists = await User.findOne({ username: candidate });
-        if (!exists) break;
-        suffix += 1;
-        candidate = `${baseUsername}_${suffix}`;
-      }
-
-      user = new User({
-        email: synthesizedEmail,
-        username: candidate,
-        name,
-        facebookId
-      });
-      await user.save();
-    } else {
-      // Attach facebookId if missing
-      if (!user.facebookId) {
-        user.facebookId = facebookId;
-        await user.save();
-      }
-    }
+    const user = await findOrCreateFacebookUser({ facebookId, email, name });
 
     const token = issueJwtForUser(user);
     const userObj = await User.findById(user._id).select('-password');
