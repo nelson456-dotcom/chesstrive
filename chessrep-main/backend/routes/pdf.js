@@ -3,13 +3,13 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const pdfGenerator = require('../services/pdfGenerator');
 const simplePdfGenerator = require('../services/simplePdfGenerator');
-const axios = require('axios');
+const { runFullAnalysis } = require('./games');
 
-// PDF endpoint now reuses main analysis - no duplicate fetch functions needed
+// PDF endpoint now calls analysis function directly - no HTTP requests needed
 
 /**
  * GET /api/pdf/report?username=<handle>&timeClass=<class>&platform=<platform>
- * Generates PDF report by reusing the main analysis endpoint (no duplicate analysis)
+ * Generates PDF report by calling the analysis function directly
  */
 router.get('/report', auth, async (req, res) => {
   try {
@@ -23,39 +23,35 @@ router.get('/report', auth, async (req, res) => {
     
     console.log(`[PDF Report] Generating PDF for username: ${handle}, timeClass: ${timeClass}, platform: ${platform}`);
     
-    // **CRITICAL FIX**: Reuse the main analysis endpoint to avoid duplicate computation
-    // Use the same host/port as the current request to avoid port mismatch
-    const baseUrl = `${req.protocol}://${req.get('host') || `localhost:${process.env.PORT || 3001}`}`;
-    const analysisUrl = `${baseUrl}/api/games/report/40?username=${encodeURIComponent(handle)}&platform=${platform || 'chesscom'}&timeClass=${timeClass || 'all'}`;
-    
-    console.log(`[PDF Report] Fetching analysis from: ${analysisUrl}`);
-    
+    // **FIXED**: Call analysis function directly instead of making HTTP request
     let analysisData;
     try {
-      console.log(`[PDF Report] Making request to analysis endpoint...`);
-      const analysisResponse = await axios.get(analysisUrl, {
-        headers: {
-          'Authorization': req.headers.authorization, // Forward auth header
-          'User-Agent': 'ChessRep-PDF/1.0'
-        },
-        timeout: 120000 // 2 minutes timeout for full analysis
-      });
-      analysisData = analysisResponse.data;
-      console.log(`[PDF Report] Analysis response received:`, {
-        status: analysisResponse.status,
+      console.log(`[PDF Report] Running full analysis directly...`);
+      const { summary, metrics, scouting, keyMoments, allAnalysis } = await runFullAnalysis(handle, timeClass, platform);
+      
+      analysisData = {
+        summary,
+        metrics,
+        scouting,
+        keyMoments,
+        games: allAnalysis.map(a => ({
+          url: a.gameUrl,
+          avgCPL: a.avgCPL,
+          counts: a.counts
+        }))
+      };
+      
+      console.log(`[PDF Report] Analysis complete:`, {
         hasSummary: !!analysisData.summary,
         hasMetrics: !!analysisData.metrics,
         hasScouting: !!analysisData.scouting,
         gamesCount: analysisData.games?.length || 0
       });
     } catch (error) {
-      console.error('[PDF Report] Failed to fetch analysis:', error.message);
-      if (error.response) {
-        console.error('[PDF Report] Response status:', error.response.status);
-        console.error('[PDF Report] Response data:', error.response.data);
-      }
+      console.error('[PDF Report] Failed to run analysis:', error.message);
+      console.error('[PDF Report] Error stack:', error.stack);
       return res.status(500).json({ 
-        message: 'Failed to fetch game analysis for PDF generation', 
+        message: 'Failed to analyze games for PDF generation', 
         error: error.message 
       });
     }
