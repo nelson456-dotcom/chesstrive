@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./utils/apiInterceptor"; // Initialize API interceptor early
 import App from "./App";
 import { AuthProvider } from './contexts/AuthContext';
 

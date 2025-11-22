@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { getApiUrl, getAuthHeaders } from '../config/api';
+import { setAuthContext } from '../utils/apiInterceptor';
 
 const AuthContext = createContext();
 
@@ -27,6 +28,10 @@ export function AuthProvider({ children }) {
         localStorage.setItem('user', JSON.stringify(userData));
         setUser(userData);
         return userData;
+      } else if (response.status === 401) {
+        // Token invalid - clear silently
+        logout();
+        return null;
       } else {
         console.error('Failed to refresh user data:', response.status);
         const errorData = await response.json().catch(() => ({}));
@@ -34,6 +39,8 @@ export function AuthProvider({ children }) {
       }
     } catch (error) {
       console.error('Error refreshing user data:', error);
+      // On network error, don't clear token (might be temporary)
+      // Only clear on authentication errors
     }
   };
 
@@ -128,6 +135,11 @@ export function AuthProvider({ children }) {
       return { success: false, error: error.message };
     }
   };
+
+  // Register logout function with interceptor
+  useEffect(() => {
+    setAuthContext({ logout });
+  }, []);
 
   // Initialize user on mount
   useEffect(() => {

@@ -24,6 +24,21 @@ module.exports = function(req, res, next) {
     };
     next();
   } catch (err) {
-    res.status(401).json({ message: 'Token is not valid' });
+    // Provide more specific error messages
+    if (err.name === 'TokenExpiredError') {
+      return res.status(401).json({ 
+        message: 'Token expired', 
+        code: 'TOKEN_EXPIRED' 
+      });
+    } else if (err.name === 'JsonWebTokenError') {
+      return res.status(401).json({ 
+        message: 'Invalid token', 
+        code: 'TOKEN_INVALID' 
+      });
+    }
+    return res.status(401).json({ 
+      message: 'Token is not valid', 
+      code: 'TOKEN_INVALID' 
+    });
   }
 }; 
