@@ -38,9 +38,14 @@ export const TestimonialsColumn = (props: {
                     <img
                       width={40}
                       height={40}
-                      src={image}
+                      src={image || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff&size=150`}
                       alt={name}
-                      className="h-10 w-10 rounded-full"
+                      className="h-10 w-10 rounded-full object-cover bg-gray-700"
+                      onError={(e) => {
+                        // Fallback to avatar with initials if image fails to load
+                        const target = e.target as HTMLImageElement;
+                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff&size=150`;
+                      }}
                     />
                     <div className="flex flex-col">
                       <div className="font-medium tracking-tight leading-5">{name}</div>

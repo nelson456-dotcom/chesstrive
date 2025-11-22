@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const chessTestimonials = [
   {
-    text: "ChessRep transformed my tactical vision completely. The puzzle training helped me improve from 1200 to 1800 rating in just 6 months!",
+    text: "ChessStrive transformed my tactical vision completely. The puzzle training helped me improve from 1200 to 1800 rating in just 6 months!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     name: "Alex Chen",
     role: "Chess Player",
@@ -15,7 +15,7 @@ const chessTestimonials = [
     role: "Club Player",
   },
   {
-    text: "As a chess coach, I love using ChessRep to analyze my students' games. The detailed move evaluations help me provide better guidance.",
+    text: "As a chess coach, I love using ChessStrive to analyze my students' games. The detailed move evaluations help me provide better guidance.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     name: "Michael Rodriguez",
     role: "Chess Coach",
@@ -27,7 +27,7 @@ const chessTestimonials = [
     role: "Tournament Player",
   },
   {
-    text: "ChessRep's live analysis during games is a game-changer. I can see engine suggestions in real-time and make better decisions.",
+    text: "ChessStrive's live analysis during games is a game-changer. I can see engine suggestions in real-time and make better decisions.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     name: "David Kim",
     role: "Online Player",
@@ -39,7 +39,7 @@ const chessTestimonials = [
     role: "Rated Player",
   },
   {
-    text: "I love how ChessRep identifies my weaknesses and creates personalized training. It's like having a personal chess trainer available 24/7.",
+    text: "I love how ChessStrive identifies my weaknesses and creates personalized training. It's like having a personal chess trainer available 24/7.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     name: "James Wilson",
     role: "Chess Enthusiast",
@@ -51,7 +51,7 @@ const chessTestimonials = [
     role: "Study Group Leader",
   },
   {
-    text: "ChessRep's 40-game analysis report gave me incredible insights into my playing patterns. I finally understand what's holding me back!",
+    text: "ChessStrive's 40-game analysis report gave me incredible insights into my playing patterns. I finally understand what's holding me back!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     name: "Robert Taylor",
     role: "Improving Player",
@@ -83,7 +83,7 @@ const ChessTestimonials = () => {
             What Our Chess Players Say
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            See what our chess community has to say about ChessRep.
+            See what our chess community has to say about ChessStrive.
           </p>
         </motion.div>
 

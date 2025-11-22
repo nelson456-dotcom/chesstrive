@@ -398,7 +398,7 @@ const HomePage = () => {
             {[
               {
                 q: "How is ChessStrive different from Stockfish?",
-                a: "ChessStrive focuses on human learning and improvement, while Stockfish is an engine for analysis. ChessRep provides personalized training based on your weaknesses."
+                a: "ChessStrive focuses on human learning and improvement, while Stockfish is an engine for analysis. ChessStrive provides personalized training based on your weaknesses."
               },
               {
                 q: "Why isn't ChessStrive Premium free?",
