@@ -26,22 +26,38 @@ router.get('/report', auth, async (req, res) => {
     // **FIXED**: Call analysis function directly instead of making HTTP request
     let analysisData;
     try {
-      console.log(`[PDF Report] Running full analysis directly...`);
-      const { summary, metrics, scouting, keyMoments, allAnalysis } = await runFullAnalysis(handle, timeClass, platform);
+      console.log(`[PDF Report] Running full analysis directly for ${handle}...`);
+      const result = await runFullAnalysis(handle, timeClass, platform);
+      
+      console.log(`[PDF Report] runFullAnalysis returned:`, {
+        hasSummary: !!result?.summary,
+        hasMetrics: !!result?.metrics,
+        hasScouting: !!result?.scouting,
+        hasKeyMoments: !!result?.keyMoments,
+        allAnalysisLength: result?.allAnalysis?.length || 0
+      });
+      
+      if (!result || !result.summary) {
+        console.error('[PDF Report] runFullAnalysis returned invalid result:', result);
+        return res.status(404).json({ 
+          message: `No analysis data found for username: ${handle}. Please ensure games are available.`,
+          detail: 'Analysis completed but returned no summary data'
+        });
+      }
       
       analysisData = {
-        summary,
-        metrics,
-        scouting,
-        keyMoments,
-        games: allAnalysis.map(a => ({
-          url: a.gameUrl,
+        summary: result.summary,
+        metrics: result.metrics,
+        scouting: result.scouting,
+        keyMoments: result.keyMoments,
+        games: (result.allAnalysis || []).map(a => ({
+          url: a.gameUrl || a.url,
           avgCPL: a.avgCPL,
           counts: a.counts
         }))
       };
       
-      console.log(`[PDF Report] Analysis complete:`, {
+      console.log(`[PDF Report] Analysis data prepared:`, {
         hasSummary: !!analysisData.summary,
         hasMetrics: !!analysisData.metrics,
         hasScouting: !!analysisData.scouting,
@@ -50,15 +66,31 @@ router.get('/report', auth, async (req, res) => {
     } catch (error) {
       console.error('[PDF Report] Failed to run analysis:', error.message);
       console.error('[PDF Report] Error stack:', error.stack);
+      
+      // Check if it's a "no games found" error
+      if (error.message && error.message.includes('No games found')) {
+        return res.status(404).json({ 
+          message: error.message,
+          detail: `Could not find games for username "${handle}" on ${platform || 'chesscom'}. Please verify the username and platform.`
+        });
+      }
+      
       return res.status(500).json({ 
         message: 'Failed to analyze games for PDF generation', 
-        error: error.message 
+        error: error.message,
+        detail: error.stack
       });
     }
     
     if (!analysisData || !analysisData.summary) {
+      console.error('[PDF Report] Analysis data validation failed:', {
+        hasAnalysisData: !!analysisData,
+        hasSummary: !!analysisData?.summary,
+        analysisDataKeys: analysisData ? Object.keys(analysisData) : 'null'
+      });
       return res.status(404).json({ 
-        message: `No analysis data found for username: ${handle}. Please ensure games are available.` 
+        message: `No analysis data found for username: ${handle}. Please ensure games are available.`,
+        detail: 'Analysis completed but summary data is missing'
       });
     }
     

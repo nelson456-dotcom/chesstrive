@@ -4,6 +4,21 @@ const auth = require('../middleware/auth');
 const User = require('../models/User');
 const Notification = require('../models/Notification');
 
+// Logging middleware for all coach routes
+router.use((req, res, next) => {
+  console.log('[Coach Routes] ====== REQUEST RECEIVED ======');
+  console.log('[Coach Routes] Method:', req.method);
+  console.log('[Coach Routes] Path:', req.path);
+  console.log('[Coach Routes] Full URL:', req.originalUrl);
+  console.log('[Coach Routes] Body:', req.body);
+  console.log('[Coach Routes] Headers:', {
+    'x-auth-token': req.header('x-auth-token') ? 'present' : 'missing',
+    'authorization': req.header('Authorization') ? 'present' : 'missing',
+    'content-type': req.header('content-type')
+  });
+  next();
+});
+
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const findUserByIdentifier = async (identifier) => {
@@ -99,7 +114,19 @@ const loadCoach = async (userId, includeStudents = false) => {
     });
   }
   // Always include students/coaches arrays so downstream logic can access them
-  return query.select('username email name isCoach stats dailyProgress rating blunderRating visualisationRating endgameRating positionalRating advantageRating resourcefulnessRating repertoire openingsPracticed createdAt updatedAt students coaches');
+  const user = await query.select('username email name isCoach stats dailyProgress rating blunderRating visualisationRating endgameRating positionalRating advantageRating resourcefulnessRating repertoire openingsPracticed createdAt updatedAt students coaches');
+  
+  // Ensure arrays exist
+  if (user) {
+    if (!Array.isArray(user.students)) {
+      user.students = [];
+    }
+    if (!Array.isArray(user.coaches)) {
+      user.coaches = [];
+    }
+  }
+  
+  return user;
 };
 
 const loadStudent = async (userId, includeCoaches = false) => {
@@ -337,77 +364,207 @@ router.put('/status', auth, async (req, res) => {
 });
 
 router.post('/students', auth, async (req, res) => {
+  console.log('[Coach Students] ====== POST /api/coach/students REQUEST RECEIVED ======');
+  console.log('[Coach Students] Request body:', req.body);
+  console.log('[Coach Students] User ID:', req.user?.id);
+  console.log('[Coach Students] Headers:', JSON.stringify(req.headers));
+  
   try {
     const { identifier } = req.body;
-    if (!identifier) {
+    if (!identifier || typeof identifier !== 'string' || !identifier.trim()) {
       return res.status(400).json({ message: 'Identifier (email or username) is required' });
     }
 
-    const coach = await loadCoach(req.user.id);
-    if (!coach) {
-      return res.status(404).json({ message: 'User not found' });
+    const trimmedIdentifier = identifier.trim();
+    console.log('[Coach Students] Adding student:', { identifier: trimmedIdentifier, coachId: req.user.id });
+
+    // Validate coach exists and is authenticated
+    if (!req.user || !req.user.id) {
+      return res.status(401).json({ message: 'Unauthorized' });
     }
 
+    // Load coach
+    let coach = await User.findById(req.user.id);
+    if (!coach) {
+      return res.status(404).json({ message: 'Coach not found' });
+    }
+
+    // Ensure arrays exist (Mongoose should handle this, but be safe)
+    if (!Array.isArray(coach.students)) {
+      coach.students = [];
+    }
+    if (!Array.isArray(coach.coaches)) {
+      coach.coaches = [];
+    }
+
+    // Check coach status
     if (!coach.isCoach) {
       return res.status(403).json({ message: 'Only coaches can add students' });
     }
 
-    const student = await findUserByIdentifier(identifier);
-    if (!student) {
-      return res.status(404).json({ message: 'Student not found' });
+    // Find student
+    let student;
+    try {
+      student = await findUserByIdentifier(trimmedIdentifier);
+    } catch (findError) {
+      console.error('[Coach Students] Error finding student:', findError);
+      return res.status(500).json({ 
+        message: 'Error searching for student',
+        error: findError.message 
+      });
     }
 
-    if (student._id.equals(coach._id)) {
+    if (!student) {
+      return res.status(404).json({ message: `Student not found: ${trimmedIdentifier}` });
+    }
+
+    // Prevent self-addition
+    if (student._id.toString() === coach._id.toString()) {
       return res.status(400).json({ message: 'You cannot add yourself as a student' });
     }
 
-    const alreadyStudent = coach.students.some((id) => id.equals(student._id));
+    // Ensure student arrays exist
+    if (!Array.isArray(student.coaches)) {
+      student.coaches = [];
+    }
+    if (!Array.isArray(student.students)) {
+      student.students = [];
+    }
+
+    // Check if already linked
+    const alreadyStudent = coach.students.some((id) => id.toString() === student._id.toString());
+    const alreadyHasCoach = student.coaches.some((id) => id.toString() === coach._id.toString());
+
+    // Add student to coach
     if (!alreadyStudent) {
       coach.students.push(student._id);
-      await coach.save();
+      try {
+        await coach.save();
+        console.log('[Coach Students] Coach saved with new student');
+      } catch (saveError) {
+        console.error('[Coach Students] Error saving coach:', saveError);
+        console.error('[Coach Students] Save error details:', {
+          message: saveError.message,
+          stack: saveError.stack,
+          name: saveError.name,
+          errors: saveError.errors
+        });
+        return res.status(500).json({ 
+          message: 'Failed to save coach',
+          error: saveError.message,
+          detail: saveError.stack
+        });
+      }
     }
 
-    const alreadyHasCoach = student.coaches.some((id) => id.equals(coach._id));
+    // Add coach to student
     if (!alreadyHasCoach) {
       student.coaches.push(coach._id);
-      await student.save();
+      try {
+        await student.save();
+        console.log('[Coach Students] Student saved with new coach');
+      } catch (saveError) {
+        console.error('[Coach Students] Error saving student:', saveError);
+        console.error('[Coach Students] Save error details:', {
+          message: saveError.message,
+          stack: saveError.stack,
+          name: saveError.name,
+          errors: saveError.errors
+        });
+        
+        // Rollback: remove student from coach if student save fails
+        if (!alreadyStudent) {
+          coach.students = coach.students.filter((id) => id.toString() !== student._id.toString());
+          try {
+            await coach.save();
+            console.log('[Coach Students] Rollback successful');
+          } catch (rollbackError) {
+            console.error('[Coach Students] Rollback failed:', rollbackError);
+          }
+        }
+        
+        return res.status(500).json({ 
+          message: 'Failed to save student',
+          error: saveError.message,
+          detail: saveError.stack
+        });
+      }
     }
 
-    // Create notifications for both coach and student
-    try {
-      if (!alreadyStudent && !alreadyHasCoach) {
-        // Notify student that they've been added by a coach
+    // Create notifications (non-blocking)
+    if (!alreadyStudent && !alreadyHasCoach) {
+      try {
         await Notification.createCoachAdded(
           student._id,
           coach._id.toString(),
-          coach.username || coach.email
+          coach.username || coach.email || 'Coach'
         );
-        
-        // Notify coach that they've added a new student
         await Notification.createStudentAdded(
           coach._id,
           student._id.toString(),
-          student.username || student.email
+          student.username || student.email || 'Student'
         );
+        console.log('[Coach Students] Notifications created');
+      } catch (notificationError) {
+        console.error('[Coach Students] Error creating notifications (non-fatal):', notificationError);
+        // Continue - notifications are not critical
       }
-    } catch (notificationError) {
-      console.error('Error creating notifications:', notificationError);
-      // Don't fail the request if notifications fail
     }
 
-    const refreshedStudent = await User.findById(student._id).select('username email name isCoach stats dailyProgress rating blunderRating visualisationRating endgameRating positionalRating advantageRating resourcefulnessRating repertoire openingsPracticed createdAt updatedAt');
+    // Refresh student data for response
+    let refreshedStudent;
+    try {
+      refreshedStudent = await User.findById(student._id).select('username email name isCoach stats dailyProgress rating blunderRating visualisationRating endgameRating positionalRating advantageRating resourcefulnessRating repertoire openingsPracticed createdAt updatedAt');
+    } catch (refreshError) {
+      console.error('[Coach Students] Error refreshing student:', refreshError);
+      // Use the student we already have
+      refreshedStudent = student;
+    }
+
+    if (!refreshedStudent) {
+      return res.status(404).json({ message: 'Student not found after save' });
+    }
+
+    // Build response
+    let studentSummary;
+    try {
+      studentSummary = toProgressSummary(refreshedStudent);
+    } catch (summaryError) {
+      console.error('[Coach Students] Error creating summary:', summaryError);
+      return res.status(500).json({ 
+        message: 'Error formatting student data',
+        error: summaryError.message
+      });
+    }
 
     res.status(alreadyStudent ? 200 : 201).json({
       success: true,
-      student: toProgressSummary(refreshedStudent),
+      student: studentSummary,
       coach: {
         id: coach._id.toString(),
         students: coach.students.map((id) => id.toString())
       }
     });
   } catch (error) {
-    console.error('Error adding student:', error);
-    res.status(500).json({ message: 'Server error' });
+    console.error('[Coach Students] ====== UNEXPECTED ERROR ======');
+    console.error('[Coach Students] Error message:', error.message);
+    console.error('[Coach Students] Error stack:', error.stack);
+    console.error('[Coach Students] Error name:', error.name);
+    console.error('[Coach Students] Error type:', error.constructor.name);
+    console.error('[Coach Students] Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
+    
+    // Ensure response hasn't been sent
+    if (!res.headersSent) {
+      res.status(500).json({ 
+        message: 'Server error',
+        error: error.message,
+        detail: error.stack,
+        name: error.name,
+        type: error.constructor.name
+      });
+    } else {
+      console.error('[Coach Students] Response already sent, cannot send error response');
+    }
   }
 });
 
@@ -583,6 +740,12 @@ router.get('/health', (req, res) => {
       'POST /coaches': 'Add coach'
     }
   });
+});
+
+// Test endpoint to verify route registration (no auth required)
+router.post('/test', (req, res) => {
+  console.log('[Coach Test] POST /api/coach/test called');
+  res.json({ message: 'Coach route is working', body: req.body });
 });
 
 module.exports = router;

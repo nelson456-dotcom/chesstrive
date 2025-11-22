@@ -1,6 +1,16 @@
 const jwt = require('jsonwebtoken');
 
 module.exports = function(req, res, next) {
+  // Log auth attempts for coach routes
+  if (req.path && req.path.includes('coach')) {
+    console.log('[Auth Middleware] Coach route auth check:', {
+      path: req.path,
+      method: req.method,
+      hasXAuthToken: !!req.header('x-auth-token'),
+      hasAuthorization: !!req.header('Authorization')
+    });
+  }
+
   // Get token from x-auth-token or Authorization header
   let token = req.header('x-auth-token');
   if (!token) {
@@ -12,6 +22,9 @@ module.exports = function(req, res, next) {
 
   // Check if no token
   if (!token) {
+    if (req.path && req.path.includes('coach')) {
+      console.log('[Auth Middleware] No token found for coach route');
+    }
     return res.status(401).json({ message: 'No token, authorization denied' });
   }
 
@@ -22,8 +35,17 @@ module.exports = function(req, res, next) {
     req.user = {
       id: decoded.user.id.toString()
     };
+    
+    if (req.path && req.path.includes('coach')) {
+      console.log('[Auth Middleware] Auth successful for coach route, user ID:', req.user.id);
+    }
+    
     next();
   } catch (err) {
+    if (req.path && req.path.includes('coach')) {
+      console.error('[Auth Middleware] Auth failed for coach route:', err.message);
+    }
+    
     // Provide more specific error messages
     if (err.name === 'TokenExpiredError') {
       return res.status(401).json({ 
