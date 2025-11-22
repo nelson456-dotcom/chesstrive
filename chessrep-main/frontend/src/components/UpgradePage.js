@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { Crown, Check, CreditCard, Lock } from 'lucide-react';
+import { Crown, Check, Lock } from 'lucide-react';
+import { stripeService } from '../services/stripeService';
 
 const UpgradePage = () => {
   const { user, refreshUser } = useAuth();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('monthly');
-  const [paymentMethod, setPaymentMethod] = useState('test');
 
   const plans = {
     monthly: {
@@ -39,39 +39,25 @@ const UpgradePage = () => {
 
   const handleUpgrade = async () => {
     if (!user) {
-      navigate('/login');
+      navigate('/login', { state: { redirectTo: '/upgrade' } });
       return;
     }
 
     setLoading(true);
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3001/api/auth/upgrade', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': token
-        },
-        body: JSON.stringify({
-          paymentMethod: paymentMethod,
-          paymentId: `test_${Date.now()}` // Placeholder
-        })
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        // Refresh user data
-        await refreshUser();
-        alert('Successfully upgraded to Premium!');
-        navigate('/');
+      // Use Stripe checkout flow
+      const billingPeriod = selectedPlan; // 'monthly' or 'yearly'
+      const response = await stripeService.createCheckoutSession('premium', billingPeriod);
+      
+      // Redirect to Stripe Checkout
+      if (response.url) {
+        window.location.href = response.url;
       } else {
-        alert(data.message || 'Upgrade failed. Please try again.');
+        throw new Error('No checkout URL received');
       }
     } catch (error) {
       console.error('Upgrade error:', error);
-      alert('An error occurred. Please try again.');
-    } finally {
+      alert(error.message || 'Failed to start checkout. Please try again.');
       setLoading(false);
     }
   };
@@ -147,53 +133,34 @@ const UpgradePage = () => {
           ))}
         </div>
 
-        {/* Payment Method Selection */}
+        {/* Security & Benefits */}
         <div className="bg-gray-800 rounded-xl p-8 mb-8">
           <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-            <CreditCard className="w-6 h-6 mr-2" />
-            Payment Method
+            <Lock className="w-6 h-6 mr-2" />
+            Secure Payment
           </h3>
           <div className="space-y-4">
-            <label className="flex items-center p-4 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors">
-              <input
-                type="radio"
-                name="paymentMethod"
-                value="test"
-                checked={paymentMethod === 'test'}
-                onChange={(e) => setPaymentMethod(e.target.value)}
-                className="mr-3"
-              />
+            <div className="flex items-start">
+              <Check className="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" />
               <div>
-                <div className="text-white font-semibold">Test Payment (Development)</div>
-                <div className="text-gray-400 text-sm">For testing purposes only</div>
+                <div className="text-white font-semibold">Secure Payment via Stripe</div>
+                <div className="text-gray-400 text-sm">Your payment information is encrypted and secure</div>
               </div>
-            </label>
-            <label className="flex items-center p-4 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors opacity-50">
-              <input
-                type="radio"
-                name="paymentMethod"
-                value="stripe"
-                disabled
-                className="mr-3"
-              />
+            </div>
+            <div className="flex items-start">
+              <Check className="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" />
               <div>
-                <div className="text-white font-semibold">Credit Card (Stripe)</div>
-                <div className="text-gray-400 text-sm">Coming soon</div>
+                <div className="text-white font-semibold">Cancel Anytime</div>
+                <div className="text-gray-400 text-sm">Cancel your subscription at any time, no questions asked</div>
               </div>
-            </label>
-            <label className="flex items-center p-4 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors opacity-50">
-              <input
-                type="radio"
-                name="paymentMethod"
-                value="paypal"
-                disabled
-                className="mr-3"
-              />
+            </div>
+            <div className="flex items-start">
+              <Check className="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" />
               <div>
-                <div className="text-white font-semibold">PayPal</div>
-                <div className="text-gray-400 text-sm">Coming soon</div>
+                <div className="text-white font-semibold">Instant Access</div>
+                <div className="text-gray-400 text-sm">Get immediate access to all premium features after payment</div>
               </div>
-            </label>
+            </div>
           </div>
         </div>
 

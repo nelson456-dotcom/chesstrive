@@ -1,24 +1,17 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
-
-// Helper function to get auth token
-const getAuthToken = () => {
-  return localStorage.getItem('token');
-};
+import { getApiUrl, getAuthHeaders } from '../config/api';
 
 // Helper function to make API requests
 const apiRequest = async (endpoint, options = {}) => {
-  const token = getAuthToken();
-  
   const config = {
     headers: {
-      'Content-Type': 'application/json',
-      ...(token && { 'x-auth-token': token }),
+      ...getAuthHeaders(),
       ...options.headers,
     },
+    credentials: 'include', // Include cookies for CORS
     ...options,
   };
 
-  const response = await fetch(`${API_BASE_URL}${endpoint}`, config);
+  const response = await fetch(getApiUrl(endpoint), config);
   
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
