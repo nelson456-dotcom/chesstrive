@@ -59,7 +59,57 @@ router.post('/create-checkout-session', auth, async (req, res) => {
       await user.save();
     }
 
-    // Create checkout session
+    // Check if user already has an active subscription to extend
+    let existingSubscription = null;
+    let isExtension = false;
+    if (user.stripeSubscriptionId) {
+      try {
+        existingSubscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId);
+        
+        // Only extend if subscription is active or trialing (not canceled)
+        if (existingSubscription.status === 'active' || existingSubscription.status === 'trialing') {
+          isExtension = true;
+          
+          // Create checkout session as payment (not subscription) to extend
+          const session = await stripe.checkout.sessions.create({
+            customer: customerId,
+            payment_method_types: ['card'],
+            line_items: [
+              {
+                price_data: {
+                  currency: 'usd',
+                  product_data: {
+                    name: `Extend Premium ${billingPeriod === 'yearly' ? 'Yearly' : 'Monthly'} Subscription`,
+                    description: `Extend your subscription by ${billingPeriod === 'yearly' ? '1 year' : '1 month'}`
+                  },
+                  unit_amount: planConfig.amount, // Amount in cents
+                },
+                quantity: 1,
+              },
+            ],
+            mode: 'payment', // Payment mode, not subscription
+            success_url: `${process.env.FRONTEND_URL || 'http://localhost:3000'}/pricing?success=true&session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url: `${process.env.FRONTEND_URL || 'http://localhost:3000'}/pricing?canceled=true`,
+            metadata: {
+              userId: user._id.toString(),
+              plan: plan,
+              billingPeriod: billingPeriod,
+              type: 'subscription_extension',
+              existingSubscriptionId: existingSubscription.id,
+              currentPeriodEnd: existingSubscription.current_period_end.toString()
+            },
+            allow_promotion_codes: true,
+          });
+
+          return res.json({ sessionId: session.id, url: session.url, extended: true });
+        }
+      } catch (error) {
+        console.error('Error checking existing subscription:', error);
+        // If subscription retrieval fails, proceed with new subscription
+      }
+    }
+
+    // Create checkout session for new subscription
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
@@ -75,7 +125,8 @@ router.post('/create-checkout-session', auth, async (req, res) => {
       metadata: {
         userId: user._id.toString(),
         plan: plan,
-        billingPeriod: billingPeriod
+        billingPeriod: billingPeriod,
+        type: 'new_subscription'
       },
       subscription_data: {
         metadata: {
@@ -161,10 +212,53 @@ async function handleCheckoutCompleted(session) {
     return;
   }
 
-  // Retrieve the subscription to get full details
+  // Check if this is a subscription extension (payment mode, not subscription mode)
+  if (session.mode === 'payment' && session.metadata?.type === 'subscription_extension') {
+    const existingSubscriptionId = session.metadata.existingSubscriptionId;
+    const billingPeriod = session.metadata.billingPeriod;
+    const currentPeriodEnd = parseInt(session.metadata.currentPeriodEnd);
+    
+    if (existingSubscriptionId && currentPeriodEnd) {
+      try {
+        const subscription = await stripe.subscriptions.retrieve(existingSubscriptionId);
+        
+        // Calculate extension period (1 month or 1 year in days)
+        const extensionDays = billingPeriod === 'yearly' ? 365 : 30;
+        
+        // Calculate new period end date
+        const currentPeriodEndDate = new Date(currentPeriodEnd * 1000);
+        const newPeriodEndDate = new Date(currentPeriodEndDate);
+        newPeriodEndDate.setDate(newPeriodEndDate.getDate() + extensionDays);
+        
+        // If subscription is set to cancel at period end, cancel that cancellation
+        if (subscription.cancel_at_period_end) {
+          await stripe.subscriptions.update(existingSubscriptionId, {
+            cancel_at_period_end: false
+          });
+          user.subscriptionCancelAtPeriodEnd = false;
+        }
+        
+        // Update our database with the extended period end
+        // Track extension separately so we know the effective end date
+        user.subscriptionExtendedPeriodEnd = newPeriodEndDate;
+        user.subscriptionCancelAtPeriodEnd = false; // Not canceling, just extended
+        await user.save();
+        
+        console.log(`Subscription extended for user ${userId}. New period end: ${newPeriodEndDate}`);
+      } catch (error) {
+        console.error('Error extending subscription:', error);
+      }
+    }
+    return;
+  }
+
+  // Regular subscription creation
   const subscriptionId = session.subscription;
   if (subscriptionId) {
     const subscription = await stripe.subscriptions.retrieve(subscriptionId);
+    // Clear extended period end for new subscriptions
+    user.subscriptionExtendedPeriodEnd = null;
+    await user.save();
     await updateUserSubscription(user, subscription);
   }
 }
@@ -204,6 +298,7 @@ async function handleSubscriptionDeleted(subscription) {
   user.subscriptionStatus = 'canceled';
   user.subscriptionPlan = null;
   user.subscriptionCurrentPeriodEnd = null;
+  user.subscriptionExtendedPeriodEnd = null; // Clear extension when canceled
   user.subscriptionCancelAtPeriodEnd = false;
   user.userType = 'free';
   
@@ -218,6 +313,7 @@ async function handlePaymentSucceeded(invoice) {
     await handleSubscriptionUpdate(subscription);
   }
 }
+
 
 // Helper function to handle failed payment
 async function handlePaymentFailed(invoice) {
@@ -243,18 +339,41 @@ async function updateUserSubscription(user, subscription) {
   user.stripeSubscriptionId = subscription.id;
   user.subscriptionStatus = subscription.status;
   user.subscriptionPlan = plan;
-  user.subscriptionCurrentPeriodEnd = new Date(subscription.current_period_end * 1000);
+  
+  const currentPeriodEnd = new Date(subscription.current_period_end * 1000);
+  
+  // If subscription has naturally renewed (new period end is after extended period end),
+  // clear the extended period end as it's no longer needed
+  if (user.subscriptionExtendedPeriodEnd && currentPeriodEnd > user.subscriptionExtendedPeriodEnd) {
+    user.subscriptionExtendedPeriodEnd = null;
+    console.log(`Subscription naturally renewed for user ${user._id}, cleared extended period end`);
+  }
+  
+  user.subscriptionCurrentPeriodEnd = currentPeriodEnd;
+  
+  // If we have an extended period end, use the later date
+  const effectivePeriodEnd = user.subscriptionExtendedPeriodEnd && 
+                             user.subscriptionExtendedPeriodEnd > currentPeriodEnd
+                             ? user.subscriptionExtendedPeriodEnd 
+                             : currentPeriodEnd;
+  
   user.subscriptionCancelAtPeriodEnd = subscription.cancel_at_period_end;
   
-  // Update userType based on subscription status
-  if (subscription.status === 'active' || subscription.status === 'trialing') {
+  // Update userType based on subscription status and effective period end
+  const now = new Date();
+  if ((subscription.status === 'active' || subscription.status === 'trialing') && 
+      effectivePeriodEnd > now) {
     user.userType = 'premium';
   } else {
     user.userType = 'free';
+    // Clear extended period end if subscription expired
+    if (effectivePeriodEnd <= now) {
+      user.subscriptionExtendedPeriodEnd = null;
+    }
   }
   
   await user.save();
-  console.log(`Subscription updated for user ${user._id}: ${plan} - ${subscription.status}`);
+  console.log(`Subscription updated for user ${user._id}: ${plan} - ${subscription.status}, effective period end: ${effectivePeriodEnd}`);
 }
 
 // @route   GET /api/stripe/subscription-status
@@ -286,10 +405,19 @@ router.get('/subscription-status', auth, async (req, res) => {
       }
     }
 
+    // Calculate effective period end (use extended if exists and later)
+    const effectivePeriodEnd = user.subscriptionExtendedPeriodEnd && 
+                               user.subscriptionCurrentPeriodEnd &&
+                               user.subscriptionExtendedPeriodEnd > user.subscriptionCurrentPeriodEnd
+                               ? user.subscriptionExtendedPeriodEnd 
+                               : user.subscriptionCurrentPeriodEnd;
+
     res.json({
       subscriptionStatus: user.subscriptionStatus,
       subscriptionPlan: user.subscriptionPlan,
       subscriptionCurrentPeriodEnd: user.subscriptionCurrentPeriodEnd,
+      subscriptionExtendedPeriodEnd: user.subscriptionExtendedPeriodEnd,
+      effectivePeriodEnd: effectivePeriodEnd,
       subscriptionCancelAtPeriodEnd: user.subscriptionCancelAtPeriodEnd,
       userType: user.userType,
       stripeCustomerId: user.stripeCustomerId,

@@ -93,6 +93,10 @@ const userSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  subscriptionExtendedPeriodEnd: {
+    type: Date,
+    default: null
+  },
   isCoach: {
     type: Boolean,
     default: false
